@@ -2,13 +2,18 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   heading2:
-    "font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[60.8px] leading-[66.8px] w-full",
+    "font-Inter font-semibold xs:text-[50px] mt-[20px] text-[px] text-white xs:leading-[60.8px] leading-[66.8px] w-full",
   heading3:
     "font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full",
+  heading4:
+    "font-Inter font-semibold xs:text-[30px] mt-[20px] text-[28px] text-black2 xs:leading-[60.8px] leading-[66.8px] w-full",
+  heading5:
+    "font-Inter font-semibold xs:text-[20px] mt-[20px] text-[16px] text-black2 xs:leading-[60.8px] leading-[66.8px] w-full",
   paragraph:
     "font-Inter font-normal text-dimWhite text-[18px] leading-[30.8px]",
   paragraph2:
     "font-Inter font-normal text-dimWhite text-[14px] leading-[30.8px]",
+  paragraph3: "font-Inter font-normal text-black2 text-[14px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

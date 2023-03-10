@@ -4,6 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {
+        caller: "url('/src/images/caller.png')",
+        card: "url('/src/images/card.png')",
+      },
       colors: {
         primary: "#25aae1",
         secondary: "#c10006",

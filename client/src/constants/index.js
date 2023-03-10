@@ -1,3 +1,15 @@
+// import { access, fidlogo, stanbic, lagferry, laswa, mtn } from "../images";
+import access from "../images/access.png";
+import mtn from "../images/mtn.png";
+import fidlogo from "../images/fidlogo.png";
+import lagferry from "../images/lagferry.png";
+import laswa from "../images/laswa.png";
+import stanbic from "../images/stanbic.png";
+import info1 from "../images/info1.png";
+import info2 from "../images/info2.png";
+import info3 from "../images/info3.png";
+import info4 from "../images/info4.png";
+
 export const navLinks = [
   {
     id: "home",
@@ -131,5 +143,86 @@ export const footerLinks = [
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
+  },
+];
+
+export const clients = [
+  {
+    id: "client-1",
+    logo: mtn,
+  },
+  {
+    id: "client-2",
+    logo: lagferry,
+  },
+  {
+    id: "client-3",
+    logo: stanbic,
+  },
+  {
+    id: "client-4",
+    logo: fidlogo,
+  },
+  {
+    id: "client-5",
+    logo: laswa,
+  },
+  {
+    id: "client-5",
+    logo: access,
+  },
+];
+
+export const features = [
+  {
+    id: "feature-1",
+    icon: info1,
+    title: "website development",
+    content:
+      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+  },
+  {
+    id: "feature-2",
+    icon: info2,
+    title: "website development",
+    content:
+      "We take proactive steps make sure your information and transactions are secure.",
+  },
+  {
+    id: "feature-3",
+    icon: info3,
+    title: "website development",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
+  {
+    id: "feature-4",
+    icon: info4,
+    title: "website development",
+    content:
+      "A balance transfer credit card can save you a lot of money in interest charges.",
+  },
+];
+
+export const stats = [
+  {
+    id: "stats-1",
+    title: "Years of experience",
+    value: "10+",
+  },
+  {
+    id: "stats-2",
+    title: "Satisfied Clients",
+    value: "35+",
+  },
+  {
+    id: "stats-3",
+    title: "Complete Projects",
+    value: "10+",
+  },
+  {
+    id: "stats-3",
+    title: "Live products",
+    value: "5+",
   },
 ];

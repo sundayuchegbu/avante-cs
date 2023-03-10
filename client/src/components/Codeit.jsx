@@ -12,15 +12,13 @@ const Codeit = () => (
         <br className="sm:block hidden" />
         <span className="text-primary">Lorem Ipsum consectetur.</span>
       </h2>
-
-      <ul
-        className={`text-dark list-disc ${styles.paragraph} max-w-[470px] mt-5 mb-6`}
-      >
-        <li>Lorem ipsum dolor sit amet consectetur. Venenatis nulla</li>
-        <li>quisque tincidunt nisi in nunc aenean. Fames semper in</li>
-        <li>mattis fermentum vel purus dignissim adipiscing volutpat.</li>
-      </ul>
-
+      <p className={`${styles.paragraph} max-w-[470px] mt-5 mb-6`}>
+        <ul className="text-dark list-disc">
+          <li>Lorem ipsum dolor sit amet consectetur. Venenatis nulla</li>
+          <li>quisque tincidunt nisi in nunc aenean. Fames semper in</li>
+          <li>mattis fermentum vel purus dignissim adipiscing volutpat.</li>
+        </ul>
+      </p>
       <button className="bg-secondary text-white flex flex-start font-bold py-2 px-4 rounded">
         Read more
       </button>
