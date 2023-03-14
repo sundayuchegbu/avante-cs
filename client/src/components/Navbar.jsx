@@ -5,6 +5,7 @@ import menu from "../images/menu.svg";
 import logo from "../images/logo.png";
 
 import { navLinks } from "../constants";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
                       : "mr-10 "
                   } hover:text-primary `}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <NavLink to={`${nav.id}`}>{nav.title}</NavLink>
                 </li>
               ))}
             </ul>

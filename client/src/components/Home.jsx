@@ -6,6 +6,8 @@ import Clients from "./Clients";
 import Testimonial from "./Testimonial";
 import Info from "./Info";
 import Stats from "./Stats";
+import ProductSample from "./ProductSample";
+import Card from "./Card";
 
 const Home = () => (
   <div>
@@ -17,14 +19,15 @@ const Home = () => (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Codeit />
+        <Card />
+        <ProductSample />
+        <Stats />
+        <Info />
       </div>
     </div>
 
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Info />
-      </div>
+      <div className={`${styles.boxWidth}`}></div>
     </div>
     <Testimonial />
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>

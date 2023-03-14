@@ -12,7 +12,7 @@ import info4 from "../images/info4.png";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "/",
     title: "HOME",
   },
   {

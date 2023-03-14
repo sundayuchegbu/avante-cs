@@ -7,6 +7,7 @@ module.exports = {
       backgroundImage: {
         caller: "url('/src/images/caller.png')",
         card: "url('/src/images/card.png')",
+        product4: "url('/src/images/product4.png')",
       },
       colors: {
         primary: "#25aae1",
