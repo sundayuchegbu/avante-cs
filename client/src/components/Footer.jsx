@@ -5,7 +5,7 @@ import mail from "../images/mail.png";
 import phone from "../images/phone.png";
 import { footerLinks } from "../constants";
 
-const Footer = () => (
+const Footer = ({ links }) => (
   <div className={`bg-dark sm:px-16 px-6 flex justify-center items-start`}>
     <div className="xl:max-w-[1280px] w-full">
       <div className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -50,7 +50,7 @@ const Footer = () => (
                 <ul className="list-none mb-4">
                   {footerLink.links.map((link, index) => (
                     <li
-                      key={link.name}
+                      key={link.key}
                       className={`font-inter font-normal text-[16px] leading-[24px] text-dimWhite hover:text-primary ${
                         index !== footerLink.links.length - 1 ? "mb-4" : "mb-0"
                       } cursor-pointer`}

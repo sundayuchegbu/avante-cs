@@ -12,7 +12,7 @@ const Stats = () => (
         {stats.map((stat) => (
           <div
             key={stat.id}
-            className={` justify-start items-center p-6 flex-row m-3  hover:bg-red-700 hover:object-center hover:w-40 hover:h-40 `}
+            className={` justify-start items-center p-6 flex-row m-3 lg:hover:bg-red-700 hover:object-center hover:w-40 hover:h-40 `}
           >
             <h4 className="font-inter font-semibold mb-4 text-[30px] xs:leading-[53px] leading-[43px] text-primary ">
               {stat.value}{" "}

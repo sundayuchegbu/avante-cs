@@ -1,21 +1,17 @@
 import styles from "../style";
-import Banner from "./Banner";
-import Codeit from "./Codeit";
-import Caller from "./Caller";
-import Clients from "./Clients";
-import Testimonial from "./Testimonial";
-import Info from "./Info";
-import Stats from "./Stats";
-import ProductSample from "./ProductSample";
-import Card from "./Card";
+import Banner from "../components/Banner";
+import Codeit from "../components/Codeit";
+import Caller from "../components/Caller";
+import Clients from "../components/Clients";
+import Testimonial from "../components/Testimonial";
+import Info from "../components/Info";
+import Stats from "../components/Stats";
+import ProductSample from "../components/ProductSample";
+import Card from "../components/Card";
 
 const Home = () => (
   <div>
-    <div className={` ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Banner />
-      </div>
-    </div>
+    <Banner />
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Codeit />

@@ -9,6 +9,9 @@ import info1 from "../images/info1.png";
 import info2 from "../images/info2.png";
 import info3 from "../images/info3.png";
 import info4 from "../images/info4.png";
+import ellipse1 from "../images/Ellipse1.png";
+import ellipse2 from "../images/Ellipse2.png";
+import ellipse3 from "../images/Ellipse3.png";
 
 export const navLinks = [
   {
@@ -41,41 +44,68 @@ export const navLinks = [
   },
 ];
 
+export const feedback = [
+  {
+    id: "feedback-1",
+    content:
+      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+
+    title: "Founder & Leader",
+    img: ellipse1,
+  },
+  {
+    id: "feedback-2",
+    content:
+      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+
+    title: "Founder & Leader",
+    img: ellipse2,
+  },
+  {
+    id: "feedback-3",
+    content:
+      "It is usually people in the money business, finance, and international trade that are really rich.",
+
+    title: "Founder & Leader",
+    img: ellipse3,
+  },
+];
+
 export const footerLinks = [
   {
     title: "Services",
     links: [
       {
         name: "Business Consulting",
-        link: "https://www.hoobank.com/how-it-works/",
+        link: "www.business.com",
       },
       {
         name: "Software Development",
-        link: "https://www.hoobank.com/create/",
+        link: "www.software.com",
       },
       {
         name: "SAS Analytics",
-        link: "https://www.hoobank.com/explore/",
+        link: " www.sas.com",
       },
       {
         name: "eGain Collaboration",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "www.egain.com",
       },
       {
         name: "eGain Knowledge",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "knowledge.com",
       },
       {
         name: "Social Media management",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "social.com",
       },
       {
         name: "Oracle Database",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "oracle.com",
       },
       {
         name: "Website Development",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "development.com",
       },
     ],
   },
@@ -134,7 +164,7 @@ export const footerLinks = [
         link: "https://www.hoobank.com/become-a-partner/",
       },
       {
-        name: "Otitogu Street, Off Admilty",
+        name: "Otitogu Street,\n Off Admilty",
 
         link: "https://www.hoobank.com/become-a-partner/",
       },
@@ -168,7 +198,7 @@ export const clients = [
     logo: laswa,
   },
   {
-    id: "client-5",
+    id: "client-6",
     logo: access,
   },
 ];
@@ -221,7 +251,7 @@ export const stats = [
     value: "10+",
   },
   {
-    id: "stats-3",
+    id: "stats-4",
     title: "Live products",
     value: "5+",
   },

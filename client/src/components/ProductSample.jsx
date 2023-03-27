@@ -22,7 +22,7 @@ const ProductSample = () => (
       <img
         src={productimage1}
         alt="productimage1"
-        className="[w-400px] h-[400px] mx-56"
+        className="[w-400px] h-[400px] lg:mx-56 mb-4"
       />
     </div>
     <div className={`${layout.sectionInfo} bg-productimage4`}>
