@@ -1,30 +1,22 @@
 import { useState } from "react";
-import { navLinks } from "../constants";
+// import { navLinks } from "../constants";
 import close from "../images/close.svg";
 import menu from "../images/menu.svg";
 import logo from "../images/logo.png";
+import { Menu } from "@headlessui/react";
 
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className=" w-full flex py-6 justify-between items-center navbar">
       <NavLink to="/">
         {" "}
         <img src={logo} alt="logo" className="w-[124px] h-[32px]" />
       </NavLink>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {/* {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-inter font-normal cursor-pointer text-[16px] ${
-              index === navLinks.length - 1 ? "mr-0 text-red-600" : "mr-10 "
-            } hover:text-primary `}
-          >
-            <NavLink to={`${nav.id}`}>{nav.title}</NavLink>
-          </li>
-        ))} */}
         <NavLink
           to="/"
           className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
@@ -37,131 +29,140 @@ const Navbar = () => {
         >
           ABOUT US
         </NavLink>
-        <div class="relative inline-block text-left mr-10">
+        <Menu as="div" className="relative inline-block text-left mr-10">
           <div>
-            <button
+            <Menu.Button
               type="button"
-              class="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-2 text-sm  text-gray-900 shadow-sm  ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
               id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
             >
               SERVICES
               <svg
-                class="-mr-1 h-5 w-5 text-gray-400"
+                className="-mr-1 h-5 w-5 text-gray-400"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
-            </button>
+            </Menu.Button>
           </div>
 
-          {/* Dropdown menu, show/hide based on menu state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95" */}
-
-          <div
-            class="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          <Menu.Items
+            className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
             tabindex="-1"
           >
-            <div class="py-1" role="none">
-              <Link
-                to="/services/consulting"
-                class="text-gray-700 block text-center px-4 py-2 mb-4 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-0"
-              >
-                Business Consulting
-              </Link>
-              <Link
-                to="/services/software"
-                class="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm "
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-1"
-              >
-                Software Development
-              </Link>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/consulting"
+                  className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                >
+                  Business Consulting
+                </Link>
+              </Menu.Item>
+
+              <Menu.Item>
+                <Link
+                  to="/services/software"
+                  className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                >
+                  Software Development
+                </Link>
+              </Menu.Item>
             </div>
-            <div class="py-1" role="none">
-              <Link
-                to="/services/sas"
-                class="text-gray-700 block px-4 py-2 text-center mb-4 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-2"
-              >
-                SAS Analytics{" "}
-              </Link>
-              <Link
-                to="/services/egain/collaboration"
-                class="text-gray-700 block px-4 text-center py-2 mb-4 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-3"
-              >
-                eGain Collaboration
-              </Link>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/sas"
+                  className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-2"
+                >
+                  SAS Analytics{" "}
+                </Link>
+              </Menu.Item>
+
+              <Menu.Item>
+                <Link
+                  to="/services/egain/collaboration"
+                  className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-3"
+                >
+                  eGain Collaboration
+                </Link>
+              </Menu.Item>
             </div>
-            <div class="py-1" role="none">
-              <Link
-                to="/services/egain/knowledge"
-                class="text-gray-700 block px-4 text-center py-2 mb-4 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-4"
-              >
-                eGain Knowledge
-              </Link>
-              <Link
-                to="/services/media/management"
-                class="text-gray-700 block text-center px-4 py-2 mb-4 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-5"
-              >
-                Social Media Management (Falcon.io){" "}
-              </Link>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/egain/knowledge"
+                  className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-4"
+                >
+                  eGain Knowledge
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link
+                  to="/services/media/management"
+                  className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-5"
+                >
+                  Social Media Management (Falcon.io){" "}
+                </Link>
+              </Menu.Item>
             </div>
-            <div class="py-1" role="none">
-              <Link
-                to="/services/oracle"
-                class="text-gray-700 block px-4 py-2 text-center mb-4 text-sm"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-6"
-              >
-                Oracle Database
-              </Link>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/oracle"
+                  className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-6"
+                >
+                  Oracle Database
+                </Link>
+              </Menu.Item>
             </div>
-            <div class="py-1" role="none">
-              <Link
-                to="services/web/development"
-                class="text-gray-700 block px-4 py-2 mb-4 text-sm text-center"
-                role="menuitem"
-                tabindex="-1"
-                id="menu-item-6"
-              >
-                Web Development
-              </Link>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="services/web/development"
+                  className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-6"
+                >
+                  Web Development
+                </Link>
+              </Menu.Item>
             </div>
-          </div>
-        </div>
+          </Menu.Items>
+        </Menu>
 
         <NavLink
           to="/products"
@@ -169,12 +170,140 @@ const Navbar = () => {
         >
           PRODUCTS
         </NavLink>
-        <NavLink
-          to="/clients"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
-        >
-          CLIENTS
-        </NavLink>
+        <Menu as="div" className="relative inline-block text-left mr-10">
+          <div>
+            <Menu.Button
+              type="button"
+              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+              id="menu-button"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              CLIENTS
+              <svg
+                className="-mr-1 h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Menu.Button>
+          </div>
+
+          <Menu.Items
+            className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+            tabindex="-1"
+          >
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/consulting"
+                  className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-0"
+                >
+                  Government Agencies
+                </Link>
+              </Menu.Item>
+
+              <Menu.Item>
+                <Link
+                  to="/services/software"
+                  className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-1"
+                >
+                  Financial Sector
+                </Link>
+              </Menu.Item>
+            </div>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/sas"
+                  className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-2"
+                >
+                  SAS Analytics{" "}
+                </Link>
+              </Menu.Item>
+
+              <Menu.Item>
+                <Link
+                  to="/services/egain/collaboration"
+                  className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-3"
+                >
+                  eGain Collaboration
+                </Link>
+              </Menu.Item>
+            </div>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/egain/knowledge"
+                  className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-4"
+                >
+                  eGain Knowledge
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link
+                  to="/services/media/management"
+                  className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-5"
+                >
+                  Social Media Management (Falcon.io){" "}
+                </Link>
+              </Menu.Item>
+            </div>
+            <div class="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="/services/oracle"
+                  className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-6"
+                >
+                  Oracle Database
+                </Link>
+              </Menu.Item>
+            </div>
+            <div className="py-1" role="none">
+              <Menu.Item>
+                <Link
+                  to="services/web/development"
+                  className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                  role="menuitem"
+                  tabindex="-1"
+                  id="menu-item-6"
+                >
+                  Web Development
+                </Link>
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </Menu>
         <NavLink
           to="/news"
           className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
@@ -198,21 +327,308 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-blue-gradient top-20 right-0 mx-4 my-2 min-w-[140px]   absolute rounded-xl sidebar`}
+          } p-6   absolute bgbackground top-20 right-0 mx-4 my-2 min-w-[140px]  rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-inter font-normal cursor-pointer text-[16px] ${
-                  index === navLinks.length - 1
-                    ? "mb-0 text-red-600"
-                    : "mb-4 hover:text-color-primary "
-                } `}
+            <NavLink
+              to="/"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+            >
+              HOME
+            </NavLink>
+            <NavLink
+              to="/about"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+            >
+              ABOUT US
+            </NavLink>
+            <Menu as="div" className="relative inline-block text-left mr-10">
+              <div>
+                <Menu.Button
+                  type="button"
+                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-2 text-sm  text-gray-900 shadow-sm  ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  id="menu-button"
+                  aria-expanded="true"
+                  aria-haspopup="true"
+                >
+                  SERVICES
+                  <svg
+                    className="-mr-1 h-5 w-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </Menu.Button>
+              </div>
+
+              <Menu.Items
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabindex="-1"
               >
-                <NavLink to={`${nav.id}`}>{nav.title}</NavLink>
-              </li>
-            ))}
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/consulting"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-0"
+                    >
+                      Business Consulting
+                    </Link>
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    <Link
+                      to="/services/software"
+                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-1"
+                    >
+                      Software Development
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/sas"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-2"
+                    >
+                      SAS Analytics{" "}
+                    </Link>
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    <Link
+                      to="/services/egain/collaboration"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-3"
+                    >
+                      eGain Collaboration
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/egain/knowledge"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-4"
+                    >
+                      eGain Knowledge
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Link
+                      to="/services/media/management"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-5"
+                    >
+                      Social Media Management (Falcon.io){" "}
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/oracle"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-6"
+                    >
+                      Oracle Database
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="services/web/development"
+                      className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-6"
+                    >
+                      Web Development
+                    </Link>
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Menu>
+
+            <NavLink
+              to="/products"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+            >
+              PRODUCTS
+            </NavLink>
+            <Menu as="div" className="relative inline-block text-left mr-10">
+              <div>
+                <Menu.Button
+                  type="button"
+                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-2 text-sm  text-gray-900 shadow-sm  ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  id="menu-button"
+                  aria-expanded="true"
+                  aria-haspopup="true"
+                >
+                  CLIENTS
+                  <svg
+                    className="-mr-1 h-5 w-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </Menu.Button>
+              </div>
+
+              <Menu.Items
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabindex="-1"
+              >
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/consulting"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-0"
+                    >
+                      Government Agencies
+                    </Link>
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    <Link
+                      to="/services/software"
+                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-1"
+                    >
+                      Financial Sector
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/sas"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-2"
+                    >
+                      SAS Analytics{" "}
+                    </Link>
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    <Link
+                      to="/services/egain/collaboration"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-3"
+                    >
+                      eGain Collaboration
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/egain/knowledge"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-4"
+                    >
+                      eGain Knowledge
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Link
+                      to="/services/media/management"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-5"
+                    >
+                      Social Media Management (Falcon.io){" "}
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div class="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="/services/oracle"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-6"
+                    >
+                      Oracle Database
+                    </Link>
+                  </Menu.Item>
+                </div>
+                <div className="py-1" role="none">
+                  <Menu.Item>
+                    <Link
+                      to="services/web/development"
+                      className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-6"
+                    >
+                      Web Development
+                    </Link>
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Menu>
+            <NavLink
+              to="/news"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mb-0 text-secondary"
+            >
+              NEWS
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mb-0 text-secondary"
+            >
+              CONTACT US
+            </NavLink>
           </ul>
         </div>
       </div>
@@ -220,3 +636,8 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+// className={`font-inter font-normal cursor-pointer text-[16px] ${
+//   index === navLinks.length - 1
+//     ? "mb-0 text-red-600"
+//     : "mb-4 hover:text-color-primary "
+// } `}

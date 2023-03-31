@@ -1,8 +1,8 @@
 import styles, { layout } from "../style";
 import softpix from "../images/softpix.png";
 const Softwarebanner = () => (
-  <section className={layout.sectionReverse}>
-    <div className={layout.sectionImgReverse}>
+  <section className={`bg-lightBlue ${layout.sectionReverse}`}>
+    <div className={`${layout.sectionImgReverse} bg-lightBlue`}>
       <img src={softpix} alt="sofware" />
     </div>
     <div className={layout.sectionInfo}>

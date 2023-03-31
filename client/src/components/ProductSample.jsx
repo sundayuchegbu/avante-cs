@@ -3,7 +3,6 @@ import styles, { layout } from "../style";
 import productimage1 from "../images/productimage1.png";
 import productimage2 from "../images/productimage2.png";
 import productimage3 from "../images/productimage3.png";
-import productimage4 from "../images/productimage4.png";
 
 const ProductSample = () => (
   <section className={layout.section}>
