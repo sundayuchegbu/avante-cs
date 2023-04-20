@@ -17,9 +17,10 @@ const Vision = () => (
       </h2>
       <div className={`${styles.paragraph} max-w-[470px] mt-5 mb-6`}>
         <ul className="text-dark list-disc">
-          <li>Lorem ipsum dolor sit amet consectetur. Venenatis nulla</li>
-          <li>quisque tincidunt nisi in nunc aenean. Fames semper in</li>
-          <li>mattis fermentum vel purus dignissim adipiscing volutpat.</li>
+          <li>
+            Our vision is to be the most respected and trusted IT professional
+            services firm recognized by our clients for delivering excellence.
+          </li>
         </ul>
       </div>
     </div>

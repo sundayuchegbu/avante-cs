@@ -31,9 +31,6 @@ const Vision1 = () => (
           </li>
         </ul>
       </div>
-      <button className="bg-secondary text-white flex flex-start font-bold py-2 px-4 rounded">
-        Read more
-      </button>
     </div>
     <div className={`${layout.sectionImg} mx-24 px-24 relative`}>
       <img
@@ -42,8 +39,8 @@ const Vision1 = () => (
         className=" block -mx-4 w-[100%]  h-[70%] "
       />
       <div className="absolute bottom-0 top-0 left-1/2 right-0 w-4 bg-background"></div>
-      <div className="absolute bottom-0 top-24 left-1/2 right-16 h-12 bg-background"></div>
-      <div className="absolute bottom-0 top-[560px] left-0 right-1/2 h-18 bg-background"></div>
+      <div className="absolute bottom-0 top-[104px] left-1/2 right-16 h-12 bg-background"></div>
+      <div className="absolute bottom-0 top-[540px] left-0 right-1/2 h-18 bg-background"></div>
     </div>
   </section>
 );

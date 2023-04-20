@@ -16,6 +16,11 @@ import SocialMediaMgt from "./pages/services/SocialMediaMgt";
 import Sas from "./pages/services/Sas";
 import OracleDatabase from "./pages/services/OracleDatabase";
 import WebDev from "./pages/services/WebDev";
+import Agencies from "./pages/clients/Agencies";
+import Financial from "./pages/clients/Financial";
+import Telecoms from "./pages/clients/Telecoms";
+import SME from "./pages/clients/SME";
+import Goods from "./pages/clients/Goods";
 
 const App = () => (
   <BrowserRouter>
@@ -37,6 +42,12 @@ const App = () => (
         <Route path="/services/consulting" element={<Consulting />} />
         <Route path="/services/software" element={<Software />} />
         <Route path="/services/sas" element={<Sas />} />
+        <Route path="/clients/agencies" element={<Agencies />} />
+        <Route path="/clients/financial" element={<Financial />} />
+        <Route path="/clients/telecoms" element={<Telecoms />} />
+        <Route path="/clients/sme" element={<SME />} />
+        <Route path="/clients/goods" element={<Goods />} />
+
         <Route
           path="/services/egain/collaboration"
           element={<EgainCollaboration />}

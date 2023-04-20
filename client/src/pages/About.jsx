@@ -6,6 +6,7 @@ import Vision from "../components/Vision";
 import Vision1 from "../components/Vision1";
 import Caller from "../components/Caller";
 import Feedback from "../components/Feedback";
+import styles from "../style";
 
 const About = () => (
   <div>
@@ -16,7 +17,11 @@ const About = () => (
     <Cooperate />
     <Cards2 />
     <Feedback />
-    <Caller />
+    <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Caller />
+      </div>{" "}
+    </div>
   </div>
 );
 

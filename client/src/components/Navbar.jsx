@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className=" w-full flex py-6 justify-between items-center navbar">
+    <nav className=" w-full flex p-8 justify-between items-center navbar">
       <NavLink to="/">
         {" "}
         <img src={logo} alt="logo" className="w-[124px] h-[32px]" />
@@ -59,7 +59,7 @@ const Navbar = () => {
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
-            tabindex="-1"
+            tabIndex="-1"
           >
             <div className="py-1" role="none">
               <Menu.Item>
@@ -67,7 +67,7 @@ const Navbar = () => {
                   to="/services/consulting"
                   className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-0"
                 >
                   Business Consulting
@@ -79,7 +79,7 @@ const Navbar = () => {
                   to="/services/software"
                   className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-1"
                 >
                   Software Development
@@ -92,7 +92,7 @@ const Navbar = () => {
                   to="/services/sas"
                   className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-2"
                 >
                   SAS Analytics{" "}
@@ -104,7 +104,7 @@ const Navbar = () => {
                   to="/services/egain/collaboration"
                   className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-3"
                 >
                   eGain Collaboration
@@ -117,7 +117,7 @@ const Navbar = () => {
                   to="/services/egain/knowledge"
                   className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-4"
                 >
                   eGain Knowledge
@@ -128,7 +128,7 @@ const Navbar = () => {
                   to="/services/media/management"
                   className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-5"
                 >
                   Social Media Management (Falcon.io){" "}
@@ -141,7 +141,7 @@ const Navbar = () => {
                   to="/services/oracle"
                   className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-6"
                 >
                   Oracle Database
@@ -154,7 +154,7 @@ const Navbar = () => {
                   to="services/web/development"
                   className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-6"
                 >
                   Web Development
@@ -200,15 +200,15 @@ const Navbar = () => {
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
-            tabindex="-1"
+            tabIndex="-1"
           >
             <div className="py-1" role="none">
               <Menu.Item>
                 <Link
-                  to="/services/consulting"
+                  to="/clients/agencies"
                   className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-0"
                 >
                   Government Agencies
@@ -217,10 +217,10 @@ const Navbar = () => {
 
               <Menu.Item>
                 <Link
-                  to="/services/software"
+                  to="/clients/financial"
                   className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-1"
                 >
                   Financial Sector
@@ -230,75 +230,38 @@ const Navbar = () => {
             <div className="py-1" role="none">
               <Menu.Item>
                 <Link
-                  to="/services/sas"
+                  to="/clients/telecoms"
                   className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-2"
                 >
-                  SAS Analytics{" "}
+                  Telecoms sector{" "}
                 </Link>
               </Menu.Item>
 
               <Menu.Item>
                 <Link
-                  to="/services/egain/collaboration"
+                  to="/clients/sme"
                   className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-3"
                 >
-                  eGain Collaboration
+                  SME{" "}
                 </Link>
               </Menu.Item>
             </div>
             <div className="py-1" role="none">
               <Menu.Item>
                 <Link
-                  to="/services/egain/knowledge"
+                  to="/clients/goods"
                   className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                   role="menuitem"
-                  tabindex="-1"
+                  tabIndex="-1"
                   id="menu-item-4"
                 >
-                  eGain Knowledge
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link
-                  to="/services/media/management"
-                  className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-5"
-                >
-                  Social Media Management (Falcon.io){" "}
-                </Link>
-              </Menu.Item>
-            </div>
-            <div class="py-1" role="none">
-              <Menu.Item>
-                <Link
-                  to="/services/oracle"
-                  className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-6"
-                >
-                  Oracle Database
-                </Link>
-              </Menu.Item>
-            </div>
-            <div className="py-1" role="none">
-              <Menu.Item>
-                <Link
-                  to="services/web/development"
-                  className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-6"
-                >
-                  Web Development
+                  Consumer goods{" "}
                 </Link>
               </Menu.Item>
             </div>
@@ -311,13 +274,13 @@ const Navbar = () => {
           NEWS
         </NavLink>
         <NavLink
-          to="/contact"
+          to="/contacts"
           className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 text-secondary"
         >
           CONTACT US
         </NavLink>
       </ul>
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden flex flex-1 justify-end items-center bg-background">
         <img
           src={toggle ? close : menu}
           className="w-[28px] h-[28px] object-contain"
@@ -372,7 +335,7 @@ const Navbar = () => {
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
-                tabindex="-1"
+                tabIndex="-1"
               >
                 <div className="py-1" role="none">
                   <Menu.Item>
@@ -380,7 +343,7 @@ const Navbar = () => {
                       to="/services/consulting"
                       className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-0"
                     >
                       Business Consulting
@@ -392,7 +355,7 @@ const Navbar = () => {
                       to="/services/software"
                       className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-1"
                     >
                       Software Development
@@ -405,7 +368,7 @@ const Navbar = () => {
                       to="/services/sas"
                       className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-2"
                     >
                       SAS Analytics{" "}
@@ -417,7 +380,7 @@ const Navbar = () => {
                       to="/services/egain/collaboration"
                       className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-3"
                     >
                       eGain Collaboration
@@ -430,7 +393,7 @@ const Navbar = () => {
                       to="/services/egain/knowledge"
                       className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-4"
                     >
                       eGain Knowledge
@@ -441,7 +404,7 @@ const Navbar = () => {
                       to="/services/media/management"
                       className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-5"
                     >
                       Social Media Management (Falcon.io){" "}
@@ -454,7 +417,7 @@ const Navbar = () => {
                       to="/services/oracle"
                       className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-6"
                     >
                       Oracle Database
@@ -467,7 +430,7 @@ const Navbar = () => {
                       to="services/web/development"
                       className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-6"
                     >
                       Web Development
@@ -487,7 +450,7 @@ const Navbar = () => {
               <div>
                 <Menu.Button
                   type="button"
-                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-2 text-sm  text-gray-900 shadow-sm  ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -513,15 +476,15 @@ const Navbar = () => {
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
-                tabindex="-1"
+                tabIndex="-1"
               >
                 <div className="py-1" role="none">
                   <Menu.Item>
                     <Link
-                      to="/services/consulting"
+                      to="/clients/agencies"
                       className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-0"
                     >
                       Government Agencies
@@ -530,10 +493,10 @@ const Navbar = () => {
 
                   <Menu.Item>
                     <Link
-                      to="/services/software"
+                      to="/clients/financial"
                       className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-1"
                     >
                       Financial Sector
@@ -543,75 +506,38 @@ const Navbar = () => {
                 <div className="py-1" role="none">
                   <Menu.Item>
                     <Link
-                      to="/services/sas"
+                      to="/clients/telecoms"
                       className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-2"
                     >
-                      SAS Analytics{" "}
+                      Telecoms sector{" "}
                     </Link>
                   </Menu.Item>
 
                   <Menu.Item>
                     <Link
-                      to="/services/egain/collaboration"
+                      to="/clients/sme"
                       className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-3"
                     >
-                      eGain Collaboration
+                      SME{" "}
                     </Link>
                   </Menu.Item>
                 </div>
                 <div className="py-1" role="none">
                   <Menu.Item>
                     <Link
-                      to="/services/egain/knowledge"
+                      to="/clients/goods"
                       className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                       role="menuitem"
-                      tabindex="-1"
+                      tabIndex="-1"
                       id="menu-item-4"
                     >
-                      eGain Knowledge
-                    </Link>
-                  </Menu.Item>
-                  <Menu.Item>
-                    <Link
-                      to="/services/media/management"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-5"
-                    >
-                      Social Media Management (Falcon.io){" "}
-                    </Link>
-                  </Menu.Item>
-                </div>
-                <div class="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/services/oracle"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-6"
-                    >
-                      Oracle Database
-                    </Link>
-                  </Menu.Item>
-                </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="services/web/development"
-                      className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-6"
-                    >
-                      Web Development
+                      Consumer goods{" "}
                     </Link>
                   </Menu.Item>
                 </div>

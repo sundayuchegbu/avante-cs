@@ -14,11 +14,13 @@ const EgainKnowledgeBanner = () => {
           <div className="absolute inset-0 bg-primary opacity-75"></div>
           <div className="absolute inset-0 flex items-center  justify-center">
             <div className="text-center items-center text-white px-4  ">
-              <h1 className={` ${styles.heading6}  py-2 px-4`}>
+              <h1
+                className={` font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[60.8px] leading-[66.8px]   `}
+              >
                 Lorem ipsum dolor
                 <br className="sm:block hidden " /> sit amet consectetur.
               </h1>
-              <p className={`${styles.paragraph2} max-w-[470px] mt-5 mb-8`}>
+              <p className={`${styles.paragraph2} max-w-[336px]  mt-5   mb-8 `}>
                 Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
                 velit mattis tempor at nisiLorem ipsum dolor sit amet
                 consectetur. Proin vel orci tempor velit mattis tempor at nisi.

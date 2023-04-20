@@ -3,26 +3,28 @@ import base from "../images/base.png";
 import styles from "../style";
 
 const Banner = () => (
-  <section className="bg-primary overflow w-full lg:grid lg:grid-cols-2 gap-0 ">
+  <section className="bg-primary overflow w-full lg:grid lg:grid-cols-2 gap-0 p-0 ">
     <div className="relative">
       <img
         src={base}
         alt="base"
-        className="w-full lg:h-[721px] object-cover "
+        className="w-full lg:h-[721px] h-[500px] object-cover  "
       />
       <div className="absolute inset-0 bg-primary opacity-75"></div>
-      <div className="absolute inset-0 flex items-center pt-4 justify-center">
-        <div className="text-center items-center text-white px-4  ">
-          <h1 className={` ${styles.heading6}  py-2 px-4`}>
+      <div className="absolute inset-0 flex items-center sx:p-4 pt-4 justify-center">
+        <div className=" text-white  max-w-[470px] ">
+          <h1
+            className={` font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[60.8px] leading-[66.8px]   `}
+          >
             Lorem ipsum dolor
-            <br className="sm:block hidden " /> sit amet consectetur.
+            <br className="sm:block hidden" /> sit amet consectetur.
           </h1>
-          <p className={`${styles.paragraph2} max-w-[470px] mt-5  mb-8`}>
+          <p className={`${styles.paragraph2}  mt-5   mb-8 `}>
             Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor velit
             mattis tempor at nisiLorem ipsum dolor sit amet consectetur. Proin
             vel orci tempor velit mattis tempor at nisi.
           </p>
-          <button className="bg-secondary font-inter text-white flex  lg:flex-center sm:items-center items-center font-bold py-2 px-8 mb-4 rounded mx-24">
+          <button className="bg-secondary font-inter text-white lg:mr-24   sm:items-center font-bold py-2 px-8 mb-24 rounded ">
             Read more
           </button>
         </div>

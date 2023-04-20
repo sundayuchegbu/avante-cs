@@ -40,3 +40,12 @@
     transform: translateY(0);
   }
 }
+
+#cta {
+  background-image: url("/src/images/combined.png");
+  background-repeat: no-repeat;
+}
+#cta1 {
+  background-image: url("/src/images/productimage4.png");
+  background-repeat: no-repeat;
+}

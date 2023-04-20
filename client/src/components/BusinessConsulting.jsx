@@ -23,7 +23,7 @@ const BusinessConsulting = () => {
         <div
           className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6`}
         >
-          <p className="text-dark list-disc">
+          <p className="text-dark list-disc leading-24">
             Avante Consulting provides implementation solutions for our
             customers from pre-sales assistance through to “go-live” events.
             These solutions are based on a proven implementation methodologies
@@ -35,7 +35,7 @@ const BusinessConsulting = () => {
             industry-specific business expertise. Our implementation support
             services include, but are not limited to:
           </p>
-          <ul className="text-dark list-disc">
+          <ul className="text-dark list-disc ml-12">
             <li>
               Complete product implementations, encompassing all implementation
               phases from project definition to the final production “go-live”.

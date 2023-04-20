@@ -29,6 +29,7 @@ module.exports = {
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         lightBlue: "#f0f8fe",
+        grey: "#E0E0E0",
       },
       fontFamily: {
         poppins: ["Inter", "sans-serif"],
@@ -43,5 +44,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

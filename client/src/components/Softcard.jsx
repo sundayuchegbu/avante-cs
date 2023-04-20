@@ -21,17 +21,30 @@ const Softcard = () => {
       </p>
       <div class=" text-secondary grid grid-cols-6 gap-4 ">
         <div class="col-span-7 flex mx-56 mb-8">
-          <p className="mx-4 font-inter ">java,</p>{" "}
-          <p className="mx-12">Microsoft.NET,</p>{" "}
-          <p className="mx-12">Python,</p> <p className="mx-12">Ionic,</p>{" "}
-          <p className="mx-12">Jquery,</p> <p className="mx-12">Javascript</p>
+          <p className="mx-4 font-inter font-semibold text-[24px] ">java,</p>{" "}
+          <p className="mx-12 font-inter font-semibold text-[24px]">
+            Microsoft.NET,
+          </p>{" "}
+          <p className="mx-12 font-inter font-semibold text-[24px]">Python,</p>{" "}
+          <p className="mx-12 font-inter font-semibold text-[24px]">Ionic,</p>{" "}
+          <p className="mx-12 font-inter font-semibold text-[24px]">Jquery,</p>{" "}
+          <p className="mx-12 font-inter font-semibold text-[24px]">
+            Javascript
+          </p>
         </div>
         <div class="col-span-6 flex mx-56 ">
-          <p className="ml-32">Web</p>
-          <p className="ml-2">Service,</p> <p className="ml-12">XML,</p>{" "}
-          <p className="mx-2">SOAP,</p> <p>WSDL</p>{" "}
-          <p className="ml-12">CSS/</p> <p>HTML,</p>{" "}
-          <p className="ml-12">AngularJs</p>{" "}
+          <p className="ml-32 font-inter font-semibold text-[24px]">Web</p>
+          <p className="ml-2 font-inter font-semibold text-[24px]">
+            Service,
+          </p>{" "}
+          <p className="ml-12 font-inter font-semibold text-[24px]">XML,</p>{" "}
+          <p className="mx-2 font-inter font-semibold text-[24px]">SOAP,</p>{" "}
+          <p className="font-inter font-semibold text-[24px]">WSDL</p>{" "}
+          <p className="ml-12 font-inter font-semibold text-[24px]">CSS/</p>{" "}
+          <p className="font-inter font-semibold text-[24px]">HTML,</p>{" "}
+          <p className="ml-12 font-inter font-semibold text-[24px]">
+            AngularJs
+          </p>{" "}
         </div>
       </div>
     </div>

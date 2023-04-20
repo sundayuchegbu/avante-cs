@@ -17,11 +17,16 @@ const Home = () => (
         <Codeit />
         <Card />
         <ProductSample />
-        <Stats />
+      </div>
+    </div>
+    <Stats />
+
+    <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        {" "}
         <Info />
       </div>
     </div>
-
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}></div>
     </div>

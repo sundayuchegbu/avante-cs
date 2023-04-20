@@ -5,7 +5,7 @@ import fidlogo from "../images/fidlogo.png";
 import lagferry from "../images/lagferry.png";
 import laswa from "../images/laswa.png";
 import stanbic from "../images/stanbic.png";
-import info1 from "../images/info1.png";
+import secondimage from "../images/secondimage.png";
 import info2 from "../images/info2.png";
 import info3 from "../images/info3.png";
 import info4 from "../images/info4.png";
@@ -77,35 +77,35 @@ export const footerLinks = [
     links: [
       {
         name: "Business Consulting",
-        link: "www.business.com",
+        link: "/services/consulting",
       },
       {
         name: "Software Development",
-        link: "www.software.com",
+        link: "/services/software",
       },
       {
         name: "SAS Analytics",
-        link: " www.sas.com",
+        link: "/services/sas",
       },
       {
         name: "eGain Collaboration",
-        link: "www.egain.com",
+        link: "/services/egain",
       },
       {
         name: "eGain Knowledge",
-        link: "knowledge.com",
+        link: "/services/knowledge",
       },
       {
         name: "Social Media management",
-        link: "social.com",
+        link: "/services/social",
       },
       {
         name: "Oracle Database",
-        link: "oracle.com",
+        link: "/service/oracle",
       },
       {
         name: "Website Development",
-        link: "development.com",
+        link: "/service/development",
       },
     ],
   },
@@ -206,31 +206,29 @@ export const clients = [
 export const features = [
   {
     id: "feature-1",
-    icon: info1,
-    title: "website development",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    icon: secondimage,
+    title: "Post by admin",
+    content: "Avante partners sas for Customer Intelligence event",
   },
   {
     id: "feature-2",
     icon: info2,
-    title: "website development",
+    title: "Post by admin",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Golive news about Fidelity bank on eGain with a focus on social channels",
   },
   {
     id: "feature-3",
     icon: info3,
-    title: "website development",
+    title: "Post by admin",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Avante Consulting Solutions Has Become SAS CI 360 Certified and A Silver...",
   },
   {
     id: "feature-4",
     icon: info4,
-    title: "website development",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+    title: "Post by admin",
+    content: "Deployment of online accounting application for Decima and Co",
   },
 ];
 

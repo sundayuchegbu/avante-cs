@@ -3,7 +3,11 @@ const styles = {
 
   heading2:
     "font-Inter font-semibold xs:text-[50px] mt-[20px] text-[20px] text-white xs:leading-[60.8px] leading-[66.8px] w-full",
+  heading7:
+    "font-Inter font-semibold xs:text-[50px] mt-[10px] text-[20px] text-secondary xs:leading-[60.8px] leading-[66.8px] w-full",
   heading6:
+    "font-Inter font-semibold xs:text-[50px] mt-[10px] text-[20px] text-white xs:leading-tight leading-tight w-full",
+  heading8:
     "font-Inter font-semibold xs:text-[50px] mt-[10px] text-[20px] text-white xs:leading-[60.8px] leading-[66.8px] w-full",
   heading3:
     "font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full",
@@ -16,6 +20,9 @@ const styles = {
   paragraph2:
     "font-Inter font-normal text-dimWhite text-[14px] leading-[30.8px]",
   paragraph3: "font-Inter font-normal text-black2 text-[14px] leading-[30.8px]",
+  paragraph4: "font-Inter font-normal text-black2 text-[14px] leading-[30.8px]",
+  paragraph5:
+    "font-Inter font-normal text-dimWhite text-[14px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

@@ -27,7 +27,7 @@ const Sas2 = () => {
           experience gives us a unique advantage in delivering end to end SAS
           Customer or Citizen Intelligence solutions. SAS Services we offer
           include the following;
-          <ul className="text-dark list-disc">
+          <ul className="text-dark list-disc ml-12">
             <li>Advanced Analytics</li>
             <li>Business Intelligence & Analytics</li>
             <li>Customer Intelligence</li>
