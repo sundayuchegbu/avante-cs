@@ -45,7 +45,105 @@
   background-image: url("/src/images/combined.png");
   background-repeat: no-repeat;
 }
+#cta4 {
+  position: relative;
+
+  background-image: url("/src/images/combined1.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
 #cta1 {
+  position: relative;
+  background: linear-gradient(to right, #90cdf4, #ffffff);
+  width: 100%;
+  height: 600px; /* adjust this to your desired height */
   background-image: url("/src/images/productimage4.png");
   background-repeat: no-repeat;
+  background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#cta1 img {
+  position: relative;
+  top: 44%;
+  left: 55%;
+
+  transform: translate(
+    -50%,
+    -55%
+  ); /* center the other image horizontally and vertically */
+}
+#cta6 {
+  position: relative;
+  width: 100%;
+  height: -200px; /* adjust this to your desired height */
+  background-image: url("/src/images/productimage4.png");
+  background-repeat: no-repeat;
+  background-position: center right; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#cta6 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(
+    -55%,
+    -50%
+  ); /* center the other image horizontally and vertically */
+}
+
+#cta2 {
+  position: relative;
+  width: 100%;
+  height: 480px; /* adjust this to your desired height */
+  background-image: url("/src/images/productimage4.png");
+  background-repeat: no-repeat;
+  background-position: bottom right; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#cta2 img {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(
+    -20%,
+    -50%
+  ); /* center the other image horizontally and vertically */
+}
+#cta3 {
+  position: relative;
+  width: 100%;
+  height: 600px; /* adjust this to your desired height */
+  background-image: url("/src/images/productimage4.png");
+  background-repeat: no-repeat;
+  background-position: center left; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#cta3 img {
+  position: absolute;
+  top: -70%;
+  right: -75%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* center the other image horizontally and vertically */
+}
+
+#cta5 {
+  position: relative;
+  background: linear-gradient(to right, #90cdf4, #ffffff);
+  width: 100%;
+  height: 500px; /* adjust this to your desired height */
+  background-image: url("/src/images/productimage4.png");
+  background-repeat: no-repeat;
+  background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
+}
+#ctas {
+  background: linear-gradient(to right, #90cdf4 30%, #ffffff 60%);
+}
+#ctas2 {
+  background: linear-gradient(to left, #90cdf4 30%, #ffffff 60%);
+}
+#ctas3 {
+  background: linear-gradient(to right, #096df3 40%, #25aae1 60%);
 }

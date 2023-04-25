@@ -4,12 +4,75 @@ import rec1 from "../images/rec1.png";
 
 const Sas2 = () => {
   return (
-    <section className={layout.section}>
-      <div className={` mx-24 ${layout.sectionInfo}`}>
-        <img src={rec1} alt="rec" className="block mb-8" />
-        <img src={rec} alt="rec" className="block" />
+    <section className={` ${layout.section}`}>
+      <div id="cta3" className={` mr-56 mt-[400px] ${layout.sectionInfo}`}>
+        <ul className="relative ml-[100px] mt-[-900px]">
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
+              checked
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+        </ul>
+        <img src={rec1} alt="rec" className="mt-[300px] mr-[180px] " />
+        <img src={rec} alt="rec" className=" mt-[730px] mr-[180px]" />
       </div>
-      <div className={`${layout.sectionInfo} px-6`}>
+      <div id="cta4" className={`${layout.sectionInfo} px-6 mt-0]`}>
         <h2 className={`${styles.heading3} mb-8 `}>
           SAS <span className="text-primary ">ANALYTICS</span>{" "}
           <br className="sm:block hidden " />

@@ -2,7 +2,7 @@ import egainknowledge from "../images/egainknowledge.png";
 import egainself from "../images/egainself.png";
 const KnowledgeAndServices = () => {
   return (
-    <div className="relative mb-24 bg-background">
+    <div className="relative mb-24 mt-24 bg-background">
       <div className="mb-12 mt-8">
         <h1 className="  text-[32px] mb-8 text-primary mx-24">
           KnowledgeAgent and SelfService software solutions.

@@ -1,9 +1,9 @@
 import React from "react";
 import Caller from "../../components/Caller";
-import Clients from "../../components/Clients";
 import EgainKnowledgeBanner from "../../components/EgainKnowledgeBanner";
 import KnowledgeAndServices from "../../components/KnowledgeAndServices";
 import Testimonial from "../../components/Testimonial";
+import styles from "../../style";
 
 const EgainKnowledge = () => {
   return (
@@ -11,7 +11,12 @@ const EgainKnowledge = () => {
       <EgainKnowledgeBanner />
       <KnowledgeAndServices />
       <Testimonial />
-      <Clients />
+      <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          {" "}
+          <Caller />
+        </div>{" "}
+      </div>
       <Caller />
     </div>
   );

@@ -108,9 +108,9 @@ const ProductSample = () => {
           />
         </div>
       </div>
-      <div className={`${layout.sectionInfo}  gap-4 z-0 -mr-8`}>
-        <img src={productimage2} alt="product image" className="mb-4 z-0" />
-        <img src={productimage3} alt="product image" />
+      <div id="cta6" className={`${layout.sectionInfo} mt-[400px] `}>
+        <img src={productimage2} alt="product image" className="mt-[-600px]" />
+        <img src={productimage3} alt="product image" className="mt-[-80px]" />
       </div>
     </section>
   );

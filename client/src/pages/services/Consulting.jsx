@@ -3,6 +3,7 @@ import Testimonial from "../../components/Testimonial";
 import Caller from "../../components/Caller";
 import Clients from "../../components/Clients";
 import BusinessConsulting from "../../components/BusinessConsulting";
+import styles from "../../style";
 
 const Consulting = () => {
   return (
@@ -11,7 +12,12 @@ const Consulting = () => {
       <BusinessConsulting />
       <Testimonial />
       <Clients />
-      <Caller />
+      <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          {" "}
+          <Caller />
+        </div>{" "}
+      </div>
     </div>
   );
 };

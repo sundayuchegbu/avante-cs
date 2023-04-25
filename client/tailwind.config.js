@@ -28,8 +28,9 @@ module.exports = {
         dark: "#000000",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
-        lightBlue: "#f0f8fe",
         grey: "#E0E0E0",
+        blue: "#096df3",
+        bluebg: "#90cdf4",
       },
       fontFamily: {
         poppins: ["Inter", "sans-serif"],

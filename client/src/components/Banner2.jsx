@@ -2,6 +2,7 @@ import base from "../images/base.png";
 import banner from "../images/banner.png";
 import banner2 from "../images/banner2.png";
 import styles from "../style";
+import { Link } from "react-router-dom";
 
 const Banner2 = () => (
   <div className="relative">
@@ -22,9 +23,11 @@ const Banner2 = () => (
               velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
               Proin vel orci tempor velit mattis tempor at nisi.
             </p>
-            <button className="bg-secondary font-inter text-white flex  lg:flex-center py-2 px-8 mt-8 items-center font-bold   rounded">
-              Read more
-            </button>
+            <Link to="/contacts">
+              <button className="bg-secondary font-inter text-white flex  lg:flex-center py-2 px-8 mt-8 items-center font-bold   rounded">
+                Read more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

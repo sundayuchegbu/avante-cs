@@ -5,14 +5,143 @@ const BusinessConsulting = () => {
   return (
     <section className={layout.sectionReverse}>
       <div className={layout.sectionImgReverse}>
+        <ul className="mt-[400px] mx-12 ">
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
+              checked
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <input
+              id="list-radio-license"
+              type="radio"
+              value=""
+              name="list-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+              disabled
+            />{" "}
+          </li>
+        </ul>
         <img src={consulting} alt="codeit" />
         <div className="absolute bottom-0 top-0 left-2/3 right-0 w-4 bg-background"></div>
         <div className="absolute bottom-0 top-0 left-1/3 right-0 w-4 bg-background"></div>
         <div className="absolute bottom-0 top-[221px] left-2/3 right-12 h-12 bg-background"></div>
         <div className="absolute bottom-0 top-[600px] left-2/3 right-12 h-4 bg-background"></div>
-        <div className="absolute bottom-0 top-[680px] right-2/3 left-12 h-15 bg-background"></div>
+        <div className="absolute bottom-0 top-[680px] right-[480px] left-[100px] h-15 bg-background"></div>
         <div className="absolute bottom-0 top-[450px] right-2/3 left-12 h-4 bg-background"></div>
         <div className="absolute bottom-0 top-[680px] right-1/3 left-12 h-4 bg-background"></div>
+
+        <div className="">
+          <ul className="mt-[-100px] mx-12">
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+              <input
+                id="list-radio-license"
+                type="radio"
+                value=""
+                name="list-radio"
+                className="w-4 h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
+                checked
+                disabled
+              />{" "}
+            </li>
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+              <input
+                id="list-radio-license"
+                type="radio"
+                value=""
+                name="list-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                disabled
+              />{" "}
+            </li>
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+              <input
+                id="list-radio-license"
+                type="radio"
+                value=""
+                name="list-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                disabled
+              />{" "}
+            </li>
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+              <input
+                id="list-radio-license"
+                type="radio"
+                value=""
+                name="list-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                disabled
+              />{" "}
+            </li>
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+              <input
+                id="list-radio-license"
+                type="radio"
+                value=""
+                name="list-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                disabled
+              />{" "}
+            </li>
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+              <input
+                id="list-radio-license"
+                type="radio"
+                value=""
+                name="list-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                disabled
+              />{" "}
+            </li>
+          </ul>
+        </div>
       </div>
       <div className={layout.sectionInfo}>
         <h2 className={`${styles.heading3} mb-4 `}>

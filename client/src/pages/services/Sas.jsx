@@ -4,6 +4,7 @@ import Clients from "../../components/Clients";
 import Hero from "../../components/Hero";
 import Sas2 from "../../components/Sas2";
 import Testimonial from "../../components/Testimonial";
+import styles from "../../style";
 
 const Sas = () => {
   return (
@@ -13,7 +14,11 @@ const Sas = () => {
 
       <Testimonial />
       <Clients />
-      <Caller />
+      <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Caller />{" "}
+        </div>
+      </div>
     </div>
   );
 };

@@ -78,6 +78,7 @@ const Codeit = () => {
         <div className="absolute top-[300px] bottom-0  right-[440px] left-[93px] h-4 bg-background"></div>
         <div className="absolute top-[100px] bottom-[100px] left-[236px] w-4 bg-background"></div>
         <div className="absolute top-[100px] bottom-[100px] left-[420px] w-4 bg-background"></div>
+        <div className="absolute top-[564px] bottom-0 left-[252px] right-[255px]  h-4 bg-background"></div>
 
         <div className="">
           <ul className=" mx-12">

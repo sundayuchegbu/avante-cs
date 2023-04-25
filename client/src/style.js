@@ -23,6 +23,8 @@ const styles = {
   paragraph4: "font-Inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph5:
     "font-Inter font-normal text-dimWhite text-[14px] leading-[30.8px]",
+  paragraph6:
+    "font-Inter font-normal text-secondary text-[14px] leading-[30.8px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
@@ -40,6 +42,7 @@ export const layout = {
   sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
 
   sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
+  sectionImgReverse1: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0  relative`,
   sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
