@@ -1,5 +1,4 @@
 import base from "../images/base.png";
-import banner from "../images/banner.png";
 import banner2 from "../images/banner2.png";
 import styles from "../style";
 import { Link } from "react-router-dom";
@@ -51,40 +50,3 @@ const Banner2 = () => (
 );
 
 export default Banner2;
-
-{
-  /* <div className="bg-primary py-8 h-[781px] relative">
-  {" "}
-  <div class="container mx-auto flex   items-center ">
-    <div class=" sm:block w-1/2 mt-18 ">
-      <h1 class="text-white font-bold text-4xl mb-4">
-        Lorem ipsum dolor
-        <br className="sm:block hidden" />
-        sit amet consectetur.
-      </h1>{" "}
-      <p class="text-white mb-4 mr-12">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor
-        tortor augue, quis bibendum nisi imperdiet non. Sed quis magna at eros
-        sagittis ultricies.
-      </p>
-      <button className="bg-secondary text-white font-bold py-2 px-4 rounded">
-        Read more
-      </button>
-    </div>
-    <div className=" w-1/2 mt-24 relative ">
-      <img
-        className=" block w-[557.88px] h-[568.46px]   object-cover "
-        src={banner2}
-        alt="Banner2"
-      />
-      <div className="absolute bottom-0 left-0 right-2/3 h-12 bg-primary"></div>
-      <div className="absolute top-60 left-0 right-2/3 h-6 bg-primary"></div>
-      <div className="absolute top-0 bottom-0 left-1/3 w-6 bg-primary"></div>
-      <div className="absolute top-0 bottom-0 right-1/3 w-6 bg-primary"></div>
-      <div className="absolute bottom-56 right-0 left-2/3 h-6 bg-primary"></div>
-      <div className="absolute bottom-24 right-1/3 left-56 h-6 bg-primary"></div>
-      <div className="absolute top-0 right-0 left-2/3 h-12 bg-primary"></div>
-    </div>
-  </div>
-</div>; */
-}

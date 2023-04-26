@@ -77,7 +77,7 @@ const BusinessConsulting = () => {
         <div className="absolute bottom-0 top-[450px] right-2/3 left-12 h-4 bg-background"></div>
         <div className="absolute bottom-0 top-[680px] right-1/3 left-12 h-4 bg-background"></div>
 
-        <div className="">
+        <div>
           <ul className="mt-[-100px] mx-12">
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
