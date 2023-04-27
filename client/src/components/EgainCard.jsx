@@ -9,7 +9,7 @@ const EgainCard = () => {
       <div class=" mx-24 flex flex-col md:flex-row">
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-inter font-medium ">eGain Chat</h3>
           </div>
           <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
@@ -29,7 +29,7 @@ const EgainCard = () => {
         </div>
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium font-inter">eGain Case Manager™</h3>
           </div>
           <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
@@ -56,7 +56,7 @@ const EgainCard = () => {
         </div>
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium font-inter">
               eGain Virtual Assistant™
             </h3>
@@ -80,7 +80,7 @@ const EgainCard = () => {
       <div class=" mx-24 flex flex-col md:flex-row">
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium">eGain Chat</h3>
           </div>
           <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
@@ -100,7 +100,7 @@ const EgainCard = () => {
         </div>
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium">eGain Case Manager™</h3>
           </div>
           <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
@@ -120,7 +120,7 @@ const EgainCard = () => {
         </div>
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium">eGain Virtual Assistant™</h3>
           </div>
           <div class="bg-gray-100  border-gray-300  p-4">
@@ -142,7 +142,7 @@ const EgainCard = () => {
       <div class=" mx-24 flex flex-col md:flex-row">
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium">eGain Chat</h3>
           </div>
           <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
@@ -162,7 +162,7 @@ const EgainCard = () => {
         </div>
         <div class="md:w-1/3 p-4">
           <div class="flex items-center">
-            <img src={bluetick} alt="Placeholder image" class="mr-2" />
+            <img src={bluetick} alt="bluetick" class="mr-2" />
             <h3 class="text-lg font-medium">eGain Case Manager™</h3>
           </div>
           <div class="bg-gray-100  border-gray-300 p-4">

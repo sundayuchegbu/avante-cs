@@ -21,7 +21,7 @@ const KnowledgeAndServices = () => {
           <div className="relative ">
             <img
               src={egainknowledge}
-              alt="Card Image"
+              alt="egainknowledge"
               className="h-[40%] w-full object-cover p-2"
             />
             <div className="absolute top-20 bottom-0 left-12 p-4 bg-none text-white">
@@ -48,7 +48,7 @@ const KnowledgeAndServices = () => {
           <div className="relative ">
             <img
               src={egainself}
-              alt="Card Image"
+              alt="egainself"
               className="h-[40%] w-full object-cover p-2"
             />
             <div className="absolute top-20 bottom-0 left-12 p-4 bg-none text-white">

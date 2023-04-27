@@ -1,7 +1,26 @@
 import React from "react";
+import FinancialSector from "../../components/FinancialSector";
+import Union from "../../components/Union";
+import Stanbic from "../../components/Stanbic";
+import InsuraceBroker from "../../components/InsuraceBroker";
+import Pension from "../../components/Pension";
+import Diamond from "../../components/Diamond";
+import United from "../../components/United";
+import Access from "../../components/Access";
 
 const Financial = () => {
-  return <div>Financial</div>;
+  return (
+    <div>
+      <FinancialSector />
+      <Union />
+      <Stanbic />
+      <InsuraceBroker />
+      <Pension />
+      <Diamond />
+      <United />
+      <Access />
+    </div>
+  );
 };
 
 export default Financial;
