@@ -205,3 +205,33 @@
     -55%
   ); /* center the other image horizontally and vertically */
 }
+
+#contact_us {
+  height: 550px;
+  width: 600px;
+}
+
+#contact_info {
+  height: 550px;
+  width: 400px;
+}
+
+#cta13 {
+  position: relative;
+  width: 100%;
+  height: 800px; /* adjust this to your desired height */
+  background-image: url("/src/images/contactbase.png");
+  background-repeat: no-repeat;
+  background-position: center top; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#cta13 img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(
+    -20%,
+    -60%
+  ); /* center the other image horizontally and vertically */
+}

@@ -4,6 +4,7 @@ import Clients from "../../components/Clients";
 import Oracle2 from "../../components/Oracle2";
 import OracleBanner from "../../components/OracleBanner";
 import Testimonial from "../../components/Testimonial";
+import styles from "../../style";
 
 const OracleDatabase = () => {
   return (
@@ -12,7 +13,12 @@ const OracleDatabase = () => {
       <Oracle2 />
       <Testimonial />
       <Clients />
-      <Caller />
+      <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          {" "}
+          <Caller />
+        </div>{" "}
+      </div>
     </div>
   );
 };

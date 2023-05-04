@@ -17,7 +17,6 @@ const EgainKnowledge = () => {
           <Caller />
         </div>{" "}
       </div>
-      <Caller />
     </div>
   );
 };
