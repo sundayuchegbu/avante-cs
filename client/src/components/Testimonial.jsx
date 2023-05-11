@@ -2,7 +2,7 @@ import test from "../images/test.png";
 import test1 from "../images/test1.png";
 
 const Testimonial = () => (
-  <div className="xl:max-w-[1280px] h-[400px] w-full">
+  <div className=" h-[400px] w-full">
     <div className="relative ">
       <img src={test1} alt="test1" className="w-full h-[394px] object-cover" />
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">

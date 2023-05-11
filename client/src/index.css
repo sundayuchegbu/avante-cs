@@ -235,3 +235,6 @@
     -60%
   ); /* center the other image horizontally and vertically */
 }
+.input:focus {
+  outline: none !important;
+}

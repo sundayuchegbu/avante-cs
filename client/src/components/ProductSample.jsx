@@ -9,18 +9,29 @@ import { useNavigate } from "react-router-dom";
 const ProductSample = () => {
   const navigate = useNavigate();
   return (
-    <section id="cta" className={layout.section}>
-      <div className={layout.sectionInfo}>
+    <section id="cta" className="flex flex-row  sm:py-16 py-6">
+      <div className="md:ml-24 flex-[1.5] flex justify-center items-start flex-col">
         <h2
-          className={` underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 ${styles.heading5}`}
+          className={` underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] mb-8
+          ${styles.heading5}`}
         >
           OUR <span className="text-primary">PRODUCT</span>{" "}
         </h2>
-        <h3 className={styles.heading3}>MOLOYAL</h3>
-        <h4 className="font-Inter font-semibold xs:text-[20px] mt-[5px] text-[24px] text-secondary xs:leading-[60.8px] leading-[66.8px] w-full">
-          Free airtime rewards program.
-        </h4>
-        <p className={`${styles.paragraph3} max-w-[470px] mt-5 mb-5 `}>
+        <div className=" flex items-center justify-center    mb-4 hidden md:block">
+          <h3 className=" font-inter font-normal md:text-[28px] text-[16px]  ">
+            Lorem Ipsum consectefgghjj
+            <br />
+            Lorem Ipsum consectetur.
+          </h3>{" "}
+        </div>
+        <div className=" items-center justify-center   visible md:invisible ">
+          <h3 className=" font-inter font-normal md:text-[28px] text-[16px] w-auto ">
+            Lorem Ipsum consectefgghjj Lorem Ipsum consectetur
+          </h3>{" "}
+        </div>
+        <p
+          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[20.8px] leading-[20px] max-w-[470px] mt-5 mb-5 `}
+        >
           MoLoyal is also a digital airtime retail and distribution platform
           where airtime from all major networks will be electronically sold with
           flexible payment channels including Debit or Credit Cards, Reward
@@ -35,68 +46,68 @@ const ProductSample = () => {
         <img
           src={arrow4}
           alt="arrow"
-          className="-mt-4  ml-[100px] h-[20px]   w-[100px] top-[10px] mb-4"
+          className="-mt-4  ml-[100px] h-[20px]   w-[100px] top-[10px] mb-8"
         />{" "}
-        <div className="flex">
-          <ul className=" mx-12 ">
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+        <div className="flex ">
+          <ul className=" mr-8 mt-0 mt-12">
+            <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="absolute w-4 h-4 checked:bg-primary text-blue-500 focus:ring-blue-500 disabled:bg-primary"
+                className="absolute md:w-4 md:h-4 w-2 h-2 checked:bg-primary text-blue-500 focus:ring-blue-500 disabled:bg-primary"
                 checked
                 disabled
               />{" "}
             </li>
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
+                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
                 disabled
               />{" "}
             </li>
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
               />{" "}
             </li>
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
+                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
                 disabled
               />{" "}
             </li>
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
               />{" "}
             </li>
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
+            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
               />{" "}
             </li>
@@ -104,13 +115,22 @@ const ProductSample = () => {
           <img
             src={productimage1}
             alt="productimage1"
-            className="[w-400px] h-[400px]  mb-4"
+            className="md:[w-400px] md:h-[400px] w-[214px] h-[157px]  mb-4"
           />
         </div>
       </div>
-      <div id="cta6" className={`${layout.sectionInfo} mt-[400px] `}>
-        <img src={productimage2} alt="productimage2" className="mt-[-600px]" />
-        <img src={productimage3} alt="productimage3" className="mt-[-80px]" />
+      <div className={`${layout.sectionInfo} mt-[480px] `}>
+        <img
+          src={productimage2}
+          alt="productimage2"
+          className="md:w-[448px] md:h-[500px] w-[140.41px] h-[156.71px]  md:mt-[-200px] mt-[-340px] "
+        />
+        <img
+          src={productimage3}
+          alt="productimage3"
+          className="md:mt-[10px] mt-[80px] md:[w-448px] md:h-[306px] "
+        />
+        {/* id="cta6" */}
       </div>
     </section>
   );

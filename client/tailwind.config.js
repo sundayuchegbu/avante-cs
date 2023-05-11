@@ -24,7 +24,7 @@ module.exports = {
         gray3: "#828282",
         gray4: "#bdbdbd",
         gray5: "#e0e0e0",
-        background: "#f5f5f5",
+        background: "#ffffff",
         dark: "#000000",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
@@ -33,7 +33,7 @@ module.exports = {
         bluebg: "#90cdf4",
       },
       fontFamily: {
-        poppins: ["Inter", "sans-serif"],
+        sans: ["Inter var", "sans-serif"],
       },
     },
     screens: {

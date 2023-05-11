@@ -5,7 +5,7 @@ import email from "../images/email.png";
 const Contacts = () => {
   return (
     <div
-      className="h-screen w-full grid place-items-center bg-slate-100 relative"
+      className="h-screen w-full grid place-items-center hidden md:block relative"
       id=""
     >
       <div className="bg-white rounded-md shadow-md flex flex-row">
@@ -57,25 +57,27 @@ const Contacts = () => {
           </div>
         </div>
         <div className=" mx-12" id="contact_us">
-          <input
-            type="text"
-            placeholder="Your full name"
-            className="w-full mt-12 px-3 h-10 my-2 outline-none border-r-white border-l-white border-t-white focus:outline-none focus:border-primary "
-          />
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Your full name"
+              className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+            />
+          </div>{" "}
           <input
             type="text"
             placeholder="Your e-mail address"
-            className="w-full mt-12 px-3 h-10 my-2 outline-none border-r-white border-l-white border-t-white focus:border-t-white "
+            className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
           />
           <input
             type="text"
             placeholder="Your reason"
-            className="w-full mt-12 px-3 h-10 my-2 outline-none border-r-white border-l-white border-t-white  "
+            className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
           />
           <input
             type="text"
             placeholder="drop a message here..."
-            className="w-full mt-12 px-3 h-24 my-2  border-r-white border-l-white border-t-white"
+            className="w-full mt-12 px-3 h-24 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
           />
           <button className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6">
             Submit

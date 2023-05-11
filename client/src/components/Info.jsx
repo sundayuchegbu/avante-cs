@@ -1,7 +1,7 @@
 import info5 from "../images/info5.png";
-import arrow4 from "../images/arrow4.svg";
+import arrow4 from "../images/arrow4.png";
 import { features } from "../constants";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import styles, { layout } from "../style";
 
@@ -9,26 +9,26 @@ const InfoCard = ({ icon, index, title, content }) => {
   const navigate = useNavigate();
   return (
     <div
-      className={` flex flex-row  rounded-[20px] ${
+      className={`  flex flex-row  rounded-[20px] ${
         index !== features.length - 1 ? "mb-2" : "mb-0"
-      } feature-card`}
+      } feature-card ${index === features.length - 4 ? "mt-[310px]" : "mt-0"}`}
     >
       <div
-        className={`w-[163px] h-[163px] rounded-full ${styles.flexCenter}  cursor-pointer mt-0 `}
+        className={`rounded-full ${styles.flexCenter}  cursor-pointer md:mt-8 `}
       >
         <img
           src={icon}
           alt="icon"
           onClick={() => navigate("/news")}
-          className=""
+          className="w-[163px] h-[163px] "
         />
       </div>
       <div className="flex-1 flex flex-col ml-3">
-        <h4 className="font-inter font-normal text-[16px] leading-[23px]  text-secondary mb-6  ">
+        <h4 className="font-inter font-normal md:text-[12px] leading-[20px]  text-secondary md:mt-8   ">
           {title}
         </h4>
         <p
-          className="font-inter font-semibold text-[20px] leading-[24px]  text-dark2 cursor-pointer "
+          className="font-inter font-normal md:text-[24px] leading-[20px]  text-dark2 cursor-pointer md:mt-4"
           onClick={() => navigate("/news")}
         >
           {content}{" "}
@@ -41,33 +41,45 @@ const InfoCard = ({ icon, index, title, content }) => {
 const Info = () => {
   const navigate = useNavigate();
   return (
-    <section id="features" className={` ${layout.section}`}>
+    <section id="features" className={`md:mx-32 ${layout.section}  `}>
       <div className={` ${layout.sectionInfo}`}>
         <h2
-          className={`underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 ${styles.heading5}`}
+          className={`font-inter font-semibold underline-offset-[28px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4  xs:text-[16px] md:mt-[20px] text-[20px] text-black2 xs:leading-[60.8px] leading-[66.8px] md:mb-12 w-full`}
         >
           OUR <span className="text-primary">NEWS</span>
         </h2>
-        <h3 className={`${styles.heading4} mb-8`}>
-          <span className="text-[56px]">Avante @10!</span>{" "}
-          <br className="sm:block hidden" />
-          Celebrating 10 years of service and partnership{" "}
+        <h3
+          className={`font-Inter font-normal xs:text-[28px] mt-[20px] text-[20px] text-black2 xs:leading-[40.8px] leading-[40.8px] w-full md:mb-12`}
+        >
+          <span className="md:text-[28px]  font-inter font-normal">
+            Lorem Ipsum consectefggh
+          </span>{" "}
+          <br />
+          Lorem Ipsum consectetur.{" "}
         </h3>
 
-        <img src={info5} alt="info5" className="mt-8  " />
-        <p className="font-inter mt-2 text-[12px]">
+        <img
+          src={info5}
+          alt="info5"
+          className="mt-8 md:w-[638px] md:h-[422px] "
+        />
+        <p className="font-inter md:mt-4  md:mb-4 mt-2 text-[12px] ">
           AVANTE @10! | Thursday, 10 DECEMBER 2022
         </p>
 
-        <h3 className={styles.heading4}>10 Years Avante History</h3>
-        <p className={`${styles.paragraph3} max-w-[470px] mt-5 `}>
+        <h3 className="font-Inter font-semibold xs:text-[32px] text-[24px] mt-[20px] md:mb-8 text-secondary text-black2 xs:leading-[60.8px] leading-[60.8px] w-full">
+          10 Years Avante History
+        </h3>
+        <p
+          className={`font-Inter font-normal text-black2 text-[14px] leading-[20.8px]  max-w-[470px] md:mt-[10px]w-full `}
+        >
           2012 – The year we were founded, Signed a Partner Reseller agreement
           with eGain 2013 – Successfully launched digital multichannel customer
           service solutions for a tier one bank and the largest Pensions
           provider in our territory. 2014 – D...
         </p>
         <button
-          className="text-secondary ml-[240px]"
+          className="text-secondary md:ml-[250px] ml-[150px]w-[84.96px] h-[22px] md:mt-12 mt-4 "
           onClick={() => navigate("/news")}
         >
           Read more
@@ -75,11 +87,17 @@ const Info = () => {
         <img
           src={arrow4}
           alt="arrow"
-          className="-mt-5  ml-[100px] h-[20px]   w-[100px] top-[10px] mb-4 ml-[300px]"
+          className="-mt-5  md:h-[20px]   md:w-[43.2px] w-[44.74px] top-[10px] mb-4 md:ml-[350px] ml-[120px]"
           onClick={() => navigate("/news")}
         />
+        <Link to="/news">
+          <button className="md:hidden font-inter font-normal bg-background text-primary ml-14 mt-8 mb-8 ring-primary ring-2 w-[220px] h-[60px]  ">
+            View more
+          </button>
+        </Link>
       </div>
-      <div className={`${layout.sectionImg} flex-col mt-72`}>
+
+      <div className={`${layout.sectionImg} hidden md:block flex-col `}>
         {features.map((feature, index) => (
           <InfoCard key={feature.id} {...feature} index={index} />
         ))}

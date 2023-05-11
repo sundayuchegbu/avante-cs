@@ -28,9 +28,10 @@ const Home = () => (
       </div>
     </div>
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}></div>
+      <div className={`${styles.boxWidth}`}> </div>
     </div>
     <Testimonial />
+
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Clients />

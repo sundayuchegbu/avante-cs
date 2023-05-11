@@ -1,5 +1,5 @@
 const styles = {
-  boxWidth: "xl:max-w-[1280px] w-full",
+  boxWidth: "dxl:max-w-[1536px] w-full",
 
   heading2:
     "font-Inter font-semibold xs:text-[50px] mt-[20px] text-[20px] text-white xs:leading-[60.8px] leading-[66.8px] w-full",
@@ -18,11 +18,11 @@ const styles = {
   paragraph:
     "font-Inter font-normal text-dimWhite text-[18px] leading-[30.8px]",
   paragraph2:
-    "font-Inter font-normal text-dimWhite text-[14px] leading-[30.8px]",
+    "font-Inter font-normal text-dimWhite text-[14px] leading-[20.8px]",
   paragraph3: "font-Inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph4: "font-Inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph5:
-    "font-Inter font-normal text-dimWhite text-[14px] leading-[30.8px]",
+    "font-Inter font-normal text-background text-[14px] leading-[30.8px]",
   paragraph6:
     "font-Inter font-normal text-secondary text-[14px] leading-[30.8px]",
 
