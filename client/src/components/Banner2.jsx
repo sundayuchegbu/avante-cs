@@ -1,50 +1,37 @@
-import base from "../images/base.png";
 import banner2 from "../images/banner2.png";
-import styles from "../style";
 import { Link } from "react-router-dom";
 
 const Banner2 = () => (
-  <div className="relative">
-    <div className="grid lg:grid-cols-2 gap-0 bg-primary ">
-      <div className="relative">
-        <img src={base} alt="base" className="w-full lg:h-full object-cover " />
-        <div className="absolute inset-0 bg-primary opacity-75"></div>
-        <div className="absolute inset-0 flex items-center  justify-center">
-          <div className=" text-white max-w-[470px]">
-            <h1
-              className={` font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[60.8px] leading-[66.8px] `}
-            >
-              Lorem ipsum dolor
-              <br className="sm:block hidden " /> sit amet consectetur.
-            </h1>
-            <p className={`${styles.paragraph2}  mt-5   mb-8  `}>
-              Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-              velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
-              Proin vel orci tempor velit mattis tempor at nisi.
-            </p>
-            <Link to="/contacts">
-              <button className="bg-secondary font-inter text-white flex  lg:flex-center py-2 px-8 mt-8 items-center font-bold   rounded">
-                Read more
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full   relative ">
-        <img
-          src={banner2}
-          alt="banner"
-          className="block w-[557.88px] h-[568.46px] mt-12  "
-        />
-        <div className="absolute top-[49px] bottom-0  left-[410px] -right-0 h-12 bg-primary"></div>
-        <div className="absolute top-[390px] bottom-0  left-[400px] -right-0 h-4 bg-primary"></div>
-        <div className="absolute top-[560px] bottom-0  right-[600px] left-0 h-14 bg-primary"></div>
-        <div className="absolute top-[280px] bottom-0  right-[600px] left-0 h-4 bg-primary"></div>
-        <div className="absolute top-[520px] bottom-0 left-[174px] right-[350px]  h-4 bg-primary"></div>
-        <div className="absolute top-0 bottom-0 left-[159px] w-4 bg-primary"></div>
-        <div className="absolute top-0 bottom-0 left-[400px] w-4 bg-primary"></div>
-      </div>
+  <div className="h-[781px] md:bg-primary flex flex-row items-center justify-between">
+    <div className="flex flex-col justify-center p-6 hidden md:block ">
+      <h2 className="font-inter font-semibold text-[50px] text-white font-bold mb-4 ml-[100px] mt-[100px]">
+        Lorem ipsum dolor <br />
+        sit amet consectetur.
+      </h2>
+      <p className=" font-inter text-[16px] text-white mb-6 ml-[100px]">
+        Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
+        <br /> velit mattis tempor at nisiLorem ipsum dolor sit amet
+        consectetur.
+        <br /> Proin vel orci tempor velit mattis tempor at nisi.
+      </p>{" "}
+      <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-[100px] w-[148px] h-[46.36px]">
+        Read more{" "}
+      </button>
+    </div>
+    <div className="mr-24">
+      {" "}
+      <img
+        src={banner2}
+        alt="banner"
+        className="md:h-[564.46px] h-[411.7px] md:w-[557.88px]"
+      />
+      <div className="absolute md:top-[27.1%] md:left-[82%] md:right-[6.3%] md:h-[10%] bg-primary"></div>
+      <div className="absolute md:top-[80%] md:left-[82%] md:right-[6.3%] md:h-[2%] bg-primary "></div>
+      <div className="absolute md:top-[91.9%] md:right-[31%] md:left-[57%] md:h-[10%] bg-primary "></div>
+      <div className="absolute md:top-[58%] md:right-[31%] md:left-[57%] md:h-[2%] bg-primary "></div>
+      <div className="absolute md:bottom-[-2%] md:top-[27.3%] md:left-[67%] md:w-[2%] bg-primary "></div>
+      <div className="absolute md:top-[27.2%] md:bottom-[-2%] md:right-[18%] md:w-[2%] bg-primary "></div>
+      <div className="absolute md:top-[95%] md:left-[68.8%] md:right-[20%] md:h-[2%] bg-primary "></div>
     </div>
   </div>
 );

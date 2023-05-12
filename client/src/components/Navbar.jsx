@@ -29,8 +29,8 @@ const Navbar = () => {
         >
           ABOUT US
         </NavLink>
-        <Menu as="div" className="relative inline-block text-left mr-10">
-          <div>
+        <Menu as="div" className="relative group inline-block text-left mr-10 ">
+          <div className="">
             <Menu.Button
               type="button"
               className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"

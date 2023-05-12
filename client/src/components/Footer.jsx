@@ -195,34 +195,30 @@ const Footer = ({ link }) => {
                   </li>
                   <div className="flex mt-4">
                     <ul className="flex">
-                      <div className="h-full w-full mr-8">
-                        <Link
-                          to="https://web.facebook.com/watch/?ref=search&v=3245498065762721&external_log_id=bf58f002-e9b0-4cda-8a5b-ec0cc2a17180&q=avante-cs"
-                          target="_blank"
-                          className="list-none"
-                        >
+                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-6 hover:bg-blue">
+                        <Link to="https://web.facebook.com/watch/?ref=search&v=3245498065762721&external_log_id=bf58f002-e9b0-4cda-8a5b-ec0cc2a17180&q=avante-cs">
                           <img
                             src={Facebook}
-                            alt="facebook"
-                            className="w-full h-full "
+                            alt="Facebook"
+                            className="w-full h-full p-3"
                           />
                         </Link>
                       </div>
-                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-8">
+                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
                         <Link>
                           <img
                             src={Google}
                             alt="google"
-                            className="w-full h-full p-2"
+                            className="w-full h-full p-3"
                           />
                         </Link>
                       </div>
-                      <div className=" flex  h-full w-full  rounded-full ring-2 ring-white Hover:bg-primary  mr-8">
+                      <div className=" flex  h-full w-full  rounded-full ring-2 ring-white hover:bg-blue  mr-7">
                         <Link>
                           <img
                             src={Twitter}
                             alt="twitter"
-                            className="w-full h-full p-2 "
+                            className="w-full h-full p-3 "
                           />
                         </Link>
                       </div>
