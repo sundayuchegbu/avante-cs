@@ -5,7 +5,7 @@ import email from "../images/email.png";
 const Contacts = () => {
   return (
     <div
-      className="h-screen w-full grid place-items-center hidden md:block relative"
+      className="ml-44  w-[80%] grid place-items-center hidden md:block relative"
       id=""
     >
       <div className="bg-white rounded-md shadow-md flex flex-row">

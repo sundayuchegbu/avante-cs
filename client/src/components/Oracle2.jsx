@@ -1,11 +1,14 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import bup from "../images/bup.png";
 import bdown from "../images/bdown.png";
 const Oracle2 = () => {
   return (
     <section className={` ${layout.section}`}>
-      <div id="cta3" className={` mr-56 mt-[400px] ${layout.sectionInfo}`}>
-        <ul className="relative ml-[100px] mt-[-900px]">
+      <div
+        id="cta3"
+        className={`hidden md:block mr-56 mt-[400px] ${layout.sectionInfo}`}
+      >
+        <ul className="relative ml-[100px] mt-[-360px]">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
               id="list-radio-license"
@@ -72,14 +75,17 @@ const Oracle2 = () => {
         <img src={bdown} alt="bdown" className=" mt-[730px] mr-[180px]" />
       </div>
       <div id="cta4" className={`${layout.sectionInfo} px-6 mt-0]`}>
-        <h2 className={`${styles.heading3} mb-8 `}>
-          ORACLE <span className="text-primary ">DATABASE</span>{" "}
-          <br className="sm:block hidden " />
-          <span className="text-primary text-[28px]">
+        <h2
+          className={`font-Inter font-semibold sm:text-[16px] mt-[20px] text-[16px] text-black sm:leading-[40.8px] leading-[30.8px] w-full mb-8 `}
+        >
+          ORACLE <span className="text-primary ">DATABASE</span> <br />
+          <span className="text-primary md:text-[28px] text-[20px]">
             Lorem Ipsum consectetur.{" "}
           </span>
         </h2>
-        <div className={`${styles.paragraph3} max-w-[470px] mt-5 mb-6 `}>
+        <div
+          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] md:mt-5 mt-2 mb-6 `}
+        >
           Avante is a silver partner of SAS and a solution partner within the
           Customer Intelligence practice. Our Oracle Consultancy Practice is
           focused on helping organisations optimize and modernize their Oracle

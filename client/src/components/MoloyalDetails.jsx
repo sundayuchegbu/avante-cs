@@ -1,21 +1,25 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import arrow4 from "../images/arrow4.svg";
 import loyalty from "../images/loyalty.png";
 import { Link } from "react-router-dom";
 const MoloyalDetails = () => {
   return (
-    <section className={layout.section}>
-      <div className={`mx-24 mt-24 ${layout.sectionInfo}`}>
-        <h2 className={`${styles.heading3} mb-2 `}>
+    <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
+      <div className={`md:mx-24 px-4 mt-24 ${layout.sectionInfo}`}>
+        <h2
+          className={`font-Inter font-semibold sm:text-[16px] mt-[20px] text-[20px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-2 `}
+        >
           MOLOYAL <br className="sm:block hidden" />
         </h2>
         <h1
-          className={`font-Inter font-semibold xs:text-[35px] mt-[10px] text-[20px] text-secondary xs:leading-[60.8px] leading-[66.8px] w-full`}
+          className={`font-Inter font-semibold sm:text-[28px] mt-[10px] text-[20px] text-secondary sm:leading-[30.8px] leading-[20.8px] w-full`}
         >
           {" "}
           Free airtime rewards program.
         </h1>
-        <div className={`${styles.paragraph3} max-w-[470px] mt-5 mb-6 `}>
+        <div
+          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] leading-[20.8px] max-w-[470px] mt-5 mb-6 `}
+        >
           MoLoyal™, the unique customer rewards programme, which helps
           businesses improve customer retention by rewarding customers with free
           airtime for every transaction made. Active members of MoLoyal can earn
@@ -30,7 +34,7 @@ const MoloyalDetails = () => {
           deposits.
         </div>
         <Link to="https://www.moloyal.com">
-          <button className="text-secondary underline decoration-1 underline-offset-4 decoration-secondary">
+          <button className="font-inter font-semibold text-secondary underline decoration-2 underline-offset-4 decoration-secondary">
             Read more{" "}
           </button>
           <img
@@ -44,7 +48,7 @@ const MoloyalDetails = () => {
         <img
           src={loyalty}
           alt="card"
-          className=" block -mx-4 w-[100%]  h-[70%] "
+          className=" block  md:w-[479px] w-[371.34px]  md:h-[485.85px] "
         />
       </div>
     </section>

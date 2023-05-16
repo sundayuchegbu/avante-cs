@@ -2,18 +2,20 @@ import bluetick from "../images/bluetick.png";
 const EgainCard = () => {
   return (
     <div className="mt-12 mb-8">
-      <h1 className="mx-32 font-inter text-[24px] mb-8">
+      <h1 className="md:mx-32 font-inter md:text-[28px] text-[20px] mb-8 px-4">
         <span className="text-primary">Lorem Ipsum consectetur. </span>
         Lorem Ipsum consectetur.{" "}
       </h1>
-      <div class=" mx-24 flex flex-col md:flex-row">
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-inter font-medium ">eGain Chat</h3>
+      <div className=" md:mx-24 flex flex-col md:flex-row">
+        <div className="md:w-1/3  p-4">
+          <div className=" flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold  ">
+              eGain Chat
+            </h3>
           </div>
-          <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
-            <p class="text-gray-700">
+          <div className="bg-background border-r-2 border-gray-300 p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px] ">
               is an integral part of the eGain software suite, eGain’s live chat
               software integrates seamlessly with the other social experience,
               web experience, and contact center applications in the suite. It
@@ -27,13 +29,15 @@ const EgainCard = () => {
             </p>
           </div>
         </div>
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium font-inter">eGain Case Manager™</h3>
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-semibold font-inter">
+              eGain Case Manager™
+            </h3>
           </div>
-          <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
-            <p class="text-gray-700">
+          <div className="bg-background border-r-2 border-gray-300 p-4">
+            <div className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is a dynamic case management solution that helps companies provide
               quick, high-quality, and cost-efficient resolution of customer
               issues across traditional and emerging interaction channels. It is
@@ -41,7 +45,7 @@ const EgainCard = () => {
               the industry’s top-rated customer engagement software suite, which
               helps businesses transform their traditional call centers into
               multichannel customer engagement hubs.
-              <ul className="text-dark list-disc">
+              <ul className="text-dark list-disc md:ml-0 ml-6">
                 <li> Effectively categorize</li>
                 <li> interactions Make agents more productive</li>
                 <li> Resolve issues quickly</li>
@@ -51,18 +55,18 @@ const EgainCard = () => {
                   communications
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium font-inter">
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-semibold font-inter">
               eGain Virtual Assistant™
             </h3>
           </div>
-          <div class="bg-gray-100  border-gray-300  p-4">
-            <p class="text-gray-700">
+          <div className="bg-background  border-gray-300  p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is a lifelike, conversational agent providing a unique,
               interactive, and personal way for users to get answers and
               assistance on your website, 24 hours a day, 7 days a week. A user
@@ -77,14 +81,16 @@ const EgainCard = () => {
           </div>
         </div>
       </div>
-      <div class=" mx-24 flex flex-col md:flex-row">
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium">eGain Chat</h3>
+      <div className=" md:mx-24 flex flex-col md:flex-row">
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+              eGain Chat
+            </h3>
           </div>
-          <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
-            <p class="text-gray-700">
+          <div className="bg-background border-r-2 border-gray-300 p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is an integral part of the eGain software suite, eGain’s live chat
               software integrates seamlessly with the other social experience,
               web experience, and contact center applications in the suite. It
@@ -98,13 +104,15 @@ const EgainCard = () => {
             </p>
           </div>
         </div>
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium">eGain Case Manager™</h3>
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18] text-[16px] font-inter font-semibold">
+              eGain Case Manager™
+            </h3>
           </div>
-          <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
-            <p class="text-gray-700">
+          <div className="bg-background border-r-2 border-gray-300 p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is a dynamic case management solution that helps companies provide
               quick, high-quality, and cost-efficient resolution of customer
               issues across traditional and emerging interaction channels. It is
@@ -118,13 +126,15 @@ const EgainCard = () => {
             </p>
           </div>
         </div>
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium">eGain Virtual Assistant™</h3>
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+              eGain Virtual Assistant™
+            </h3>
           </div>
-          <div class="bg-gray-100  border-gray-300  p-4">
-            <p class="text-gray-700">
+          <div className="bg-background  border-gray-300  p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is a lifelike, conversational agent providing a unique,
               interactive, and personal way for users to get answers and
               assistance on your website, 24 hours a day, 7 days a week. A user
@@ -139,14 +149,16 @@ const EgainCard = () => {
           </div>
         </div>
       </div>
-      <div class=" mx-24 flex flex-col md:flex-row">
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium">eGain Chat</h3>
+      <div className=" md:mx-24 flex flex-col md:flex-row">
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+              eGain Chat
+            </h3>
           </div>
-          <div class="bg-gray-100 border-r-2 border-gray-300 p-4">
-            <p class="text-gray-700">
+          <div className="bg-background border-r-2 border-gray-300 p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is an integral part of the eGain software suite, eGain’s live chat
               software integrates seamlessly with the other social experience,
               web experience, and contact center applications in the suite. It
@@ -160,13 +172,15 @@ const EgainCard = () => {
             </p>
           </div>
         </div>
-        <div class="md:w-1/3 p-4">
-          <div class="flex items-center">
-            <img src={bluetick} alt="bluetick" class="mr-2" />
-            <h3 class="text-lg font-medium">eGain Case Manager™</h3>
+        <div className="md:w-1/3 p-4">
+          <div className="flex items-center">
+            <img src={bluetick} alt="bluetick" className="mr-2" />
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+              eGain Case Manager™
+            </h3>
           </div>
-          <div class="bg-gray-100  border-gray-300 p-4">
-            <p class="text-gray-700">
+          <div className="bg-background  border-gray-300 p-4">
+            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
               is a dynamic case management solution that helps companies provide
               quick, high-quality, and cost-efficient resolution of customer
               issues across traditional and emerging interaction channels. It is

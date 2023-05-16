@@ -15,8 +15,8 @@ const About = () => (
     <Vision1 />
     <Values />
     <Cooperate />
-    <Cards2 />
     <Feedback />
+    <Cards2 />
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Caller />

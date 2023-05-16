@@ -1,11 +1,11 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import consulting from "../images/consulting.png";
 
 const BusinessConsulting = () => {
   return (
     <section className={layout.sectionReverse}>
-      <div className={layout.sectionImgReverse}>
-        <ul className="mt-[400px] mx-12 ">
+      <div className={`hidden md:block ${layout.sectionImgReverse}`}>
+        <ul className="absolute mt-[300px] ml-8 ">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
               id="list-radio-license"
@@ -68,17 +68,19 @@ const BusinessConsulting = () => {
             />{" "}
           </li>
         </ul>
-        <img src={consulting} alt="codeit" />
-        <div className="absolute bottom-0 top-0 left-2/3 right-0 w-4 bg-background"></div>
-        <div className="absolute bottom-0 top-0 left-1/3 right-0 w-4 bg-background"></div>
-        <div className="absolute bottom-0 top-[221px] left-2/3 right-12 h-12 bg-background"></div>
-        <div className="absolute bottom-0 top-[600px] left-2/3 right-12 h-4 bg-background"></div>
-        <div className="absolute bottom-0 top-[680px] right-[480px] left-[100px] h-15 bg-background"></div>
-        <div className="absolute bottom-0 top-[450px] right-2/3 left-12 h-4 bg-background"></div>
-        <div className="absolute bottom-0 top-[680px] right-1/3 left-12 h-4 bg-background"></div>
+        <div className="flex justify-center item-center mt-12">
+          <img src={consulting} alt="codeit" className="" />
+          <div className="absolute bottom-[275px] top-[48px] left-[460px] right-0 w-4 bg-background"></div>
+          <div className="absolute bottom-[348px] top-[48px] left-[260px] right-0 w-4 bg-background"></div>
+          <div className="absolute bottom-0 top-[48px] left-[460px] right-[125px] h-[10%] bg-background"></div>
+          <div className="absolute bottom-0 top-[350px] left-[460px] right-[125px] h-4 bg-background"></div>
+          <div className="absolute bottom-0 top-[500px] right-[480px] left-[125px] h-[10%] bg-background"></div>
+          <div className="absolute bottom-0 top-[300px] right-[480px] left-[125px] h-4 bg-background"></div>
+          <div className="absolute bottom-0 top-[500px] right-[265px] left-[260px] h-4 bg-background"></div>
+        </div>
 
-        <div>
-          <ul className="mt-[-100px] mx-12">
+        <div className="flex justify-end item-end mt-[-530px] mr-8">
+          <ul className=" ">
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
                 id="list-radio-license"
@@ -144,15 +146,18 @@ const BusinessConsulting = () => {
         </div>
       </div>
       <div className={layout.sectionInfo}>
-        <h2 className={`${styles.heading3} mb-4 `}>
-          BUSINESS <span className="text-primary">CONSULTING</span>{" "}
-          <br className="sm:block hidden" />
-          <span className="text-primary">Lorem Ipsum consectetur.</span>
-        </h2>
-        <div
-          className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6`}
+        <h2
+          className={`font-Inter font-semibold sm:text-[28px] mt-[20px] text-[16px] text-black xs:leading-[60.8px] leading-[20.8px] md:p-0 p-4 w-full mb-4 `}
         >
-          <p className="text-dark list-disc leading-24">
+          BUSINESS <span className="text-primary ">CONSULTING</span> <br />
+        </h2>
+        <p className="text-primary text-primary font-Inter font-semibold sm:text-[28px] sm:mt-[12px] mt-[-12px] text-[20px] text-black sm:leading-[30.8px] leading-[10.8px] md:p-0 p-4 w-full">
+          Lorem Ipsum consectetur.
+        </p>
+        <div
+          className={`font-Inter font-normal text-black1 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
+        >
+          <p className="text-dark list-disc leading-24 md:p-0 p-4 ">
             Avante Consulting provides implementation solutions for our
             customers from pre-sales assistance through to “go-live” events.
             These solutions are based on a proven implementation methodologies
@@ -164,7 +169,7 @@ const BusinessConsulting = () => {
             industry-specific business expertise. Our implementation support
             services include, but are not limited to:
           </p>
-          <ul className="text-dark list-disc ml-12">
+          <ul className="font-inter font-normal text-dark md:text-[14px] text-[12px] list-disc ml-12">
             <li>
               Complete product implementations, encompassing all implementation
               phases from project definition to the final production “go-live”.
@@ -181,7 +186,7 @@ const BusinessConsulting = () => {
             </li>
             <li>Functional and technical operational support.</li>
           </ul>
-          <p className="text-dark list-disc mt-2">
+          <p className="font-inter font-normal text-dark1 md:text-[14px] text-[12px] md:p-0 p-4 list-disc mt-2">
             Our professionals share a vision and are selected based on quality,
             like-mindedness, and commitment to client service. Outstanding
             client service continues to be our top priority.

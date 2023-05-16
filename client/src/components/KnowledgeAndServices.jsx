@@ -2,12 +2,12 @@ import egainknowledge from "../images/egainknowledge.png";
 import egainself from "../images/egainself.png";
 const KnowledgeAndServices = () => {
   return (
-    <div className="relative mb-24 mt-24 bg-background">
+    <div className="relative mb-8 mt-24 bg-background">
       <div className="mb-12 mt-8">
-        <h1 className="  text-[32px] mb-8 text-primary mx-24">
+        <h1 className="font-inter font-normal  md:text-[28px] text-[20px] mb-8 text-primary md:mx-24 px-4">
           KnowledgeAgent and SelfService software solutions.
         </h1>
-        <p className=" text-black text-[14px] min-w-[470px] p-4 lg:mx-24 w-[50%] ">
+        <p className="font-inter font-normal  md:text-[14px] text-[12px] mb-8 text-black1 md:mx-24 px-4 md:w-[730px]">
           eGain KnowledgeAgent is highly-rated knowledge management software
           that empowers customer service agents with knowledge, ensuring fast,
           consistent, and accurate answers to increase customer satisfaction.
@@ -16,21 +16,21 @@ const KnowledgeAndServices = () => {
           escalations to live customer service or sales agents."
         </p>
       </div>
-      <div className="lg:flex mt-12 mb-8 bg-background ">
-        <div className="lg:flex flex-col w-80 h-[400px] min-w-[470px] mx-auto border border-l mb-24 ">
+      <div className="md:flex mt-12 mb-8 bg-background ">
+        <div className="md:flex flex-col  h-[400px] min-w-[470px] mx-auto border border-l mb-24 ">
           <div className="relative ">
             <img
               src={egainknowledge}
               alt="egainknowledge"
-              className="h-[40%] w-full object-cover p-2"
+              className="md:h-[153px] h-[131.42px] md:w-[500px] w-[350px] object-cover p-2"
             />
-            <div className="absolute top-20 bottom-0 left-12 p-4 bg-none text-white">
-              <h2 className="text-[18px] font-bold mb-2">
+            <div className="absolute md:top-20 top-16 bottom-0 left-12 p-4 bg-none text-white">
+              <h2 className="text-[18px] font-inter font-semobold font-semibold md:mb-2">
                 eGain KnowledgeAgent™
               </h2>
             </div>
-            <div className="h-[16px]  flex items-center py-24  ">
-              <p className="text-gray-700 p-2 text-[14px]  mb-0">
+            <div className="h-[16px]  flex items-center md:pb-44 pb-32   md:w-[543px] w-[366px] md:h-[329px] h-[310px] ">
+              <p className="font-inter font-normal  md:text-[14px] text-[12px] text-black1 px-4  md:w-[500px] md:h-[114px] ">
                 {" "}
                 The top-rated knowledge management software, guarantees
                 high-quality customer service by infusing your customer service
@@ -44,18 +44,20 @@ const KnowledgeAndServices = () => {
           </div>
         </div>
 
-        <div className="lg:flex flex-col w-80 h-[400px] min-w-[470px] mx-auto border border-l   ">
+        <div className="md:flex flex-col  h-[400px] min-w-[470px] mx-auto border border-l   ">
           <div className="relative ">
             <img
               src={egainself}
               alt="egainself"
-              className="h-[40%] w-full object-cover p-2"
+              className="md:h-[153px] h-[131.42px] md:w-[500px] w-[350px] object-cover p-2"
             />
-            <div className="absolute top-20 bottom-0 left-12 p-4 bg-none text-white">
-              <h2 className="text-lg font-bold mb-2">eGain SelfService™</h2>
+            <div className="absolute md:top-20 top-16 bottom-0 left-12 p-4 bg-none text-white">
+              <h2 className="text-[18px] font-inter font-semobold font-semibold md:mb-2">
+                eGain SelfService™
+              </h2>
             </div>
-            <div className="h-[16px]  flex items-center py-24   ">
-              <p className="text-gray-700 p-2 text-[14px]  mb-0">
+            <div className="h-[16px]  flex items-center  md:pb-44 pb-32   md:w-[543px] w-[366px] md:h-[329px] h-[310px]  ">
+              <p className="font-inter font-normal  md:text-[14px] text-[12px] text-black1 px-4  mb-0">
                 {" "}
                 Enables organizations to provide distinctive, productive, and
                 brand-aligned self-service experiences that enable breakthrough

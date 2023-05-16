@@ -238,3 +238,19 @@
 .input:focus {
   outline: none !important;
 }
+
+#cta15 {
+  position: relative;
+  width: 100%;
+  height: 350px; /* adjust this to your desired height */
+  background-image: url("/src/images/basesmall.png");
+  background-repeat: no-repeat;
+  background-position: top right; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#cta15 img {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-20%, -50%);
+}

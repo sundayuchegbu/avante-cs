@@ -5,17 +5,19 @@ import { Link } from "react-router-dom";
 
 const Codeit = () => {
   return (
-    <section className={`${layout.sectionReverse} md:mt-[10px] mt-[-400px] `}>
+    <section
+      className={`flex md:flex-row flex-col sm:py-16 py-6 md:mt-[10px] mt-[-200px] `}
+    >
       <div className={layout.sectionImgReverse}>
         <div className="flex mt-24">
-          <ul className="md:mt-[305px] mt-[90px] md:mx-12 mx-8 ">
+          <ul className="md:mt-[305px] mt-[90px] md:mx-12 px-4 ">
             <li className="w-full border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-2 ">
               <input
                 id="list-radio-license"
                 type="radio"
                 value=""
                 name="list-radio"
-                className="md:w-4 md:h-4 w-2 h-2 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
+                className="md:w-4 md:h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
                 checked
                 disabled
               />{" "}
@@ -26,7 +28,7 @@ const Codeit = () => {
                 type="radio"
                 value=""
                 name="list-radio"
-                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
+                className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
                 disabled
               />{" "}
             </li>
@@ -36,7 +38,7 @@ const Codeit = () => {
                 type="radio"
                 value=""
                 name="list-radio"
-                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
               />{" "}
             </li>
@@ -46,7 +48,7 @@ const Codeit = () => {
                 type="radio"
                 value=""
                 name="list-radio"
-                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
+                className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
                 disabled
               />{" "}
             </li>
@@ -56,7 +58,7 @@ const Codeit = () => {
                 type="radio"
                 value=""
                 name="list-radio"
-                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
               />{" "}
             </li>
@@ -66,7 +68,7 @@ const Codeit = () => {
                 type="radio"
                 value=""
                 name="list-radio"
-                className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
               />{" "}
             </li>
@@ -92,24 +94,24 @@ const Codeit = () => {
               alt="codeit2"
               className=" relative w-[296.91px] h-[215.13px]"
             />
-            <div className="absolute top-[27%] left-[60.5%] right-[29.5%] h-[20%] bg-background"></div>
-            <div className="absolute top-[60%] left-[60%] right-[30.4%] h-[2%] bg-background "></div>
-            <div className="absolute top-[76.5%] right-[65%] left-[20.7%] h-[10%] bg-background "></div>
-            <div className="absolute top-[45%] right-[65%] left-[21%] h-[2%] bg-background "></div>
-            <div className="absolute bottom-[13.6%] top-[27.4%] left-[35%] w-[2%] bg-background "></div>
-            <div className="absolute top-[27.5%] bottom-[15.5%] right-[39%] w-[2%] bg-background "></div>
-            <div className="absolute top-[70%] left-[36.9%] right-[38.8%] h-[2%] bg-background "></div>
+            <div className="absolute top-[27%] left-[60.5%] right-[11%] h-[20%] bg-background"></div>
+            <div className="absolute top-[64%] left-[60%] right-[11%] h-[5%] bg-background "></div>
+            <div className="absolute top-[76.5%] right-[65%] left-[11%] h-[10%] bg-background "></div>
+            <div className="absolute top-[55%] right-[65%] left-[11%] h-[4%] bg-background "></div>
+            <div className="absolute bottom-[13.6%] top-[27.4%] left-[35%] w-[4%] bg-background "></div>
+            <div className="absolute top-[27.5%] bottom-[13.5%] right-[39%] w-[4%] bg-background "></div>
+            <div className="absolute top-[70%] left-[36.9%] right-[38.8%] h-[4%] bg-background "></div>
           </div>
 
           <div>
-            <ul className=" mx-12">
+            <ul className=" md:mx-12 md:ml-0 px-4">
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-2">
                 <input
                   id="list-radio-license"
                   type="radio"
                   value=""
                   name="list-radio"
-                  className="md:w-4 md:h-4 w-2 h-2 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
+                  className="md:w-4 md:h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
                   checked
                   disabled
                 />{" "}
@@ -120,7 +122,7 @@ const Codeit = () => {
                   type="radio"
                   value=""
                   name="list-radio"
-                  className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                  className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                   disabled
                 />{" "}
               </li>
@@ -130,7 +132,7 @@ const Codeit = () => {
                   type="radio"
                   value=""
                   name="list-radio"
-                  className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                  className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                   disabled
                 />{" "}
               </li>
@@ -140,7 +142,7 @@ const Codeit = () => {
                   type="radio"
                   value=""
                   name="list-radio"
-                  className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                  className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                   disabled
                 />{" "}
               </li>
@@ -150,7 +152,7 @@ const Codeit = () => {
                   type="radio"
                   value=""
                   name="list-radio"
-                  className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                  className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                   disabled
                 />{" "}
               </li>
@@ -160,7 +162,7 @@ const Codeit = () => {
                   type="radio"
                   value=""
                   name="list-radio"
-                  className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
+                  className="md:w-4 md:h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                   disabled
                 />{" "}
               </li>

@@ -1,14 +1,21 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import vision1 from "../images/vision1.png";
 const Vision1 = () => (
-  <section className={layout.section}>
-    <div className={`mx-24 ${layout.sectionInfo}`}>
-      <h2 className={`${styles.heading3} mb-4 `}>
-        OUR <span className="text-primary">MISSION</span>{" "}
-        <br className="sm:block hidden" />
-        <span className="text-primary">Lorem Ipsum consectetur.</span>
+  <section className="flex md:flex-row flex-col-reverse sm:py-16 py-6 md:ml-24">
+    <div className={`mx-12 ${layout.sectionInfo}`}>
+      <h2
+        className={`font-Inter font-semibold xs:text-[16px] md:mt-[10px] mt-[20px] text-[16px] text-black   w-full mb-4 `}
+      >
+        OUR <span className="text-primary">MISSION</span>
       </h2>
-      <div className={`${styles.paragraph} max-w-[470px] mt-5 mb-6`}>
+      <h1
+        className={`font-Inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
+      >
+        Lorem Ipsum consectetur.{" "}
+      </h1>
+      <div
+        className={`font-Inter font-normal text-background md:text-[18px] text-[12px] md:leading-[30.8px] leading-[20.8px] max-w-[470px] md:mt-0 mt-5 mb-6`}
+      >
         <ul className="text-dark list-disc">
           <li>
             Our mission statement is to contribute to the success of our clients
@@ -32,15 +39,15 @@ const Vision1 = () => (
         </ul>
       </div>
     </div>
-    <div className={`${layout.sectionImg} mx-24 px-24 relative`}>
+    <div className={`${layout.sectionImg} md:mx-24 md:px-24 relative`}>
       <img
         src={vision1}
         alt="card"
-        className=" block -mx-4 w-[100%]  h-[70%] "
+        className="  md:w-[561px] w-[371.34px]  md:h-[567px] h-[238px] "
       />
-      <div className="absolute bottom-0 top-0 left-1/2 right-0 w-4 bg-background"></div>
-      <div className="absolute bottom-0 top-[104px] left-1/2 right-16 h-12 bg-background"></div>
-      <div className="absolute bottom-0 top-[540px] left-0 right-1/2 h-18 bg-background"></div>
+      <div className="absolute md:bottom-[24px] bottom-[0%] md:top-[25px] top-[12%] left-1/2 right-[0%] w-4 bg-background"></div>
+      <div className="absolute bottom-0 md:top-[20px] top-[-1%] left-1/2 md:right-[13.8%] right-[2.8%] md:h-[13%] h-[16%] bg-background"></div>
+      <div className="absolute md:bottom-[20px] bottom-0 md:top-[82%] top-[75%] md:left-[13.9%] left-[3.4%] right-1/2 h-18 bg-background"></div>
     </div>
   </section>
 );
