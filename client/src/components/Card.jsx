@@ -3,6 +3,7 @@ import whitearrow from "../images/whitearrow.png";
 import carbon from "../images/carbon.png";
 import vector from "../images/vector.png";
 import icon from "../images/icon.png";
+import { Link } from "react-router-dom";
 
 export const Card = () => {
   return (
@@ -34,16 +35,18 @@ export const Card = () => {
               These solutions are based on a proven implementation methodologies
               developed over the years and are...
             </div>
-            <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />
-              </i>
-            </button>
+            <Link to="/services/consulting">
+              <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -62,16 +65,18 @@ export const Card = () => {
               e-commerce, mobile solutions, customer relationship management,
               and enterprise resourcemanagement. They have experience ...
             </div>
-            <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />{" "}
-              </i>
-            </button>
+            <Link to="/services/software">
+              <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />{" "}
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="md:ml-32 ml-4">
@@ -90,16 +95,18 @@ export const Card = () => {
               knowledge management solutions. Avante is the number one eGain
               partner in Nigeria based on successful...
             </div>
-            <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />
-              </i>
-            </button>
+            <Link to="/services/sas">
+              <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="md:mt-24 md:ml-0 ml-[-4px]">
@@ -116,16 +123,18 @@ export const Card = () => {
               View our projects below to see a lists of our clients and how we
               have helped them to take their business to the next level.
             </div>
-            <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />{" "}
-              </i>
-            </button>
+            <Link to="/services/web/development">
+              <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />{" "}
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
