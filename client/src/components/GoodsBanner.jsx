@@ -1,5 +1,6 @@
 import { layout } from "../style";
 import sme1 from "../images/sme1.png";
+import sme2 from "../images/sme2.png";
 import smallwhite from "../images/smallwhite.png";
 import { Link } from "react-router-dom";
 const GoodsBanner = () => {
@@ -36,7 +37,7 @@ const GoodsBanner = () => {
               </button>
             </Link>
           </div>
-          <div className={`${layout.sectionImg} md:mx-24 lg:px-24   relative`}>
+          <div className={`${layout.sectionImg} md:mx-24 md:px-24   relative`}>
             <img
               src={sme1}
               alt="consumer"
@@ -48,11 +49,7 @@ const GoodsBanner = () => {
       <div className="block">
         <div className="block md:hidden">
           <div className="  flex-col flex justify-center item-center bg-background mb-12">
-            <img
-              src={sme1}
-              alt="consumer"
-              className=" w-[328.6px] h-[213.5px]"
-            />
+            <img src={sme2} alt="consumer" className="w-[] h-[246.65px]" />
             <div className="flex-start bg-background mt-12 ">
               <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 ">
                 Consumer goods{" "}
