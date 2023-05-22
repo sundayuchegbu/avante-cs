@@ -1,5 +1,5 @@
 import { layout } from "../style";
-import database from "../images/database.png";
+import database1 from "../images/database1.png";
 import smalloracle from "../images/smalloracle.png";
 import smallwhite from "../images/smallwhite.png";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,7 @@ const OracleBanner = () => {
   return (
     <div>
       <div className="hidden md:block">
-        <div id="ctas2" className={`mb-32  h-[721px] ${layout.section}`}>
+        <div id="oracle" className={`mb-32  h-[721px] ${layout.section}`}>
           <div className={`mx-32 ${layout.sectionInfo}`}>
             <h2
               className={`font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
@@ -29,14 +29,11 @@ const OracleBanner = () => {
               Get Started
             </button>
           </div>
-          <div
-            id="cta2"
-            className={`${layout.sectionImg} lg:mx-24 lg:px-24   relative`}
-          >
+          <div className={`${layout.sectionImg} lg:mx-24 lg:px-24   relative`}>
             <img
-              src={database}
+              src={database1}
               alt="database"
-              className=" mt-[20px] w-[471.19px] h-[518.48px]   "
+              className=" mt-[20px] w-[448px] h-[518.48px]   "
             />
           </div>
         </div>

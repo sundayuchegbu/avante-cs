@@ -4,19 +4,34 @@ import lagferry2 from "../images/lagferry2.png";
 import { Link } from "react-router-dom";
 const Lagferry = () => {
   return (
-    <section className={` mt-[-150px] ${layout.sectionReverse} mb-24`}>
-      <div id="cta9" className={` relative   ${layout.sectionImgReverse1} `}>
-        <img src={lagferry2} alt="codeit" className="block h-[428.8px]" />
+    <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
+      <div>
+        <div className="hidden md:block md:mt-[400px]">
+          <div className={`relative  ${layout.sectionImgReverse1} `}>
+            <img
+              src={lagferry2}
+              alt="codeit"
+              className="block w-[488.47pz] h-[535.1px] ml-32"
+            />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8 mt-[200px]">
+          <div className="block md:hidden">
+            <img src={lagferry2} alt="lagferry2" />
+          </div>
+        </div>
       </div>
-      <div className={layout.sectionInfo}>
+      <div className={`${layout.sectionInfo} mt-[200px] md:mr-44 px-8`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[10px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-2  mt-[150px]`}
+          className={`font-inter font-semibold xs:text-[16px] md:mt-[200px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
-          LAGFERRY <br className="sm:block hidden " />
-          <span className="text-primary ">Water transport infrastructure</span>
+          LAGFERRY <br />
+          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
+            Water transport infrastructure
+          </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
         >
           Lagos Ferry Services Company (LFSC) known as Lagferry is a limited
           liability company which was established as a Special Purpose Vehicle

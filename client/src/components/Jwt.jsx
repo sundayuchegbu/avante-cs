@@ -3,19 +3,33 @@ import jwt from "../images/jwt.png";
 import { Link } from "react-router-dom";
 const Jwt = () => {
   return (
-    <section className={` mt-[-150px] ${layout.sectionReverse}`}>
-      <div id="cta9" className={` relative   ${layout.sectionImgReverse1} `}>
-        <img src={jwt} alt="jwt" className="block h-[428.8px]" />
+    <section className={` mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
+      <div>
+        <div className="hidden md:block">
+          <div
+            id="cta9"
+            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+          >
+            <img src={jwt} alt="jwt" className="block h-[428.8px]" />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8">
+          <div id="cta19" className="block md:hidden">
+            <img src={jwt} alt="jwt" />
+          </div>
+        </div>
       </div>
-      <div className={layout.sectionInfo}>
+      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[10px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-2  mt-[150px]`}
+          className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2 `}
         >
-          JWT <br className="sm:block hidden " />
-          <span className="text-primary ">LASTVEB up-skilling youth.</span>
+          JWT <br />
+          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
+            LASTVEB up-skilling youth.
+          </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
         >
           JWT is the world\'s best known marketing and Communications brand. In
           Nigeria the company operates as LTC-JWT. As a result of an initiative

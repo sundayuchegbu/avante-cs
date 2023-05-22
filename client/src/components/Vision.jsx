@@ -4,10 +4,14 @@ import vision from "../images/vision.png";
 const Vision = () => (
   <section className="flex md:flex-row flex-col sm:py-16 py-6 ">
     <div className={` relative ${layout.sectionImgReverse}`}>
-      <img src={vision} alt="codeit" className="md:p-0 p-2" />
-      <div className="absolute bottom-0 md:top-0 top-[2%] left-1/2 right-0 w-4 bg-background"></div>
-      <div className="absolute bottom-0 md:top-[0%] top-[2%] md:left-[12.1%] left-[1.9%] md:right-[50%] right-[50%] h-[15%] bg-background"></div>
-      <div className="absolute bottom-0 md:top-[85%] top[100%] md:left-1/2 left-[53%] md:right-[12.2%] right-[2%] h-[15%] bg-background"></div>
+      <img
+        src={vision}
+        alt="codeit"
+        className="md:p-0 p-2 md:w-[559px] w-[371.34px] md:h-[478px] h-[238px]"
+      />
+      {/* <div className="absolute bottom-0 md:top-0 top-[2%] left-1/2 right-0 w-4 bg-background"></div> */}
+      {/* <div className="absolute bottom-0 md:top-[0%] top-[2%] md:left-[12.1%] left-[1.9%] md:right-[50%] right-[50%] h-[15%] bg-background"></div> */}
+      {/* <div className="absolute bottom-0 md:top-[85%] top[100%] md:left-1/2 left-[53%] md:right-[12.2%] right-[2%] h-[15%] bg-background"></div> */}
     </div>
     <div className={layout.sectionInfo}>
       <h2

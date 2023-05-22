@@ -1,5 +1,5 @@
 import banner from "../images/banner.png";
-import banner4 from "../images/banner4.png";
+import home from "../images/home.png";
 import smallwhite from "../images/smallwhite.png";
 
 const Banner = () => (
@@ -24,7 +24,7 @@ const Banner = () => (
       <img src={banner} alt="banner" className="w-full sm:h-screen " />
     </div>
     <div className=" block md:hidden flex-col flex justify-center item-center bg-background">
-      <img src={banner4} alt="banner4" />
+      <img src={home} alt="banner4" />
       <div className="flex-start bg-background mt-12">
         <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 ">
           Avante-cs

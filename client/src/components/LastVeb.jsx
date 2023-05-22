@@ -1,19 +1,23 @@
 import React from "react";
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import lastveb from "../images/lastveb.png";
 import { Link } from "react-router-dom";
 
 const LastVeb = () => {
   return (
-    <section className={layout.section}>
-      <div className={`mx-24 ${layout.sectionInfo}`}>
+    <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
+      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[70px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-4 `}
+          className={`font-inter font-semibold xs:text-[20px] md:mt-[60px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
-          LASTVEB <br className="sm:block hidden" />
-          <span className="text-primary">LASTVEB up-skilling youth.</span>
+          LASTVEB <br />
+          <span className=" text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
+            LASTVEB up-skilling youth.
+          </span>
         </h2>
-        <div className={`${styles.paragraph3} max-w-[470px] mt-5 mb-6`}>
+        <div
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+        >
           Lagos State Technical and Vocational Education Board (LASTVEB) aims to
           be National Leader for jobs and self-empowerment by up-skilling and
           integrating young people into the labour market by providing them with
@@ -27,12 +31,21 @@ const LastVeb = () => {
           </button>
         </Link>
       </div>
-      <div id="cta10" className={`${layout.sectionImg} mx-24 px-24 relative`}>
-        <img
-          src={lastveb}
-          alt="nsip"
-          className=" block -mx-4 w-[100%]  h-[70%] "
-        />
+      <div>
+        <div className="hidden md:block mt-[200px]">
+          <div className={`${layout.sectionImg} mx-24 px-24 relative`}>
+            <img
+              src={lastveb}
+              alt="lastveb"
+              className=" block -mx-4 w-[488.47pz] h-[535.1px] "
+            />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8">
+          <div className="block md:hidden">
+            <img src={lastveb} alt="smalllastveb" />
+          </div>
+        </div>
       </div>
     </section>
   );

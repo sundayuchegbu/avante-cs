@@ -3,24 +3,38 @@ import foodconcept from "../images/foodconcept.png";
 import { Link } from "react-router-dom";
 const FoodConcept = () => {
   return (
-    <section className={` mb-24 mt-[-150px] ${layout.sectionReverse}`}>
-      <div id="cta9" className={` relative   ${layout.sectionImgReverse1} `}>
-        <img
-          src={foodconcept}
-          alt="foodconcept"
-          className="block h-[428.8px]"
-        />
+    <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
+      <div>
+        <div className="hidden md:block">
+          <div
+            id="cta9"
+            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+          >
+            <img
+              src={foodconcept}
+              alt="foodconcept"
+              className="block h-[428.8px]"
+            />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8">
+          <div id="cta19" className="block md:hidden">
+            <img src={foodconcept} alt="foodconcept" />
+          </div>
+        </div>
       </div>
-      <div className={layout.sectionInfo}>
+
+      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[10px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-2  mt-[150px]`}
+          className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
-          FOOD <span className="text-primary">CONCEPT</span>{" "}
-          <br className="sm:block hidden " />
-          <span className="text-primary ">Lorem Ipsum consectetur. </span>
+          FOOD <span className="text-primary">CONCEPT</span> <br />
+          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
+            Lorem Ipsum consectetur.{" "}
+          </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
         >
           Food Concepts opened Chicken Republic in 2004 and their other brands
           of focus include Butterfield Bakery, Reeds and Pizza Republic. Apart

@@ -4,25 +4,34 @@ import venture from "../images/venture.png";
 
 const Venture = () => {
   return (
-    <section className={` mt-[-150px] ${layout.sectionReverse}`}>
-      <div id="cta9" className={` relative   ${layout.sectionImgReverse1} `}>
-        <img
-          src={venture}
-          alt="venture"
-          className="block h-[446px] w-[448px] mr-24"
-        />
+    <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
+      <div>
+        <div className="hidden md:block">
+          <div
+            id="cta9"
+            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+          >
+            <img src={venture} alt="venture" className="block h-[428.8px]" />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8">
+          <div id="cta19" className="block md:hidden">
+            <img src={venture} alt="venture" />
+          </div>
+        </div>
       </div>
-      <div className={layout.sectionInfo}>
+
+      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[10px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-2  mt-[150px]`}
+          className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
-          VENTURE GARDEN GROUP (VGG) <br className="sm:block hidden " />
-          <span className="text-primary ">
-            Campaign Management <br className="sm:block hidden " /> Automation{" "}
+          VENTURE GARDEN GROUP (VGG) <br />
+          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
+            Campaign Management <br /> Automation{" "}
           </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[20.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
         >
           Venture Garden Group (VGG) is a leading provider of innovative,
           data-driven, end-to-end technology platforms addressing reconciliation

@@ -4,10 +4,14 @@ import values from "../images/values.png";
 const Values = () => (
   <section className="flex md:flex-row flex-col sm:py-16 py-6">
     <div className={`p-4 relative ${layout.sectionImgReverse}`}>
-      <img src={values} alt="codeit" className="block " />
-      <div className="absolute md:bottom-[16px] bottom-[16px] md:top-[16px] top-[16px] left-1/2 right-0 w-4 bg-background"></div>
-      <div className="absolute bottom-0  md:top-[16px] top-[16px] left-1/2 md:right-[98.4px] right-[16px] h-16 bg-background"></div>
-      <div className="absolute bottom-0 md:top-[430px] top-[266px] md:left-[98px] left-[16px] md:right-1/2 right-[198px] h-16 bg-background"></div>
+      <img
+        src={values}
+        alt="values"
+        className="block  md:w-[559px] w-[371.34px] md:h-[478px] h-[238px] "
+      />
+      {/* <div className="absolute md:bottom-[16px] bottom-[16px] md:top-[16px] top-[16px] left-1/2 right-0 w-4 bg-background"></div> */}
+      {/* <div className="absolute bottom-0  md:top-[16px] top-[16px] left-1/2 md:right-[98.4px] right-[16px] h-16 bg-background"></div> */}
+      {/* <div className="absolute bottom-0 md:top-[430px] top-[266px] md:left-[98px] left-[16px] md:right-1/2 right-[198px] h-16 bg-background"></div> */}
     </div>
     <div className={layout.sectionInfo}>
       <h2

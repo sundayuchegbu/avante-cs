@@ -1,21 +1,34 @@
 import React from "react";
 import { layout } from "../style";
 import lasgm from "../images/lasgm.png";
+import smalllasgm from "../images/smalllasgm.png";
 import { Link } from "react-router-dom";
 
 const LasgMinistry = () => {
   return (
-    <section className={` mt-[-150px] ${layout.sectionReverse}`}>
-      <div id="cta9" className={` relative   ${layout.sectionImgReverse1} `}>
-        <img src={lasgm} alt="codeit" className="block h-[428.8px]" />
+    <section className={` mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
+      <div>
+        <div className="hidden md:block md:mt-[360px]">
+          <div className={` relative   ${layout.sectionImgReverse1} `}>
+            <img
+              src={lasgm}
+              alt="codeit"
+              className="block w-[488.47pz] h-[535.1px]  ml-44"
+            />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8 mt-[200px]">
+          <div className="block md:hidden">
+            <img src={lasgm} alt="smalllasgm" />
+          </div>
+        </div>
       </div>
-      <div className={layout.sectionInfo}>
+      <div className={`${layout.sectionInfo} mt-[200px] px-8`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[10px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-2  mt-[150px]`}
+          className={`font-Inter font-semibold xs:text-[16px] md:mt-[200px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
-          LASG MINISTRY OF SCIENCE AND TECHNOLOGY{" "}
-          <br className="sm:block hidden " />
-          <span className="text-primary ">
+          LASG MINISTRY OF SCIENCE AND TECHNOLOGY <br className=" " />
+          <span className="text-primary text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
             Professional training assistance
           </span>
         </h2>

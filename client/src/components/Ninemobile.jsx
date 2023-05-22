@@ -3,26 +3,38 @@ import { layout } from "../style";
 import ninemobile from "../images/ninemobile.png";
 const Ninemobile = () => {
   return (
-    <section className={` mt-[-150px] ${layout.sectionReverse}`}>
-      <div id="cta9" className={` relative   ${layout.sectionImgReverse1} `}>
-        <img
-          src={ninemobile}
-          alt="ninemobile"
-          className="block h-[446px] w-[448px] mr-24"
-        />
+    <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
+      <div>
+        <div className="hidden md:block">
+          <div
+            id="cta9"
+            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+          >
+            <img
+              src={ninemobile}
+              alt="ninemobile"
+              className="block h-[428.8px]"
+            />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8 mt-[20px]">
+          <div id="cta24" className="block md:hidden ">
+            <img src={ninemobile} alt="ninemobile" />
+          </div>
+        </div>
       </div>
-      <div className={layout.sectionInfo}>
+      <div className={`${layout.sectionInfo} md:ml-56 px-8 `}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[10px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-2  mt-[150px]`}
+          className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[150px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
           <span className="text-success">9</span>mobile
-          <br className="sm:block hidden " />
-          <span className="text-primary ">
-            Campaign Management <br className="sm:block hidden " /> Automation{" "}
+          <br />
+          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
+            Campaign Management <br /> Automation{" "}
           </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[20.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
         >
           9mobile is Nigeria’s most innovative telecoms network. They began
           trading in October 2008 with the ground breaking “0809uchoose”

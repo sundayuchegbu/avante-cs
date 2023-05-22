@@ -16,10 +16,10 @@ const Navbar = () => {
         {" "}
         <img src={logo} alt="logo" className="w-[124px] h-[32px]" />
       </NavLink>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <div className=" sm:flex hidden justify-end items-center flex-1">
         <NavLink
           to="/"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10"
         >
           HOME
         </NavLink>
@@ -275,11 +275,11 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/contacts"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 text-secondary"
+          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-0 text-secondary"
         >
           CONTACT US
         </NavLink>
-      </ul>
+      </div>
       <div className="sm:hidden flex flex-1 justify-end items-center bg-background">
         <img
           src={toggle ? close : menu}
@@ -290,41 +290,45 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6   absolute bgbackground top-20 right-0 mx-4 my-2 min-w-[140px]  rounded-xl sidebar`}
+          } p-6   absolute bg-grey w-full   top-20 right-0  my-4 min-w-[140px] sidenav`}
         >
-          <ul className="list-none flex flex-col justify-end items-center flex-1">
+          <div className="list-none flex flex-col justify-end items-center flex-1">
             <NavLink
               to="/"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6"
             >
               HOME
             </NavLink>
             <NavLink
               to="/about"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6"
             >
               ABOUT US
             </NavLink>
-            <Menu as="div" className="relative inline-block text-left mr-10">
+            <Menu
+              as="div"
+              className="relative inline-block text-left mr-10 mb-4"
+            >
               <div>
                 <Menu.Button
                   type="button"
-                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-2 text-sm  text-gray-900 shadow-sm  ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  className="inline-flex w-full justify-center gap-x-2 rounded-none bg-grey  text-sm  text-gray-900    ring-inset ring-gray-300 hover:bg-background hover:text-primary"
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
                 >
                   SERVICES
                   <svg
-                    className="-mr-1 h-5 w-5 text-gray-400"
+                    className="-mr-1 h-5 w-5 text-gray-400 -mt-2"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      d="M12.79 7.21a.75.75 0 011.06.02L17 11.168l-3.71 3.938a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
                       clipRule="evenodd"
+                      transform="rotate(90 10 10)"
                     />
                   </svg>
                 </Menu.Button>
@@ -442,15 +446,18 @@ const Navbar = () => {
 
             <NavLink
               to="/products"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6"
             >
               PRODUCTS
             </NavLink>
-            <Menu as="div" className="relative inline-block text-left mr-10">
+            <Menu
+              as="div"
+              className="relative inline-block text-left mr-10 mb-6"
+            >
               <div>
                 <Menu.Button
                   type="button"
-                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-grey px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -545,7 +552,7 @@ const Navbar = () => {
             </Menu>
             <NavLink
               to="/news"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mb-0 text-secondary"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mb-6"
             >
               NEWS
             </NavLink>
@@ -555,15 +562,10 @@ const Navbar = () => {
             >
               CONTACT US
             </NavLink>
-          </ul>
+          </div>
         </div>
       </div>
     </nav>
   );
 };
 export default Navbar;
-// className={`font-inter font-normal cursor-pointer text-[16px] ${
-//   index === navLinks.length - 1
-//     ? "mb-0 text-red-600"
-//     : "mb-4 hover:text-color-primary "
-// } `}

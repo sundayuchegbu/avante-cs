@@ -254,3 +254,131 @@ export const stats = [
     value: "5+",
   },
 ];
+
+export const navItems = [
+  {
+    id: 1,
+    title: "Home",
+    path: "./",
+    cName: "nav-item",
+  },
+  {
+    id: 2,
+    title: "About Us",
+    path: "./about",
+    cName: "nav-item",
+  },
+  {
+    id: 3,
+    title: "Services",
+    path: "./services",
+    cName: "nav-item",
+  },
+  {
+    id: 4,
+    title: "Products",
+    path: "./products",
+    cName: "nav-item",
+  },
+  {
+    id: 5,
+    title: "Clients",
+    path: "./clients",
+    cName: "nav-item",
+  },
+  {
+    id: 6,
+    title: "News",
+    path: "./news",
+    cName: "nav-item",
+  },
+  {
+    id: 7,
+    title: "Contact Us",
+    path: "./contacts",
+    cName: "nav-item",
+  },
+];
+
+export const serviceDropdown = [
+  {
+    id: 1,
+    title: "Business Consulting",
+    path: "./services/consulting",
+    cName: "submenu-item",
+  },
+  {
+    id: 2,
+    title: "Software Development",
+    path: "./services/software",
+    cName: "submenu-item",
+  },
+  {
+    id: 3,
+    title: "SAS Analytics",
+    path: "./services/sas",
+    cName: "submenu-item",
+  },
+  {
+    id: 4,
+    title: "eGain Collaboration",
+    path: "./services/egain/collaboration",
+    cName: "submenu-item",
+  },
+  {
+    id: 5,
+    title: "eGain Knowledge",
+    path: "./services/egain/knowledge",
+    cName: "submenu-item",
+  },
+  {
+    id: 6,
+    title: "social Media Management",
+    path: "./services/media/management",
+    cName: "submenu-item",
+  },
+  {
+    id: 7,
+    title: "Oracle Databsae",
+    path: "./services/oracle",
+    cName: "submenu-item",
+  },
+  {
+    id: 8,
+    title: "Website Development",
+    path: "./services/web/development",
+    cName: "submenu-item",
+  },
+];
+export const clientsDropdown = [
+  {
+    id: 1,
+    title: "Government Agencies",
+    path: "./clients/agencies",
+    cName: "submenu-item",
+  },
+  {
+    id: 2,
+    title: "Financial Sector",
+    path: "./clients/financial",
+    cName: "submenu-item",
+  },
+  {
+    id: 3,
+    title: "Telecoms Sector",
+    path: "./clients/telecoms",
+    cName: "submenu-item",
+  },
+  {
+    id: 4,
+    title: "SME",
+    path: "./clients/sme",
+    cName: "submenu-item",
+  },
+  {
+    id: 5,
+    title: "Consumer Goods",
+    path: "./clients/goods",
+    cName: "submenu-item",
+  },
+];

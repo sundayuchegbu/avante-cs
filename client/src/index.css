@@ -139,10 +139,22 @@
   background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
 }
 #ctas {
-  background: linear-gradient(to right, #90cdf4 30%, #ffffff 60%);
+  background: linear-gradient(to right, #e1edff 30%, #fafcff 50%, #ffffff 70%);
+}
+#egain {
+  background: linear-gradient(to right, #c7ddff 30%, #e1edff 50%, #fafcff 70%);
+}
+#financial {
+  background: linear-gradient(to left, #c7ddff 30%, #e1edff 50%, #fafcff 70%);
+}
+#oracle {
+  background: linear-gradient(to left, #c7ddff 30%, #ffffff 70%);
 }
 #ctas2 {
   background: linear-gradient(to left, #90cdf4 30%, #ffffff 60%);
+}
+#ctas4 {
+  background: linear-gradient(to left, #209fe4 30%, #25aae1 60%);
 }
 #ctas3 {
   background: linear-gradient(to right, #096df3 40%, #25aae1 60%);
@@ -159,8 +171,8 @@
 
 #cta9 img {
   position: relative;
-  top: 60%;
-  left: 45%;
+  top: 57%;
+  left: 47%;
 
   transform: translate(
     -45%,
@@ -179,7 +191,7 @@
 #cta10 img {
   position: relative;
   top: 45%;
-  left: 30%;
+  left: 20%;
 
   transform: translate(
     -45%,
@@ -253,4 +265,156 @@
   top: 60%;
   left: 30%;
   transform: translate(-20%, -50%);
+}
+
+#cta16 {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallred.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#cta16 img {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-30%, -70%);
+}
+#cta17 {
+  position: relative;
+  width: 100%;
+  height: 300px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallblue.png");
+  background-repeat: no-repeat;
+  background-position: bottom center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-right: -25px;
+}
+
+#cta17 img {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-30%, -70%);
+}
+
+#cta18 {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallred.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#cta18 img {
+  position: absolute;
+  top: 67%;
+  left: 40%;
+  transform: translate(-30%, -70%);
+}
+
+#cta19 {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallred.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#cta19 img {
+  position: absolute;
+  top: 67%;
+  left: 40%;
+  transform: translate(-30%, -70%);
+}
+
+#cta20 {
+  position: relative;
+  width: 100%;
+  height: 300px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallblue.png");
+  background-repeat: no-repeat;
+  background-position: bottom center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-right: -25px;
+}
+
+#cta20 img {
+  position: absolute;
+  top: 67%;
+  left: 20%;
+  transform: translate(-30%, -70%);
+}
+
+#cta21 {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallred.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#cta21 img {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: translate(-30%, -70%);
+}
+
+#cta22 {
+  position: relative;
+  width: 289.73px;
+  height: 210.16px; /* adjust this to your desired height */
+  background-image: url("/src/images/navybase.png");
+  background-repeat: no-repeat;
+  background-position: bottom center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-right: -25px;
+}
+
+#cta22 img {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-30%, -70%);
+}
+
+#cta23 {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallred.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#cta23 img {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  transform: translate(-30%, -70%);
+}
+
+#cta24 {
+  position: relative;
+  width: 100%;
+  height: 310px; /* adjust this to your desired height */
+  background-image: url("/src/images/redbase.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#cta24 img {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-30%, -70%);
 }

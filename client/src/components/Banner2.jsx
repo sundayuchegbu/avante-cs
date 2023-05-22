@@ -3,7 +3,10 @@ import banner4 from "../images/banner4.png";
 import smallwhite from "../images/smallwhite.png";
 
 const Banner2 = () => (
-  <div className="md:h-[781px] bg-primary  flex flex-row items-center justify-between ">
+  <div
+    id="ctas4"
+    className="md:h-[781px] bg-primary  flex flex-row items-center justify-between "
+  >
     <div className="flex flex-col  justify-center p-6 hidden md:block ">
       <h2 className="font-inter font-semibold text-[50px] text-white font-bold mb-4 ml-[100px] mt-[100px]">
         Lorem ipsum dolor <br />
@@ -26,13 +29,13 @@ const Banner2 = () => (
         alt="banner"
         className="md:h-[564.46px] h-[411.7px] md:w-[557.88px]  "
       />
-      <div className="absolute md:top-[27.1%] md:left-[82%] md:right-[6.3%] md:h-[10%] bg-primary"></div>
-      <div className="absolute md:top-[80%] md:left-[82%] md:right-[6.3%] md:h-[2%] bg-primary "></div>
-      <div className="absolute md:top-[98%] md:right-[32%] md:left-[57%] md:h-[10%] bg-primary "></div>
-      <div className="absolute md:top-[58%] md:right-[32%] md:left-[57%] md:h-[2%] bg-primary "></div>
-      <div className="absolute md:bottom-[-5%] md:top-[27.3%] md:left-[67%] md:w-[1%] bg-primary "></div>
-      <div className="absolute md:top-[27.2%] md:bottom-[-5%] md:right-[18%] md:w-[1%] bg-primary "></div>
-      <div className="absolute md:top-[95%] md:left-[67.8%] md:right-[19%] md:h-[2%] bg-primary "></div>
+      {/* <div className="absolute md:top-[27.1%] md:left-[82%] md:right-[6.3%] md:h-[10%] bg-primary"></div> */}
+      {/* <div className="absolute md:top-[80%] md:left-[82%] md:right-[6.3%] md:h-[2%] bg-primary "></div> */}
+      {/* <div className="absolute md:top-[98%] md:right-[32%] md:left-[57%] md:h-[10%] bg-primary "></div> */}
+      {/* <div className="absolute md:top-[58%] md:right-[32%] md:left-[57%] md:h-[2%] bg-primary "></div> */}
+      {/* <div className="absolute md:bottom-[-5%] md:top-[27.3%] md:left-[67%] md:w-[1%] bg-primary "></div> */}
+      {/* <div className="absolute md:top-[27.2%] md:bottom-[-5%] md:right-[18%] md:w-[1%] bg-primary "></div> */}
+      {/* <div className="absolute md:top-[95%] md:left-[67.8%] md:right-[19%] md:h-[2%] bg-primary "></div> */}
     </div>
     <div className=" block md:hidden flex-col flex justify-center item-center bg-background">
       <img src={banner4} alt="banner4" />

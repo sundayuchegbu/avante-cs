@@ -1,5 +1,5 @@
 import styles, { layout } from "../style";
-import softpix from "../images/softpix.png";
+import softpix1 from "../images/softpix1.png";
 import mobilesoft from "../images/mobilesoft.png";
 import { useNavigate } from "react-router-dom";
 const Softwarebanner = () => {
@@ -8,8 +8,12 @@ const Softwarebanner = () => {
     <div>
       <div className="hidden md:block">
         <div id="ctas" className={` mb-8 ${layout.sectionReverse}`}>
-          <div id="cta1" className={`${layout.sectionImgReverse}  `}>
-            <img src={softpix} alt="sofware" />
+          <div className={`${layout.sectionImgReverse}  `}>
+            <img
+              src={softpix1}
+              alt="sofware"
+              className="w-[471.19px] h-[518.48px] "
+            />
           </div>
           <div className={`  mx-24 ${layout.sectionInfo}`}>
             <h2 className={`${styles.heading3} mb-4 `}>

@@ -1,18 +1,22 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import akinsqured from "../images/akinsqured.png";
 import { Link } from "react-router-dom";
 
 const AkinSquared = () => {
   return (
-    <section className={`mb-32 ${layout.section}`}>
-      <div className={`mx-24 ${layout.sectionInfo}`}>
+    <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
+      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[20px] mt-[70px] text-[40px] text-black xs:leading-[30.8px] leading-[66.8px] w-full mb-4 `}
+          className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
-          AKIN SQUARED <br className="sm:block hidden" />
-          <span className="text-primary">Water transport infrastructure</span>
+          AKIN SQUARED <br />
+          <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
+            Water transport infrastructure
+          </span>
         </h2>
-        <div className={`${styles.paragraph3} max-w-[470px] mt-5 mb-6`}>
+        <div
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+        >
           A production outfit that does both Photography and film. They have
           worked with some of the big cooperate bodies and individuals around
           Nigeria and abroad. To create the awareness for Akin Squared
@@ -26,12 +30,24 @@ const AkinSquared = () => {
           </button>
         </Link>
       </div>
-      <div id="cta10" className={`${layout.sectionImg} mx-24 px-24 relative`}>
-        <img
-          src={akinsqured}
-          alt="akinsqured"
-          className=" block -mx-4 w-[100%]  h-[70%] "
-        />
+      <div>
+        <div className="hidden md:block">
+          <div
+            id="cta10"
+            className={`${layout.sectionImg} mx-24 px-24 relative`}
+          >
+            <img
+              src={akinsqured}
+              alt="akinsqured"
+              className=" block -mx-4 w-[100%]  h-[70%] "
+            />
+          </div>
+        </div>
+        <div className="px-8 block md:hidden mx-8">
+          <div id="cta20" className="block md:hidden">
+            <img src={akinsqured} alt="akinsqured" />
+          </div>
+        </div>
       </div>
     </section>
   );

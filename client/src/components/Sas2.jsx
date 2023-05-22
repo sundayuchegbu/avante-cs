@@ -5,7 +5,7 @@ import rec1 from "../images/rec1.png";
 const Sas2 = () => {
   return (
     <section className={` ${layout.section}`}>
-      <div id="cta3" className={` mr-56 mt-[400px] ${layout.sectionInfo}`}>
+      <div id="cta3" className={` mr-[400px] mt-[400px] ${layout.sectionInfo}`}>
         <ul className="relative ml-[100px] mt-[-900px] hidden md:block">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -83,7 +83,7 @@ const Sas2 = () => {
       <div>
         <div
           id="cta4"
-          className={`${layout.sectionInfo} px-6 md:mt-0 mt-[-430px]  `}
+          className={`${layout.sectionInfo} px-6 md:mt-0 mt-[-430px] md:ml-[-40px]`}
         >
           <h2
             className={`font-Inter font-semibold xs:text-[28px] mt-[20px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-8 px-2`}

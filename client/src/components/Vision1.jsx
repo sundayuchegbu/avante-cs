@@ -45,9 +45,9 @@ const Vision1 = () => (
         alt="card"
         className="  md:w-[561px] w-[371.34px]  md:h-[567px] h-[238px] "
       />
-      <div className="absolute md:bottom-[24px] bottom-[0%] md:top-[25px] top-[12%] left-1/2 right-[0%] w-4 bg-background"></div>
-      <div className="absolute bottom-0 md:top-[20px] top-[-1%] left-1/2 md:right-[13.8%] right-[2.8%] md:h-[13%] h-[16%] bg-background"></div>
-      <div className="absolute md:bottom-[20px] bottom-0 md:top-[82%] top-[75%] md:left-[13.9%] left-[3.4%] right-1/2 h-18 bg-background"></div>
+      {/* <div className="absolute md:bottom-[24px] bottom-[0%] md:top-[25px] top-[12%] left-1/2 right-[0%] w-4 bg-background"></div> */}
+      {/* <div className="absolute bottom-0 md:top-[20px] top-[-1%] left-1/2 md:right-[13.8%] right-[2.8%] md:h-[13%] h-[16%] bg-background"></div> */}
+      {/* <div className="absolute md:bottom-[20px] bottom-0 md:top-[82%] top-[75%] md:left-[13.9%] left-[3.4%] right-1/2 h-18 bg-background"></div> */}
     </div>
   </section>
 );

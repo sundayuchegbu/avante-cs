@@ -62,7 +62,7 @@ const Codeit = () => {
                 disabled
               />{" "}
             </li>
-            <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-1">
+            <li className="w-full block md:hidden border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-1">
               <input
                 id="list-radio-license"
                 type="radio"
@@ -80,13 +80,13 @@ const Codeit = () => {
               alt="codeit"
               className=" relative md:w-[488.47px] w-[296.91] md:h-[535.1px] h-[215.13px] "
             />
-            <div className="absolute md:top-[13.1%] md:left-[63%] md:right-[11.2%] md:h-[10%] bg-background"></div>
-            <div className="absolute md:top-[60%] md:left-[63%] md:right-[11.4%] md:h-[2%] bg-background "></div>
-            <div className="absolute md:top-[75.5%] md:right-[65%] md:left-[16.7%] md:h-[10%] bg-background "></div>
-            <div className="absolute md:top-[45%] md:right-[65%] md:left-[16.7%] md:h-[2%] bg-background "></div>
-            <div className="absolute md:bottom-[14.5%] md:top-[13.2%] md:left-[35%] md:w-[2%] bg-background "></div>
-            <div className="absolute md:top-[13.4%] md:bottom-[14.5%] md:right-[36%] md:w-[2%] bg-background "></div>
-            <div className="absolute md:top-[76%] md:left-[36.9%] md:right-[37.8%] md:h-[2%] bg-background "></div>
+            {/* <div className="absolute md:top-[13.1%] md:left-[63%] md:right-[11.2%] md:h-[10%] bg-background"></div> */}
+            {/* <div className="absolute md:top-[60%] md:left-[63%] md:right-[11.4%] md:h-[2%] bg-background "></div> */}
+            {/* <div className="absolute md:top-[75.5%] md:right-[65%] md:left-[16.7%] md:h-[10%] bg-background "></div> */}
+            {/* <div className="absolute md:top-[45%] md:right-[65%] md:left-[16.7%] md:h-[2%] bg-background "></div> */}
+            {/* <div className="absolute md:bottom-[14.5%] md:top-[13.2%] md:left-[35%] md:w-[2%] bg-background "></div> */}
+            {/* <div className="absolute md:top-[13.4%] md:bottom-[14.5%] md:right-[36%] md:w-[2%] bg-background "></div> */}
+            {/* <div className="absolute md:top-[76%] md:left-[36.9%] md:right-[37.8%] md:h-[2%] bg-background "></div> */}
           </div>
           <div className="block md:hidden">
             <img
@@ -94,17 +94,17 @@ const Codeit = () => {
               alt="codeit2"
               className=" relative w-[296.91px] h-[215.13px]"
             />
-            <div className="absolute top-[27%] left-[60.5%] right-[11%] h-[20%] bg-background"></div>
-            <div className="absolute top-[64%] left-[60%] right-[11%] h-[5%] bg-background "></div>
-            <div className="absolute top-[76.5%] right-[65%] left-[11%] h-[10%] bg-background "></div>
-            <div className="absolute top-[55%] right-[65%] left-[11%] h-[4%] bg-background "></div>
-            <div className="absolute bottom-[13.6%] top-[27.4%] left-[35%] w-[4%] bg-background "></div>
-            <div className="absolute top-[27.5%] bottom-[13.5%] right-[39%] w-[4%] bg-background "></div>
-            <div className="absolute top-[70%] left-[36.9%] right-[38.8%] h-[4%] bg-background "></div>
+            {/* <div className="absolute top-[27%] left-[60.5%] right-[11%] h-[20%] bg-background"></div> */}
+            {/* <div className="absolute top-[64%] left-[60%] right-[11%] h-[5%] bg-background "></div> */}
+            {/* <div className="absolute top-[76.5%] right-[65%] left-[11%] h-[10%] bg-background "></div> */}
+            {/* <div className="absolute top-[55%] right-[65%] left-[11%] h-[4%] bg-background "></div> */}
+            {/* <div className="absolute bottom-[13.6%] top-[27.4%] left-[35%] w-[4%] bg-background "></div> */}
+            {/* <div className="absolute top-[27.5%] bottom-[13.5%] right-[39%] w-[4%] bg-background "></div> */}
+            {/* <div className="absolute top-[70%] left-[36.9%] right-[38.8%] h-[4%] bg-background "></div> */}
           </div>
 
           <div>
-            <ul className=" md:mx-12 md:ml-0 px-4">
+            <ul className=" md:mx-12 md:mr-4 -mr-4 px-4">
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-2">
                 <input
                   id="list-radio-license"
@@ -156,7 +156,7 @@ const Codeit = () => {
                   disabled
                 />{" "}
               </li>
-              <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-2">
+              <li className="w-full block md:hidden  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-2">
                 <input
                   id="list-radio-license"
                   type="radio"

@@ -73,9 +73,9 @@ const Cooperate = () => (
           className="block md:w-[561px] w-[336.6px] md:h-[567px] h-[238px] "
         />
       </div>
-      <div className="absolute md:bottom-[0px] bottom-[0px] md:top-[0px] top-[0px] md:left-[58%] left-[50%] right-0 w-4 bg-background"></div>
-      <div className="absolute md:bottom-0 bottom-[180px]  md:top-[0px] top-[0px] md:left-[420px] left-[50%] md:right-[25px] right-[3px] md:h-[15%] bg-background"></div>
-      <div className="absolute bottom-0 md:top-[482px] top-[180px] md:left-[137px] left-[26px] md:right-[300px] right-[183px] md:h-[15%] bg-background"></div>
+      {/* <div className="absolute md:bottom-[0px] bottom-[0px] md:top-[0px] top-[0px] md:left-[58%] left-[50%] right-0 w-4 bg-background"></div> */}
+      {/* <div className="absolute md:bottom-0 bottom-[180px]  md:top-[0px] top-[0px] md:left-[420px] left-[50%] md:right-[25px] right-[3px] md:h-[15%] bg-background"></div> */}
+      {/* <div className="absolute bottom-0 md:top-[482px] top-[180px] md:left-[137px] left-[26px] md:right-[300px] right-[183px] md:h-[15%] bg-background"></div> */}
     </div>
     <div className={layout.sectionInfo}>
       <h2
