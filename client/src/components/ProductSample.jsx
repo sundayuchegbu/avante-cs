@@ -119,7 +119,7 @@ const ProductSample = () => {
           />
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[480px] `}>
+      <div className={`${layout.sectionInfo} mt-[450px] `}>
         <img
           src={productimage2}
           alt="productimage2"
@@ -130,7 +130,6 @@ const ProductSample = () => {
           alt="productimage3"
           className="md:mt-[10px] mt-[80px] md:[w-448px] md:h-[306px] "
         />
-        {/* id="cta6" */}
       </div>
     </section>
   );

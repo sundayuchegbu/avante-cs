@@ -3,6 +3,7 @@ import egain from "../images/egain.png";
 import oracle from "../images/oracle.png";
 import sas from "../images/sas.png";
 import whitearrow from "../images/whitearrow.png";
+import { Link } from "react-router-dom";
 
 const Cards2 = () => {
   return (
@@ -35,16 +36,18 @@ const Cards2 = () => {
               partner in Nigeria based on successful implementations in the
               finance and telecoms sectors.
             </div>
-            <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />
-              </i>
-            </button>
+            <Link to="/services/egain/collaboration">
+              <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -65,16 +68,18 @@ const Cards2 = () => {
               partner in Nigeria based on successful implementations in the
               finance and telecoms sectors.
             </div>
-            <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />{" "}
-              </i>
-            </button>
+            <Link to="/services/sas">
+              <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />{" "}
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="md:ml-[250px] ml-4">
@@ -94,16 +99,18 @@ const Cards2 = () => {
               partner in Nigeria based on successful implementations in the
               finance and telecoms sectors.
             </div>
-            <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />
-              </i>
-            </button>
+            <Link to="/services/oracle">
+              <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="md:mt-24 md:ml-[50px] ml-[-4px]">
@@ -123,16 +130,18 @@ const Cards2 = () => {
               partner in Nigeria based on successful implementations in the
               finance and telecoms sectors.
             </div>
-            <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
-              <span className="mr-12">Read more</span>
-              <i className="fas fa-chevron-right">
-                <img
-                  src={whitearrow}
-                  alt="whitearrow"
-                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />{" "}
-              </i>
-            </button>
+            <Link to="/services/software">
+              <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+                <span className="mr-12">Read more</span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={whitearrow}
+                    alt="whitearrow"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />{" "}
+                </i>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

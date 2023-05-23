@@ -196,7 +196,10 @@ const Footer = ({ link }) => {
                   <div className="flex mt-4">
                     <ul className="flex">
                       <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-6 hover:bg-blue">
-                        <Link to="https://web.facebook.com/watch/?ref=search&v=3245498065762721&external_log_id=bf58f002-e9b0-4cda-8a5b-ec0cc2a17180&q=avante-cs">
+                        <Link
+                          target="_blank"
+                          to="https://web.facebook.com/watch/?ref=search&v=3245498065762721&external_log_id=bf58f002-e9b0-4cda-8a5b-ec0cc2a17180&q=avante-cs"
+                        >
                           <img
                             src={Facebook}
                             alt="Facebook"

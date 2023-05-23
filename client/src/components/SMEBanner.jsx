@@ -2,6 +2,7 @@ import { layout } from "../style";
 import consumer from "../images/consumer.png";
 import consumer1 from "../images/consumer1.png";
 import smallwhite from "../images/smallwhite.png";
+import { Link } from "react-router-dom";
 
 const SMEBanner = () => {
   return (
@@ -55,18 +56,20 @@ const SMEBanner = () => {
             mattis tempor at nisiLorem ipsum dolor sit amet consectetur. Proin
             vel orci tempor velit mattis tempor at nisi.
           </p>
-          <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
-            <span className="mx-8 text-[12px] font-inter font-normal">
-              Read more
-            </span>
-            <i className="fas fa-chevron-right">
-              <img
-                src={smallwhite}
-                alt="smallwhite"
-                className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-              />{" "}
-            </i>
-          </button>
+          <Link to="/contacts">
+            <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
+              <span className="mx-8 text-[12px] font-inter font-normal">
+                Read more
+              </span>
+              <i className="fas fa-chevron-right">
+                <img
+                  src={smallwhite}
+                  alt="smallwhite"
+                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                />{" "}
+              </i>
+            </button>
+          </Link>
         </div>
       </div>{" "}
     </div>

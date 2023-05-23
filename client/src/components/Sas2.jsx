@@ -86,7 +86,7 @@ const Sas2 = () => {
           className={`${layout.sectionInfo} px-6 md:mt-0 mt-[-430px] md:ml-[-40px]`}
         >
           <h2
-            className={`font-Inter font-semibold xs:text-[28px] mt-[20px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-8 px-2`}
+            className={`font-inter font-semibold xs:text-[28px] mt-[20px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-8 px-2`}
           >
             SAS <span className="text-primary ">ANALYTICS</span> <br />
             <span className="text-primary md:text-[28px] text-[20px]">

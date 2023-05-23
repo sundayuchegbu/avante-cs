@@ -25,7 +25,7 @@ const SocialCard = () => {
             Engage{" "}
           </h2>
         </div>
-        <p className="font-inter font-normal md:text-[14px] text-[12px] text-white">
+        <div className="font-inter font-normal md:text-[14px] text-[12px] text-white">
           Moderate multiple conversations, share notes and assign tasks to your
           team, while keeping track of the most urgent messages.{" "}
           <ul className="list-disc ml-8">
@@ -34,7 +34,7 @@ const SocialCard = () => {
             <li>Customer profle cards</li>
             <li>Assigning and archiving</li>
           </ul>
-        </p>
+        </div>
       </div>
 
       <div className="md:w-1/3 md:h-[294px] h-[220px] md:w-[329px] w-[355px] bg-dark p-6 border-2 mb-4 md:mx-12 mx-6  border-primary rounded-lg">

@@ -74,13 +74,6 @@ const BusinessConsulting = () => {
             alt="codeit"
             className="w-[488.47px] h-[535.1px]"
           />
-          {/* <div className="absolute bottom-[275px] top-[48px] left-[460px] right-0 w-4 bg-background"></div> */}
-          {/* <div className="absolute bottom-[348px] top-[48px] left-[260px] right-0 w-4 bg-background"></div> */}
-          {/* <div className="absolute bottom-0 top-[48px] left-[460px] right-[125px] h-[10%] bg-background"></div> */}
-          {/* <div className="absolute bottom-0 top-[350px] left-[460px] right-[125px] h-4 bg-background"></div> */}
-          {/* <div className="absolute bottom-0 top-[500px] right-[480px] left-[125px] h-[10%] bg-background"></div> */}
-          {/* <div className="absolute bottom-0 top-[300px] right-[480px] left-[125px] h-4 bg-background"></div> */}
-          {/* <div className="absolute bottom-0 top-[500px] right-[265px] left-[260px] h-4 bg-background"></div> */}
         </div>
 
         <div className="flex justify-end item-end mt-[-530px] mr-8">

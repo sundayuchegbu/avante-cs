@@ -11,10 +11,14 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className=" w-full flex p-8 justify-between items-center navbar">
+    <nav className=" w-full flex p-8  justify-between items-center navbar ">
       <NavLink to="/">
         {" "}
-        <img src={logo} alt="logo" className="w-[124px] h-[32px]" />
+        <img
+          src={logo}
+          alt="logo"
+          className="sm:w-[192.76pxpx] sm:h-[46px] -ml-12"
+        />
       </NavLink>
       <div className=" sm:flex hidden justify-end items-center flex-1">
         <NavLink
@@ -227,7 +231,7 @@ const Navbar = () => {
                 </Link>
               </Menu.Item>
             </div>
-            <div className="py-1" role="none">
+            <div className="py-0" role="none">
               <Menu.Item>
                 <Link
                   to="/clients/telecoms"
@@ -252,7 +256,7 @@ const Navbar = () => {
                 </Link>
               </Menu.Item>
             </div>
-            <div className="py-1" role="none">
+            <div className="py-0" role="none">
               <Menu.Item>
                 <Link
                   to="/clients/goods"
@@ -275,7 +279,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/contacts"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-0 text-secondary"
+          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary -mr-20 text-secondary"
         >
           CONTACT US
         </NavLink>
@@ -452,7 +456,7 @@ const Navbar = () => {
             </NavLink>
             <Menu
               as="div"
-              className="relative inline-block text-left mr-10 mb-6"
+              className="relative inline-block text-center mr-10 mb-6"
             >
               <div>
                 <Menu.Button
@@ -464,15 +468,16 @@ const Navbar = () => {
                 >
                   CLIENTS
                   <svg
-                    className="-mr-1 h-5 w-5 text-gray-400"
+                    className="-mr-1 h-5 w-5 text-gray-400 -mt-2"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      d="M12.79 7.21a.75.75 0 011.06.02L17 11.168l-3.71 3.938a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
                       clipRule="evenodd"
+                      transform="rotate(90 10 10)"
                     />
                   </svg>
                 </Menu.Button>

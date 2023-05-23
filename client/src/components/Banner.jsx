@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => (
   <div className="flex flex-col md:flex-row h-screen">
-    <div className="md:w-1/2 h-screen bg-primary flex flex-col justify-center items-center md:items-start p-8 hidden md:block">
+    <div className="md:w-1/2 h-screen bg-primary flex flex-col justify-center items-center sm:items-start p-8 hidden sm:block">
       <h2 className="font-inter font-semibold text-[50px] text-white font-bold mb-4 ml-[100px] mt-[100px]">
         Lorem ipsum dolor <br />
         sit amet consectetur.
@@ -21,10 +21,10 @@ const Banner = () => (
       </button>
     </div>
 
-    <div className="md:w-1/2  h-screen bg-cover bg-center hidden md:block ">
+    <div className="md:w-1/2  h-screen bg-cover bg-center hidden sm:block ">
       <img src={banner} alt="banner" className="w-full sm:h-screen " />
     </div>
-    <div className=" block md:hidden flex-col flex justify-center item-center bg-background">
+    <div className=" block sm:hidden flex-col flex justify-center item-center bg-background">
       <img src={home} alt="banner4" />
       <div className="flex-start bg-background mt-12">
         <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 ">

@@ -6,7 +6,7 @@ const Oracle2 = () => {
     <section className={` ${layout.section}`}>
       <div
         id="cta3"
-        className={`hidden md:block mr-56 mt-[400px] ${layout.sectionInfo}`}
+        className={`hidden sm:block mr-56 mt-[400px] ${layout.sectionInfo}`}
       >
         <ul className="relative ml-[100px] mt-[-360px]">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
@@ -71,20 +71,20 @@ const Oracle2 = () => {
             />{" "}
           </li>
         </ul>
-        <img src={bup} alt="bup" className="mt-[300px] mr-[180px] " />
-        <img src={bdown} alt="bdown" className=" mt-[730px] mr-[180px]" />
+        <img src={bup} alt="bup" className="mt-[300px] mr-[350px] " />
+        <img src={bdown} alt="bdown" className=" mt-[730px] mr-[350px]" />
       </div>
       <div id="cta4" className={`${layout.sectionInfo} px-6 mt-0]`}>
         <h2
           className={`font-Inter font-semibold sm:text-[16px] mt-[20px] text-[16px] text-black sm:leading-[40.8px] leading-[30.8px] w-full mb-8 `}
         >
           ORACLE <span className="text-primary ">DATABASE</span> <br />
-          <span className="text-primary md:text-[28px] text-[20px]">
+          <span className="text-primary sm:text-[28px] text-[20px]">
             Lorem Ipsum consectetur.{" "}
           </span>
         </h2>
         <div
-          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] md:mt-5 mt-2 mb-6 `}
+          className={`font-Inter font-normal text-black2 sm:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:mt-5 mt-2 mb-6 `}
         >
           Avante is a silver partner of SAS and a solution partner within the
           Customer Intelligence practice. Our Oracle Consultancy Practice is
