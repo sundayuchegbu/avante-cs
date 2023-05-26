@@ -1,4 +1,4 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import { Link } from "react-router-dom";
 import united from "../images/united.png";
 const United = () => {

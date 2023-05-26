@@ -1,7 +1,6 @@
 import React from "react";
 import { layout } from "../style";
 import lasgm from "../images/lasgm.png";
-import smalllasgm from "../images/smalllasgm.png";
 import { Link } from "react-router-dom";
 
 const LasgMinistry = () => {
