@@ -154,7 +154,7 @@ const BusinessConsulting = () => {
         <div
           className={`font-Inter font-normal text-black1 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
         >
-          <p className="text-dark list-disc leading-24 md:p-0 p-4 ">
+          <p className=" font-inter font-normal text-dark list-disc leading-[25.8px] md:p-0 p-4 ">
             Avante Consulting provides implementation solutions for our
             customers from pre-sales assistance through to “go-live” events.
             These solutions are based on a proven implementation methodologies
@@ -166,7 +166,7 @@ const BusinessConsulting = () => {
             industry-specific business expertise. Our implementation support
             services include, but are not limited to:
           </p>
-          <ul className="font-inter font-normal text-dark md:text-[14px] text-[12px] list-disc ml-12">
+          <ul className="font-inter font-normal text-dark md:text-[14px] text-[12px] list-disc ml-8">
             <li>
               Complete product implementations, encompassing all implementation
               phases from project definition to the final production “go-live”.
@@ -183,7 +183,7 @@ const BusinessConsulting = () => {
             </li>
             <li>Functional and technical operational support.</li>
           </ul>
-          <p className="font-inter font-normal text-dark1 md:text-[14px] text-[12px] md:p-0 p-4 list-disc mt-2">
+          <p className="font-inter font-normal text-dark1 md:text-[14px] text-[12px] md:p-0 p-4 list-disc mt-2 leading-[25.8px]">
             Our professionals share a vision and are selected based on quality,
             like-mindedness, and commitment to client service. Outstanding
             client service continues to be our top priority.

@@ -19,7 +19,7 @@ const ProductBanner = () => {
               MO <span className="text-secondary"> LOYAL</span>
             </h2>
             <div
-              className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6`}
+              className={`${styles.paragraph} max-w-[470px]  sm:p-auto mt-5 mb-6`}
             >
               <p className="text-dark">
                 MoLoyal is a customer rewards program that incentivizes
@@ -45,7 +45,7 @@ const ProductBanner = () => {
           <h1 className=" font-inter font-semibold flex ml-[50px] text-primary mt-[-23px]">
             LOYAL{" "}
           </h1>
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
             MoLoyal is a customer rewards program that incentivizes customers to
             make transactions in various industries by offering free airtime
             rewards. It also serves as a digital airtime retail and distribution

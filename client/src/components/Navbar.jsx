@@ -34,8 +34,9 @@ const Navbar = () => {
           ABOUT US
         </NavLink>
         <Menu as="div" className="relative group inline-block text-left mr-10 ">
-          <div className="">
+          <div className=" ">
             <Menu.Button
+              onMouseEnter={({ target }) => target.click()}
               type="button"
               className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
               id="menu-button"
@@ -177,6 +178,7 @@ const Navbar = () => {
         <Menu as="div" className="relative inline-block text-left mr-10">
           <div>
             <Menu.Button
+              onMouseEnter={({ target }) => target.click()}
               type="button"
               className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
               id="menu-button"
@@ -292,20 +294,20 @@ const Navbar = () => {
           alt="menu"
         />
         <div
-          className={`${
-            toggle ? "flex" : "hidden"
-          } p-6   absolute bg-grey w-full   top-20 right-0  my-4 min-w-[140px] sidenav`}
+          className={` p-6   absolute bg-background w-full h-full  top-20  pl-4 duration-500 py-24 min-w-[140px] ${
+            toggle ? "right-0" : "right-[-100%]"
+          }`}
         >
-          <div className="list-none flex flex-col justify-end items-center flex-1">
+          <div className="list-none px-3 text-left flex flex-col justify-start items-start flex-1 -mt-12">
             <NavLink
               to="/"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6"
+              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6 text-[14px]"
             >
               HOME
             </NavLink>
             <NavLink
               to="/about"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6"
+              className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10 mb-6"
             >
               ABOUT US
             </NavLink>
@@ -316,14 +318,14 @@ const Navbar = () => {
               <div>
                 <Menu.Button
                   type="button"
-                  className="inline-flex w-full justify-center gap-x-2 rounded-none bg-grey  text-sm  text-gray-900    ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  className="inline-flex w-full justify-end item-end gap-x-2 rounded-none bg-background  text-[14px]  text-gray-900    ring-inset ring-gray-300  hover:text-primary font-inter font-normal"
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
                 >
                   SERVICES
                   <svg
-                    className="-mr-1 h-5 w-5 text-gray-400 -mt-2"
+                    className="mr-32 h-5 w-5 text-gray-400 -mt-2.5"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -349,7 +351,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/consulting"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white text-[14px]"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
@@ -361,7 +363,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/software"
-                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-1"
@@ -374,7 +376,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/sas"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-2"
@@ -386,7 +388,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/egain/collaboration"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-3"
@@ -399,7 +401,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/egain/knowledge"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-4"
@@ -410,7 +412,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/media/management"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-5"
@@ -423,7 +425,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/services/oracle"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-6"
@@ -436,7 +438,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="services/web/development"
-                      className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 mb-4 text-[14px] text-center hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-6"
@@ -461,14 +463,14 @@ const Navbar = () => {
               <div>
                 <Menu.Button
                   type="button"
-                  className="inline-flex w-full justify-center gap-x-2 rounded-md bg-grey px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+                  className="inline-flex w-full justify-end item-end gap-x-2 rounded-none bg-background  text-[14px]  text-gray-900    ring-inset ring-gray-300  hover:text-primary font-inter font-normal"
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
                 >
                   CLIENTS
                   <svg
-                    className="-mr-1 h-5 w-5 text-gray-400 -mt-2"
+                    className="mr-32 h-5 w-5 text-gray-400 -mt-2.5"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -494,7 +496,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/clients/agencies"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
@@ -506,7 +508,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/clients/financial"
-                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-1"
@@ -519,7 +521,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/clients/telecoms"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-2"
@@ -531,7 +533,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/clients/sme"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-3"
@@ -544,7 +546,7 @@ const Navbar = () => {
                   <Menu.Item>
                     <Link
                       to="/clients/goods"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      className="text-black1 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-4"
@@ -557,13 +559,13 @@ const Navbar = () => {
             </Menu>
             <NavLink
               to="/news"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mb-6"
+              className="font-inter font-normal text-black1 cursor-pointer text-[14px] hover:text-primary mb-6"
             >
               NEWS
             </NavLink>
             <NavLink
-              to="/contact"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mb-0 text-secondary"
+              to="/contacts"
+              className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mb-0 text-secondary"
             >
               CONTACT US
             </NavLink>

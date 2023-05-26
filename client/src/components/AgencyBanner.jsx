@@ -2,7 +2,6 @@ import React from "react";
 import govagency from "../images/govagency.png";
 import smallagency from "../images/smallagency.png";
 import smallwhite from "../images/smallwhite.png";
-import whitearrow from "../images/whitearrow.png";
 import { layout } from "../style";
 import { Link } from "react-router-dom";
 
@@ -19,7 +18,7 @@ const AgencyBanner = () => {
               agencies{" "}
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[20.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
               velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
@@ -27,9 +26,6 @@ const AgencyBanner = () => {
             </div>
             <Link to="/contacts">
               {" "}
-              {/* <button className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded">
-                Get started{" "}
-              </button> */}
               <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
                   Read more

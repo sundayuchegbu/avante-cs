@@ -27,7 +27,7 @@ const DevBanner = () => {
           <div className={layout.sectionInfo}>
             <h2 className={`${styles.heading3} mb-4 `}>Web Development </h2>
             <div
-              className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6`}
+              className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6 leading-[25.8px]`}
             >
               <p className="text-dark">
                 Avante is a software development company that specializes in
@@ -39,8 +39,17 @@ const DevBanner = () => {
               </p>
             </div>
             <Link to="/contacts">
-              <button className="bg-secondary text-white flex flex-start font-bold py-4 px-24 rounded">
-                Request a Demo
+              <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[207px] rounded-lg  bg-secondary ">
+                <span className="mx-8 text-[12px] font-inter font-normal">
+                  Request a demo
+                </span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={smallwhite}
+                    alt="smallwhite"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />{" "}
+                </i>
               </button>
             </Link>
           </div>

@@ -10,11 +10,11 @@ const Codeit = () => {
     >
       <div className={layout.sectionImgReverse}>
         <div className="flex mt-24">
-          <ul className="sm:mt-[305px] sm:mr-8 mt-[90px]  px-4 ">
+          <ul className="sm:mt-[305px] sm:mr-8 mt-[90px]  px-4  ">
             <li className="w-full border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2 ">
               <input
                 autoComplete="off"
-                id="list-radio-license"
+                id="list-radio-license1"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -26,7 +26,7 @@ const Codeit = () => {
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
               <input
                 autoComplete="off"
-                id="list-radio-license"
+                id="list-radio-license2"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -37,7 +37,7 @@ const Codeit = () => {
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
               <input
                 autoComplete="off"
-                id="list-radio-license"
+                id="list-radio-license3"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -48,7 +48,7 @@ const Codeit = () => {
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
               <input
                 autoComplete="off"
-                id="list-radio-license"
+                id="list-radio-license4"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -59,7 +59,7 @@ const Codeit = () => {
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
               <input
                 autoComplete="off"
-                id="list-radio-license"
+                id="list-radio-license5"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -70,7 +70,7 @@ const Codeit = () => {
             <li className="w-full block hidden sm:block border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
               <input
                 autoComplete="off"
-                id="list-radio-license"
+                id="list-radio-license6"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -178,20 +178,21 @@ const Codeit = () => {
           </span>
         </h2>
         <div
-          className={`font-Inter font-normal  text-background text-[15px] leading-[40.8px] max-w-[470px]  mt-5 mb-6`}
+          className={`font-Inter font-normal  text-background text-[15px] leading-[25.8px] max-w-[470px]  mt-5 mb-6`}
         >
-          <p className="text-dark ">
+          <div className="text-dark ">
             We are a leading business and technology consulting organisation,
             with a very strong focus on Customer Experience, Knowledge
-            Management, Loyalty and Ticketing solutions. We have our own
-            research and development team who develop innovative business and
-            mobile solutions. We also provide and support ATM security products
-            to banks and financial institutions.
-          </p>
+            Management, Loyalty and Ticketing solutions.
+            <p />
+            <br /> We have our own research and development team who develop
+            innovative business and mobile solutions. We also provide and
+            support ATM security products to banks and financial institutions.
+          </div>
         </div>
-        <Link to="/services/consulting">
+        <Link to="/about">
           <button className="bg-secondary text-white flex flex-start font-normal font-inter py-2 px-4 rounded">
-            Read more
+            Learn more
           </button>
         </Link>
       </div>

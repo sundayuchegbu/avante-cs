@@ -6,7 +6,7 @@ const Banner3 = () => {
       <img
         src={banner3}
         alt="Banner3"
-        className="md:w-full w-[414px] md:h-auto h-[282.58px]"
+        className="sm:w-full w-[414px] sm:h-auto h-[282.58px]"
       />
     </div>
   );

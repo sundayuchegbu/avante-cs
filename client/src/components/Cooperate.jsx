@@ -1,4 +1,4 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import solution from "../images/solution.png";
 const Cooperate = () => (
   <section className={`flex md:flex-row flex-col sm:py-16 py-6 px-4`}>
@@ -76,16 +76,18 @@ const Cooperate = () => (
     </div>
     <div className={layout.sectionInfo}>
       <h2
-        className={`font-Inter font-semibold xs:text-[16px] mt-[20px] text-[16px] text-black xs:leading-[60.8px] leading-[66.8px] w-full  `}
+        className={`font-inter font-semibold xs:text-[16px] mt-[20px] text-[16px] text-black xs:leading-[30.8px] leading-[66.8px] w-full  `}
       >
         CORPORATE <span className="text-secondary ">PROFILE</span> <br />
       </h2>
-      <h3 className="text-secondary font-Inter font-semibold xs:text-[28px] mt-[10px] text-[20px] text-black xs:leading-[40.8px] leading-[30.8px] w-full">
+      <h3 className="text-secondary font-inter font-semibold xs:text-[16px] mt-[10px] text-[20px] text-black xs:leading-[30.8px] leading-[30.8px] w-full">
         {" "}
         Consulting for transformation <br />
         through Business solution provision
       </h3>
-      <p className={`${styles.paragraph3} max-w-[470px] mt-4 mb-6`}>
+      <p
+        className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-4 mb-6`}
+      >
         Avante Consulting Solutions provides business and technology services
         and solutions to participants in the Financial Services, Public Sector,
         Telecommunications, Energy, Retail, Education and Consumer Goods

@@ -2,11 +2,11 @@ import React from "react";
 import logo from "../images/logo.png";
 import styles from "../style";
 import mail from "../images/mail.png";
-import Google from "../images/Google.png";
-import Twitter from "../images/Twitter.png";
+
 import Facebook from "../images/Facebook.png";
 import phone from "../images/phone.png";
-// import sas2 from "../images/sas2.png";
+import sas2 from "../images/sas2.png";
+import instagram from "../images/instagram.png";
 import { Link } from "react-router-dom";
 
 const Footer = ({ link }) => {
@@ -20,8 +20,9 @@ const Footer = ({ link }) => {
             <div className="flex-[3.0] flex flex-col justify-start mr-[100px] w-full ">
               <img src={logo} alt="logo" className="w-full " />
               <p className={`${styles.paragraph5} mt-2 max-w-[470px]  `}>
-                Funding freemium long tail hypotheses first mover advantage
-                assets ownership niche market startup investor.
+                We are a leading business and technology consulting
+                organisation, with a very strong focus on Customer Experience,
+                Knowledge Management, Loyalty and Ticketing solutions.
               </p>
               <div className="overflow-auto  flex items-center mt-4 mb-2">
                 <img
@@ -30,7 +31,7 @@ const Footer = ({ link }) => {
                   className="w-[14px] h-[14px] mr-4 object-contain"
                 />
                 <p className="text-[16px] text-background font-inter">
-                  agensi@mail.com
+                  info@avante-cs.com
                 </p>
               </div>
 
@@ -41,7 +42,7 @@ const Footer = ({ link }) => {
                   className="w-[14px] h-[14px] mr-4  object-contain"
                 />
                 <p className="text-[16px] text-background font-inter text-[12px]">
-                  +234-1-2953541
+                  +234 -1-2953541
                 </p>
               </div>
             </div>
@@ -130,13 +131,6 @@ const Footer = ({ link }) => {
                   >
                     Our partners{" "}
                   </Link>
-                  {/* <Link
-                    to="https://www.sas.com/en_us/solutions/customer-intelligence.html"
-                    target="_blank"
-                    className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block`}
-                  >
-                    <img src={sas2} alt="sas" className="w-[150px]" />{" "}
-                  </Link> */}
                 </ul>
               </div>
             </div>
@@ -198,16 +192,16 @@ const Footer = ({ link }) => {
                       <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-6 hover:bg-blue">
                         <Link
                           target="_blank"
-                          to="https://web.facebook.com/watch/?ref=search&v=3245498065762721&external_log_id=bf58f002-e9b0-4cda-8a5b-ec0cc2a17180&q=avante-cs"
+                          to="https://web.facebook.com/AvanteConsultingSolutions?_rdc=1&_rdr"
                         >
                           <img
                             src={Facebook}
                             alt="Facebook"
-                            className="w-full h-full p-3"
+                            className="w-full h-full p-3 ml-0.5"
                           />
                         </Link>
                       </div>
-                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
+                      {/* <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
                         <Link>
                           <img
                             src={Google}
@@ -215,11 +209,14 @@ const Footer = ({ link }) => {
                             className="w-full h-full p-3"
                           />
                         </Link>
-                      </div>
+                      </div> */}
                       <div className=" flex  h-full w-full  rounded-full ring-2 ring-white hover:bg-blue  mr-7">
-                        <Link>
+                        <Link
+                          target="_blank"
+                          to="https://www.instagram.com/avanteconsultingsolutions"
+                        >
                           <img
-                            src={Twitter}
+                            src={instagram}
                             alt="twitter"
                             className="w-full h-full p-3 "
                           />
@@ -227,6 +224,13 @@ const Footer = ({ link }) => {
                       </div>
                     </ul>
                   </div>
+                  <Link
+                    to="https://www.sas.com/en_us/solutions/customer-intelligence.html"
+                    target="_blank"
+                    className={`font-inter font-normal text-[16px] leading-[24px] text-background mt-[20px] hover:text-primary  cursor-pointer block`}
+                  >
+                    <img src={sas2} alt="sas" className="w-[200px]" />{" "}
+                  </Link>
                 </ul>
               </div>
             </div>

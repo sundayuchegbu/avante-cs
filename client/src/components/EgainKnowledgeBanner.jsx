@@ -1,6 +1,5 @@
 import styles from "../style";
 import knowledge from "../images/knowledge.png";
-import base from "../images/base.png";
 import smallknowledge from "../images/smallknowledge.png";
 import { Link } from "react-router-dom";
 const EgainKnowledgeBanner = () => {
@@ -17,13 +16,13 @@ const EgainKnowledgeBanner = () => {
               <div className="absolute inset-0 flex items-center sm:p-4 pt-4 justify-center">
                 <div className="text-white  max-w-[470px]  ">
                   <h1
-                    className={` font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[60.8px] leading-[66.8px]   `}
+                    className={` font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[55.8px] leading-[66.8px]   `}
                   >
                     Lorem ipsum dolor
                     <br className="sm:block hidden " /> sit amet consectetur.
                   </h1>
                   <p
-                    className={`${styles.paragraph2} max-w-[336px]  mt-5   mb-8 `}
+                    className={`${styles.paragraph2} max-w-[336px]  mt-5 leading-[25.8px]   mb-8 `}
                   >
                     Lorem ipsum dolor sit amet consectetur. Proin vel orci
                     tempor velit mattis tempor at nisiLorem ipsum dolor sit amet
@@ -46,9 +45,6 @@ const EgainKnowledgeBanner = () => {
                 alt="banner"
                 className="block w-[561px] h-[567px] mt-12  "
               />
-              {/* <div className="absolute top-[48px] bottom-0  left-[270px] -right-0 h-24 bg-primary"></div> */}
-              {/* <div className="absolute top-[530px] bottom-0  right-[490px] left-0 h-32 bg-primary"></div> */}
-              {/* <div className="absolute top-0 bottom-0 left-[270px] w-4 bg-primary"></div> */}
             </div>
           </div>
         </div>
@@ -62,17 +58,19 @@ const EgainKnowledgeBanner = () => {
           <h1 className=" font-inter font-semibold flex ml-[70px] text-primary mt-[-23px]">
             KNOWLEDGE
           </h1>
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
             eGain offers two software solutions - KnowledgeAgent for empowering
             customer service agents with accurate answers and eGain SelfService
             for providing productive self-service experiences with seamless
             escalations to live agents when needed.
           </p>
-          <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
-            <span className="mx-[60px] text-[14px] font-inter font-normal">
-              eGain Demo Chat{" "}
-            </span>
-          </button>
+          <Link to="/contacts">
+            <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
+              <span className="mx-[60px] text-[14px] font-inter font-normal">
+                eGain Demo Chat{" "}
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

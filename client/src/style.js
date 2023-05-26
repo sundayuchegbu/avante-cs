@@ -15,7 +15,7 @@ const styles = {
   heading5:
     "font-inter font-semibold xs:text-[20px] mt-[20px] text-[16px] text-black2 xs:leading-[60.8px] leading-[66.8px] w-full",
   paragraph:
-    "font-inter font-normal text-dimWhite text-[18px] leading-[30.8px]",
+    "font-inter font-normal text-dimWhite text-[18px] leading-[25.8px]",
   paragraph2:
     "font-inter font-normal text-dimWhite text-[14px] leading-[20.8px]",
   paragraph3: "font-inter font-normal text-black2 text-[14px] leading-[30.8px]",

@@ -16,7 +16,7 @@ const FinancialSector = () => {
               Financial sectors
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[20.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
               velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
@@ -58,7 +58,7 @@ const FinancialSector = () => {
               <h1 className="flex ml-[107px] mt-[-23px] font-semibold text-primary">
                 SECTORS
               </h1>
-              <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+              <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
                 Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
                 velit mattis tempor at nisiLorem ipsum dolor sit amet
                 consectetur. Proin vel orci tempor velit mattis tempor at nisi.

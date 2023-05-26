@@ -10,14 +10,14 @@ const Banner = () => (
         Lorem ipsum dolor <br />
         sit amet consectetur.
       </h2>
-      <p className=" font-inter text-[16px] text-white mb-6 ml-[100px]">
+      <p className=" font-inter text-[16px] leading-[25.8px] text-white mb-6 ml-[100px]">
         Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
         <br /> velit mattis tempor at nisiLorem ipsum dolor sit amet
         consectetur.
         <br /> Proin vel orci tempor velit mattis tempor at nisi.
       </p>
       <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-[100px] w-[148px] h-[46.36px]">
-        Read more{" "}
+        Get in touch{" "}
       </button>
     </div>
 
@@ -38,7 +38,7 @@ const Banner = () => (
         <Link to="/contacts">
           <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
             <span className="mx-8 text-[12px] font-inter font-normal">
-              Read more
+              Get in touch
             </span>
             <i className="fas fa-chevron-right">
               <img

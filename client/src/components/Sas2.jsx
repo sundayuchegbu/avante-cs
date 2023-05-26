@@ -9,7 +9,7 @@ const Sas2 = () => {
         <ul className="relative ml-[100px] mt-[-900px] hidden md:block">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license1"
               type="radio"
               value=""
               name="list-radio"
@@ -20,7 +20,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license2"
               type="radio"
               value=""
               name="list-radio"
@@ -30,7 +30,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license3"
               type="radio"
               value=""
               name="list-radio"
@@ -40,7 +40,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license4"
               type="radio"
               value=""
               name="list-radio"
@@ -50,7 +50,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license5"
               type="radio"
               value=""
               name="list-radio"
@@ -60,7 +60,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license6"
               type="radio"
               value=""
               name="list-radio"
@@ -86,7 +86,7 @@ const Sas2 = () => {
           className={`${layout.sectionInfo} px-6 md:mt-0 mt-[-430px] md:ml-[-40px]`}
         >
           <h2
-            className={`font-inter font-semibold xs:text-[28px] mt-[20px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-8 px-2`}
+            className={`font-inter font-semibold xs:text-[28px] mt-[20px] text-[16px] text-black sm:leading-[45.8px] leading-[30.8px] w-full mb-8 px-2`}
           >
             SAS <span className="text-primary ">ANALYTICS</span> <br />
             <span className="text-primary md:text-[28px] text-[20px]">
@@ -94,7 +94,7 @@ const Sas2 = () => {
             </span>
           </h2>
           <div
-            className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] md:mt-5 mt-[-10px] mb-6 px-2`}
+            className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] md:mt-5 mt-[-10px] mb-6 px-2`}
           >
             Avante is a silver partner of SAS and a solution partner within the
             Customer Intelligence practice. Avante has extensive experience in

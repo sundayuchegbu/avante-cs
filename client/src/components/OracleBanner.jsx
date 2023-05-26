@@ -2,9 +2,8 @@ import { layout } from "../style";
 import database1 from "../images/database1.png";
 import smalloracle from "../images/smalloracle.png";
 import smallwhite from "../images/smallwhite.png";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const OracleBanner = () => {
-  const navigate = useNavigate();
   return (
     <div>
       <div className="hidden md:block">
@@ -16,18 +15,27 @@ const OracleBanner = () => {
               Oracle Database
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[20.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
               velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
               Proin vel orci tempor velit mattis tempor at nisi.
             </div>
-            <button
-              className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded"
-              onClick={() => navigate("/contacts")}
-            >
-              Get Started
-            </button>
+            <Link to="/contact">
+              {" "}
+              <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
+                <span className="mx-8 text-[12px] font-inter font-normal">
+                  Read more
+                </span>
+                <i className="fas fa-chevron-right">
+                  <img
+                    src={smallwhite}
+                    alt="smallwhite"
+                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                  />{" "}
+                </i>
+              </button>
+            </Link>
           </div>
           <div className={`${layout.sectionImg} lg:mx-24 lg:px-24   relative`}>
             <img

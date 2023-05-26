@@ -23,12 +23,12 @@ const InfoCard = ({ icon, index, title, content }) => {
           className="w-[163px] h-[163px] "
         />
       </div>
-      <div className="flex-1 flex flex-col ml-3">
+      <div className="flex-1 flex flex-col ml-3 ]">
         <h4 className="font-inter font-normal md:text-[12px] leading-[20px]  text-secondary md:mt-8   ">
           {title}
         </h4>
         <p
-          className="font-inter font-normal md:text-[24px] leading-[20px]  text-dark2 cursor-pointer md:mt-4"
+          className="font-inter font-normal md:text-[24px] leading-[30.8px]  text-dark2 cursor-pointer md:mt-4"
           onClick={() => navigate("/news")}
         >
           {content}{" "}
@@ -97,7 +97,7 @@ const Info = () => {
         </Link>
       </div>
 
-      <div className={`${layout.sectionImg} hidden md:block flex-col `}>
+      <div className={`${layout.sectionImg} hidden md:block flex-col   `}>
         {features.map((feature, index) => (
           <InfoCard key={feature.id} {...feature} index={index} />
         ))}

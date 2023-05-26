@@ -3,7 +3,7 @@ const SocialCard = () => {
     <div className="md:flex justify-between  md:mx-2 mb-8 ">
       <div className="md:w-1/3 md:h-[294px] h-[220px] md:w-[329px] w-[355px] bg-dark p-6 border-2 mb-4 md:mx-12 mx-6 border-primary  rounded-lg">
         <div className="flex items-center   ">
-          <h2 className="ml-4 font-inter font-semibold text-[18px]  text-white">
+          <h2 className=" font-inter font-semibold text-[18px]  text-white">
             Publish
           </h2>
         </div>
@@ -21,7 +21,7 @@ const SocialCard = () => {
 
       <div className="md:w-1/3 md:h-[294px] h-[220px] md:w-[329px] w-[355px] bg-dark p-6 border-2 mb-4 md:mx-12 mx-6 border-primary  rounded-lg">
         <div className="flex items-center mb-4">
-          <h2 className="ml-4 font-inter font-semibold text-[18px] text-white">
+          <h2 className=" font-inter font-semibold text-[18px] text-white">
             Engage{" "}
           </h2>
         </div>
@@ -39,11 +39,11 @@ const SocialCard = () => {
 
       <div className="md:w-1/3 md:h-[294px] h-[220px] md:w-[329px] w-[355px] bg-dark p-6 border-2 mb-4 md:mx-12 mx-6  border-primary rounded-lg">
         <div className="flex items-center mb-4">
-          <h2 className="ml-4 font-inter font-semibold text-[18px] text-white">
+          <h2 className=" font-inter font-semibold text-[18px] text-white">
             Listen
           </h2>
         </div>
-        <p className="font-inter font-normal md:text-[14px] text-[12px] text-white">
+        <div className="font-inter font-normal md:text-[14px] text-[12px] text-white">
           Monitor social media and the internet for people and topics that will
           determine audience segments and tactics for your next campaign.{" "}
           <ul className="list-disc ml-8">
@@ -52,7 +52,7 @@ const SocialCard = () => {
             <li>Custom audience creation</li>
             <li>Crisis alerts</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   );

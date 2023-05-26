@@ -6,7 +6,7 @@ const Softcard = () => {
       <h2 class="font-inter text-xl font-semibold md:mb-8 mb-4 text-primary  md:text-[28px] text-[20px] md:p-0 p-4">
         Custom software <span className="text-dark">improves efficiency.</span>
       </h2>
-      <p class="font-inter font-normal md:mt-0 mt-[-10px] text-black1 md:mb-4 md:text-[14px] text-[12px] md:p-0 p-4">
+      <p class="font-inter font-normal md:mt-0 mt-[-10px] text-black1 md:mb-4 md:text-[14px] leading-[25.8px] text-[12px] md:p-0 p-4">
         Avante develops custom built software in-house to support our
         e-Commerce, Mobile Solutions, Customer Relationship Management and
         Enterprise Resource Management specialisations. We have built custom
@@ -18,7 +18,7 @@ const Softcard = () => {
         Knowledge solutions and 3rd Party Customer Relationship Management
         software to improve productivity in contact centers.
       </p>
-      <p class="font-inter text-normal text-black md:text-[14px] text-[12px] md:mb-32 mb-12  md:mt-8 px-4">
+      <p class="font-inter text-normal text-black md:text-[14px] text-[12px] md:mb-32 mb-12  md:mt-8 px-4 leading-[25.8px]">
         Some of the technologies used by our consultants in various projects
         include;
       </p>

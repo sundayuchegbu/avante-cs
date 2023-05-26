@@ -15,7 +15,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background border-r-2 border-gray-300 p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px] ">
+            <p className="  text-black1 font-inter font-normal leading-[25.8px] xs:text-[14px] text-[12px] ">
               is an integral part of the eGain software suite, eGain’s live chat
               software integrates seamlessly with the other social experience,
               web experience, and contact center applications in the suite. It
@@ -37,7 +37,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background border-r-2 border-gray-300 p-4">
-            <div className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <div className="text-black1 font-inter font-normal sm:text-[14px] leading-[25.8px] text-[12px]">
               is a dynamic case management solution that helps companies provide
               quick, high-quality, and cost-efficient resolution of customer
               issues across traditional and emerging interaction channels. It is
@@ -66,7 +66,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background  border-gray-300  p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <p className="text-black1 font-inter font-normal leading-[25.8px] sm:text-[14px] text-[12px]">
               is a lifelike, conversational agent providing a unique,
               interactive, and personal way for users to get answers and
               assistance on your website, 24 hours a day, 7 days a week. A user
@@ -90,7 +90,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background border-r-2 border-gray-300 p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <p className="text-black1 font-inter font-normal leading-[25.8px] xs:text-[14px] text-[12px]">
               is an integral part of the eGain software suite, eGain’s live chat
               software integrates seamlessly with the other social experience,
               web experience, and contact center applications in the suite. It
@@ -112,7 +112,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background border-r-2 border-gray-300 p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <p className="text-black1 font-inter leading-[25.8px] font-normal xs:text-[14px] text-[12px]">
               is a dynamic case management solution that helps companies provide
               quick, high-quality, and cost-efficient resolution of customer
               issues across traditional and emerging interaction channels. It is
@@ -134,7 +134,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background  border-gray-300  p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <p className="text-black1 font-inter font-normal xs:text-[14px] leading-[25.8px] text-[12px]">
               is a lifelike, conversational agent providing a unique,
               interactive, and personal way for users to get answers and
               assistance on your website, 24 hours a day, 7 days a week. A user
@@ -158,7 +158,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background border-r-2 border-gray-300 p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <p className="text-black1 font-inter font-normal leading-[25.8px] xs:text-[14px] text-[12px]">
               is an integral part of the eGain software suite, eGain’s live chat
               software integrates seamlessly with the other social experience,
               web experience, and contact center applications in the suite. It
@@ -180,7 +180,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background  border-gray-300 p-4">
-            <p className="text-black1 font-inter font-normal md:text-[14px] text-[12px]">
+            <p className="text-black1 font-inter font-normal xs:text-[14px] leading-[25.8px] text-[12px]">
               is a dynamic case management solution that helps companies provide
               quick, high-quality, and cost-efficient resolution of customer
               issues across traditional and emerging interaction channels. It is

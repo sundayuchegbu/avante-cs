@@ -18,7 +18,7 @@ const MoloyalDetails = () => {
           Free airtime rewards program.
         </h1>
         <div
-          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] leading-[20.8px] max-w-[470px] mt-5 mb-6 `}
+          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] mt-5 mb-6 `}
         >
           MoLoyal™, the unique customer rewards programme, which helps
           businesses improve customer retention by rewarding customers with free

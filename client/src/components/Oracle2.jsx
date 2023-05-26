@@ -8,10 +8,10 @@ const Oracle2 = () => {
         id="cta3"
         className={`hidden sm:block mr-56 mt-[400px] ${layout.sectionInfo}`}
       >
-        <ul className="relative ml-[100px] mt-[-360px]">
+        <ul className="relative ml-[50px] mt-[-360px]">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license1"
               type="radio"
               value=""
               name="list-radio"
@@ -22,7 +22,7 @@ const Oracle2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license2"
               type="radio"
               value=""
               name="list-radio"
@@ -32,7 +32,7 @@ const Oracle2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license3"
               type="radio"
               value=""
               name="list-radio"
@@ -42,7 +42,7 @@ const Oracle2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license4"
               type="radio"
               value=""
               name="list-radio"
@@ -52,7 +52,7 @@ const Oracle2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license5"
               type="radio"
               value=""
               name="list-radio"
@@ -62,7 +62,7 @@ const Oracle2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license6"
               type="radio"
               value=""
               name="list-radio"
@@ -71,8 +71,8 @@ const Oracle2 = () => {
             />{" "}
           </li>
         </ul>
-        <img src={bup} alt="bup" className="mt-[300px] mr-[350px] " />
-        <img src={bdown} alt="bdown" className=" mt-[730px] mr-[350px]" />
+        <img src={bup} alt="bup" className="mt-[300px] mr-[300px] " />
+        <img src={bdown} alt="bdown" className=" mt-[730px] mr-[300px]" />
       </div>
       <div id="cta4" className={`${layout.sectionInfo} px-6 mt-0]`}>
         <h2

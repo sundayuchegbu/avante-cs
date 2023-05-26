@@ -9,19 +9,11 @@ const EgainBanner = () => {
         <div id="egain" className={` ${layout.sectionReverse}`}>
           <div className={`${layout.sectionImgReverse}  relative`}>
             <img src={egainbanner} alt="egainbanner" />
-
-            {/* <div className="absolute top-[-2px] bottom-0  left-[480px] right-[90px] h-16 bg-bluebg"></div> */}
-            {/* <div className="absolute top-[340px] bottom-0  left-[480px] right-[90px] h-4 bg-bluebg"></div> */}
-            {/* <div className="absolute top-[508px] bottom-0  right-[481px] left-[92px] h-14 bg-bluebg"></div> */}
-            {/* <div className="absolute top-[250px] bottom-0  right-[481px] left-[90px] h-4 bg-bluebg"></div> */}
-            {/* <div className="absolute top-[0] bottom-0 left-[242px] w-4 bg-bluebg"></div> */}
-            {/* <div className="absolute top-[22px] bottom-[0px] left-[480px] w-4 bg-bluebg"></div> */}
-            {/* <div className="absolute top-[440px] bottom-0 left-[252px] right-[255px]  h-4 bg-bluebg"></div> */}
           </div>
           <div className={layout.sectionInfo}>
             <h2 className={`${styles.heading3} mb-4 `}>eGain Collaboration</h2>
             <div
-              className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6`}
+              className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
             >
               <p className="text-dark">
                 Our partnership with eGain strengthens our commitment to the
@@ -55,11 +47,13 @@ const EgainBanner = () => {
             partner in Nigeria based on successful implementations in the
             finance and telecoms sectors. Some of eGain's features include:
           </p>
-          <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
-            <span className="mx-[60px] text-[14px] font-inter font-normal">
-              eGain Demo Chat{" "}
-            </span>
-          </button>
+          <Link to="/contacts">
+            <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
+              <span className="mx-[60px] text-[14px] font-inter font-normal">
+                eGain Demo Chat{" "}
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

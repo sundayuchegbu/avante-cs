@@ -10,7 +10,7 @@ const ProductSample = () => {
   const navigate = useNavigate();
   return (
     <section id="cta" className="flex flex-row  sm:py-16 py-6">
-      <div className="md:ml-24 flex-[1.5] flex justify-center items-start flex-col">
+      <div className="md:ml-8 md:mr-8 flex-[1.5] flex justify-center items-start flex-col">
         <h2
           className={` underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] mb-8
           ${styles.heading5}`}
@@ -30,7 +30,7 @@ const ProductSample = () => {
           </h3>{" "}
         </div>
         <p
-          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[20.8px] leading-[20px] max-w-[470px] mt-5 mb-5 `}
+          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[20.8px] leading-[25.8px] max-w-[470px] mt-5 mb-5 `}
         >
           MoLoyal is also a digital airtime retail and distribution platform
           where airtime from all major networks will be electronically sold with
@@ -41,7 +41,7 @@ const ProductSample = () => {
           className="text-secondary"
           onClick={() => navigate("/products")}
         >
-          Read more{" "}
+          Learn more{" "}
         </button>
         <img
           src={arrow4}
@@ -115,11 +115,11 @@ const ProductSample = () => {
           <img
             src={productimage1}
             alt="productimage1"
-            className="md:[w-400px] md:h-[400px] w-[214px] h-[157px]  mb-4"
+            className="md:w-[543px] md:h-[500px] w-[214px] ml-4 h-[157px]  mb-4"
           />
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[450px] `}>
+      <div className={`${layout.sectionInfo} mt-[410px] `}>
         <img
           src={productimage2}
           alt="productimage2"

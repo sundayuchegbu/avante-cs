@@ -208,21 +208,21 @@ export const features = [
     id: "feature-1",
     icon: secondimage,
     title: "Post by admin",
-    content: "Avante partners sas for Customer Intelligence event",
+    content: "Avante partners SAS for Customer Intelligence Event",
   },
   {
     id: "feature-2",
     icon: info2,
     title: "Post by admin",
     content:
-      "Golive news about Fidelity bank on eGain with a focus on social channels",
+      "Golive news about Fidelity Bank on eGain with a focus on social channels",
   },
   {
     id: "feature-3",
     icon: info3,
     title: "Post by admin",
     content:
-      "Avante Consulting Solutions Has Become SAS CI 360 Certified and A Silver...",
+      "Avante Consulting Solutions has become SAS CI 360 certified and a silver partner",
   },
   {
     id: "feature-4",

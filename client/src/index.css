@@ -128,6 +128,24 @@
     -50%
   ); /* center the other image horizontally and vertically */
 }
+#contact {
+  position: relative;
+  width: 50%;
+  height: 600px; /* adjust this to your desired height */
+  background-image: url("/src/images/contact.png");
+  background-repeat: no-repeat;
+  background-position: left top; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#contact img {
+  position: absolute;
+  top: -90%;
+  right: -75%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* center the other image horizontally and vertically */
+}
 
 #cta5 {
   position: relative;
@@ -138,6 +156,7 @@
   background-repeat: no-repeat;
   background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
 }
+
 #ctas {
   background: linear-gradient(to right, #e1edff 30%, #fafcff 50%, #ffffff 70%);
 }
