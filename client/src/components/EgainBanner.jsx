@@ -40,7 +40,7 @@ const EgainBanner = () => {
           <h1 className=" font-inter font-semibold flex ml-[70px] text-primary mt-[-23px]">
             COLLABORATION
           </h1>
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
             Our partnership with eGain strengthens our commitment to the
             industry's most innovative omni-channel customer service and
             knowledge management solutions. Avante is the number one eGain

@@ -1,9 +1,8 @@
 import React from "react";
 import caller from "../images/caller.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Caller = () => {
-  const navigate = useNavigate();
   return (
     <div>
       <div className="relative py-[200px] mb-12 w-full h-[500] hidden md:block">
@@ -20,12 +19,12 @@ const Caller = () => {
           <p className="font-inter text-lg mb-4">
             Have any questions or enquiry about our services ?
           </p>
-          <button
-            className="bg-secondary text-white flex flex-start font-bold py-2 px-4 rounded"
-            onClick={() => navigate("/contacts")}
-          >
-            Read more
-          </button>
+          <Link to="/contacts">
+            {" "}
+            <button className="bg-secondary text-white flex flex-start font-bold py-2 px-4 rounded">
+              Read more
+            </button>
+          </Link>
         </div>
       </div>
       <div className="block md:hidden flex item-center">

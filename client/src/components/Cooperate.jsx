@@ -7,7 +7,7 @@ const Cooperate = () => (
         <ul className=" md:mr-24 mr-4  md:mt-[200px] mt-[110px]">
           <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
             <input
-              id="list-radio-license"
+              id="list-radio-license17"
               type="radio"
               value=""
               name="list-radio"
@@ -18,7 +18,7 @@ const Cooperate = () => (
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
             <input
-              id="list-radio-license"
+              id="list-radio-license18"
               type="radio"
               value=""
               name="list-radio"
@@ -28,7 +28,7 @@ const Cooperate = () => (
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
             <input
-              id="list-radio-license"
+              id="list-radio-license19"
               type="radio"
               value=""
               name="list-radio"
@@ -38,7 +38,7 @@ const Cooperate = () => (
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
             <input
-              id="list-radio-license"
+              id="list-radio-license20"
               type="radio"
               value=""
               name="list-radio"
@@ -48,7 +48,7 @@ const Cooperate = () => (
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
             <input
-              id="list-radio-license"
+              id="list-radio-license21"
               type="radio"
               value=""
               name="list-radio"
@@ -58,7 +58,7 @@ const Cooperate = () => (
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
             <input
-              id="list-radio-license"
+              id="list-radio-license22"
               type="radio"
               value=""
               name="list-radio"

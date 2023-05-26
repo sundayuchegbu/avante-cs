@@ -11,12 +11,12 @@ const FinancialSector = () => {
         <div id="financial" className={`mb-32  h-[721px] ${layout.section}`}>
           <div className={`mx-32 ${layout.sectionInfo}`}>
             <h2
-              className={`font-Inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
+              className={`font-inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
               Financial sectors
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
               velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.

@@ -52,7 +52,7 @@ const ProductSample = () => {
           <ul className=" mr-8 mt-0 mt-12">
             <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
               <input
-                id="list-radio-license"
+                id="list-radio-license11"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -63,7 +63,7 @@ const ProductSample = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
-                id="list-radio-license"
+                id="list-radio-license12"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -73,7 +73,7 @@ const ProductSample = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
-                id="list-radio-license"
+                id="list-radio-license13"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -83,7 +83,7 @@ const ProductSample = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
-                id="list-radio-license"
+                id="list-radio-license14"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -93,7 +93,7 @@ const ProductSample = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
-                id="list-radio-license"
+                id="list-radio-license15"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -103,7 +103,7 @@ const ProductSample = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
               <input
-                id="list-radio-license"
+                id="list-radio-license16"
                 type="radio"
                 value=""
                 name="list-radio"

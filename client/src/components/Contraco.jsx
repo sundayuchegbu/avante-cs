@@ -1,4 +1,4 @@
-import styles, { layout } from "../style";
+import { layout } from "../style";
 import contraco from "../images/contraco.png";
 import { Link } from "react-router-dom";
 

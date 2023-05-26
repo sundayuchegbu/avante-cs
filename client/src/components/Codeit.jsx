@@ -100,7 +100,7 @@ const Codeit = () => {
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"
-                  id="list-radio-license"
+                  id="list-radio-license21"
                   type="radio"
                   value=""
                   name="list-radio"
@@ -112,7 +112,7 @@ const Codeit = () => {
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"
-                  id="list-radio-license"
+                  id="list-radio-license22"
                   type="radio"
                   value=""
                   name="list-radio"
@@ -123,7 +123,7 @@ const Codeit = () => {
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"
-                  id="list-radio-license"
+                  id="list-radio-license23"
                   type="radio"
                   value=""
                   name="list-radio"
@@ -134,7 +134,7 @@ const Codeit = () => {
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"
-                  id="list-radio-license"
+                  id="list-radio-license24"
                   type="radio"
                   value=""
                   name="list-radio"
@@ -145,7 +145,7 @@ const Codeit = () => {
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"
-                  id="list-radio-license"
+                  id="list-radio-license25"
                   type="radio"
                   value=""
                   name="list-radio"
@@ -156,7 +156,7 @@ const Codeit = () => {
               <li className="w-full hidden sm:block  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"
-                  id="list-radio-license"
+                  id="list-radio-license26"
                   type="radio"
                   value=""
                   name="list-radio"
@@ -170,7 +170,7 @@ const Codeit = () => {
       </div>
       <div className={`${layout.sectionInfo} sm:mt-[-180px] mt-[100px]`}>
         <h2
-          className={`font-Inter font-semibold xs:text-[16px] mt-[20px] text-[16px] text-black xs:leading-[30.8px] leading-[40.8px] w-full   `}
+          className={`font-inter font-semibold xs:text-[16px] mt-[20px] text-[16px] text-black xs:leading-[30.8px] leading-[40.8px] w-full   `}
         >
           WHO WE ARE <br className="sm:block  hidden" />
           <span className="text-primary text xs:text-[24px] text-[24px] font-normal font-inter block">

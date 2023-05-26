@@ -16,13 +16,6 @@ const DevBanner = () => {
               alt="webimage"
               className="block w-[561px] h-[567px]"
             />
-            {/* <div className="absolute top-0 bottom-0  left-[480px] right-[90px] h-24 bg-background"></div> */}
-            {/* <div className="absolute top-[390px] bottom-0  left-[480px] right-20 h-4 bg-background"></div> */}
-            {/* <div className="absolute top-[500px] bottom-0  right-[460px] left-[93px] h-18 bg-background"></div> */}
-            {/* <div className="absolute top-[250px] bottom-0  right-[460px] left-[93px] h-4 bg-background"></div> */}
-            {/* <div className="absolute top-0 bottom-0 left-[279px] w-4 bg-background"></div> */}
-            {/* <div className="absolute top-0 bottom-0 left-[470px] w-4 bg-background"></div> */}
-            {/* <div className="absolute top-[480px] bottom-0 left-[279px] right-[255px]  h-4 bg-background"></div> */}
           </div>
           <div className={layout.sectionInfo}>
             <h2 className={`${styles.heading3} mb-4 `}>Web Development </h2>

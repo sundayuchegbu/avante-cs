@@ -8,7 +8,7 @@ const BusinessConsulting = () => {
         <ul className="absolute mt-[300px] ml-8 ">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license31"
               type="radio"
               value=""
               name="list-radio"
@@ -19,7 +19,7 @@ const BusinessConsulting = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license32"
               type="radio"
               value=""
               name="list-radio"
@@ -29,7 +29,7 @@ const BusinessConsulting = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license33"
               type="radio"
               value=""
               name="list-radio"
@@ -39,7 +39,7 @@ const BusinessConsulting = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license34"
               type="radio"
               value=""
               name="list-radio"
@@ -49,7 +49,7 @@ const BusinessConsulting = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license35"
               type="radio"
               value=""
               name="list-radio"
@@ -59,7 +59,7 @@ const BusinessConsulting = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license"
+              id="list-radio-license36"
               type="radio"
               value=""
               name="list-radio"
@@ -80,7 +80,7 @@ const BusinessConsulting = () => {
           <ul className=" ">
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
-                id="list-radio-license"
+                id="list-radio-license37"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -91,7 +91,7 @@ const BusinessConsulting = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
-                id="list-radio-license"
+                id="list-radio-license38"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -101,7 +101,7 @@ const BusinessConsulting = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
-                id="list-radio-license"
+                id="list-radio-license39"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -111,7 +111,7 @@ const BusinessConsulting = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
-                id="list-radio-license"
+                id="list-radio-license40"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -121,7 +121,7 @@ const BusinessConsulting = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
-                id="list-radio-license"
+                id="list-radio-license41"
                 type="radio"
                 value=""
                 name="list-radio"
@@ -131,7 +131,7 @@ const BusinessConsulting = () => {
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
-                id="list-radio-license"
+                id="list-radio-license42"
                 type="radio"
                 value=""
                 name="list-radio"

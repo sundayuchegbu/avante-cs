@@ -21,7 +21,7 @@ const styles = {
   paragraph3: "font-inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph4: "font-inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph5:
-    "font-inter font-normal text-background text-[14px] leading-[30.8px]",
+    "font-inter font-normal text-background text-[14px] leading-[25.8px]",
   paragraph6:
     "font-inter font-normal text-secondary text-[14px] leading-[30.8px]",
 

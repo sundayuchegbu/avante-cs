@@ -9,7 +9,7 @@ const Sas2 = () => {
         <ul className="relative ml-[100px] mt-[-900px] hidden md:block">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license1"
+              id="list-radio-license51"
               type="radio"
               value=""
               name="list-radio"
@@ -20,7 +20,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license2"
+              id="list-radio-license52"
               type="radio"
               value=""
               name="list-radio"
@@ -30,7 +30,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license3"
+              id="list-radio-license53"
               type="radio"
               value=""
               name="list-radio"
@@ -40,7 +40,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license4"
+              id="list-radio-license54"
               type="radio"
               value=""
               name="list-radio"
@@ -50,7 +50,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license5"
+              id="list-radio-license55"
               type="radio"
               value=""
               name="list-radio"
@@ -60,7 +60,7 @@ const Sas2 = () => {
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
-              id="list-radio-license6"
+              id="list-radio-license56"
               type="radio"
               value=""
               name="list-radio"

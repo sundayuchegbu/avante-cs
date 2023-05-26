@@ -14,7 +14,7 @@ const TelecomsBanner = () => {
               Telecoms sectors{" "}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[20.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
               velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
