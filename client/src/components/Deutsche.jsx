@@ -1,4 +1,4 @@
-import styles, { layout } from "../style";
+import  { layout } from "../style";
 import deutsche from "../images/deutsche.png";
 import { Link } from "react-router-dom";
 
