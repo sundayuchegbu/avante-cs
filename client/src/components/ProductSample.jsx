@@ -19,7 +19,7 @@ const ProductSample = () => {
         </h2>
         <div className=" flex items-center justify-center    mb-4 hidden md:block">
           <h3 className=" font-inter font-normal md:text-[28px] text-[16px]  ">
-            Lorem Ipsum consectefgghjj
+            Lorem Ipsum consectefgghjjb
             <br />
             Lorem Ipsum consectetur.
           </h3>{" "}
