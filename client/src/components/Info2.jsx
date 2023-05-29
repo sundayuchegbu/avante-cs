@@ -11,7 +11,7 @@ const InfoCard = ({ icon, index, title, content }) => {
     <div
       className={`  flex flex-row  rounded-[20px] ${
         index !== features.length - 1 ? "mb-2" : "mb-0"
-      } feature-card ${index === features.length - 4 ? "mt-[310px]" : "mt-0"}`}
+      } feature-card ${index === features.length - 4 ? "mt-[30px]" : "mt-0"}`}
     >
       <div
         className={`rounded-full ${styles.flexCenter}  cursor-pointer md:mt-8 `}
