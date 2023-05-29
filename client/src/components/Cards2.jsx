@@ -8,22 +8,26 @@ import { Link } from "react-router-dom";
 const Cards2 = () => {
   return (
     <div className="flex flex-col md:mb-12 mb-8">
-      <div className=" flex  md:justify-center justify-end md:items-end items-end md:mr-[1130px] ml-[200px]  ">
-        <h1 className="md:mb-4 font-inter font-semibold text-[16px]  ">
+      <div className=" flex  sm:justify-center justify-end sm:items-end items-end sm:mr-[1130px] mr-[10px]  ">
+        <h1 className="sm:mb-4 font-inter font-semibold text-[16px]  ">
           OUR <span className="text-secondary ">PARTNERS</span>{" "}
         </h1>{" "}
       </div>
-      <div className=" flex items-center justify-center md:items-end items-center md:mr-[890px] ml-[150px] mb-4">
-        <h1 className="md:mb-8 font-inter font-normal md:text-[28px] text-[16px]  ">
+      <div className=" flex items-center justify-center md:items-end items-center sm:mr-[890px] ml-[150px] mb-4">
+        <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[16px]  ">
           Lorem Ipsum consectetur.{" "}
         </h1>{" "}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:-gap-6 gap-8">
         <div className="sm:ml-[310px] ml-4">
-          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  md:w-[482px] w-[338px] md:h-[293px] h-[223px] ">
-            <div className="text-white text-4xl md:text-6xl  md:ml-[-72px] ml-[-330px] sm:mt-[-110px] rounded-full p-4 absolute">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
+            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
-                <img src={microsoft} alt="vector" className="h-16 w-16" />
+                <img
+                  src={microsoft}
+                  alt="vector"
+                  className="sm:h-16 h-10 sm:w-16 w-10"
+                />
               </i>
             </div>
             <div className="text-white ml-8 md:text-[32px] text-[24px] font-inter font-semibold mb-4">
@@ -49,17 +53,17 @@ const Cards2 = () => {
         </div>
 
         <div className="md:mt-24 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-center md:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
-            <div className="text-white text-4xl sm:text-6xl md:ml-[400px] sm:ml-[310px] mr-[-310px] -mt-16 sm:mt-[-110px] rounded-full p-4 absolute">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
+            <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
               <i>
                 <img
                   src={sas}
                   alt="vector"
-                  className="sm:h-16 sm:w-16 h-14 w-14"
+                  className="sm:h-16  h-10 sm:w-16 w-10"
                 />
               </i>
             </div>
-            <div className="text-white md:ml-2 ml-[-45px]  md:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
+            <div className="text-white sm:ml-2 ml-[-45px]  sm:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
               SAS{" "}
             </div>
             <div className=" font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
@@ -81,10 +85,14 @@ const Cards2 = () => {
           </div>
         </div>
         <div className="sm:ml-[310px] ml-4">
-          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  md:w-[482px] w-[338px] md:h-[293px] h-[223px] ">
-            <div className="text-white text-4xl md:text-6xl  sm:ml-[-72px] ml-[-330px] sm:mt-[-110px] rounded-full p-4 absolute">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
+            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
-                <img src={oracle} alt="oracle" className="h-16 w-16" />
+                <img
+                  src={oracle}
+                  alt="oracle"
+                  className="sm:h-16 h-12 sm:w-16 w-12"
+                />
               </i>
             </div>
             <div className="text-white ml-8 md:text-[32px] text-[24px] font-inter font-semibold mb-4">
@@ -109,13 +117,17 @@ const Cards2 = () => {
           </div>
         </div>
         <div className="md:mt-24 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-center md:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
-            <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[310px]  sm:mt-[-110px] rounded-full p-4 absolute">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
+            <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
               <i>
-                <img src={egain} alt="icon" className="h-16 w-16" />
+                <img
+                  src={egain}
+                  alt="icon"
+                  className="sm:h-16  h-12 sm:w-16 w-12"
+                />
               </i>
             </div>
-            <div className="text-white md:ml-2 ml-[-45px]  md:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
+            <div className="text-white sm:ml-2 -ml-4  md:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
               Microsoft{" "}
             </div>
             <div className="font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
@@ -132,7 +144,7 @@ const Cards2 = () => {
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
                   />{" "}
                 </i>
-              </button>
+              </button>{" "}
             </Link>
           </div>
         </div>

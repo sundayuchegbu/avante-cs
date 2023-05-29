@@ -1,7 +1,7 @@
 import React from "react";
-import ten from "./images/ten.png";
-import arrow4 from "./images/arrow4.png";
-import styles, { layout } from "./style";
+import ten from "../images/ten.png";
+import arrow4 from "../images/arrow4.png";
+import styles, { layout } from "../style";
 import { Link } from "react-router-dom";
 
 const NewsCard = () => {
