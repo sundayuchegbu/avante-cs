@@ -170,10 +170,10 @@ const Codeit = () => {
       </div>
       <div className={`${layout.sectionInfo} sm:mt-[-180px] mt-[100px]`}>
         <h2
-          className={`font-inter font-semibold xs:text-[16px] mt-[20px] text-[16px] text-black xs:leading-[30.8px] leading-[40.8px] w-full   `}
+          className={`font-inter font-semibold xs:text-[16px] mt-[20px] text-[16px] text-black xs:leading-[40.8px] leading-[40.8px] w-full   `}
         >
           WHO WE ARE <br className="sm:block  hidden" />
-          <span className="text-primary text xs:text-[24px] text-[24px] font-normal font-inter block">
+          <span className="text-primary text xs:text-[28px] text-[24px] font-normal font-inter block">
             Business & Technology Consulting
           </span>
         </h2>

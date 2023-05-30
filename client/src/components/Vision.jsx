@@ -16,7 +16,7 @@ const Vision = () => (
       >
         OUR <span className="text-primary">VISION</span> <br className="" />
         <span className="text-primary xs:text-[28px] mt-[10px]">
-          Lorem Ipsum consectetur.
+          Envisioning Tomorrow's Possibilities.{" "}
         </span>
       </h2>
       <div

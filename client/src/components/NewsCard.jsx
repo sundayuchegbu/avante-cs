@@ -16,9 +16,7 @@ const NewsCard = () => {
             OUR <span className="text-primary">NEWS</span>
           </h2>
           <h3 className=" font-inter font-normal md:text-[28px] text-[16px] mb-12 ">
-            Lorem Ipsum consectefgghjj
-            <br />
-            Lorem Ipsum consectetur.
+            Insights, Updates, and Industry Highlights.
           </h3>{" "}
           <img
             src={ten}

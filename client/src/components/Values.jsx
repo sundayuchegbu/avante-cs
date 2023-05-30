@@ -17,7 +17,7 @@ const Values = () => (
         OUR <span className="text-primary">VALUES</span>{" "}
       </h2>
       <h2 className="text-primary font-Inter font-semibold xs:text-[28px] md:mt-[0px] mt-[-60px] text-[20px]  xs:leading-[60.8px] leading-[66.8px] w-full md:p-0 p-4">
-        Lorem Ipsum consectetur.
+        Core Guiding Principles{" "}
       </h2>
 
       <p
@@ -25,9 +25,9 @@ const Values = () => (
       >
         Our values of honesty, integrity, commitment and delivery are important
         to us. As our business continues to grow we work hard to keep these
-        values at the core of our operation. We are a company that values
-        individuals and teamwork. We continually strive as a firm to make a
-        positive and lasting impact.
+        values at the core of our operation.<p className="mb-2"></p> We are a
+        company that values individuals and teamwork. We continually strive as a
+        firm to make a positive and lasting impact.
       </p>
     </div>
   </section>

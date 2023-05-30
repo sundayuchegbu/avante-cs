@@ -8,17 +8,17 @@ import { Link } from "react-router-dom";
 export const Card = () => {
   return (
     <div className="flex flex-col sm:mb-0 mb-8">
-      <div className=" flex  sm:justify-center justify-center sm:items-end items-end sm:ml-[900px] ml-[200px] mb-4 ">
-        <h1 className="sm:mb-4 font-inter font-semibold text-[14px]  ">
+      <div className=" flex  sm:justify-center justify-center sm:items-end items-end sm:ml-[900px] ml-[200px] mb-2 ">
+        <h1 className="sm:mb-4 font-inter font-semibold sm:text-[16px] text-[14px]  ">
           OUR <span className="text-primary ">SERVICES</span>{" "}
         </h1>{" "}
       </div>
-      <div className=" flex  sm:justify-center justtify-end sm:items-center items-end sm:ml-[700px] ml-[150px] mb-4">
-        <h1 className="sm:mb-8 font-inter font-normal sm:text-[28px] text-[14px]">
-          Lorem Ipsum consectetur.{" "}
+      <div className=" flex  sm:justify-center justtify-end sm:items-center items-end sm:ml-[700px] ml-[165px] mb-4">
+        <h1 className="sm:mb-8 font-inter font-normal sm:text-[28px] text-[12px]">
+          Your Success, Our Priority{" "}
         </h1>{" "}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <div className="sm:ml-32 ">
           <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
             <div className="text-white text-4xl sm:text-6xl bg-primary sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] rounded-full p-4  absolute">

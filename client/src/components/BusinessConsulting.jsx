@@ -149,7 +149,7 @@ const BusinessConsulting = () => {
           BUSINESS <span className="text-primary ">CONSULTING</span> <br />
         </h2>
         <p className="text-primary text-primary font-Inter font-semibold sm:text-[28px] sm:mt-[12px] mt-[-12px] text-[20px] text-black sm:leading-[30.8px] leading-[10.8px] md:p-0 p-4 w-full">
-          Lorem Ipsum consectetur.
+          Expert Advisory Solutions
         </p>
         <div
           className={`font-Inter font-normal text-black1 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}

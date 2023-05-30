@@ -8,18 +8,18 @@ import { Link } from "react-router-dom";
 const Cards2 = () => {
   return (
     <div className="flex flex-col md:mb-12 mb-8">
-      <div className=" flex  sm:justify-center justify-end sm:items-end items-end sm:mr-[1130px] mr-[10px]  ">
+      <div className=" flex  sm:justify-center justify-end sm:items-end items-end sm:mr-[1000px] mr-[10px]  ">
         <h1 className="sm:mb-4 font-inter font-semibold text-[16px]  ">
           OUR <span className="text-secondary ">PARTNERS</span>{" "}
         </h1>{" "}
       </div>
       <div className=" flex items-center justify-center md:items-end items-center sm:mr-[890px] ml-[150px] mb-4">
         <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[16px]  ">
-          Lorem Ipsum consectetur.{" "}
+          Strategic Collaborative Alliances{" "}
         </h1>{" "}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 sm:-gap-6 gap-8">
-        <div className="sm:ml-[310px] ml-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
+        <div className="sm:ml-[280px]  ml-4">
           <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
             <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
@@ -84,7 +84,7 @@ const Cards2 = () => {
             </Link>
           </div>
         </div>
-        <div className="sm:ml-[310px] ml-4">
+        <div className="sm:ml-[280px] sm:-mt-10 ml-4">
           <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
             <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
@@ -116,7 +116,7 @@ const Cards2 = () => {
             </Link>
           </div>
         </div>
-        <div className="md:mt-24 md:ml-[50px] ml-4">
+        <div className="sm:mt-10 md:ml-[50px] ml-4">
           <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
             <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
               <i>

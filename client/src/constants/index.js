@@ -5,12 +5,13 @@ import fidlogo from "../images/fidlogo.png";
 import lagferry from "../images/lagferry.png";
 import laswa from "../images/laswa.png";
 import stanbic from "../images/stanbic.png";
-import secondimage from "../images/secondimage.png";
-import info2 from "../images/info2.png";
-import info3 from "../images/info3.png";
-import info4 from "../images/info4.png";
+import general from "../images/general.png";
+// import info1 from "../images/info1.png";
+// import info3 from "../images/info3.png";
+// import info4 from "../images/info4.png";
 import ellipse1 from "../images/Ellipse1.png";
 import ellipse2 from "../images/Ellipse2.png";
+// import info6 from "../images/info6.jpg";
 import ellipse3 from "../images/Ellipse3.png";
 
 export const navLinks = [
@@ -206,27 +207,27 @@ export const clients = [
 export const features = [
   {
     id: "feature-1",
-    icon: secondimage,
+    icon: general,
     title: "Post by admin",
     content: "Avante partners SAS for Customer Intelligence Event",
   },
   {
     id: "feature-2",
-    icon: info2,
+    icon: general,
     title: "Post by admin",
     content:
       "Golive news about Fidelity Bank on eGain with a focus on social channels",
   },
   {
     id: "feature-3",
-    icon: info3,
+    icon: general,
     title: "Post by admin",
     content:
       "Avante Consulting Solutions has become SAS CI 360 certified and a silver partner",
   },
   {
     id: "feature-4",
-    icon: info4,
+    icon: general,
     title: "Post by admin",
     content: "Deployment of online accounting application for Decima and Co",
   },

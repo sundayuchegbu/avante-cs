@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../images/logo.png";
 import styles from "../style";
 import mail from "../images/mail.png";
+import insta from "../images/insta.png";
 
 import Facebook from "../images/Facebook.png";
 import phone from "../images/phone.png";
@@ -197,28 +198,32 @@ const Footer = ({ link }) => {
                           <img
                             src={Facebook}
                             alt="Facebook"
-                            className="w-full h-full p-3 ml-0.5"
+                            className="w-full h-full p-3 ml-1"
                           />
                         </Link>
                       </div>
-                      {/* <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
-                        <Link>
-                          <img
-                            src={Google}
-                            alt="google"
-                            className="w-full h-full p-3"
-                          />
-                        </Link>
-                      </div> */}
+
                       <div className=" flex  h-full w-full  rounded-full ring-2 ring-white hover:bg-blue  mr-7">
                         <Link
                           target="_blank"
-                          to="https://www.instagram.com/avanteconsultingsolutions"
+                          to="https://www.linkedin.com/company/avante-consulting-solutions-ltd/mycompany/"
                         >
                           <img
                             src={instagram}
                             alt="twitter"
                             className="w-full h-full p-3 "
+                          />
+                        </Link>
+                      </div>
+                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
+                        <Link
+                          to="https://www.instagram.com/avanteconsultingsolutions"
+                          target="_blank"
+                        >
+                          <img
+                            src={insta}
+                            alt="insta"
+                            className="w-full  h-full p-3"
                           />
                         </Link>
                       </div>

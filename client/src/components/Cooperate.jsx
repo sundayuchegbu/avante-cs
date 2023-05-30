@@ -83,7 +83,7 @@ const Cooperate = () => (
       <h3 className="text-secondary font-inter font-semibold xs:text-[16px] mt-[10px] text-[20px] text-black xs:leading-[30.8px] leading-[30.8px] w-full">
         {" "}
         Consulting for transformation <br />
-        through Business solution provision
+        by providing Business Tools
       </h3>
       <p
         className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-4 mb-6`}
@@ -91,11 +91,12 @@ const Cooperate = () => (
         Avante Consulting Solutions provides business and technology services
         and solutions to participants in the Financial Services, Public Sector,
         Telecommunications, Energy, Retail, Education and Consumer Goods
-        industry. We introduce leading edge practices and offer business
-        advisory, business and functional transformation and IT consulting to
-        some of Nigeria’s leading organisations, governments and institutions.
-        We leverage our deep industry insight and integrated breadth of
-        capabilities to enable transformation for our clients and the industry.
+        industry.<p className="mb-2"></p> We introduce leading edge practices
+        and offer business advisory, business and functional transformation and
+        IT consulting to some of Nigeria’s leading organisations, governments
+        and institutions.<p className="mb-2"></p> We leverage our deep industry
+        insight and integrated breadth of capabilities to enable transformation
+        for our clients and the industry.
       </p>
     </div>
   </section>

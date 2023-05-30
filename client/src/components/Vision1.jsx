@@ -11,7 +11,7 @@ const Vision1 = () => (
       <h1
         className={`font-Inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
       >
-        Lorem Ipsum consectetur.{" "}
+        Delivering Excellence Together.{" "}
       </h1>
       <div
         className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[20.8px] max-w-[470px] md:mt-0 mt-5 mb-6`}
@@ -32,11 +32,12 @@ const Vision1 = () => (
           <li className="mt-4">
             We strive for excellence and aim to exceed expectations. We work
             hard to achieve our goals and we encourage our staff to be
-            ambitious. By ensuring we provide the right resources at the right
-            time, we aim to maximise the client business potential. Retaining
-            our competitive edge through innovation is central to the way we
-            operate and we are always looking at ways to improve our business
-            processes and services.
+            ambitious. <p className="mb-2"></p>
+            By ensuring we provide the right resources at the right time, we aim
+            to maximise the client business potential. <p className="mb-2"></p>
+            Retaining our competitive edge through innovation is central to the
+            way we operate and we are always looking at ways to improve our
+            business processes and services.
           </li>
         </ul>
       </div>

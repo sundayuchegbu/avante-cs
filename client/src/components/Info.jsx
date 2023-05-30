@@ -1,4 +1,4 @@
-import info5 from "../images/info5.png";
+import info1 from "../images/info1.jpg";
 import arrow4 from "../images/arrow4.png";
 import { features } from "../constants";
 import { Link, useNavigate } from "react-router-dom";
@@ -44,23 +44,23 @@ const Info = () => {
     <section id="features" className={`md:mx-32 ${layout.section}  `}>
       <div className={` ${layout.sectionInfo}`}>
         <h2
-          className={`font-inter font-semibold underline-offset-[28px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4  xs:text-[16px] md:mt-[20px] text-[20px] text-black2 xs:leading-[60.8px] leading-[66.8px] md:mb-12 w-full`}
+          className={`font-inter font-semibold underline-offset-[28px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4  xs:text-[16px] md:mt-[20px] text-[20px] text-black2 xs:leading-[30.8px] leading-[66.8px] md:mb-12 w-full`}
         >
           OUR <span className="text-primary">NEWS</span>
         </h2>
         <h3
-          className={`font-Inter font-normal xs:text-[28px] mt-[20px] text-[20px] text-black2 xs:leading-[40.8px] leading-[40.8px] w-full md:mb-12`}
+          className={`font-Inter font-normal xs:text-[28px] mt-[10px] text-[20px] text-black2 xs:leading-[40.8px] leading-[40.8px] w-full md:mb-12`}
         >
           <span className="md:text-[28px]  font-inter font-normal">
-            Lorem Ipsum consectefggh
+            Stay Informed{" "}
           </span>{" "}
           <br />
-          Lorem Ipsum consectetur.{" "}
+          Latest Updates and Insights{" "}
         </h3>
 
         <img
-          src={info5}
-          alt="info5"
+          src={info1}
+          alt="info1"
           className="mt-8 md:w-[638px] md:h-[422px] "
         />
         <p className="font-inter md:mt-4  md:mb-4 mt-2 text-[12px] ">
