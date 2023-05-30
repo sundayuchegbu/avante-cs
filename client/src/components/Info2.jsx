@@ -24,11 +24,11 @@ const InfoCard = ({ icon, index, title, content }) => {
         />
       </div>
       <div className="flex-1 flex flex-col ml-3 ]">
-        <h4 className="font-inter font-normal md:text-[12px] leading-[20px]  text-secondary md:mt-8   ">
+        <h4 className="font-inter font-normal md:text-[12px] leading-[25.8px]  text-secondary md:mt-8   ">
           {title}
         </h4>
         <p
-          className="font-inter font-normal md:text-[24px] leading-[30.8px]  text-dark2 cursor-pointer md:mt-4"
+          className="font-inter font-normal md:text-[24px] leading-[25.8px]  text-dark2 cursor-pointer md:mt-4"
           onClick={() => navigate("/news")}
         >
           {content}{" "}
@@ -42,13 +42,13 @@ const Info2 = () => {
   const navigate = useNavigate();
   return (
     <section id="features" className={`sm:mx-32 ${layout.section}  `}>
-      <div className={` ${layout.sectionInfo}`}>
+      <div className={`sm:mx-0 mx-4 ${layout.sectionInfo}`}>
         <img
           src={ten}
           alt="ten"
           className="sm:w-[634px] w-full sm:h-[445px] h-[238px]"
         />
-        <p className="font-inter md:mt-4  md:mb-4 mt-2 text-[12px] ">
+        <p className="font-inter sm:mt-4  md:mb-4 mt-2 text-[12px] ">
           AVANTE @10! | Thursday, 10 DECEMBER 2022
         </p>
 
