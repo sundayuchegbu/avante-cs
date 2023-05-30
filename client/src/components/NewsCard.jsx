@@ -23,7 +23,7 @@ const NewsCard = () => {
           <img
             src={ten}
             alt="ten"
-            className="sm:w-[634px] w-[37..34px] sm:h-[445px] h-[238px]"
+            className="sm:w-[634px] w-full sm:h-[445px] h-[238px]"
           />
         </div>
       </div>

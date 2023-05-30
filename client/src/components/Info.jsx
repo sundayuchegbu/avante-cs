@@ -71,7 +71,7 @@ const Info = () => {
           10 Years Avante History
         </h3>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[20.8px]  max-w-[470px] md:mt-[10px]w-full `}
+          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px]  max-w-[470px] md:mt-[10px]w-full `}
         >
           2012 – The year we were founded, Signed a Partner Reseller agreement
           with eGain 2013 – Successfully launched digital multichannel customer

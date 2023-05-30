@@ -295,13 +295,13 @@ const Navbar = () => {
         />
         <div
           className={` p-6   absolute bg-background w-full h-full  top-20  pl-4 duration-500 py-24 min-w-[140px] ${
-            toggle ? "right-0" : "right-[-100%]"
+            toggle ? "right-0 " : "right-[-100%] && collapse"
           }`}
         >
-          <div className="list-none px-3 text-left flex flex-col justify-start items-start flex-1 -mt-12">
+          <div className="list-none px-3 text-left   flex flex-col justify-start items-start flex-1 -mt-12">
             <NavLink
               to="/"
-              className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6 text-[14px]"
+              className=" font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10 mb-6 text-[14px]"
             >
               HOME
             </NavLink>

@@ -1,4 +1,4 @@
-import info5 from "../images/info5.png";
+import ten from "../images/ten.png";
 import arrow4 from "../images/arrow4.png";
 import { features } from "../constants";
 import { Link, useNavigate } from "react-router-dom";
@@ -41,12 +41,12 @@ const InfoCard = ({ icon, index, title, content }) => {
 const Info2 = () => {
   const navigate = useNavigate();
   return (
-    <section id="features" className={`md:mx-32 ${layout.section}  `}>
+    <section id="features" className={`sm:mx-32 ${layout.section}  `}>
       <div className={` ${layout.sectionInfo}`}>
         <img
-          src={info5}
-          alt="info5"
-          className="mt-8 md:w-[638px] md:h-[422px] "
+          src={ten}
+          alt="ten"
+          className="sm:w-[634px] w-full sm:h-[445px] h-[238px]"
         />
         <p className="font-inter md:mt-4  md:mb-4 mt-2 text-[12px] ">
           AVANTE @10! | Thursday, 10 DECEMBER 2022
@@ -56,7 +56,7 @@ const Info2 = () => {
           10 Years Avante History
         </h3>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[20.8px]  max-w-[470px] md:mt-[10px]w-full `}
+          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px]  max-w-[470px] md:mt-[10px]w-full `}
         >
           2012 – The year we were founded, Signed a Partner Reseller agreement
           with eGain 2013 – Successfully launched digital multichannel customer
