@@ -15,19 +15,20 @@ const SocialMedia = () => {
             />
           </div>
           <div className={layout.sectionInfo}>
-            <h2 className={`${styles.heading3} mb-4 p-6 text-secondary`}>
-              Social Media <br className="sm:block hidden" />
-              Management <br className="sm:block hidden" />{" "}
-              <span className="text-primary">(Falcon.io)</span>
+            <h2
+              className={`${styles.heading3} sm:-mt-8 mb-4 p-6 text-secondary`}
+            >
+              Harness the Power of Social <br className="sm:block hidden" />
+              Media for Business Success <br className="sm:block hidden" />{" "}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] sm:p-auto mt-5 mb-6 p-6`}
+              className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] sm:p-auto sm:-mt-5 mb-6 p-6`}
             >
-              Falcon is a Unified Social Media Management Platform which allows
-              marketing t eams manage all their social channels, contact and
-              customer data with greater ease and impact. You will love the
-              intuit interface, backed by our dedication to above and beyond
-              support.
+              In the ever-evolving world of social media, effectively managing
+              your online presence is essential for staying ahead of the
+              competition. At Avante Consulting, we specialize in providing
+              comprehensive social media management services that are tailored
+              to meet the unique needs of your business.
             </div>
           </div>
         </div>
@@ -36,17 +37,15 @@ const SocialMedia = () => {
         <img src={smallmedia} alt="smallemedia" />
         <div className="flex-start bg-background mt-12">
           <h1 className=" font-inter font-semibold flex ml-[20px] text-secondary mt-[-23px] mb-4">
-            SOCIAL MEDIA MANAGEMENT{" "}
-          </h1>
-          <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 text-primary">
-            (Falcon.io){" "}
+            Harness the Power of Social Media for Business Success{" "}
           </h1>
 
           <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
-            Falcon is a Unifed Social Media Management Platform which allows
-            marketing teams manage all their social channels, contact and
-            customer data with greater ease and impact. You will love the intuit
-            interface, backed by our dedication to above and beyond support.
+            In the ever-evolving world of social media, effectively managing
+            your online presence is essential for staying ahead of the
+            competition. At Avante Consulting, we specialize in providing
+            comprehensive social media management services that are tailored to
+            meet the unique needs of your business.
           </p>
           <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
             <span className="mx-[60px] text-[14px] font-inter font-normal">

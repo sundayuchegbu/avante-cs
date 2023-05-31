@@ -30,7 +30,7 @@ const EgainKnowledgeBanner = () => {
                   <Link to="/contacts">
                     {" "}
                     <button className="bg-secondary font-inter text-white flex  md:flex-center sm:items-center items-center font-normal py-2 px-8 mb-4 rounded">
-                      eGain Demo Chat{" "}
+                      Contact us{" "}
                     </button>
                   </Link>
                 </div>

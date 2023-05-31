@@ -186,7 +186,7 @@ const Footer = ({ link }) => {
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer `}
                   >
                     Penthouse 11B, Kayode <br /> Otitoju Street, Off Admiralty
-                    Road, Lekki Phase 1, Lagos{" "}
+                    Road, Lekki Phase 1, Lagos.{" "}
                   </li>
                   <div className="flex mt-4">
                     <ul className="flex">
@@ -198,7 +198,7 @@ const Footer = ({ link }) => {
                           <img
                             src={Facebook}
                             alt="Facebook"
-                            className="w-full h-full p-3 ml-1"
+                            className="w-auto h-auto p-6 mr-1"
                           />
                         </Link>
                       </div>
@@ -211,7 +211,7 @@ const Footer = ({ link }) => {
                           <img
                             src={instagram}
                             alt="twitter"
-                            className="w-full h-full p-3 "
+                            className="w-auto h-auto p-4 "
                           />
                         </Link>
                       </div>
@@ -223,7 +223,7 @@ const Footer = ({ link }) => {
                           <img
                             src={insta}
                             alt="insta"
-                            className="w-full  h-full p-3"
+                            className="w-auto h-auto p-3"
                           />
                         </Link>
                       </div>

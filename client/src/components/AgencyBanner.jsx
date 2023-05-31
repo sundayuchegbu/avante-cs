@@ -15,7 +15,7 @@ const AgencyBanner = () => {
               className={`font-Inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
               Government <br className="sm:hidden" />
-              agencies{" "}
+              Agencies{" "}
             </h2>
             <div
               className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
