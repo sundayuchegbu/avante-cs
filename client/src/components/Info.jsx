@@ -19,7 +19,7 @@ const InfoCard = ({ icon, index, title, content }) => {
         <img
           src={icon}
           alt="icon"
-          onClick={() => navigate("/news")}
+          onClick={() => navigate("/explicit")}
           className="w-[163px] h-[163px] "
         />
       </div>
@@ -29,7 +29,7 @@ const InfoCard = ({ icon, index, title, content }) => {
         </h4>
         <p
           className="font-inter font-normal md:text-[24px] leading-[30.8px]  text-dark2 cursor-pointer md:mt-4"
-          onClick={() => navigate("/news")}
+          onClick={() => navigate("/explicit")}
         >
           {content}{" "}
         </p>
@@ -80,7 +80,7 @@ const Info = () => {
         </p>
         <button
           className="text-secondary md:ml-[250px] ml-[150px]w-[84.96px] h-[22px] md:mt-12 mt-4 "
-          onClick={() => navigate("/news")}
+          onClick={() => navigate("/explicit")}
         >
           Read more
         </button>
@@ -88,7 +88,7 @@ const Info = () => {
           src={arrow4}
           alt="arrow"
           className="-mt-5  md:h-[20px]   md:w-[43.2px] w-[44.74px] top-[10px] mb-4 md:ml-[350px] ml-[120px]"
-          onClick={() => navigate("/news")}
+          onClick={() => navigate("/explicit")}
         />
         <Link to="/news">
           <button className="md:hidden font-inter font-normal bg-background text-primary ml-14 mt-8 mb-8 ring-primary ring-2 w-[220px] h-[60px]  ">

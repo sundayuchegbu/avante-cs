@@ -20,7 +20,7 @@ const Values = () => (
         Core Guiding Principles{" "}
       </h2>
 
-      <p
+      <div
         className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] md:mt-0 mt-0 md:mb-2 mb-0 md:p-0 p-4`}
       >
         Our values of honesty, integrity, commitment and delivery are important
@@ -28,7 +28,7 @@ const Values = () => (
         values at the core of our operation.<p className="mb-2"></p> We are a
         company that values individuals and teamwork. We continually strive as a
         firm to make a positive and lasting impact.
-      </p>
+      </div>
     </div>
   </section>
 );
