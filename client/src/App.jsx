@@ -20,6 +20,7 @@ import Financial from "./pages/clients/Financial";
 import Telecoms from "./pages/clients/Telecoms";
 import SME from "./pages/clients/SME";
 import Goods from "./pages/clients/Goods";
+import NewsExplicit from "./components/NewsExplicit";
 
 const App = () => (
   <BrowserRouter>
@@ -45,6 +46,7 @@ const App = () => (
         <Route path="/clients/telecoms" element={<Telecoms />} />
         <Route path="/clients/sme" element={<SME />} />
         <Route path="/clients/goods" element={<Goods />} />
+        <Route path="/explicit" element={<NewsExplicit />} />
 
         <Route
           path="/services/egain/collaboration"

@@ -16,22 +16,20 @@ const EgainKnowledgeBanner = () => {
               <div className="absolute inset-0 flex items-center sm:p-4 pt-4 justify-center">
                 <div className="text-white  max-w-[470px]  ">
                   <h1
-                    className={` font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[55.8px] leading-[66.8px]   `}
+                    className={` font-inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-white xs:leading-[55.8px] leading-[66.8px]  w-[546px] `}
                   >
-                    Lorem ipsum dolor
-                    <br className="sm:block hidden " /> sit amet consectetur.
+                    eGain Knowledge: Empowering Customer Engagement Solutions
                   </h1>
                   <p
                     className={`${styles.paragraph2} max-w-[336px]  mt-5 leading-[25.8px]   mb-8 `}
                   >
-                    Lorem ipsum dolor sit amet consectetur. Proin vel orci
-                    tempor velit mattis tempor at nisiLorem ipsum dolor sit amet
-                    consectetur. Proin vel orci tempor velit mattis tempor at
-                    nisi.
+                    Unlocking Customer Engagement Excellence with eGain
+                    Knowledge. Discover the Power of Intelligent Knowledge
+                    Management for Exceptional Customer Experiences
                   </p>
                   <Link to="/contacts">
                     {" "}
-                    <button className="bg-secondary font-inter text-white flex  md:flex-center sm:items-center items-center font-bold py-2 px-8 mb-4 rounded">
+                    <button className="bg-secondary font-inter text-white flex  md:flex-center sm:items-center items-center font-normal py-2 px-8 mb-4 rounded">
                       eGain Demo Chat{" "}
                     </button>
                   </Link>

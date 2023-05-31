@@ -46,7 +46,7 @@ const NewsCard = () => {
             customer service solutions for a tier one bank and the largest
             Pensions provider in our territory. 2014 – D...
           </p>
-          <Link to="">
+          <Link to="/explicit">
             <button className="text-secondary sm:ml-0 ml-[8px] w-[84.96px] h-[22px] sm:mt-2 mt-4 ">
               Read more
             </button>

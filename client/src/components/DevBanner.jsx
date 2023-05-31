@@ -23,12 +23,13 @@ const DevBanner = () => {
               className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6 leading-[25.8px]`}
             >
               <p className="text-dark">
-                Avante is a software development company that specializes in
-                e-commerce, mobile solutions, customer relationship management,
-                and enterprise resource management. They have experience
-                building custom solutions for various industries and use
-                technologies such as Service-oriented architecture (SOA) to
-                improve productivity.
+                Welcome to our Web Development services, where we bring your
+                digital vision to life. Our skilled team of developers utilizes
+                a range of programming languages and frameworks to create
+                stunning, user-friendly, and responsive websites that enhance
+                your online presence and drive business growth. Trust us for
+                exceptional web development solutions tailored to your unique
+                needs.
               </p>
             </div>
             <Link to="/contacts">

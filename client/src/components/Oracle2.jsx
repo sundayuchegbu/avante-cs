@@ -80,7 +80,7 @@ const Oracle2 = () => {
         >
           ORACLE <span className="text-primary ">DATABASE</span> <br />
           <span className="text-primary sm:text-[28px] text-[20px]">
-            Lorem Ipsum consectetur.{" "}
+            Data Management Excellence
           </span>
         </h2>
         <div

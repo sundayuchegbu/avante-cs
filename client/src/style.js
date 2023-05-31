@@ -17,7 +17,7 @@ const styles = {
   paragraph:
     "font-inter font-normal text-dimWhite text-[18px] leading-[25.8px]",
   paragraph2:
-    "font-inter font-normal text-dimWhite text-[14px] leading-[20.8px]",
+    "font-inter font-normal text-background text-[14px] leading-[25.8px]",
   paragraph3: "font-inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph4: "font-inter font-normal text-black2 text-[14px] leading-[30.8px]",
   paragraph5:
