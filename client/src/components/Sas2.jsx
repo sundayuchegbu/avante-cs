@@ -4,9 +4,12 @@ import rec1 from "../images/rec1.png";
 
 const Sas2 = () => {
   return (
-    <section className={` ${layout.section}`}>
-      <div id="cta3" className={` mr-[400px] mt-[400px] ${layout.sectionInfo}`}>
-        <ul className="relative ml-[100px] mt-[-900px] hidden md:block">
+    <section className={`flex md:flex-row flex-col sm:py-24 py-6 md:-mt-32 `}>
+      <div
+        id="cta3"
+        className={` mr-[350px] mt-[400px] flex-1 flex justify-center items-start flex-col `}
+      >
+        <ul className="relative ml-[50px] mt-[-900px] hidden md:block">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
               id="list-radio-license51"
@@ -72,18 +75,18 @@ const Sas2 = () => {
         <img
           src={rec1}
           alt="rec"
-          className="mt-[300px] mr-[180px] md:block hidden "
+          className="mt-[300px] mr-[120px] md:block hidden "
         />
         <img
           src={rec}
           alt="rec"
-          className=" mt-[730px] mr-[180px] md:block hidden"
+          className=" mt-[730px] mr-[120px] md:block hidden"
         />
       </div>
       <div>
         <div
           id="cta4"
-          className={`${layout.sectionInfo} px-6 md:mt-0 mt-[-430px] md:ml-[-40px]`}
+          className={`${layout.sectionInfo} px-6 md:mt-24 mt-[-430px] md:mr-[100px]`}
         >
           <h2
             className={`font-inter font-semibold xs:text-[28px] mt-[20px] text-[16px] text-black sm:leading-[45.8px] leading-[30.8px] w-full mb-8 px-2`}
@@ -94,7 +97,7 @@ const Sas2 = () => {
             </span>
           </h2>
           <div
-            className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] md:mt-5 mt-[-10px] mb-6 px-2`}
+            className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] md:-mt-6 mt-[-10px] mb-6 px-2`}
           >
             Avante is a silver partner of SAS and a solution partner within the
             Customer Intelligence practice. Avante has extensive experience in

@@ -20,12 +20,15 @@ const Vision = () => (
         </span>
       </h2>
       <div
-        className={`font-inter font-normal text-background sm:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] mt-5 mb-6 `}
+        className={`font-inter font-normal text-background sm:text-[14px] text-[12px] leading-[25.8px]  mt-5 mb-6 `}
       >
-        <p className="text-dark list-disc ml-4">
-          Our vision is to be the most respected and trusted IT professional
-          services firm recognized by our clients for delivering excellence.
-        </p>
+        <ul className="">
+          <li className="text-dark list-disc ml-10">
+            Our vision is to be the most respected and trusted IT{" "}
+            <p className="mb-2"></p> professional services firm recognized by
+            our clients for<p className="mb-2"></p> delivering excellence.
+          </li>
+        </ul>
       </div>
     </div>
   </section>

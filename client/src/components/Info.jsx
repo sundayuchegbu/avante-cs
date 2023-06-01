@@ -28,7 +28,7 @@ const InfoCard = ({ icon, index, title, content }) => {
           {title}
         </h4>
         <p
-          className="font-inter font-normal md:text-[24px] leading-[30.8px]  text-dark2 cursor-pointer md:mt-4"
+          className="font-inter font-normal sm:text-[24px] leading-[30.8px]  text-dark2 cursor-pointer md:mt-4"
           onClick={() => navigate("/explicit")}
         >
           {content}{" "}
@@ -71,7 +71,7 @@ const Info = () => {
           10 Years Avante History
         </h3>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px]  max-w-[470px] md:mt-[10px]w-full `}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px]  max-w-[470px] md:mt-[10px]w-full `}
         >
           2012 – The year we were founded, Signed a Partner Reseller agreement
           with eGain 2013 – Successfully launched digital multichannel customer
@@ -79,15 +79,15 @@ const Info = () => {
           provider in our territory. 2014 – D...
         </p>
         <button
-          className="text-secondary md:ml-[250px] ml-[150px]w-[84.96px] h-[22px] md:mt-12 mt-4 "
+          className="font-inter font-normal text-secondary md:ml-[290px] ml-[150px]w-[84.96px] h-[22px] md:mt-4 mt-4 "
           onClick={() => navigate("/explicit")}
         >
-          Read more
+          READ MORE
         </button>
         <img
           src={arrow4}
           alt="arrow"
-          className="-mt-5  md:h-[20px]   md:w-[43.2px] w-[44.74px] top-[10px] mb-4 md:ml-[350px] ml-[120px]"
+          className="-mt-5  md:h-[20px]   md:w-[43.2px] w-[44.74px] top-[5px] mb-4 md:ml-[400px] ml-[120px]"
           onClick={() => navigate("/explicit")}
         />
         <Link to="/news">

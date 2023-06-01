@@ -3,10 +3,10 @@ import React from "react";
 const Softcard = () => {
   return (
     <div className=" bg-background md:p-4 h-[500px] md:mx-[170px] md:w-[700px] md:mb-56 ">
-      <h2 className="font-inter text-xl font-semibold md:mb-8 mb-4 text-primary  md:text-[28px] text-[20px] md:p-0 p-4">
+      <h2 className="font-inter sm:ml-16 font-semibold md:mb-8 mb-4 text-primary  md:text-[28px] text-[20px] md:p-0 p-4">
         Custom software <span className="text-dark">improves efficiency.</span>
       </h2>
-      <p className="font-inter font-normal md:mt-0 mt-[-10px] text-black1 md:mb-4 md:text-[14px] leading-[25.8px] text-[12px] md:p-0 p-4">
+      <p className="font-inter font-normal md:mt-0 mt-[-10px] text-black1 md:mb-4 md:text-[14px] leading-[25.8px] text-[12px] md:p-0 p-4 sm:ml-16">
         Avante develops custom built software in-house to support our
         e-Commerce, Mobile Solutions, Customer Relationship Management and
         Enterprise Resource Management specialisations. We have built custom
@@ -18,7 +18,7 @@ const Softcard = () => {
         Knowledge solutions and 3rd Party Customer Relationship Management
         software to improve productivity in contact centers.
       </p>
-      <p className="font-inter text-normal text-black md:text-[14px] text-[12px] md:mb-32 mb-12  md:mt-8 px-4 leading-[25.8px]">
+      <p className="font-inter text-normal text-black md:text-[14px] text-[12px] md:mb-32 mb-12  md:mt-8 sm:px-0 px-4 leading-[25.8px] sm:ml-16">
         Some of the technologies used by our consultants in various projects
         include;
       </p>

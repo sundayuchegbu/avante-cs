@@ -1,12 +1,12 @@
 import Ellipse1 from "../images/Ellipse1.png";
-import Ellipse2 from "../images/Ellipse1.png";
+import round from "../images/round.png";
 import Ellipse3 from "../images/Ellipse3.png";
 
 const Feedback = () => (
-  <div className="md:flex justify-between   md:mx-24 mb-12">
+  <div className="md:flex justify-between   md:mx-24 mb-32">
     <div className="md:w-1/3 md:h-[274px] h-[190px] md:w-[350px] w-[329px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
       <div className="flex items-center md:mb-4 ">
-        <div className="h-10 w-10 rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
+        <div className="h-[60px] w-[60px] rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
           <img src={Ellipse1} alt="microsoft" />
         </div>
       </div>
@@ -23,8 +23,8 @@ const Feedback = () => (
 
     <div className="md:w-1/3 md:h-[274px] h-[190px] md:w-[350px] w-[329px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
       <div className="flex items-center mb-4 ">
-        <div className="h-10 w-10 rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
-          <img src={Ellipse2} alt="microsoft" />
+        <div className="h-[60px] w-[60px] rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
+          <img src={round} alt="microsoft" />
         </div>
       </div>
       <h2 className="ml-4 md:text-[18px] text-[16px] text-black2 mb-4 font-inter font-semibold">
@@ -40,7 +40,7 @@ const Feedback = () => (
 
     <div className="md:w-1/3 md:h-[274px] h-[190px] md:w-[350px] w-[329px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
       <div className="flex items-center mb-4 ">
-        <div className="h-10 w-10 rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
+        <div className="h-[60px] w-[60px] rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
           <img src={Ellipse3} alt="microsoft" />
         </div>
       </div>

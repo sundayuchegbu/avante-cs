@@ -19,7 +19,7 @@ const Testimonial = () => (
         <p className="font-inter text-black text-sm mb-4">
           Sales Director - EMEA
         </p>
-        <p className="font-inter text-black  text-xs">Egain Communications</p>
+        <p className="font-inter text-black  text-xs">eGain Communications</p>
       </div>
     </div>
   </div>

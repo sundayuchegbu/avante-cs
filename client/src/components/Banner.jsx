@@ -16,9 +16,11 @@ const Banner = () => (
         empower organizations to thrive in today's dynamic market. Partner with
         us and unlock your business's full potential.
       </p>
-      <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-[100px] w-[148px] h-[46.36px]">
-        Get in touch{" "}
-      </button>
+      <Link to="/contacts">
+        <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-[100px] w-[148px] h-[46.36px]">
+          Get in Touch{" "}
+        </button>
+      </Link>{" "}
     </div>
 
     <div className="md:w-1/2  h-screen bg-cover bg-center hidden sm:block ">
@@ -39,7 +41,7 @@ const Banner = () => (
         <Link to="/contacts">
           <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
             <span className="mx-8 text-[12px] font-inter font-normal">
-              Get in touch
+              Get in Touch
             </span>
             <i className="fas fa-chevron-right">
               <img

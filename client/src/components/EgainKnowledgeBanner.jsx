@@ -21,7 +21,7 @@ const EgainKnowledgeBanner = () => {
                     eGain Knowledge: Empowering Customer Engagement Solutions
                   </h1>
                   <p
-                    className={`${styles.paragraph2} max-w-[336px]  mt-5 leading-[25.8px]   mb-8 `}
+                    className={`${styles.paragraph2} max-w-[470px]  mt-5 leading-[25.8px]   mb-8 `}
                   >
                     Unlocking Customer Engagement Excellence with eGain
                     Knowledge. Discover the Power of Intelligent Knowledge
@@ -41,7 +41,7 @@ const EgainKnowledgeBanner = () => {
               <img
                 src={knowledge}
                 alt="banner"
-                className="block w-[561px] h-[567px] mt-12  "
+                className="block w-[561px] h-[567px] mt-12 ml-24 "
               />
             </div>
           </div>

@@ -8,9 +8,9 @@ const EgainBanner = () => {
       <div className="hidden md:block">
         <div id="egain" className={` ${layout.sectionReverse}`}>
           <div className={`${layout.sectionImgReverse}  relative`}>
-            <img src={egainbanner} alt="egainbanner" />
+            <img src={egainbanner} alt="egainbanner" className="ml-44" />
           </div>
-          <div className={layout.sectionInfo}>
+          <div className={`${layout.sectionInfo} ml-32`}>
             <h2 className={`${styles.heading3} mb-4 `}>eGain Collaboration</h2>
             <div
               className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
@@ -24,7 +24,7 @@ const EgainBanner = () => {
               </p>
             </div>
             <Link to="/contacts">
-              <button className="bg-secondary text-white flex flex-start font-bold py-4 px-24 rounded">
+              <button className="bg-secondary text-white flex flex-start font-normal py-4 px-24 rounded">
                 Contact us{" "}
               </button>
             </Link>
@@ -50,7 +50,7 @@ const EgainBanner = () => {
           <Link to="/contacts">
             <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
               <span className="mx-[60px] text-[14px] font-inter font-normal">
-                eGain Demo Chat{" "}
+                Contact us{" "}
               </span>
             </button>
           </Link>

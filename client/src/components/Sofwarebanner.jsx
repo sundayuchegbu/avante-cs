@@ -8,14 +8,14 @@ const Softwarebanner = () => {
     <div>
       <div className="hidden md:block">
         <div id="ctas" className={` mb-8 ${layout.sectionReverse}`}>
-          <div className={`${layout.sectionImgReverse}  `}>
+          <div className={` ml-44 ${layout.sectionImgReverse}  `}>
             <img
               src={softpix1}
               alt="sofware"
               className="w-[471.19px] h-[518.48px] "
             />
           </div>
-          <div className={`  mx-24 ${layout.sectionInfo}`}>
+          <div className={`   ${layout.sectionInfo}`}>
             <h2 className={`${styles.heading3} mb-4 `}>
               SOFTWARE <br className="sm:block hidden" /> DEVELOPMENT
             </h2>
@@ -32,7 +32,7 @@ const Softwarebanner = () => {
               </p>
             </div>
             <button
-              className="bg-secondary text-white flex flex-start font-bold py-4 px-24 rounded"
+              className="bg-secondary text-white flex flex-start font-normal py-4 px-24 rounded"
               onClick={() => navigate("/contacts")}
             >
               Request a quote

@@ -23,22 +23,22 @@ const Navbar = () => {
       <div className=" sm:flex hidden justify-end items-center flex-1">
         <NavLink
           to="/"
-          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
         >
           HOME
         </NavLink>
         <NavLink
           to="/about"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
         >
           ABOUT US
         </NavLink>
-        <Menu as="div" className="relative group inline-block text-left mr-10 ">
+        <Menu as="div" className="relative group inline-block text-left mr-9 ">
           <div className=" ">
             <Menu.Button
               onMouseEnter={({ target }) => target.click()}
               type="button"
-              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-[14px]  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
               id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
@@ -136,7 +136,7 @@ const Navbar = () => {
                   tabIndex="-1"
                   id="menu-item-5"
                 >
-                  Social Media Management (Falcon.io){" "}
+                  Social Media Management{" "}
                 </Link>
               </Menu.Item>
             </div>
@@ -171,16 +171,16 @@ const Navbar = () => {
 
         <NavLink
           to="/products"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
         >
           PRODUCTS
         </NavLink>
-        <Menu as="div" className="relative inline-block text-left mr-10">
+        <Menu as="div" className="relative inline-block text-left mr-9">
           <div>
             <Menu.Button
               onMouseEnter={({ target }) => target.click()}
               type="button"
-              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-sm  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-[14px]  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
               id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
@@ -242,7 +242,7 @@ const Navbar = () => {
                   tabIndex="-1"
                   id="menu-item-2"
                 >
-                  Telecoms sector{" "}
+                  Telecoms Sector{" "}
                 </Link>
               </Menu.Item>
 
@@ -267,7 +267,7 @@ const Navbar = () => {
                   tabIndex="-1"
                   id="menu-item-4"
                 >
-                  Consumer goods{" "}
+                  Consumer Goods{" "}
                 </Link>
               </Menu.Item>
             </div>
@@ -275,13 +275,13 @@ const Navbar = () => {
         </Menu>
         <NavLink
           to="/news"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary mr-10"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
         >
           NEWS
         </NavLink>
         <NavLink
           to="/contacts"
-          className="font-inter font-normal cursor-pointer text-[16px] hover:text-primary -mr-20 text-secondary"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary -mr-20 text-secondary"
         >
           CONTACT US
         </NavLink>
@@ -417,7 +417,7 @@ const Navbar = () => {
                       tabIndex="-1"
                       id="menu-item-5"
                     >
-                      Social Media Management (Falcon.io){" "}
+                      Social Media Management{" "}
                     </Link>
                   </Menu.Item>
                 </div>
@@ -526,7 +526,7 @@ const Navbar = () => {
                       tabIndex="-1"
                       id="menu-item-2"
                     >
-                      Telecoms sector{" "}
+                      Telecoms Sector{" "}
                     </Link>
                   </Menu.Item>
 
@@ -551,7 +551,7 @@ const Navbar = () => {
                       tabIndex="-1"
                       id="menu-item-4"
                     >
-                      Consumer goods{" "}
+                      Consumer Goods{" "}
                     </Link>
                   </Menu.Item>
                 </div>

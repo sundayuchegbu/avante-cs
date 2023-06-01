@@ -49,7 +49,7 @@ const Footer = ({ link }) => {
             </div>
             <div className="flex-[2.0] mr-8 w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-                <h4 className="font-inter font-medium text-[18px] leading-[27px] text-white mb-4">
+                <h4 className="font-inter font-medium text-[18px] leading-[24px] text-white mb-2">
                   {" "}
                   Services{" "}
                 </h4>
@@ -57,10 +57,10 @@ const Footer = ({ link }) => {
                   <Link
                     to="/services/consulting"
                     className={
-                      "font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary my-4 cursor-pointer block"
+                      "font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary my-2 mb-6 cursor-pointer block"
                     }
                   >
-                    Business consulting{" "}
+                    Business Consulting{" "}
                   </Link>
                   <Link
                     to="/services/software"
@@ -109,7 +109,7 @@ const Footer = ({ link }) => {
             </div>
             <div className="flex-[2.0] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-                <h4 className="font-inter font-medium text-[18px] leading-[27px] text-white mb-4">
+                <h4 className="font-inter font-medium text-[18px] leading-[24px] text-white mb-4">
                   {" "}
                   About Us{" "}
                 </h4>
@@ -118,7 +118,7 @@ const Footer = ({ link }) => {
                     to=""
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Corporate philosophy{" "}
+                    Corporate Philosophy{" "}
                   </Link>
                   <Link
                     to=""
@@ -130,7 +130,7 @@ const Footer = ({ link }) => {
                     to=""
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block mb-4`}
                   >
-                    Our partners{" "}
+                    Our Partners{" "}
                   </Link>
                 </ul>
               </div>
@@ -146,19 +146,19 @@ const Footer = ({ link }) => {
                     to="/clients/agencies"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Government agencies{" "}
+                    Government Agencies{" "}
                   </Link>
                   <Link
                     to="/clients/financial"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Financial sector{" "}
+                    Financial Sector{" "}
                   </Link>
                   <Link
                     to="/clients/telecoms"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Telecoms sector{" "}
+                    Telecoms Sector{" "}
                   </Link>
                   <Link
                     to="/clients/sme"
@@ -170,14 +170,14 @@ const Footer = ({ link }) => {
                     to="/clients/goods"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block`}
                   >
-                    Consumer goods{" "}
+                    Consumer Goods{" "}
                   </Link>
                 </ul>
               </div>
             </div>
             <div className="flex-[2.3] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10 ">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-                <h4 className="font-inter font-medium text-[18px] leading-[27px] text-white mb-4">
+                <h4 className="font-inter font-medium text-[18px] leading-[24px] text-white mb-4">
                   {" "}
                   Address{" "}
                 </h4>

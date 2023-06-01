@@ -4,10 +4,9 @@ import productimage1 from "../images/productimage1.png";
 import productimage2 from "../images/productimage2.png";
 import productimage3 from "../images/productimage3.png";
 import arrow4 from "../images/arrow4.svg";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProductSample = () => {
-  const navigate = useNavigate();
   return (
     <section id="cta" className="flex flex-row  sm:py-16 py-6">
       <div className="md:ml-8 md:mr-8 flex-[1.5] flex justify-center items-start flex-col">
@@ -18,7 +17,7 @@ const ProductSample = () => {
           OUR <span className="text-primary">PRODUCT</span>{" "}
         </h2>
         <div className=" flex items-center justify-center    mb-4 hidden md:block">
-          <h3 className=" font-inter font-normal md:text-[28px] text-[16px]  ">
+          <h3 className=" font-inter font-normal md:text-[32px] text-[16px]  ">
             Cutting-edge Solutions <br />
             Transforming Businesses Today{" "}
           </h3>{" "}
@@ -29,24 +28,18 @@ const ProductSample = () => {
           </h3>{" "}
         </div>
         <p
-          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[20.8px] leading-[25.8px] max-w-[470px] mt-5 mb-5 `}
+          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-5 mb-5 `}
         >
           MoLoyal is also a digital airtime retail and distribution platform
           where airtime from all major networks will be electronically sold with
           flexible payment channels including Debit or Credit Cards, Reward
           Wallet, Mobile Money, Shortcodes and Bank deposits.
         </p>
-        <button
-          className="text-secondary"
-          onClick={() => navigate("/products")}
-        >
-          Learn more{" "}
-        </button>
-        <img
-          src={arrow4}
-          alt="arrow"
-          className="-mt-4  ml-[100px] h-[20px]   w-[100px] top-[10px] mb-8"
-        />{" "}
+        <Link to="/products">
+          <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-0 w-[148px] h-[46.36px]">
+            Learn more{" "}
+          </button>
+        </Link>{" "}
         <div className="flex ">
           <ul className=" mr-8 mt-0 mt-12">
             <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
@@ -114,7 +107,7 @@ const ProductSample = () => {
           <img
             src={productimage1}
             alt="productimage1"
-            className="md:w-[543px] md:h-[500px] w-[214px] ml-4 h-[157px]  mb-4"
+            className="md:w-[543px] md:h-[500px] w-[214px] ml-24 h-[157px]  mb-4"
           />
         </div>
       </div>

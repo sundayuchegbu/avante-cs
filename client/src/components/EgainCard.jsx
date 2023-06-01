@@ -2,10 +2,10 @@ import bluetick from "../images/bluetick.png";
 const EgainCard = () => {
   return (
     <div className="mt-12 mb-8">
-      <h1 className="md:mx-32 font-inter md:text-[28px] text-[20px] mb-8 px-4">
+      <h1 className="md:mx-32 font-inter md:text-[28px] text-[20px] mb-8 -px-2">
         <span className="text-primary">
           {" "}
-          knowledge-powered automation platform for customer engagement{" "}
+          Knowledge-powered automation platform for customer engagement{" "}
         </span>
       </h1>
       <div className=" md:mx-24 flex flex-col md:flex-row">
@@ -33,7 +33,7 @@ const EgainCard = () => {
         <div className="md:w-1/3 p-4">
           <div className="flex items-center">
             <img src={bluetick} alt="bluetick" className="mr-2" />
-            <h3 className="md:text-[18px] text-[16px] font-semibold font-inter">
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold ">
               eGain Chat
             </h3>
           </div>
@@ -55,7 +55,7 @@ const EgainCard = () => {
         <div className="md:w-1/3 p-4">
           <div className="flex items-center">
             <img src={bluetick} alt="bluetick" className="mr-2" />
-            <h3 className="md:text-[18px] text-[16px] font-semibold font-inter">
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold ">
               eGain Virtual Assistant™
             </h3>
           </div>
@@ -79,7 +79,7 @@ const EgainCard = () => {
         <div className="md:w-1/3 p-4">
           <div className="flex items-center">
             <img src={bluetick} alt="bluetick" className="mr-2" />
-            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold ">
               eGain Mail
             </h3>
           </div>
@@ -102,7 +102,7 @@ const EgainCard = () => {
         <div className="md:w-1/3 p-4">
           <div className="flex items-center">
             <img src={bluetick} alt="bluetick" className="mr-2" />
-            <h3 className="md:text-[18] text-[16px] font-inter font-semibold">
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold ">
               eGain Social
             </h3>
           </div>
@@ -125,7 +125,7 @@ const EgainCard = () => {
         <div className="md:w-1/3 p-4">
           <div className="flex items-center">
             <img src={bluetick} alt="bluetick" className="mr-2" />
-            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold ">
               eGain Knowledge Hub
             </h3>
           </div>
@@ -150,7 +150,7 @@ const EgainCard = () => {
         <div className="md:w-1/3 p-4">
           <div className="flex items-center">
             <img src={bluetick} alt="bluetick" className="mr-2" />
-            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold">
+            <h3 className="md:text-[18px] text-[16px] font-inter font-semibold ">
               eGain Analytics Hub
             </h3>
           </div>

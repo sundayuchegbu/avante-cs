@@ -16,13 +16,13 @@ const KnowledgeAndServices = () => {
           escalations to live customer service or sales agents."
         </p>
       </div>
-      <div className="md:flex mt-12 mb-8 bg-background ">
-        <div className="md:flex flex-col  h-[400px] min-w-[470px] mx-auto border border-l mb-24 ">
-          <div className="relative ">
+      <div className="md:flex mt-12 mb-8 bg-background sm:mx-28">
+        <div className="md:flex flex-col sm:w-[543] sm:h-[329px] min-w-[470px] mx-auto border border-l mb-24 ">
+          <div className="relative  ">
             <img
               src={egainknowledge}
               alt="egainknowledge"
-              className="sm:h-[153px] h-[131.42px] sm:w-[500px] w-[350px] object-cover p-2"
+              className="sm:h-[153px] h-[131.42px] sm:w-[500px] w-[350px] object-cover p-2 "
             />
             <div className="absolute md:top-20 top-16 bottom-0 left-12 p-4 bg-none text-white">
               <h2 className="text-[18px] font-inter font-semobold font-semibold md:mb-2">
@@ -30,7 +30,7 @@ const KnowledgeAndServices = () => {
               </h2>
             </div>
             <div className="h-[16px]  flex items-center sm:pb-44 pb-32   sm:w-[543px] w-[366px] sm:h-[329px] h-[310px] ">
-              <p className="font-inter font-normal leading-[25.8px] xs:text-[14px] text-[12px] text-black1 px-4  md:w-[500px] md:h-[114px] ">
+              <p className="font-inter font-normal ml-8 leading-[25.8px] xs:text-[14px] text-[12px] text-black1 px-4  md:w-[500px] md:h-[114px] ">
                 {" "}
                 The top-rated knowledge management software, guarantees
                 high-quality customer service by infusing your customer service
@@ -44,7 +44,7 @@ const KnowledgeAndServices = () => {
           </div>
         </div>
 
-        <div className="md:flex flex-col  h-[400px] min-w-[470px] mx-auto border border-l   ">
+        <div className="md:flex flex-col  sm:w-[543] sm:h-[329px] min-w-[470px] mx-auto border border-l sm:ml-12  ">
           <div className="relative ">
             <img
               src={egainself}
@@ -57,7 +57,7 @@ const KnowledgeAndServices = () => {
               </h2>
             </div>
             <div className="h-[16px]  flex items-center  md:pb-44 pb-32   md:w-[543px] w-[366px] md:h-[329px] h-[310px]  ">
-              <p className="font-inter font-normal  xs:text-[14px] leading-[25.8px] text-[12px] text-black1 px-4  mb-0">
+              <p className="font-inter font-normal ml-8  xs:text-[14px] leading-[25.8px] text-[12px] text-black1 px-4  mb-0">
                 {" "}
                 Enables organizations to provide distinctive, productive, and
                 brand-aligned self-service experiences that enable breakthrough

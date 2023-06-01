@@ -89,16 +89,21 @@ const SocialInfo = () => {
           <h4 className="font-semibold">Strategy Development: </h4>
           We work closely with you to understand your business objectives and
           target audience, and develop a customized social media strategy that
-          aligns with your goals.<p className="mb-4"></p> Content Creation: Our
-          team of content experts creates compelling and shareable social media
-          posts that resonate with your target audience and reflect your brand's
-          voice and values.<p className="mb-4"></p> Platform Management: We
-          handle the management of your social media platforms, ensuring
-          consistent branding and messaging across channels such as Facebook,
-          Twitter, Instagram, LinkedIn, and more.<p className="mb-4"></p>{" "}
-          Community Engagement: We actively engage with your social media
-          community, responding to comments, messages, and reviews in a timely
-          and professional manner, fostering meaningful interactions.
+          aligns with your goals.<p className="mb-4"></p>
+          <span className="font-inter font-semibold">
+            {" "}
+            Content Creation:
+          </span>{" "}
+          <p className="mb-2"></p> Our team of content experts creates
+          compelling and shareable social media posts that resonate with your
+          target audience and reflect your brand's voice and values.
+          <p className="mb-4"></p> Platform Management: We handle the management
+          of your social media platforms, ensuring consistent branding and
+          messaging across channels such as Facebook, Twitter, Instagram,
+          LinkedIn, and more.<p className="mb-4"></p> Community Engagement: We
+          actively engage with your social media community, responding to
+          comments, messages, and reviews in a timely and professional manner,
+          fostering meaningful interactions.
           <p className="mb-4"></p>
           Performance Tracking: Our team closely monitors the performance of
           your social media campaigns, tracking key metrics and providing

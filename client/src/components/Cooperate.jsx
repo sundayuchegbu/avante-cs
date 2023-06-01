@@ -1,5 +1,5 @@
 import { layout } from "../style";
-import solution from "../images/solution.png";
+import solution from "../images/solution.jpeg";
 const Cooperate = () => (
   <section className={`flex md:flex-row flex-col sm:py-16 py-6 px-4`}>
     <div className={` relative ${layout.sectionImgReverse}`}>
@@ -70,7 +70,7 @@ const Cooperate = () => (
         <img
           src={solution}
           alt="codeit"
-          className="block md:w-[561px] w-[336.6px] md:h-[567px] h-[238px] "
+          className="block md:w-[400px] w-[336.6px] md:h-[400px] h-[238px] "
         />
       </div>
     </div>

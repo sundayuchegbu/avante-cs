@@ -22,7 +22,7 @@ const Caller = () => {
           <Link to="/contacts">
             {" "}
             <button className="bg-secondary font-inter text-white flex flex-start font-normal py-2 px-4 rounded">
-              Get in touch
+              Get in Touch
             </button>
           </Link>
         </div>
@@ -32,7 +32,7 @@ const Caller = () => {
           <Link to="/contacts">
             {" "}
             <button className="bg-background w-[168px] h-[45px] mt-4 ml-4 rounded-lg text-black font-inter font-normal text-[14px] ">
-              Get in touch
+              Get in Touch
             </button>
           </Link>
           <p className="p-3 text-background text-[12px] font-inter font-normal ">

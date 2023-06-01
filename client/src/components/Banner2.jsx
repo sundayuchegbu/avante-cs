@@ -1,6 +1,7 @@
 import banner2 from "../images/banner2.png";
 import b5 from "../images/b5.png";
 import smallwhite from "../images/smallwhite.png";
+import { Link } from "react-router-dom";
 
 const Banner2 = () => (
   <div
@@ -18,9 +19,11 @@ const Banner2 = () => (
         that exceed client expectations. Partner with us for transformative
         solutions and achieve lasting success.
       </p>{" "}
-      <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-[100px] w-[148px] h-[46.36px]">
-        Get in touch{" "}
-      </button>
+      <Link to="/contacts">
+        <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-[100px] w-[148px] h-[46.36px]">
+          Get in Touch{" "}
+        </button>
+      </Link>
     </div>
     <div className="hidden md:block md:mr-24">
       {" "}
@@ -44,7 +47,7 @@ const Banner2 = () => (
         </p>
         <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
           <span className="mx-8 text-[12px] font-inter font-normal">
-            Read more
+            Get in Touch
           </span>
           <i className="fas fa-chevron-right">
             <img

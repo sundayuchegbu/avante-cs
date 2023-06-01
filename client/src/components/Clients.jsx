@@ -3,9 +3,7 @@ import styles from "../style";
 
 const Clients = () => (
   <section className={`${styles.flexCenter}  my-4 h-[200px]   `}>
-    <div
-      className={`${styles.flexCenter} flex-wrap w-full filter blur-sm hover:blur-none`}
-    >
+    <div className={`${styles.flexCenter} flex-wrap w-full `}>
       {clients.map((client) => (
         <div
           key={client.id}

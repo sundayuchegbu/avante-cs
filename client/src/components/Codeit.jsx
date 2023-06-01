@@ -185,12 +185,12 @@ const Codeit = () => {
             with a very strong focus on Customer Experience, Knowledge
             Management, Loyalty and Ticketing solutions.
             <p />
-            <br /> We have our own research and development team who develop
-            innovative business and mobile solutions. We also provide and
-            support ATM security products to banks and financial institutions.
+            <br /> Our expert consultants leverage their industry knowledge and
+            technological expertise to deliver strategic insights, optimize
+            processes, and drive innovation.
           </div>
         </div>
-        <Link to="/about">
+        <Link to="/contacts">
           <button className="bg-secondary text-white flex flex-start font-normal font-inter py-2 px-4 rounded">
             Learn more
           </button>
