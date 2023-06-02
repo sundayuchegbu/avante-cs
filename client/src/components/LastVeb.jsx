@@ -33,11 +33,13 @@ const LastVeb = () => {
       </div>
       <div>
         <div className="hidden md:block mt-[200px]">
-          <div className={`${layout.sectionImg} mx-24 px-24 relative`}>
+          <div
+            className={`${layout.sectionImg} mr-32 -mt-[50px] px-24 relative`}
+          >
             <img
               src={lastveb}
               alt="lastveb"
-              className=" block -mx-4 w-[488.47pz] h-[535.1px] "
+              className=" block -mx-4 w-[500.47px] h-[400.1px] "
             />
           </div>
         </div>

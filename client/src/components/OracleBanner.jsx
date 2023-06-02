@@ -7,7 +7,7 @@ const OracleBanner = () => {
   return (
     <div>
       <div className="hidden md:block">
-        <div id="oracle" className={`mb-32  h-[721px] ${layout.section}`}>
+        <div id="oracle" className={`mb-12  h-[721px] ${layout.section}`}>
           <div className={`mx-32 ${layout.sectionInfo}`}>
             <h2
               className={`font-Inter font-semibold xs:text-[40px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
@@ -28,7 +28,7 @@ const OracleBanner = () => {
               {" "}
               <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
-                  Read more
+                  Get started{" "}
                 </span>
                 <i className="fas fa-chevron-right">
                   <img
@@ -40,11 +40,11 @@ const OracleBanner = () => {
               </button>
             </Link>
           </div>
-          <div className={`${layout.sectionImg} lg:mx-24 lg:px-24   relative`}>
+          <div className={`${layout.sectionImg} sm:ml-24 sm:px-24   relative`}>
             <img
               src={database1}
               alt="database"
-              className=" mt-[20px] w-[448px] h-[518.48px]   "
+              className=" mt-[20px] w-[650px] h-[518.48px] mr-56  "
             />
           </div>
         </div>

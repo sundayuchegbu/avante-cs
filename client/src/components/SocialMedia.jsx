@@ -5,7 +5,7 @@ import smallmedia from "../images/smallmedia.png";
 const SocialMedia = () => {
   return (
     <div>
-      <div className="hidden md:block">
+      <div id="egain" className="hidden md:block">
         <div className={layout.sectionReverse}>
           <div className={layout.sectionImgReverse}>
             <img
@@ -22,7 +22,7 @@ const SocialMedia = () => {
               Media for Business Success <br className="sm:block hidden" />{" "}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] sm:p-auto sm:-mt-5 mb-6 p-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto sm:-mt-5 mb-6 p-6`}
             >
               In the ever-evolving world of social media, effectively managing
               your online presence is essential for staying ahead of the

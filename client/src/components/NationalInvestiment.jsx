@@ -36,11 +36,14 @@ const NationalInvestiment = () => {
       </div>
       <div>
         <div className="hidden md:block mt-[200px]">
-          <div className={`${layout.sectionImg}  px-24 relative`}>
+          <div
+            id="nsip"
+            className={`${layout.sectionImg} mt-[-200px] mr-20px  px-24 relative`}
+          >
             <img
               src={nsip}
               alt="nsip"
-              className=" block -mx-4 w-[488.47pz] h-[535.1px]  "
+              className=" block mx-8 w-[400.47px] h-[420px] -mt-[80px]  "
             />
           </div>
         </div>

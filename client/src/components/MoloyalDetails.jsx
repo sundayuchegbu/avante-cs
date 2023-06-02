@@ -5,20 +5,20 @@ import { Link } from "react-router-dom";
 const MoloyalDetails = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-24 px-4 mt-24 ${layout.sectionInfo}`}>
+      <div className={`md:mx-32 px-4 mt-24 ${layout.sectionInfo}`}>
         <h2
-          className={`font-Inter font-semibold sm:text-[16px] mt-[20px] text-[20px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-2 `}
+          className={`font-inter font-semibold sm:text-[16px] mt-[20px] text-[20px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-2 `}
         >
           MOLOYAL <br className="sm:block hidden" />
         </h2>
         <h1
-          className={`font-Inter font-semibold sm:text-[28px] mt-[10px] text-[20px] text-secondary sm:leading-[30.8px] leading-[20.8px] w-full`}
+          className={`font-inter font-semibold sm:text-[28px] mt-[10px] text-[20px] text-secondary sm:leading-[30.8px] leading-[20.8px] w-full`}
         >
           {" "}
           Free airtime rewards program.
         </h1>
         <div
-          className={`font-Inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] mt-5 mb-6 `}
+          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] mt-5 mb-6 `}
         >
           MoLoyal™, the unique customer rewards programme, which helps
           businesses improve customer retention by rewarding customers with free

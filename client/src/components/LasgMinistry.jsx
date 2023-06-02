@@ -12,7 +12,7 @@ const LasgMinistry = () => {
             <img
               src={lasgm}
               alt="codeit"
-              className="block w-[488.47pz] h-[535.1px]  ml-44"
+              className="block w-[488.47pz] h-[400.1px] -mt-[-50px]  ml-44"
             />
           </div>
         </div>

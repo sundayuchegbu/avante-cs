@@ -84,7 +84,7 @@ const Oracle2 = () => {
           </span>
         </h2>
         <div
-          className={`font-Inter font-normal text-black2 sm:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:mt-5 mt-2 mb-6 `}
+          className={`font-inter font-normal text-black2 sm:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:-mt-2 mt-2 mb-6 `}
         >
           Avante is a silver partner of SAS and a solution partner within the
           Customer Intelligence practice. Our Oracle Consultancy Practice is

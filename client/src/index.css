@@ -217,6 +217,24 @@
     -55%
   ); /* center the other image horizontally and vertically */
 }
+#nsip {
+  position: relative;
+  width: 100%;
+  height: 450px; /* adjust this to your desired height */
+  background-image: url("/src/images/bluebase.png");
+  background-repeat: no-repeat;
+  background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
+}
+#nsip img {
+  position: relative;
+  top: 50%;
+  left: 30%;
+
+  transform: translate(
+    -45%,
+    -55%
+  ); /* center the other image horizontally and vertically */
+}
 #cta11 {
   position: relative;
   width: 100%;

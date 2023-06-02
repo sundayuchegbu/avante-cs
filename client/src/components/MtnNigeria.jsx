@@ -46,7 +46,7 @@ const MtnNigeria = () => {
             <img
               src={mtn2}
               alt="mtn2"
-              className=" block -mx-4 w-[100%]  h-[70%] "
+              className=" block -mx-4 w-[488.47px] h-[545.1px] "
             />
           </div>
         </div>

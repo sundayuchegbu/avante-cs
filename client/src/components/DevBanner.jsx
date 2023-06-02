@@ -14,15 +14,15 @@ const DevBanner = () => {
             <img
               src={webimage1}
               alt="webimage"
-              className="block w-[561px] h-[567px]"
+              className="block w-[561px] h-[567px] ml-44"
             />
           </div>
-          <div className={layout.sectionInfo}>
+          <div className={`ml-12 ${layout.sectionInfo}`}>
             <h2 className={`${styles.heading3} mb-4 `}>Web Development </h2>
             <div
               className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6 leading-[25.8px]`}
             >
-              <p className="text-dark">
+              <p className="text-dark font-inter font-normal text-[14px] leading-[25.8px]">
                 Welcome to our Web Development services, where we bring your
                 digital vision to life. Our skilled team of developers utilizes
                 a range of programming languages and frameworks to create

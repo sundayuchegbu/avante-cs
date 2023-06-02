@@ -12,7 +12,7 @@ const ProductBanner = () => {
           className={`bg-gradient-to-r from-blue-500 to-blue-400  ${layout.sectionReverse}`}
         >
           <div className={`  ${layout.sectionImgReverse1} h-[721px] mt-0   `}>
-            <img src={moloyalproduct} alt="moloyalproduct" />
+            <img src={moloyalproduct} alt="moloyalproduct" className="ml-72" />
           </div>
           <div className={` ml-24 ${layout.sectionInfo}`}>
             <h2 className={`${styles.heading3} mb-4 `}>
@@ -21,7 +21,7 @@ const ProductBanner = () => {
             <div
               className={`${styles.paragraph} max-w-[470px]  sm:p-auto mt-5 mb-6`}
             >
-              <p className="text-dark">
+              <p className="text-dark font-inter font-normal text-[16px]">
                 MoLoyal is a customer rewards program that incentivizes
                 customers to make transactions in various industries by offering
                 free airtime rewards. It also serves as a digital airtime retail
@@ -29,7 +29,7 @@ const ProductBanner = () => {
               </p>
             </div>
             <Link to="https://www.moloyal.com" target="_blank">
-              <button className="bg-secondary text-white flex flex-start font-bold py-4 px-24 rounded">
+              <button className="bg-secondary text-white flex flex-start font-normal font-inter py-4 px-24 rounded">
                 Request a demo
               </button>
             </Link>

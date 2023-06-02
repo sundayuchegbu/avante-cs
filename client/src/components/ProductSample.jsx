@@ -3,7 +3,6 @@ import styles, { layout } from "../style";
 import productimage1 from "../images/productimage1.png";
 import productimage2 from "../images/productimage2.png";
 import productimage3 from "../images/productimage3.png";
-import arrow4 from "../images/arrow4.svg";
 import { Link } from "react-router-dom";
 
 const ProductSample = () => {
