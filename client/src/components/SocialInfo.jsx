@@ -8,7 +8,7 @@ const SocialInfo = () => {
         id="cta3"
         className={`hidden sm:block mr-56 mt-[400px] ${layout.sectionInfo}`}
       >
-        <ul className="relative ml-[50px] mt-[-900px] hidden md:block">
+        <ul className="relative ml-[50px] mt-[-300px] hidden md:block">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
               id="list-radio-license1"
@@ -84,7 +84,7 @@ const SocialInfo = () => {
       </div>
       <div
         id="cta4"
-        className={`${layout.sectionInfo} px-6 md:mt-24 mt-[-430px] md:mr-[100px]`}
+        className={`${layout.sectionInfo} px-6 md:mt-24 mt-[2px] md:mr-[100px]`}
       >
         <h2
           className={`font-inter font-semibold sm:text-[20px] mt-[20px] text-[16px] text-black sm:leading-[40.8px] leading-[30.8px] w-full mb-8 `}

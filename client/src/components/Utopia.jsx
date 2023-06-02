@@ -38,7 +38,7 @@ const Utopia = () => {
             <img
               src={utopia}
               alt="utopia"
-              className=" block -mx-4 w-[100%]  h-[70%] "
+              className=" block -mx-4 w-[70%]  h-[70%] "
             />
           </div>
         </div>

@@ -1,16 +1,20 @@
 import { layout } from "../style";
+import union1 from "../images/union1.png";
 import union from "../images/union.png";
 import { Link } from "react-router-dom";
 const Union = () => {
   return (
     <section className={` mt-[-250px] flex md:flex-row flex-col sm:py-16 py-6`}>
       <div>
-        <div className="hidden md:block md:mt-[400px]">
-          <div className={`relative md:mr-24  ${layout.sectionImgReverse1} `}>
+        <div className="hidden md:block md:mt-[50px]">
+          <div
+            id="union"
+            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+          >
             <img
-              src={union}
+              src={union1}
               alt="union"
-              className="block w-[488.47pz] h-[535.1px] ml-32"
+              className="block w-[60%] h-[70%] ml-32"
             />
           </div>
         </div>
@@ -20,7 +24,9 @@ const Union = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[200px] md:mr-44 px-8`}>
+      <div
+        className={`${layout.sectionInfo} md:mt-[20px] mt-[200px] md:ml-44 px-8`}
+      >
         <h2
           className={`font-Inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-40px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >

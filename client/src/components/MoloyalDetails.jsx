@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const MoloyalDetails = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-32 px-4 mt-24 ${layout.sectionInfo}`}>
+      <div className={`md:mx-32 px-4 mt-12 ${layout.sectionInfo}`}>
         <h2
           className={`font-inter font-semibold sm:text-[16px] mt-[20px] text-[20px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-2 `}
         >
@@ -44,11 +44,11 @@ const MoloyalDetails = () => {
           />{" "}
         </Link>
       </div>
-      <div className={`${layout.sectionImg} mx-24 px-24 relative`}>
+      <div className={`${layout.sectionImg} sm:mx-24 px-24 relative`}>
         <img
           src={loyalty}
           alt="card"
-          className=" block  md:w-[479px] w-[371.34px]  md:h-[485.85px] "
+          className=" block  sm:w-[479px] w-full  sm:h-[485.85px] h-full "
         />
       </div>
     </section>

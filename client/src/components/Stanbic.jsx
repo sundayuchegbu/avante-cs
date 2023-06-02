@@ -35,7 +35,7 @@ const Stanbic = () => {
             <img
               src={stanbicibtc}
               alt="nsip"
-              className=" block -mx-4 w-[488.47pz] h-[535.1px]"
+              className=" block -mx-4 w-[450.47px] h-[430.1px]"
             />
           </div>
         </div>

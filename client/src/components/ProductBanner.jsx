@@ -29,7 +29,7 @@ const ProductBanner = () => {
               </p>
             </div>
             <Link to="https://www.moloyal.com" target="_blank">
-              <button className="bg-secondary text-white flex flex-start font-normal font-inter py-4 px-24 rounded">
+              <button className="bg-secondary text-white flex flex-start font-normal font-inter py-4 px-8 rounded">
                 Request a demo
               </button>
             </Link>
@@ -37,7 +37,11 @@ const ProductBanner = () => {
         </div>
       </div>
       <div className=" block md:hidden flex-col flex justify-center item-center bg-background mb-12">
-        <img src={smallloyal} alt="smallloyal" />
+        <img
+          src={smallloyal}
+          alt="smallloyal"
+          className="w-[1200px] h-[100%]"
+        />
         <div className="flex-start bg-background mt-12">
           <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-6 ">
             Mo{" "}

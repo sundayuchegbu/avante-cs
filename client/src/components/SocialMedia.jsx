@@ -49,8 +49,7 @@ const SocialMedia = () => {
           </p>
           <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
             <span className="mx-[60px] text-[14px] font-inter font-normal">
-              eGain Demo Chat{" "}
-            </span>
+              Contact us           </span>
           </button>
         </div>
       </div>
