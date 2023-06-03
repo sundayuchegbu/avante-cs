@@ -198,7 +198,7 @@ const Footer = ({ link }) => {
                           <img
                             src={Facebook}
                             alt="Facebook"
-                            className="w-auto h-auto p-6 mr-1"
+                            className="w-auto h-auto sm:p-6 p-8 "
                           />
                         </Link>
                       </div>
@@ -211,7 +211,7 @@ const Footer = ({ link }) => {
                           <img
                             src={instagram}
                             alt="twitter"
-                            className="w-auto h-auto p-4 "
+                            className="w-auto h-auto sm:p-4 p-6 "
                           />
                         </Link>
                       </div>
@@ -223,7 +223,7 @@ const Footer = ({ link }) => {
                           <img
                             src={insta}
                             alt="insta"
-                            className="w-auto h-auto p-3"
+                            className="w-auto h-auto sm:p-3 p-4"
                           />
                         </Link>
                       </div>

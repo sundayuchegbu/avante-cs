@@ -39,10 +39,7 @@ const MtnNigeria = () => {
       </div>
       <div>
         <div className="hidden md:block">
-          <div
-            id="cta10"
-            className={`${layout.sectionImg} mx-24 px-24 relative`}
-          >
+          <div id="" className={`${layout.sectionImg} mx-24 px-24 relative`}>
             <img
               src={mtn2}
               alt="mtn2"

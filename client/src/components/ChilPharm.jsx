@@ -40,7 +40,7 @@ const ChilPharm = () => {
             <img
               src={pharm}
               alt="pharm"
-              className=" block -mx-4 w-[100%]  h-[70%] "
+              className=" block -mx-4 w-[480.47px] h-[400.1px] "
             />
           </div>
         </div>

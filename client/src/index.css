@@ -198,6 +198,25 @@
     -50%
   ); /* center the other image horizontally and vertically */
 }
+#ninemobile {
+  position: relative;
+  width: 100%;
+  height: 600px; /* adjust this to your desired height */
+  background-image: url("/src/images/redbase.png");
+  background-repeat: no-repeat;
+  background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
+}
+
+#ninemobile img {
+  position: relative;
+  top: 57%;
+  left: 50%;
+
+  transform: translate(
+    -55%,
+    -45%
+  ); /* center the other image horizontally and vertically */
+}
 #union {
   position: relative;
   width: 100%;
@@ -386,6 +405,22 @@
 #cta19 img {
   position: absolute;
   top: 67%;
+  left: 40%;
+  transform: translate(-30%, -70%);
+}
+#food {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust this to your desired height */
+  background-image: url("/src/images/smallred.png");
+  background-repeat: no-repeat;
+  background-position: center center; /* center the background image horizontally and align it to the bottom of the container */
+  margin-left: -25px;
+}
+
+#food img {
+  position: absolute;
+  top: 60%;
   left: 40%;
   transform: translate(-30%, -70%);
 }

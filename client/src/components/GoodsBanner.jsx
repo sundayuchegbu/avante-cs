@@ -8,11 +8,11 @@ const GoodsBanner = () => {
     <div>
       <div className="hidden md:block">
         <div id="financial" className={`mb-32  h-[721px] ${layout.section}`}>
-          <div className={`mx-32 ${layout.sectionInfo}`}>
+          <div className={`ml-24 ${layout.sectionInfo}`}>
             <h2
               className={`font-inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
-              Consumer goods{" "}
+              Consumer Goods{" "}
             </h2>
             <div
               className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
@@ -37,11 +37,11 @@ const GoodsBanner = () => {
               </button>
             </Link>
           </div>
-          <div className={`${layout.sectionImg} md:mx-24 md:px-24   relative`}>
+          <div className={`${layout.sectionImg}     relative`}>
             <img
               src={sme1}
               alt="consumer"
-              className=" mt-[20px] w-[471.19px] h-[518.48px]   "
+              className=" mt-[20px] w-[700.19px] h-[518.48px]   "
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ const GoodsBanner = () => {
             <img src={sme2} alt="consumer" className="w-[] h-[246.65px]" />
             <div className="flex-start bg-background mt-12 ">
               <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 ">
-                Consumer goods{" "}
+                Consumer Goods{" "}
               </h1>
 
               <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">

@@ -7,7 +7,7 @@ const Ninemobile = () => {
       <div>
         <div className="hidden md:block">
           <div
-            id="cta9"
+            id="ninemobile"
             className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
           >
             <img

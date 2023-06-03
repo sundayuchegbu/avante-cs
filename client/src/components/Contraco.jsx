@@ -39,7 +39,7 @@ const Contraco = () => {
             <img
               src={contraco}
               alt="contraco"
-              className=" block -mx-4 w-[100%]  h-[70%] "
+              className=" block -mx-4 w-[488.47px] h-[400.1px] "
             />
           </div>
         </div>

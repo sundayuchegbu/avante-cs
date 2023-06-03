@@ -69,7 +69,7 @@ const Projects = () => {
             <h2 className=" block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               MoLoyal{" "}
             </h2>
-            <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2 ">
+            <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-4 ">
               MoLoyal, the unique customer rewards programme, which helps
               businesses improve customer retention by rewarding customers with
               free airtime for every transaction made. Active members of MoLoyal
@@ -102,7 +102,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               Tado Emme{" "}
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Tado Emme is a fashion company that produces suits made for men
               who like African fashion, distinctive quality, and style. Their
               suits are made of the finest fabrics and sewn to perfection so
@@ -135,7 +135,7 @@ const Projects = () => {
             <h2 className=" block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-24 md:mb-2 mb-4">
               Lagos Waterways Authority (LASWA){" "}
             </h2>
-            <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2 ">
+            <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8 ">
               Lagos Waterways Authority (LASWA) is charged with the
               responsibility of coordinating and managing the reforms necessary
               for the long-term growth and development of water transportation
@@ -169,7 +169,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-24 md:mb-2 mb-4">
               Infrastructure Delivery International{" "}
             </h2>
-            <p className="  font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className="  font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               We understand that addressing Africa’s infrastructural gaps will
               require not only the best in international expertise, but also a
               deep understanding of how Africa works.
@@ -201,7 +201,7 @@ const Projects = () => {
             <h2 className=" block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               Decima and Co
             </h2>
-            <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2 ">
+            <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8 ">
               Decima and company is a management consulting firm established in
               2018. We provide services including financial advisory, strategy
               formulation and implementation as well as business process
@@ -234,7 +234,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               Data Starkey Network Limited{" "}
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Data Starkey Network System is an information Based system
               specially designed to offer varieties of services tailored to
               solving some social and industrial problem that has been
@@ -267,7 +267,7 @@ const Projects = () => {
             <h2 className=" block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               Compass Global Service
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Compass Global Services is a consultancy firm specializing in;
               International Trade/investment Promotion, Strategic Business
               Planning, Enterprise Development/Solutions, Access to New
@@ -301,7 +301,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               4H Offshore
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               4H Offshore provides optimal, timely, and quality goods and
               services in a safe and environmentally friendly manner to the Oil
               and Gas, power, and petrochemical industries.
@@ -333,7 +333,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               3RD Sector Development Solutions
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Third Sector Development Solutions (TSDS) is a Nigerian
               consultancy platform set-up to provide support & information to
               organizations in the third Sector
@@ -365,7 +365,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               Watermans Legal Practitioners
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               {" "}
               Waterman’s, Legal Practitioners was registered to do business by
               the Corporate Affairs Commission; Nigeria in April 2003. The
@@ -399,7 +399,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               Silverstream Energy{" "}
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               {" "}
               We are an energy sector focused company principally involved in
               providing environmental protection solution, targeted at the oil &
@@ -434,7 +434,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               MoLoyal Customer App
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               MoLoyal™, the unique customer rewards programme, which helps
               businesses improve customer retention by rewarding customers with
               free airtime for every transaction made.
@@ -466,7 +466,7 @@ const Projects = () => {
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
               MoLoyal Agent App{" "}
             </h2>
-            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-2">
+            <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Moloyal agent app provides a platform for merchants to enable
               agents that will dispense airtime, process loyalty rewards for
               customers and scan tickets.

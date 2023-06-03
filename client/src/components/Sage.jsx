@@ -33,14 +33,11 @@ const Sage = () => {
       </div>
       <div>
         <div className="hidden md:block">
-          <div
-            id="cta10"
-            className={`${layout.sectionImg} mx-24 px-24 relative`}
-          >
+          <div id="" className={`${layout.sectionImg} mx-24 px-24 relative`}>
             <img
               src={sage}
               alt="sage"
-              className=" block -mx-4 w-[100%]  h-[70%] "
+              className=" block -mx-4 w-[488.47px] h-[400.1px] "
             />
           </div>
         </div>

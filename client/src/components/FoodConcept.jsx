@@ -18,7 +18,7 @@ const FoodConcept = () => {
           </div>
         </div>
         <div className="px-8 block md:hidden mx-8">
-          <div id="cta19" className="block md:hidden">
+          <div id="food" className="block md:hidden">
             <img src={foodconcept} alt="foodconcept" />
           </div>
         </div>

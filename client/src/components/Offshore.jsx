@@ -20,7 +20,11 @@ const Offshore = () => {
         </div>
         <div className="px-8 block md:hidden mx-8">
           <div id="cta19" className="block md:hidden">
-            <img src={offshore1} alt="offshore1" />
+            <img
+              src={offshore1}
+              alt="offshore1"
+              className="w-[488.47px] h-[400.1px]"
+            />
           </div>
         </div>
       </div>

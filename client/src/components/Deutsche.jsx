@@ -1,4 +1,4 @@
-import  { layout } from "../style";
+import { layout } from "../style";
 import deutsche from "../images/deutsche.png";
 import { Link } from "react-router-dom";
 
@@ -37,14 +37,11 @@ const Deutsche = () => {
       </div>
       <div>
         <div className="hidden md:block">
-          <div
-            id="cta10"
-            className={`${layout.sectionImg} mx-24 px-24 relative`}
-          >
+          <div id="" className={`${layout.sectionImg} mx-24 px-24 relative`}>
             <img
               src={deutsche}
               alt="deutsche"
-              className=" block -mx-4 w-[100%]  h-[70%] "
+              className=" block -mx-4 w-[500px]  h-[450px] "
             />
           </div>
         </div>
