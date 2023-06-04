@@ -9,7 +9,7 @@ const FinancialSector = () => {
     <div>
       <div className="hidden md:block">
         <div id="financial" className={`mb-32  h-[721px] ${layout.section}`}>
-          <div className={`mx-32 ${layout.sectionInfo}`}>
+          <div className={`ml-24 ${layout.sectionInfo}`}>
             <h2
               className={`font-inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
@@ -42,7 +42,7 @@ const FinancialSector = () => {
             <img
               src={financial1}
               alt="card"
-              className=" mt-[20px] w-[471.19px] h-[518.48px]   "
+              className=" mt-[20px] w-[700.19px] h-[518.48px]    "
             />
           </div>
         </div>
