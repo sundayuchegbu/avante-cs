@@ -15,13 +15,13 @@ const ProductSample = () => {
         >
           OUR <span className="text-primary">PRODUCT</span>{" "}
         </h2>
-        <div className=" flex items-center justify-center    mb-4 hidden md:block">
+        <div className=" flex items-center justify-center    mb-4  hidden md:block">
           <h3 className=" font-inter font-normal md:text-[32px] text-[16px]  ">
             Cutting-edge Solutions <br />
             Transforming Businesses Today{" "}
           </h3>{" "}
         </div>
-        <div className=" items-center justify-center   visible md:invisible ">
+        <div className=" items-center justify-center  mb-12   visible md:invisible ">
           <h3 className=" font-inter font-semibold md:text-[28px] text-[12px] w-auto ">
             Cutting-edge Solutions Transforming Businesses Today
           </h3>{" "}
@@ -40,7 +40,7 @@ const ProductSample = () => {
           </button>
         </Link>{" "}
         <div className="flex ">
-          <ul className=" mr-8 mt-0 mt-12">
+          <ul className=" mr-8 sm:mt-0 mt-16">
             <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
               <input
                 id="list-radio-license11"
@@ -106,11 +106,11 @@ const ProductSample = () => {
           <img
             src={productimage1}
             alt="productimage1"
-            className="md:w-[543px] md:h-[500px] w-[214px] ml-24 h-[157px]  mb-4"
+            className="md:w-[543px] md:h-[500px] w-[214px] sm:ml-24 h-[157px] mt-8  mb-4"
           />
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[410px] `}>
+      <div className={`${layout.sectionInfo} mt-[410px]  hidden sm:block`}>
         <img
           src={productimage2}
           alt="productimage2"
