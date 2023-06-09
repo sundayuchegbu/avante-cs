@@ -2,12 +2,12 @@ import React from "react";
 import logo from "../images/logo.png";
 import styles from "../style";
 import mail from "../images/mail.png";
-import insta from "../images/insta.png";
+import insta2 from "../images/insta2.png";
 
 import Facebook from "../images/Facebook.png";
 import phone from "../images/phone.png";
 import sas2 from "../images/sas2.png";
-import instagram from "../images/instagram.png";
+import linkedin2 from "../images/linkedin2.png";
 import { Link } from "react-router-dom";
 
 const Footer = ({ link }) => {
@@ -209,7 +209,7 @@ const Footer = ({ link }) => {
                           to="https://www.linkedin.com/company/avante-consulting-solutions-ltd/mycompany/"
                         >
                           <img
-                            src={instagram}
+                            src={linkedin2}
                             alt="twitter"
                             className="w-auto h-auto sm:p-4 p-6 "
                           />
@@ -221,7 +221,7 @@ const Footer = ({ link }) => {
                           target="_blank"
                         >
                           <img
-                            src={insta}
+                            src={insta2}
                             alt="insta"
                             className="w-auto h-auto sm:p-3 p-4"
                           />
