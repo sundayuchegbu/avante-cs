@@ -188,7 +188,7 @@ export const clients = [
   },
   {
     id: "client-3",
-    logo: stanbic,
+    logo: access,
   },
   {
     id: "client-4",
@@ -200,7 +200,7 @@ export const clients = [
   },
   {
     id: "client-6",
-    logo: access,
+    logo: stanbic,
   },
 ];
 

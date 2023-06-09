@@ -209,7 +209,7 @@ const Projects = () => {
             </p>
             <Link to="https://idi-ng.com">
               <button
-                className="block text-secondary ml-[350px] sm:-mt-4 md:text-[12px] text-[7.38px] "
+                className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
                 Read more{" "}
@@ -219,7 +219,7 @@ const Projects = () => {
               <img
                 src={arrow}
                 alt="arrow"
-                className="-mt-4  ml-[390px] h-[15px]   w-[100px] top-[10px] "
+                className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
               />{" "}
             </Link>
           </div>

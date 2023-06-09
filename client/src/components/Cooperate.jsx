@@ -85,7 +85,7 @@ const Cooperate = () => (
         Consulting for transformation <br />
         by providing Business Tools
       </h3>
-      <p
+      <div
         className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-4 mb-6`}
       >
         Avante Consulting Solutions provides business and technology services
@@ -97,7 +97,7 @@ const Cooperate = () => (
         and institutions.<p className="mb-2"></p> We leverage our deep industry
         insight and integrated breadth of capabilities to enable transformation
         for our clients and the industry.
-      </p>
+      </div>
     </div>
   </section>
 );

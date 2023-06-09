@@ -20,7 +20,7 @@ export const Card = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <div className="sm:ml-32 ">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center sm:px-8 p-2 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
             <div className="text-white text-4xl sm:text-6xl bg-primary sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] rounded-full p-4  absolute">
               <i>
                 <img
@@ -30,16 +30,16 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white ml-8 sm:text-[32px] text-[24px] font-inter font-semibold mb-4">
+            <div className="text-white sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter font-semibold mb-4">
               Business Consulting{" "}
             </div>
-            <div className="text-white ml-8 leading-[25.8px font-inter sm:text-[14px] text-[12px] sm:text-base mb-4">
+            <div className="text-white ml-8 leading-[25.8px font-inter sm:text-[14px] text-[10px] sm:text-base mb-4">
               Avante Consulting provides implementation solutions for our
               customers from pre-sales assistance ...
             </div>
             <Link to="/services/consulting">
               <button className="flex sm:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-                <span className="mr-12">Read more</span>
+                <span className="sm:mr-8 mr-20">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
@@ -53,7 +53,7 @@ export const Card = () => {
         </div>
 
         <div className="sm:mt-24 sm:ml-4 ">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[338px] sm:h-[293px] h-[223px]">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[320px] sm:h-[293px] h-[215px]">
             <div className="text-white text-4xl sm:text-6xl sm:ml-[415px] ml-[30px] bg-primary sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-12">
               <i>
                 <img
@@ -85,7 +85,7 @@ export const Card = () => {
           </div>
         </div>
         <div className="sm:ml-32 ">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
             <div className="text-white text-4xl sm:text-6xl bg-primary sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] rounded-full p-4 absolute">
               <i>
                 <img
@@ -117,7 +117,7 @@ export const Card = () => {
           </div>
         </div>
         <div className="sm:mt-24 sm:ml-4 ">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[338px] sm:h-[293px] h-[223px]">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[320px] sm:h-[293px] h-[215px]">
             <div className="text-white text-4xl sm:text-6xl sm:ml-[415px] ml-[30px] bg-primary sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-12">
               <i>
                 <img
