@@ -352,6 +352,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               className=" font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10 mb-6 text-[14px]"
+              onClick={() => setShowMobileNav(true)}
             >
               HOME
             </NavLink>
@@ -374,7 +375,6 @@ const Navbar = () => {
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
-                  onClick={() => setShowMobileNav(true)}
                 >
                   SERVICES
                   <svg
@@ -531,7 +531,6 @@ const Navbar = () => {
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
-                  onClick={() => setShowMobileNav(true)}
                 >
                   CLIENTS
                   <svg
