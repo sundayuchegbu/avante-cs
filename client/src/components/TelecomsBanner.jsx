@@ -16,9 +16,13 @@ const TelecomsBanner = () => {
             <div
               className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
-              Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-              velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
-              Proin vel orci tempor velit mattis tempor at nisi.
+              Avante Consulting is a trusted partner for telecom companies
+              seeking to thrive in the dynamic and competitive
+              telecommunications sector. Our specialized consulting services
+              empower organizations to optimize network infrastructure, enhance
+              customer experiences, drive innovation, and seize new market
+              opportunities. Partner with us to navigate the evolving telecom
+              landscape and achieve strategic growth.{" "}
             </div>
             <Link to="/contacts">
               {" "}
@@ -55,9 +59,13 @@ const TelecomsBanner = () => {
               </h1>
 
               <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
-                Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-                velit mattis tempor at nisiLorem ipsum dolor sit amet
-                consectetur. Proin vel orci tempor velit mattis tempor at nisi.
+                Avante Consulting is a trusted partner for telecom companies
+                seeking to thrive in the dynamic and competitive
+                telecommunications sector. Our specialized consulting services
+                empower organizations to optimize network infrastructure,
+                enhance customer experiences, drive innovation, and seize new
+                market opportunities. Partner with us to navigate the evolving
+                telecom landscape and achieve strategic growth.
               </p>
               <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">

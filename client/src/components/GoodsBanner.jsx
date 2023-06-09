@@ -17,9 +17,13 @@ const GoodsBanner = () => {
             <div
               className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
-              Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-              velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
-              Proin vel orci tempor velit mattis tempor at nisi.
+              Avante Consulting provides tailored consulting services for
+              consumer goods companies seeking to thrive in the ever-changing
+              market landscape. Our industry expertise and innovative strategies
+              help optimize supply chain operations, enhance brand positioning,
+              drive customer engagement, and capitalize on emerging trends.
+              Partner with us to gain a competitive edge and achieve sustainable
+              growth in the dynamic consumer goods industry.
             </div>
             <Link to="/contacts">
               {" "}
@@ -56,9 +60,14 @@ const GoodsBanner = () => {
               </h1>
 
               <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
-                Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-                velit mattis tempor at nisiLorem ipsum dolor sit amet
-                consectetur. Proin vel orci tempor velit mattis tempor at nisi.
+                Avante Consulting provides tailored consulting services for
+                consumer goods companies seeking to thrive in the ever-changing
+                market landscape. Our industry expertise and innovative
+                strategies help optimize supply chain operations, enhance brand
+                positioning, drive customer engagement, and capitalize on
+                emerging trends. Partner with us to gain a competitive edge and
+                achieve sustainable growth in the dynamic
+                consumer goods industry.
               </p>
               <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">

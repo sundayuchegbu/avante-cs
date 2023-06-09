@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const AgencyBanner = () => {
   return (
-    <div>
+    <div className="">
       <div className="hidden md:block">
         <div id="ctas2" className={`  h-[721px] ${layout.section}`}>
           <div className={`mx-32 ${layout.sectionInfo}`}>
@@ -18,11 +18,16 @@ const AgencyBanner = () => {
               Agencies{" "}
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
-              Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-              velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
-              Proin vel orci tempor velit mattis tempor at nisi.
+              Avante Consulting understands the unique challenges faced by
+              government agencies. We provide specialized consulting services
+              tailored to meet the specific needs of public sector
+              organizations. Our team of experts offers strategic guidance,
+              process optimization, and technology solutions to enhance
+              efficiency, transparency, and citizen services. Partner with us to
+              navigate the complexities of government operations and drive
+              sustainable growth.
             </div>
             <Link to="/contacts">
               {" "}
@@ -62,9 +67,13 @@ const AgencyBanner = () => {
             AGENCIES
           </h1>
           <p className="font-inter font-normal text-[12px] mt-12 ml-8 mr-4 leading-[30.8px]">
-            Lorem ipsum dolor sit amet consectetur. Proin vel orci temporvelit
-            mattis tempor at nisiLorem ipsum dolor sit amet consectetur. Proin
-            vel orci tempor velit mattis tempor at nisi.
+            Avante Consulting understands the unique challenges faced by
+            government agencies. We provide specialized consulting services
+            tailored to meet the specific needs of public sector organizations.
+            Our team of experts offers strategic guidance, process optimization,
+            and technology solutions to enhance efficiency, transparency, and
+            citizen services. Partner with us to navigate the complexities of
+            government operations and drive sustainable growth.
           </p>
           <button className="flex  items-center text-white text-[12px] ml-8 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
             <span className="mx-8 text-[12px] font-inter font-normal">

@@ -16,11 +16,15 @@ const SMEBanner = () => {
               SME
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
-              Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-              velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
-              Proin vel orci tempor velit mattis tempor at nisi.
+              Avante Consulting understands the unique challenges and
+              aspirations of small and medium-sized enterprises (SMEs). Our
+              tailored consulting services offer practical solutions to help
+              SMEs streamline operations, optimize resources, implement
+              cost-effective technologies, and accelerate growth. Partner with
+              us to unlock the full potential of your business and achieve
+              sustainable success in today's competitive market.
             </div>
             <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
               <span className="mx-8 text-[12px] font-inter font-normal">
@@ -52,9 +56,13 @@ const SMEBanner = () => {
           </h1>
 
           <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
-            Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor velit
-            mattis tempor at nisiLorem ipsum dolor sit amet consectetur. Proin
-            vel orci tempor velit mattis tempor at nisi.
+            Avante Consulting understands the unique challenges and aspirations
+            of small and medium-sized enterprises (SMEs). Our tailored
+            consulting services offer practical solutions to help SMEs
+            streamline operations, optimize resources, implement cost-effective
+            technologies, and accelerate growth. Partner with us to unlock the
+            full potential of your business and achieve sustainable success in
+            today's competitive market.
           </p>
           <Link to="/contacts">
             <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">

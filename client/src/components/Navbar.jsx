@@ -205,14 +205,17 @@ const Navbar = () => {
           PRODUCTS
         </NavLink>
 
-        <Menu as="div" className="relative inline-block text-left mr-9">
+        <Popover
+          as="div"
+          className="relative group inline-block text-left mr-9"
+        >
           <div
             onMouseEnter={() => setIsShowing(true)}
             onMouseLeave={() => setIsShowing(false)}
           >
-            <Menu.Button
-              type="button"
-              className="inline-flex w-full justify-center gap-x-2 rounded-md bg-background px-3 py-0 text-[14px]  text-gray-900   ring-inset ring-gray-300 hover:bg-background hover:text-primary"
+            <Popover.Button
+              type="popover-button"
+              className="inline-flex w-full justify-center focus:ring-0 focus:ring-offset-0  gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px]  text-gray-900   hover:bg-background focus:ring-none hover:text-primary"
               id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
@@ -230,7 +233,7 @@ const Navbar = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </Menu.Button>
+            </Popover.Button>
           </div>
 
           <Transition
@@ -238,15 +241,9 @@ const Navbar = () => {
             onMouseEnter={() => setIsShowing(true)}
             onMouseLeave={() => setIsShowing(false)}
             as={Fragment}
-            enter="transition ease-out duration-200"
-            enterFrom="opacity-0 translate-y-1"
-            enterTo="opacity-100 translate-y-0"
-            leave="transition ease-in duration-150"
-            leaveFrom="opacity-100 translate-y-0"
-            leaveTo="opacity-0 translate-y-1"
           >
             <div>
-              <Menu.Items
+              <Popover.Panel
                 className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
                 role="menu"
                 aria-orientation="vertical"
@@ -254,7 +251,7 @@ const Navbar = () => {
                 tabIndex="-1"
               >
                 <div className="py-1" role="none">
-                  <Menu.Item>
+                  <Popover.Panel>
                     <Link
                       to="/clients/agencies"
                       className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
@@ -264,9 +261,9 @@ const Navbar = () => {
                     >
                       Government Agencies
                     </Link>
-                  </Menu.Item>
+                  </Popover.Panel>
 
-                  <Menu.Item>
+                  <Popover.Panel>
                     <Link
                       to="/clients/financial"
                       className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
@@ -276,10 +273,10 @@ const Navbar = () => {
                     >
                       Financial Sector
                     </Link>
-                  </Menu.Item>
+                  </Popover.Panel>
                 </div>
                 <div className="py-0" role="none">
-                  <Menu.Item>
+                  <Popover.Panel>
                     <Link
                       to="/clients/telecoms"
                       className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
@@ -289,9 +286,9 @@ const Navbar = () => {
                     >
                       Telecoms Sector{" "}
                     </Link>
-                  </Menu.Item>
+                  </Popover.Panel>
 
-                  <Menu.Item>
+                  <Popover.Panel>
                     <Link
                       to="/clients/sme"
                       className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
@@ -301,10 +298,10 @@ const Navbar = () => {
                     >
                       SME{" "}
                     </Link>
-                  </Menu.Item>
+                  </Popover.Panel>
                 </div>
                 <div className="py-0" role="none">
-                  <Menu.Item>
+                  <Popover.Panel>
                     <Link
                       to="/clients/goods"
                       className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
@@ -314,12 +311,12 @@ const Navbar = () => {
                     >
                       Consumer Goods{" "}
                     </Link>
-                  </Menu.Item>
+                  </Popover.Panel>
                 </div>
-              </Menu.Items>
+              </Popover.Panel>
             </div>
           </Transition>
-        </Menu>
+        </Popover>
         <NavLink
           to="/news"
           className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
@@ -335,8 +332,8 @@ const Navbar = () => {
       </div>
       <div className="sm:hidden flex flex-1 justify-end items-center bg-background">
         <img
-          src={toggle ? close : menu}
-          className="w-[28px] h-[28px] object-contain"
+          src={`${toggle && !showMobileNav ? close : menu} `}
+          className={` w-[28px] h-[28px] object-contain`}
           onClick={() => {
             setToggle((prev) => !prev);
             setShowMobileNav(false);
@@ -630,6 +627,7 @@ const Navbar = () => {
             <NavLink
               to="/news"
               className="font-inter font-normal text-black1 cursor-pointer text-[14px] hover:text-primary mb-6"
+              onClick={() => setShowMobileNav(true)}
             >
               NEWS
             </NavLink>

@@ -13,14 +13,18 @@ const FinancialSector = () => {
             <h2
               className={`font-inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
-              Financial sectors
+              Financial Sector
             </h2>
             <div
               className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
-              Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-              velit mattis tempor at nisiLorem ipsum dolor sit amet consectetur.
-              Proin vel orci tempor velit mattis tempor at nisi.{" "}
+              Avante Consulting has extensive experience working with clients in
+              the financial sector. Our tailored consulting services help
+              financial institutions navigate the evolving landscape, address
+              regulatory requirements, optimize operations, and drive digital
+              transformation. Partner with us to enhance risk management,
+              improve customer experiences, and achieve sustainable growth in
+              the competitive financial industry.{" "}
             </div>
             <Link to="/contacts">
               {" "}
@@ -59,9 +63,13 @@ const FinancialSector = () => {
                 SECTORS
               </h1>
               <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
-                Lorem ipsum dolor sit amet consectetur. Proin vel orci tempor
-                velit mattis tempor at nisiLorem ipsum dolor sit amet
-                consectetur. Proin vel orci tempor velit mattis tempor at nisi.
+                Avante Consulting has extensive experience working with clients
+                in the financial sector. Our tailored consulting services help
+                financial institutions navigate the evolving landscape, address
+                regulatory requirements, optimize operations, and drive digital
+                transformation. Partner with us to enhance risk management,
+                improve customer experiences, and achieve sustainable growth in
+                the competitive financial industry.
               </p>
               <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
