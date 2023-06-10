@@ -1,10 +1,10 @@
 import { layout } from "../style";
 import solution from "../images/solution.jpeg";
 const Cooperate = () => (
-  <section className={`flex md:flex-row flex-col sm:py-16 py-6 px-4`}>
+  <section className={`flex md:flex-row flex-col sm:py-16 py-6 px-4 mb-14`}>
     <div className={` relative ${layout.sectionImgReverse}`}>
-      <div className="flex">
-        <ul className=" md:mr-24 mr-4  md:mt-[200px] mt-[110px]">
+      <div className="relative flex">
+        {/* <ul className=" md:mr-24 mr-4  md:mt-[200px] mt-[110px]">
           <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
             <input
               id="list-radio-license17"
@@ -66,12 +66,15 @@ const Cooperate = () => (
               disabled
             />{" "}
           </li>
-        </ul>
+        </ul> */}
         <img
           src={solution}
           alt="codeit"
           className="block md:w-[400px] w-[336.6px] md:h-[400px] h-[238px] "
         />
+        <div className=" absolute top-0 bottom-0 left-1/2  w-4 bg-background"></div>
+        <div className=" absolute top-0 right-0 sm:w-48 w-40  sm:h-20 h-12 bg-background"></div>
+        <div className=" absolute bottom-0 left-0 sm:w-52 w-44 sm:h-20 h-12 bg-background"></div>
       </div>
     </div>
     <div className={layout.sectionInfo}>

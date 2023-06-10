@@ -190,7 +190,7 @@ const Footer = ({ link }) => {
                   </li>
                   <div className="flex mt-4">
                     <ul className="flex">
-                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-6 hover:bg-blue">
+                      <div className="flex  h-[40px] w-[39.97px]  rounded-full ring-2 ring-white  mr-6 hover:bg-blue">
                         <Link
                           target="_blank"
                           to="https://web.facebook.com/AvanteConsultingSolutions?_rdc=1&_rdr"
@@ -198,12 +198,12 @@ const Footer = ({ link }) => {
                           <img
                             src={Facebook}
                             alt="Facebook"
-                            className="w-auto h-auto sm:p-6 p-8 "
+                            className="w-[11.99px] h-[12px] mt-3.5 ml-3.5 -p-1  "
                           />
                         </Link>
                       </div>
 
-                      <div className=" flex  h-full w-full  rounded-full ring-2 ring-white hover:bg-blue  mr-7">
+                      <div className=" flex  h-[40px] w-[39.97px]  rounded-full ring-2 ring-white hover:bg-blue  mr-7">
                         <Link
                           target="_blank"
                           to="https://www.linkedin.com/company/avante-consulting-solutions-ltd/mycompany/"
@@ -211,11 +211,11 @@ const Footer = ({ link }) => {
                           <img
                             src={linkedin2}
                             alt="twitter"
-                            className="w-auto h-auto sm:p-4 p-6 "
+                            className="w-[11.99px] h-[12px] mt-3.5 ml-3.5 -p-1  "
                           />
                         </Link>
                       </div>
-                      <div className="flex  h-full w-full  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
+                      <div className="flex  h-[40px] w-[39.97px]  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
                         <Link
                           to="https://www.instagram.com/avanteconsultingsolutions"
                           target="_blank"
@@ -223,7 +223,7 @@ const Footer = ({ link }) => {
                           <img
                             src={insta2}
                             alt="insta"
-                            className="w-auto h-auto sm:p-3 p-4"
+                            className="w-[11.99px] h-[12px]  mt-3.5 ml-3.5 -p-1 "
                           />
                         </Link>
                       </div>

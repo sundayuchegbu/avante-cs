@@ -33,13 +33,15 @@ export const Card = () => {
             <div className="text-white sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter font-semibold mb-4">
               Business Consulting{" "}
             </div>
-            <div className="text-white ml-8 leading-[25.8px font-inter sm:text-[14px] text-[10px] sm:text-base mb-4">
+            <div className="text-white font-inter font-normal ml-8 leading-[25.8px font-inter sm:text-[14px] text-[10px] sm:text-base mb-4">
               Avante Consulting provides implementation solutions for our
               customers from pre-sales assistance ...
             </div>
             <Link to="/services/consulting">
               <button className="flex sm:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-                <span className="sm:mr-8 mr-20">Read more</span>
+                <span className="sm:mr-8 mr-20 font-inter font-normal">
+                  Read more
+                </span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
@@ -63,16 +65,16 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-2 ml-[-26px]  sm:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
+            <div className="text-white font-inter  sm:ml-2 mr-20  sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
               Software Development
             </div>
-            <div className="text-white leading-[25.8px sm:text-[14px] text-[12px]  sm:text-base mb-4">
+            <div className=" font-inter font-normal text-white leading-[25.8px sm:text-[14px] text-[10px]  sm:text-base mb-4">
               Avante is a software development company that specializes in
               e-commerce, mobile solutions, ...
             </div>
             <Link to="/services/software">
-              <button className="flex sm:ml-0 ml-[-115px] items-center text-white text-[12px] ">
-                <span className="mr-12">Read more</span>
+              <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
+                <span className="mr-12 font-inter font-normal">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
@@ -95,15 +97,15 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-8 -ml-10 sm:text-[32px] text-[24px] font-inter font-semibold mb-4">
+            <div className="text-white font-inter font-normal sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter font-semibold mb-4">
               SAS Analytics{" "}
             </div>
-            <div className="text-white ml-8 font-inter leading-[25.8px sm:text-[14px] text-[12px] sm:text-base mb-4">
+            <div className="text-white font-inter font-normal ml-8 font-inter leading-[25.8px] sm:text-[14px] text-[10px] sm:text-base mb-4">
               Avante is a silver partner of SAS and a solution partner within
               the Customer ...
             </div>
             <Link to="/services/sas">
-              <button className="flex sm:ml-8 ml-[-53px] items-center text-white text-[12px] ">
+              <button className="flex sm:ml-8 ml-[-40px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
@@ -127,15 +129,15 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-2 ml-[-45px]  sm:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
+            <div className="text-white sm:mr-2 mr-20 font-inter font-normal sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
               Web Development{" "}
             </div>
-            <div className="text-white sm:text-[14px] leading-[25.8px] text-[12px]  sm:text-base mb-4">
+            <div className="text-white sm:text-[14px] font-inter font-normal leading-[25.8px] text-[10px]  sm:text-base mb-4">
               View our projects to see a lists of our clients and how we have
               helped them to take their business ...
             </div>
             <Link to="/services/web/development">
-              <button className="flex sm:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+              <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img

@@ -14,13 +14,13 @@ const Cards2 = () => {
         </h1>{" "}
       </div>
       <div className=" flex items-center justify-center md:items-end items-center sm:mr-[890px] ml-[150px] mb-4">
-        <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[16px]  ">
+        <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[14px]  ">
           Strategic Collaborative Alliances{" "}
         </h1>{" "}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
         <div className="sm:ml-[280px]  ml-4">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
             <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
@@ -30,16 +30,18 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white ml-8 md:text-[32px] text-[24px] font-inter font-semibold mb-4">
+            <div className="text-white sm:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4">
               eGain{" "}
             </div>
-            <div className=" font-inter font-normal text-white ml-8 font-inter sm:text-[14px] leading-[25.8px] text-[12px] md:text-base mb-4">
+            <div className=" font-inter font-normal text-white ml-8 font-inter sm:text-[14px] leading-[25.8px] text-[10px] md:text-base mb-4">
               Our partnership with eGain strengthens our commitment to the
               industry's most innovative ...
             </div>
             <Link to="/services/egain/collaboration">
-              <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
-                <span className="mr-12">Read more</span>
+              <button className="flex md:ml-8 ml-[-32px] items-center text-white text-[12px] ">
+                <span className="sm:mr-8 mr-16 font-inter font-normal">
+                  Read more
+                </span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
@@ -53,7 +55,7 @@ const Cards2 = () => {
         </div>
 
         <div className="md:mt-24 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[320px] md:h-[293px] h-[215px]">
             <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
               <i>
                 <img
@@ -63,7 +65,7 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-2 ml-[-45px]  sm:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
+            <div className="text-white sm:ml-2 mr-56  sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
               SAS{" "}
             </div>
             <div className=" font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
@@ -71,7 +73,7 @@ const Cards2 = () => {
               the Customer Intelligence practice.
             </div>
             <Link to="/services/sas">
-              <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+              <button className="flex  sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
@@ -85,7 +87,7 @@ const Cards2 = () => {
           </div>
         </div>
         <div className="sm:ml-[280px] sm:-mt-10 ml-4">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[338px] sm:h-[293px] h-[223px] ">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
             <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
@@ -95,15 +97,15 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white ml-8 md:text-[32px] text-[24px] font-inter font-semibold mb-4">
+            <div className="text-white sm:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4">
               ORACLE{" "}
             </div>
-            <div className=" font-inter font-normal leading-[25.8px] text-white ml-8 font-inter sm:text-[14px] text-[12px] md:text-base mb-4">
+            <div className=" font-inter font-normal leading-[25.8px] text-white ml-8 font-inter sm:text-[14px] text-[10px] md:text-base mb-4">
               Our Oracle Consultancy Practice is focused on helping
               organisations optimize and ...
             </div>
             <Link to="/services/oracle">
-              <button className="flex md:ml-8 ml-[-53px] items-center text-white text-[12px] ">
+              <button className="flex sm:ml-8 ml-[-40px] items-center text-white text-[12px] ">
                 <span className="mr-12 font-inter font-normal">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
@@ -117,7 +119,7 @@ const Cards2 = () => {
           </div>
         </div>
         <div className="sm:mt-10 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[338px] md:h-[293px] h-[223px]">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[320px] md:h-[293px] h-[215px]">
             <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
               <i>
                 <img
@@ -127,7 +129,7 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-2 -ml-4  md:text-[32px] text-[24px] font-inter font-semibold mb-4 ">
+            <div className="text-white sm:mr-2 mr-20  md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
               Microsoft{" "}
             </div>
             <div className="font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
@@ -135,7 +137,7 @@ const Cards2 = () => {
               e-commerce, mobile solutions,
             </div>
             <Link to="/services/software">
-              <button className="flex md:ml-0 ml-[-115px] items-center text-white text-[12px] ">
+              <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img

@@ -12,7 +12,7 @@ const Values = () => (
     </div>
     <div className={layout.sectionInfo}>
       <h2
-        className={`text-black font-Inter font-semibold xs:text-[16px] md:mt-[-200px] mt-[10px]  text-[16px]  xs:leading-[30.8px] leading-[66.8px] w-full md:mb-0 mb-0 md:p-0 p-4`}
+        className={`text-black font-inter font-semibold xs:text-[16px] md:mt-[-200px] mt-[10px]  text-[16px]  xs:leading-[30.8px] leading-[66.8px] w-full md:mb-0 mb-0 md:p-0 p-4`}
       >
         OUR <span className="text-primary">VALUES</span>{" "}
       </h2>
