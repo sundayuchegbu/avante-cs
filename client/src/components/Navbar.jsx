@@ -370,7 +370,7 @@ const Navbar = () => {
               <div>
                 <Menu.Button
                   type="button"
-                  className="inline-flex w-full justify-end item-end gap-x-2 rounded-none bg-background  text-[14px]  text-gray-900    ring-inset ring-gray-300  hover:text-primary font-inter font-normal"
+                  className="inline-flex w-full justify-end item-end gap-x-2 rounded-none    text-[14px]  text-gray-900    ring-inset ring-gray-300  hover:text-primary font-inter font-normal "
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
@@ -391,124 +391,125 @@ const Navbar = () => {
                   </svg>
                 </Menu.Button>
               </div>
+              <div id="submenu" className=" bg-none">
+                <Menu.Items
+                  className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="menu-button"
+                  tabIndex="-1"
+                  onClick={() => setShowMobileNav(true)}
+                >
+                  <div className="py-1" role="none">
+                    <Menu.Item>
+                      <Link
+                        to="/services/consulting"
+                        className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white text-[14px]"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-0"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        Business Consulting
+                      </Link>
+                    </Menu.Item>
 
-              <Menu.Items
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="menu-button"
-                tabIndex="-1"
-                onClick={() => setShowMobileNav(true)}
-              >
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/services/consulting"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white text-[14px]"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-0"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Business Consulting
-                    </Link>
-                  </Menu.Item>
+                    <Menu.Item>
+                      <Link
+                        to="/services/software"
+                        className="text-gray-700 block px-4 py-2 text-center  mb-4 text-[14px] hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-1"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        Software Development
+                      </Link>
+                    </Menu.Item>
+                  </div>
+                  <div className="py-1" role="none">
+                    <Menu.Item>
+                      <Link
+                        to="/services/sas"
+                        className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-2"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        SAS Analytics{" "}
+                      </Link>
+                    </Menu.Item>
 
-                  <Menu.Item>
-                    <Link
-                      to="/services/software"
-                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-1"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Software Development
-                    </Link>
-                  </Menu.Item>
-                </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/services/sas"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-2"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      SAS Analytics{" "}
-                    </Link>
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <Link
-                      to="/services/egain/collaboration"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-3"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      eGain Collaboration
-                    </Link>
-                  </Menu.Item>
-                </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/services/egain/knowledge"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-4"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      eGain Knowledge
-                    </Link>
-                  </Menu.Item>
-                  <Menu.Item>
-                    <Link
-                      to="/services/media/management"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-5"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Social Media Management{" "}
-                    </Link>
-                  </Menu.Item>
-                </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/services/oracle"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-6"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Oracle Database
-                    </Link>
-                  </Menu.Item>
-                </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="services/web/development"
-                      className="text-gray-700 block px-4 py-2 mb-4 text-[14px] text-center hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-6"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Web Development
-                    </Link>
-                  </Menu.Item>
-                </div>
-              </Menu.Items>
+                    <Menu.Item>
+                      <Link
+                        to="/services/egain/collaboration"
+                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-3"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        eGain Collaboration
+                      </Link>
+                    </Menu.Item>
+                  </div>
+                  <div className="py-1" role="none">
+                    <Menu.Item>
+                      <Link
+                        to="/services/egain/knowledge"
+                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-4"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        eGain Knowledge
+                      </Link>
+                    </Menu.Item>
+                    <Menu.Item>
+                      <Link
+                        to="/services/media/management"
+                        className="text-gray-700 block text-center px-4 py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-5"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        Social Media Management{" "}
+                      </Link>
+                    </Menu.Item>
+                  </div>
+                  <div className="py-1" role="none">
+                    <Menu.Item>
+                      <Link
+                        to="/services/oracle"
+                        className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-6"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        Oracle Database
+                      </Link>
+                    </Menu.Item>
+                  </div>
+                  <div className="py-1" role="none">
+                    <Menu.Item>
+                      <Link
+                        to="services/web/development"
+                        className="text-gray-700 block px-4 py-2 mb-4 text-[14px] text-center hover:bg-primary hover:text-white"
+                        role="menuitem"
+                        tabIndex="-1"
+                        id="menu-item-6"
+                        onClick={() => setShowMobileNav(true)}
+                      >
+                        Web Development
+                      </Link>
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </div>
             </Menu>
 
             <NavLink

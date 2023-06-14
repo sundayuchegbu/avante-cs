@@ -10,7 +10,7 @@ const Testimonial = () => (
           <img src={test} alt="test" className="mb-10" />{" "}
         </div>
 
-        <p className=" font-inter sm:text-[16px] sm:leading-[25.8px] leading-[25.8px] lg:w-[367.45] max-w-[290px] text-[10px] text-dark text-center mb-8">
+        <p className=" font-inter sm:text-[16px] sm:leading-[25.8px] leading-[15px] sm:w-542px w-[300.45px]  text-[10px] text-dark text-center mb-8">
           Avante CS Ltd. has a strong longstanding relationship with eGain
           <br className="sm:block hidden" />
           Communications in delivering successful projects across Nigeria.
