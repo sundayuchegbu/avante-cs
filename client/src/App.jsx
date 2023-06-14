@@ -21,6 +21,8 @@ import Telecoms from "./pages/clients/Telecoms";
 import SME from "./pages/clients/SME";
 import Goods from "./pages/clients/Goods";
 import NewsExplicit from "./components/NewsExplicit";
+import Register from "./pages/auth/Register";
+import { Toaster } from "react-hot-toast";
 
 const App = () => (
   <BrowserRouter>
@@ -47,6 +49,7 @@ const App = () => (
         <Route path="/clients/sme" element={<SME />} />
         <Route path="/clients/goods" element={<Goods />} />
         <Route path="/explicit" element={<NewsExplicit />} />
+        <Route path="/register" element={<Register />} />
 
         <Route
           path="/services/egain/collaboration"
@@ -57,6 +60,7 @@ const App = () => (
         <Route path="/services/oracle" element={<OracleDatabase />} />
         <Route path="/services/web/development" element={<WebDev />} />
       </Routes>
+      <Toaster />
       <Footer />
     </div>
   </BrowserRouter>

@@ -16,7 +16,7 @@ const About = () => (
     <Values />
     <Cooperate />
     <Feedback />
-    {/* <Cards2 /> */}
+    <Cards2 />
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Caller />

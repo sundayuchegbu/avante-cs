@@ -35,7 +35,7 @@ const Caller = () => {
               Get in Touch
             </button>
           </Link>
-          <p className="p-3 text-background text-[12px] font-inter font-normal ">
+          <p className="p-3 text-background text-[11px] font-inter font-normal ">
             Have any questions or enquiry about our services?
           </p>
         </div>

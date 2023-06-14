@@ -1,4 +1,6 @@
+const { uploadPicture } = require("../middleware/uploadPictureMiddleware");
 const User = require("../model/User");
+const { fileRemover } = require("../utils/fileRemover");
 
 const registerUser = async (req, res, next) => {
   try {
@@ -104,4 +106,64 @@ const updateProfile = async (req, res, next) => {
   }
 };
 
-module.exports = { registerUser, login, profile, updateProfile };
+const updateProfilePicture = async (req, res, next) => {
+  try {
+    const upload = uploadPicture.single("profilePicture");
+
+    upload(req, res, async function (err) {
+      if (err) {
+        const error = new Error(
+          "An unknown error occured when uploading" + err.message
+        );
+        next(error);
+      } else {
+        // if all is well
+        if (req.file) {
+          let filename;
+          let updatedUser = await User.findById(req.user._id);
+          filename = updatedUser.avatar;
+          if (filename) {
+            fileRemover(filename);
+          }
+          updatedUser.avatar = req.file.filename;
+          await updatedUser.save();
+          res.json({
+            _id: updatedUser._id,
+            avatar: updatedUser.avatar,
+            name: updatedUser.name,
+            email: updatedUser.email,
+            verified: updatedUser.verified,
+            admin: updatedUser.admin,
+            token: await updatedUser.generateJWT(),
+          });
+        } else {
+          let filename;
+          let updatedUser = await User.findById(req.user._id);
+          filename = updatedUser.avatar;
+          updatedUser.avatar = "";
+          await updatedUser.save();
+          fileRemover(filename);
+          res.json({
+            _id: updatedUser._id,
+            avatar: updatedUser.avatar,
+            name: updatedUser.name,
+            email: updatedUser.email,
+            verified: updatedUser.verified,
+            admin: updatedUser.admin,
+            token: await updatedUser.generateJWT(),
+          });
+        }
+      }
+    });
+  } catch (error) {
+    next();
+  }
+};
+
+module.exports = {
+  registerUser,
+  login,
+  profile,
+  updateProfile,
+  updateProfilePicture,
+};

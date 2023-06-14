@@ -330,7 +330,7 @@ const Navbar = () => {
           CONTACT US
         </NavLink>
       </div>
-      <div className="sm:hidden flex flex-1 justify-end items-center bg-background">
+      <div className="sm:hidden  flex flex-1 justify-end   items-center bg-background">
         <img
           src={`${toggle && !showMobileNav ? close : menu} `}
           className={` w-[28px] h-[28px] object-contain`}
@@ -341,11 +341,13 @@ const Navbar = () => {
           alt="menu"
         />
         <div
-          className={` p-6   absolute bg-background w-full h-full  top-20  pl-2 duration-500 py-24 min-w-[140px] ${
-            toggle ? "right-0 " : "right-[-100%] && collapse"
-          }  ${showMobileNav ? "hidden" : ""}`}
+          className={` p-6  absolute bg-background w-full h-full  top-20 pl-2 duration-500 py-24   ${
+            toggle ? " flex right-0 " : "right-[-100%]  hidden  "
+          }  ${showMobileNav ? "hidden" : ""} `}
         >
-          <div className="list-none px-3 text-left   flex flex-col justify-start items-start flex-1 -mt-12">
+          <div
+            className={`list-none px-3 text-left   flex flex-col justify-start items-start flex flex-1 -mt-12`}
+          >
             <NavLink
               to="/"
               className=" font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10 mb-6 text-[14px]"
