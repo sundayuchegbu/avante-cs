@@ -539,7 +539,7 @@ const Navbar = () => {
             <div>
               <div
                 onClick={() => setIsListed(!isListed)}
-                className="w-64 p-4 -ml-4 text-sm font-medium leading-none text-gray-800 flex items-center justify-between cursor-pointer"
+                className="w-64 p-4 -ml-4 text-sm font-medium leading-none text-gray-800 flex items-center  mb-4 justify-between cursor-pointer"
               >
                 CLIENTS
                 <div>
