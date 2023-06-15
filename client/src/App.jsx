@@ -26,8 +26,8 @@ import { Toaster } from "react-hot-toast";
 
 const App = () => (
   <BrowserRouter>
-    <div className="bg-background w-full overflow">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className="bg-background w-full overflow ">
+      <div className={`${styles.paddingX} ${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>

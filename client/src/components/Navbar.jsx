@@ -3,7 +3,7 @@ import { useState, useRef, Fragment } from "react";
 import close from "../images/close.svg";
 import menu from "../images/menu.svg";
 import logo from "../images/logo.png";
-import { Menu, Popover, Transition } from "@headlessui/react";
+import { Popover, Transition } from "@headlessui/react";
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -13,6 +13,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [isShowing, setIsShowing] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
+
+  const [isList, setIsList] = useState(false);
+  const [isListed, setIsListed] = useState(false);
 
   const triggerRef = useRef();
   const timeOutRef = useRef();
@@ -28,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" w-full flex p-8  justify-between items-center navbar ">
+    <nav className=" w-full flex p-8   justify-between items-center navbar ">
       <NavLink to="/">
         {" "}
         <img
@@ -330,7 +333,8 @@ const Navbar = () => {
           CONTACT US
         </NavLink>
       </div>
-      <div className="sm:hidden  flex flex-1 justify-end   items-center bg-background">
+
+      <div className="sm:hidden  flex flex-1 justify-end    items-center bg-background ">
         <img
           src={`${toggle && !showMobileNav ? close : menu} `}
           className={` w-[28px] h-[28px] object-contain`}
@@ -341,7 +345,7 @@ const Navbar = () => {
           alt="menu"
         />
         <div
-          className={` p-6  absolute bg-background w-full h-full  top-20 pl-2 duration-500 py-24   ${
+          className={` p-6  absolute bg-background w-full h-full   top-20 pl-2 duration-500 py-24   ${
             toggle ? " flex right-0 " : "right-[-100%]  hidden  "
           }  ${showMobileNav ? "hidden" : ""} `}
         >
@@ -362,155 +366,138 @@ const Navbar = () => {
             >
               ABOUT US
             </NavLink>
-            <Menu
-              as="div"
-              className="relative inline-block text-left mr-10 mb-4"
-              onClick={() => setShowMobileNav(true)}
-            >
-              <div>
-                <Menu.Button
-                  type="button"
-                  className="inline-flex w-full justify-end item-end gap-x-2 rounded-none    text-[14px]  text-gray-900    ring-inset ring-gray-300  hover:text-primary font-inter font-normal "
-                  id="menu-button"
-                  aria-expanded="true"
-                  aria-haspopup="true"
-                >
-                  SERVICES
-                  <svg
-                    className="mr-32 h-5 w-5 text-gray-400 -mt-2.5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.79 7.21a.75.75 0 011.06.02L17 11.168l-3.71 3.938a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                      clipRule="evenodd"
-                      transform="rotate(90 10 10)"
-                    />
-                  </svg>
-                </Menu.Button>
+            <div>
+              <div
+                onClick={() => setIsList(!isList)}
+                className="w-64 p-4 -ml-4  -mt-4 mb-4 text-sm font-medium leading-none text-gray-800 flex items-center justify-between cursor-pointer"
+              >
+                SERVICES
+                <div>
+                  {isList ? (
+                    <div>
+                      <svg
+                        width={10}
+                        height={6}
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.00016 5.33333L0.333496 0.666664H9.66683L5.00016 5.33333Z"
+                          fill="#1F2937"
+                        />
+                      </svg>
+                    </div>
+                  ) : (
+                    <>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-caret-right-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        {" "}
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />{" "}
+                      </svg>
+                    </>
+                  )}
+                </div>
               </div>
-              <div id="submenu" className=" bg-none">
-                <Menu.Items
-                  className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="menu-button"
-                  tabIndex="-1"
-                  onClick={() => setShowMobileNav(true)}
-                >
-                  <div className="py-1" role="none">
-                    <Menu.Item>
-                      <Link
-                        to="/services/consulting"
-                        className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white text-[14px]"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-0"
-                        onClick={() => setShowMobileNav(true)}
+              {isList && (
+                <div className="w-64 -mt-5 p-4 ">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <svg
+                        className="hidden"
+                        width={12}
+                        height={12}
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Business Consulting
-                      </Link>
-                    </Menu.Item>
-
-                    <Menu.Item>
-                      <Link
-                        to="/services/software"
-                        className="text-gray-700 block px-4 py-2 text-center  mb-4 text-[14px] hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-1"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        Software Development
-                      </Link>
-                    </Menu.Item>
+                        <path
+                          d="M4.5 3L7.5 6L4.5 9"
+                          stroke="#4B5563"
+                          strokeWidth="1.25"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      <div className="pl-4 -ml-10 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Business Consulting{" "}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="py-1" role="none">
-                    <Menu.Item>
-                      <Link
-                        to="/services/sas"
-                        className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-2"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        SAS Analytics{" "}
-                      </Link>
-                    </Menu.Item>
-
-                    <Menu.Item>
-                      <Link
-                        to="/services/egain/collaboration"
-                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-3"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        eGain Collaboration
-                      </Link>
-                    </Menu.Item>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between ">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Software Development{" "}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="py-1" role="none">
-                    <Menu.Item>
-                      <Link
-                        to="/services/egain/knowledge"
-                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-4"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        eGain Knowledge
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item>
-                      <Link
-                        to="/services/media/management"
-                        className="text-gray-700 block text-center px-4 py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-5"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        Social Media Management{" "}
-                      </Link>
-                    </Menu.Item>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          SAS Analytics
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="py-1" role="none">
-                    <Menu.Item>
-                      <Link
-                        to="/services/oracle"
-                        className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-6"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        Oracle Database
-                      </Link>
-                    </Menu.Item>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          eGain Collaboration{" "}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="py-1" role="none">
-                    <Menu.Item>
-                      <Link
-                        to="services/web/development"
-                        className="text-gray-700 block px-4 py-2 mb-4 text-[14px] text-center hover:bg-primary hover:text-white"
-                        role="menuitem"
-                        tabIndex="-1"
-                        id="menu-item-6"
-                        onClick={() => setShowMobileNav(true)}
-                      >
-                        Web Development
-                      </Link>
-                    </Menu.Item>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          eGain Knowledge
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </Menu.Items>
-              </div>
-            </Menu>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Social Media Management{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Oracle Database{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pl-4 pt-3 -ml-14">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Web Development{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
 
             <NavLink
               to="/products"
@@ -519,114 +506,95 @@ const Navbar = () => {
             >
               PRODUCTS
             </NavLink>
-            <Menu
-              as="div"
-              className="relative inline-block text-center mr-10 mb-6"
-              onClick={() => setShowMobileNav(true)}
-            >
-              <div>
-                <Menu.Button
-                  type="button"
-                  className="inline-flex w-full justify-end item-end gap-x-2 rounded-none bg-background  text-[14px]  text-gray-900    ring-inset ring-gray-300  hover:text-primary font-inter font-normal"
-                  id="menu-button"
-                  aria-expanded="true"
-                  aria-haspopup="true"
-                >
-                  CLIENTS
-                  <svg
-                    className="mr-32 h-5 w-5 text-gray-400 -mt-2.5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.79 7.21a.75.75 0 011.06.02L17 11.168l-3.71 3.938a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
-                      clipRule="evenodd"
-                      transform="rotate(90 10 10)"
-                    />
-                  </svg>
-                </Menu.Button>
-              </div>
-
-              <Menu.Items
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="menu-button"
-                tabIndex="-1"
-                onClick={() => setShowMobileNav(true)}
+            <div>
+              <div
+                onClick={() => setIsListed(!isListed)}
+                className="w-64 p-4 -ml-4 text-sm font-medium leading-none text-gray-800 flex items-center justify-between cursor-pointer"
               >
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/clients/agencies"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-0"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Government Agencies
-                    </Link>
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <Link
-                      to="/clients/financial"
-                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-1"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Financial Sector
-                    </Link>
-                  </Menu.Item>
+                CLIENTS
+                <div>
+                  {isListed ? (
+                    <div>
+                      <svg
+                        width={10}
+                        height={6}
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.00016 5.33333L0.333496 0.666664H9.66683L5.00016 5.33333Z"
+                          fill="#1F2937"
+                        />
+                      </svg>
+                    </div>
+                  ) : (
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-caret-right-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        {" "}
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />{" "}
+                      </svg>
+                    </div>
+                  )}
                 </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/clients/telecoms"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-2"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Telecoms Sector{" "}
-                    </Link>
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <Link
-                      to="/clients/sme"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-3"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      SME{" "}
-                    </Link>
-                  </Menu.Item>
+              </div>
+              {isListed && (
+                <div className="w-64 mt-2 p-4  -pt-8 -ml-5 bg-background ">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className=" flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Government Agencies{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pl-4 -ml-8 pt-3">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Financial Sector
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pl-4 -ml-8 pt-3">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Telecomms Sector{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pl-4 -ml-8 pt-3">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          SME{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pl-4 -ml-8 pt-3">
+                    <div className="flex items-center justify-between">
+                      <div className="pl-4 flex items-center">
+                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                          Consumer Goods{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="py-1" role="none">
-                  <Menu.Item>
-                    <Link
-                      to="/clients/goods"
-                      className="text-black1 block px-4 text-center py-2 mb-4 text-[14px] hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
-                      role="menuitem"
-                      tabIndex="-1"
-                      id="menu-item-4"
-                      onClick={() => setShowMobileNav(true)}
-                    >
-                      Consumer Goods{" "}
-                    </Link>
-                  </Menu.Item>
-                </div>
-              </Menu.Items>
-            </Menu>
+              )}
+            </div>
             <NavLink
               to="/news"
               className="font-inter font-normal text-black1 cursor-pointer text-[14px] hover:text-primary mb-6"
