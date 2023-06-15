@@ -427,7 +427,13 @@ const Navbar = () => {
                       </svg>
                       <div className="pl-4 -ml-10 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Business Consulting{" "}
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/services/consulting"
+                          >
+                            {" "}
+                            Business Consulting{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -436,7 +442,13 @@ const Navbar = () => {
                     <div className="flex items-center justify-between ">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Software Development{" "}
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/services/software"
+                          >
+                            {" "}
+                            Software Development{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -445,7 +457,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          SAS Analytics
+                          <NavLink to="/services/sas"> SAS Analytics</NavLink>
                         </p>
                       </div>
                     </div>
@@ -454,7 +466,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          eGain Collaboration{" "}
+                          <NavLink to="/services/egain/collaboration">
+                            {" "}
+                            eGain Collaboration{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -463,7 +478,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          eGain Knowledge
+                          <NavLink to="/services/egain/knowledge">
+                            {" "}
+                            eGain Knowledge
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -472,7 +490,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Social Media Management{" "}
+                          <NavLink to="/services/media/management">
+                            {" "}
+                            Social Media Management{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -481,7 +502,13 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Oracle Database{" "}
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/services/oracle"
+                          >
+                            {" "}
+                            Oracle Database{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -490,7 +517,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Web Development{" "}
+                          <NavLink to="/services/web/development">
+                            {" "}
+                            Web Development{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -551,7 +581,13 @@ const Navbar = () => {
                     <div className="flex items-center">
                       <div className=" flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Government Agencies{" "}
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/clients/agencies"
+                          >
+                            {" "}
+                            Government Agencies{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -560,7 +596,13 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Financial Sector
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/clients/financial"
+                          >
+                            {" "}
+                            Financial Sector
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -569,7 +611,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Telecomms Sector{" "}
+                          <NavLink to="/clients/telecoms">
+                            {" "}
+                            Telecomms Sector{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
@@ -578,6 +623,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/clients/sme"
+                          ></NavLink>
                           SME{" "}
                         </p>
                       </div>
@@ -587,7 +636,13 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          Consumer Goods{" "}
+                          <NavLink
+                            onClick={() => setShowMobileNav(true)}
+                            to="/clients/goods"
+                          >
+                            {" "}
+                            Consumer Goods{" "}
+                          </NavLink>
                         </p>
                       </div>
                     </div>
