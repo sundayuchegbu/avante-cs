@@ -184,7 +184,7 @@ export const clients = [
   },
   {
     id: "client-2",
-    logo: lagferry,
+    logo: stanbic,
   },
   {
     id: "client-3",
@@ -196,11 +196,11 @@ export const clients = [
   },
   {
     id: "client-5",
-    logo: laswa,
+    logo: lagferry,
   },
   {
     id: "client-6",
-    logo: stanbic,
+    logo: laswa,
   },
 ];
 
