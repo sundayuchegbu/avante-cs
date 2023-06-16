@@ -31,6 +31,7 @@ module.exports = {
         grey: "#E0E0E0",
         blue: "#096df3",
         bluebg: "#90cdf4",
+        active: "#c10006",
       },
       fontFamily: {
         sans: ["Inter var", "sans-serif"],

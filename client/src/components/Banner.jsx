@@ -32,7 +32,7 @@ const Banner = () => (
         <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 ">
           Avante-cs
         </h1>
-        <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4">
+        <p className="font-inter font-normal text-[12px] mt-12 max-w-[300px] ml-4">
           At Avante Consulting Solutions, we are dedicated to driving success
           for your business. With our innovative solutions and industry
           expertise, we empower organizations to thrive in today's dynamic

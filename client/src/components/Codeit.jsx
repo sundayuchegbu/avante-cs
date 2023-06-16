@@ -9,8 +9,8 @@ const Codeit = () => {
       className={`flex sm:flex-row flex-col sm:py-16 py-6 sm:mt-[10px] mt-[-200px] `}
     >
       <div className={layout.sectionImgReverse}>
-        <div className="flex mt-24">
-          <ul className="sm:mt-[305px] sm:mr-8 mt-[90px]  px-4  ">
+        <div className="flex mt-24 ">
+          <ul className="sm:mt-[305px] sm:mr-8 mr-4 mt-[90px]  px-4  ">
             <li className="w-full border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2 ">
               <input
                 autoComplete="off"
@@ -96,7 +96,7 @@ const Codeit = () => {
           </div>
 
           <div>
-            <ul className=" sm:mx-12 sm:mr-4 -mr-4 px-4">
+            <ul className=" sm:mx-12 sm:mr-4 -mr-2 px-4">
               <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-2">
                 <input
                   autoComplete="off"

@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" w-full flex p-8   justify-between items-center navbar ">
+    <nav className=" w-full flex p-8  justify-between items-center navbar ">
       <NavLink to="/">
         {" "}
         <img
@@ -43,13 +43,13 @@ const Navbar = () => {
       <div className=" sm:flex hidden justify-end items-center flex-1 ">
         <NavLink
           to="/"
-          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
+          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9 active:text-secondary`}
         >
           HOME
         </NavLink>
         <NavLink
           to="/about"
-          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9"
+          className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9 active"
         >
           ABOUT US
         </NavLink>
@@ -354,14 +354,14 @@ const Navbar = () => {
           >
             <NavLink
               to="/"
-              className=" font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10 mb-6 text-[14px]"
+              className=" cursor-pointer font-inter font-normal text-[12px] hover:text-primary mr-10 mb-6 "
               onClick={() => setShowMobileNav(true)}
             >
               HOME
             </NavLink>
             <NavLink
               to="/about"
-              className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10 mb-6"
+              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mr-10 mb-6"
               onClick={() => setShowMobileNav(true)}
             >
               ABOUT US
@@ -369,38 +369,29 @@ const Navbar = () => {
             <div>
               <div
                 onClick={() => setIsList(!isList)}
-                className="w-64 p-4 -ml-4  -mt-4 mb-4 text-sm font-medium leading-none text-gray-800 flex items-center justify-between cursor-pointer"
+                className="w-64 p-4 -ml-4  -mt-4 mb-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center justify-between cursor-pointer"
               >
                 SERVICES
                 <div>
                   {isList ? (
                     <div>
                       <svg
-                        width={10}
-                        height={6}
-                        viewBox="0 0 10 6"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 320 512"
                       >
-                        <path
-                          d="M5.00016 5.33333L0.333496 0.666664H9.66683L5.00016 5.33333Z"
-                          fill="#1F2937"
-                        />
+                        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
                       </svg>
                     </div>
                   ) : (
                     <>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-caret-right-fill"
-                        viewBox="0 0 16 16"
+                        height="1em"
+                        viewBox="0 0 256 512"
                       >
-                        {" "}
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />{" "}
-                      </svg>
+                        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                      </svg>{" "}
                     </>
                   )}
                 </div>
@@ -425,7 +416,7 @@ const Navbar = () => {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <div className="pl-4 -ml-10 flex items-center">
+                      <div className="pl-4 -mt-4 -ml-10 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
                           <NavLink
                             onClick={() => setShowMobileNav(true)}
@@ -531,7 +522,7 @@ const Navbar = () => {
 
             <NavLink
               to="/products"
-              className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-10 mb-6"
+              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mr-10 mb-4"
               onClick={() => setShowMobileNav(true)}
             >
               PRODUCTS
@@ -539,44 +530,35 @@ const Navbar = () => {
             <div>
               <div
                 onClick={() => setIsListed(!isListed)}
-                className="w-64 p-4 -ml-4 text-sm font-medium leading-none text-gray-800 flex items-center  mb-4 justify-between cursor-pointer"
+                className="w-64 p-4 -ml-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center  mb-4 justify-between cursor-pointer"
               >
                 CLIENTS
                 <div>
                   {isListed ? (
                     <div>
                       <svg
-                        width={10}
-                        height={6}
-                        viewBox="0 0 10 6"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 320 512"
                       >
-                        <path
-                          d="M5.00016 5.33333L0.333496 0.666664H9.66683L5.00016 5.33333Z"
-                          fill="#1F2937"
-                        />
-                      </svg>
+                        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                      </svg>{" "}
                     </div>
                   ) : (
                     <div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-caret-right-fill"
-                        viewBox="0 0 16 16"
+                        height="1em"
+                        viewBox="0 0 256 512"
                       >
-                        {" "}
-                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />{" "}
-                      </svg>
+                        <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                      </svg>{" "}
                     </div>
                   )}
                 </div>
               </div>
               {isListed && (
-                <div className="w-64 mt-2 p-4  -pt-8 -ml-5 bg-background ">
+                <div className="w-64 -mt-8 p-4  -pt-8 -ml-5 bg-background ">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
                       <div className=" flex items-center">
@@ -652,14 +634,14 @@ const Navbar = () => {
             </div>
             <NavLink
               to="/news"
-              className="font-inter font-normal text-black1 cursor-pointer text-[14px] hover:text-primary mb-6"
+              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mb-6"
               onClick={() => setShowMobileNav(true)}
             >
               NEWS
             </NavLink>
             <NavLink
               to="/contacts"
-              className="font-inter font-normal cursor-pointer text-[14px] hover:text-primary mb-0 text-secondary"
+              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mb-0 text-secondary"
               onClick={() => setShowMobileNav(true)}
             >
               CONTACT US
