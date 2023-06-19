@@ -113,7 +113,7 @@ const Navbar = () => {
                       <Popover.Panel>
                         <Link
                           to="/services/consulting"
-                          className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                          className="text-gray-700 block  px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                           tabIndex="-1"
                           id="menu-item-0"
                           onClick={() => setActivePage("/services")}
@@ -125,7 +125,7 @@ const Navbar = () => {
                       <Popover.Panel>
                         <Link
                           to="/services/software"
-                          className=" block px-4 py-2 text-center   mb-4 text-sm hover:bg-primary hover:text-white"
+                          className=" block px-4 py-2    mb-4 text-sm hover:bg-primary hover:text-white"
                           tabIndex="-1"
                           id="menu-item-1"
                           onClick={() => setActivePage("/services")}
@@ -138,7 +138,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/sas"
-                        className=" block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                        className=" block px-4 py-2  mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-2"
                         onClick={() => setActivePage("/services")}
@@ -150,7 +150,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/egain/collaboration"
-                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                        className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-3"
                         onClick={() => setActivePage("/services")}
@@ -163,7 +163,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/egain/knowledge"
-                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                        className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-4"
                         onClick={() => setActivePage("/services")}
@@ -174,7 +174,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/media/management"
-                        className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                        className="text-gray-700 block  px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-5"
                         onClick={() => setActivePage("/services")}
@@ -187,7 +187,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/oracle"
-                        className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                        className="text-gray-700 block px-4 py-2  mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-6"
                         onClick={() => setActivePage("/services")}
@@ -200,7 +200,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="services/web/development"
-                        className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                        className="text-gray-700 block px-4 py-2 mb-4 text-sm  hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-6"
                         onClick={() => setActivePage("/services")}
@@ -277,7 +277,7 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/agencies"
-                      className="text-gray-700 block text-center px-4 py-2 mb-2 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block  px-4 py-2 mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
@@ -290,7 +290,7 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/financial"
-                      className="text-gray-700 block px-4 py-2 text-center  mb-2 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2   mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-1"
@@ -302,7 +302,7 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/telecoms"
-                      className="text-gray-700 block px-4 py-2 text-center mb-2 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2  mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-2"
@@ -315,7 +315,7 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/sme"
-                      className="text-gray-700 block px-4 text-center py-2 mb-2 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4  py-2 mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-3"
@@ -327,7 +327,7 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/goods"
-                      className="text-gray-700 block px-4 text-center py-2 mb-2 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4  py-2 mb-2 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-4"
