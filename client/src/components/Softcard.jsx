@@ -23,7 +23,7 @@ const Softcard = () => {
         include;
       </p>
       <div className=" text-red-500/50  grid grid-cols-6 gap-4  ">
-        <div class="col-span-7 flex md:mx-32 md:mb-8 mb-4">
+        <div className="col-span-7 flex md:mx-32 md:mb-8 mb-4">
           <p className="md:mx-4 mx-2 font-inter font-semibold md:text-[24px] text-[7.74px] ">
             Java,
           </p>{" "}

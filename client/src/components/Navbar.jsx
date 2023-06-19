@@ -1,15 +1,17 @@
-import { useState, useRef, Fragment } from "react";
+import { useState, useRef, Fragment, useEffect } from "react";
 // import { navLinks } from "../constants";
 import close from "../images/close.svg";
 import menu from "../images/menu.svg";
 import logo from "../images/logo.png";
 import { Popover, Transition } from "@headlessui/react";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const timeoutDuration = 120;
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [toggle, setToggle] = useState(false);
   const [isShowing, setIsShowing] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -17,7 +19,7 @@ const Navbar = () => {
   const [isList, setIsList] = useState(false);
   const [isListed, setIsListed] = useState(false);
 
-  const [activePage, setActivePage] = useState("/");
+  const [activePage, setActivePage] = useState(location.pathname);
 
   const triggerRef = useRef();
   const timeOutRef = useRef();
@@ -31,6 +33,7 @@ const Navbar = () => {
       isOpen && triggerRef.current?.click();
     }, timeoutDuration);
   };
+  useEffect(() => {}, [location]);
 
   return (
     <nav className=" w-full flex p-8  justify-between items-center navbar ">
@@ -45,7 +48,7 @@ const Navbar = () => {
       <div className=" sm:flex hidden justify-end items-center flex-1 ">
         <NavLink
           to="/"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9 ${
+          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9 ${
             activePage === "/" ? "text-primary" : "black2"
           }`}
           onClick={() => setActivePage("/")}
@@ -54,10 +57,12 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/about"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9  ${
+          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9  ${
             activePage === "/about" ? "text-primary" : "black2"
           }`}
-          onClick={() => setActivePage("/about")}
+          onClick={() => {
+            setActivePage("/about");
+          }}
         >
           ABOUT US
         </NavLink>
@@ -72,14 +77,13 @@ const Navbar = () => {
             >
               <Popover.Button
                 ref={triggerRef}
-                type="pop-button"
+                type="popover-button"
                 className={`${
                   activePage === "/services" ? "text-primary" : "text-black2"
-                } inline-flex w-full justify-center focus:ring-0 focus:ring-offset-0  gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px] hover:bg-background focus:ring-none hover:text-primary  `}
+                } inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px] hover:bg-background focus:ring-0 ring-offset-0 hover:text-secondary  focus:outline-none focus-visible:outline-none`}
                 id="menu-button"
                 aria-expanded="true"
                 aria-haspopup="true"
-                onClick={() => setActivePage("/services")}
               >
                 SERVICES
                 <svg
@@ -99,20 +103,20 @@ const Navbar = () => {
               <Transition>
                 <div>
                   <Popover.Panel
-                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+                    className="absolute right-0 z-10 mt-1 w-56 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="menu-button"
                     tabIndex="-1"
                   >
-                    <div className="py-1" role="none">
+                    <div>
                       <Popover.Panel>
                         <Link
                           to="/services/consulting"
                           className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
-                          role="menuitem"
                           tabIndex="-1"
                           id="menu-item-0"
+                          onClick={() => setActivePage("/services")}
                         >
                           Business Consulting
                         </Link>
@@ -121,90 +125,90 @@ const Navbar = () => {
                       <Popover.Panel>
                         <Link
                           to="/services/software"
-                          className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
-                          role="menuitem"
+                          className=" block px-4 py-2 text-center   mb-4 text-sm hover:bg-primary hover:text-white"
                           tabIndex="-1"
                           id="menu-item-1"
+                          onClick={() => setActivePage("/services")}
                         >
                           Software Development
                         </Link>
                       </Popover.Panel>
                     </div>
-                    <div className="py-1" role="none">
-                      <Popover.Panel>
-                        <Link
-                          to="/services/sas"
-                          className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
-                          role="menuitem"
-                          tabIndex="-1"
-                          id="menu-item-2"
-                        >
-                          SAS Analytics{" "}
-                        </Link>
-                      </Popover.Panel>
+                    {/* <div className="py-1 " role="none"> */}
+                    <Popover.Panel>
+                      <Link
+                        to="/services/sas"
+                        className=" block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-2"
+                        onClick={() => setActivePage("/services")}
+                      >
+                        SAS Analytics{" "}
+                      </Link>
+                    </Popover.Panel>
 
-                      <Popover.Panel>
-                        <Link
-                          to="/services/egain/collaboration"
-                          className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
-                          role="menuitem"
-                          tabIndex="-1"
-                          id="menu-item-3"
-                        >
-                          eGain Collaboration
-                        </Link>
-                      </Popover.Panel>
-                    </div>
-                    <div className="py-1" role="none">
-                      <Popover.Panel>
-                        <Link
-                          to="/services/egain/knowledge"
-                          className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
-                          role="menuitem"
-                          tabIndex="-1"
-                          id="menu-item-4"
-                        >
-                          eGain Knowledge
-                        </Link>
-                      </Popover.Panel>
-                      <Popover.Panel>
-                        <Link
-                          to="/services/media/management"
-                          className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
-                          role="menuitem"
-                          tabIndex="-1"
-                          id="menu-item-5"
-                        >
-                          Social Media Management{" "}
-                        </Link>
-                      </Popover.Panel>
-                    </div>
-                    <div className="py-1" role="none">
-                      <Popover.Panel>
-                        <Link
-                          to="/services/oracle"
-                          className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
-                          role="menuitem"
-                          tabIndex="-1"
-                          id="menu-item-6"
-                        >
-                          Oracle Database
-                        </Link>
-                      </Popover.Panel>
-                    </div>
-                    <div className="py-1" role="none">
-                      <Popover.Panel>
-                        <Link
-                          to="services/web/development"
-                          className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
-                          role="menuitem"
-                          tabIndex="-1"
-                          id="menu-item-6"
-                        >
-                          Web Development
-                        </Link>
-                      </Popover.Panel>
-                    </div>
+                    <Popover.Panel>
+                      <Link
+                        to="/services/egain/collaboration"
+                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-3"
+                        onClick={() => setActivePage("/services")}
+                      >
+                        eGain Collaboration
+                      </Link>
+                    </Popover.Panel>
+                    {/* </div> */}
+                    {/* <div className="py-1" role="none"> */}
+                    <Popover.Panel>
+                      <Link
+                        to="/services/egain/knowledge"
+                        className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-4"
+                        onClick={() => setActivePage("/services")}
+                      >
+                        eGain Knowledge
+                      </Link>
+                    </Popover.Panel>
+                    <Popover.Panel>
+                      <Link
+                        to="/services/media/management"
+                        className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-5"
+                        onClick={() => setActivePage("/services")}
+                      >
+                        Social Media Management{" "}
+                      </Link>
+                    </Popover.Panel>
+                    {/* </div> */}
+                    {/* <div className="py-1" role="none"> */}
+                    <Popover.Panel>
+                      <Link
+                        to="/services/oracle"
+                        className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-6"
+                        onClick={() => setActivePage("/services")}
+                      >
+                        Oracle Database
+                      </Link>
+                    </Popover.Panel>
+                    {/* </div> */}
+                    {/* <div className="py-1" role="none"> */}
+                    <Popover.Panel>
+                      <Link
+                        to="services/web/development"
+                        className="text-gray-700 block px-4 py-2 mb-4 text-sm text-center hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-6"
+                        onClick={() => setActivePage("/services")}
+                      >
+                        Web Development
+                      </Link>
+                    </Popover.Panel>
+                    {/* </div> */}
                   </Popover.Panel>
                 </div>
               </Transition>
@@ -216,7 +220,7 @@ const Navbar = () => {
           to="/products"
           className={`font-inter font-normal cursor-pointer  ${
             activePage === "/products" ? "text-primary" : "black2"
-          }  text-[14px] hover:text-primary mr-9`}
+          }  text-[14px] hover:text-secondary mr-9`}
           onClick={() => setActivePage("/products")}
         >
           PRODUCTS
@@ -232,13 +236,12 @@ const Navbar = () => {
           >
             <Popover.Button
               type="popover-button"
-              className={`inline-flex w-full justify-center focus:ring-0 focus:ring-offset-0  gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px]   ${
+              className={`inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px]   ${
                 activePage === "/clients" ? "text-primary" : "black2"
-              }   hover:bg-background focus:ring-none hover:text-primary `}
+              }   hover:bg-background focus:ring-none hover:text-secondary `}
               id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
-              onClick={() => setActivePage("/clients")}
             >
               CLIENTS
               <svg
@@ -264,7 +267,7 @@ const Navbar = () => {
           >
             <div>
               <Popover.Panel
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right  rounded-md bg-white   ring-opacity-5 focus:outline-none "
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
@@ -274,10 +277,11 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/agencies"
-                      className="text-gray-700 block text-center px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block text-center px-4 py-2 mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-0"
+                      onClick={() => setActivePage("/clients")}
                     >
                       Government Agencies
                     </Link>
@@ -286,23 +290,23 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/financial"
-                      className="text-gray-700 block px-4 py-2 text-center  mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center  mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-1"
+                      onClick={() => setActivePage("/clients")}
                     >
                       Financial Sector
                     </Link>
                   </Popover.Panel>
-                </div>
-                <div className="py-0" role="none">
                   <Popover.Panel>
                     <Link
                       to="/clients/telecoms"
-                      className="text-gray-700 block px-4 py-2 text-center mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 py-2 text-center mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-2"
+                      onClick={() => setActivePage("/clients")}
                     >
                       Telecoms Sector{" "}
                     </Link>
@@ -311,23 +315,23 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/sme"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 text-center py-2 mb-2 text-sm hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-3"
+                      onClick={() => setActivePage("/clients")}
                     >
                       SME{" "}
                     </Link>
                   </Popover.Panel>
-                </div>
-                <div className="py-0" role="none">
                   <Popover.Panel>
                     <Link
                       to="/clients/goods"
-                      className="text-gray-700 block px-4 text-center py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4 text-center py-2 mb-2 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-4"
+                      onClick={() => setActivePage("/clients")}
                     >
                       Consumer Goods{" "}
                     </Link>
@@ -339,7 +343,7 @@ const Navbar = () => {
         </Popover>
         <NavLink
           to="/news"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-primary mr-9  ${
+          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9  ${
             activePage === "/news" ? "text-primary" : "black2"
           }`}
           onClick={() => setActivePage("/news")}
@@ -348,7 +352,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/contacts"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-primary -mr-20 text-black2 ${
+          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary -mr-20 text-black2 ${
             activePage === "/contacts" ? "text-primary" : "black2"
           }
 `}
