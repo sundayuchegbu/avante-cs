@@ -25,7 +25,7 @@ const Register = () => {
   });
   useEffect(() => {
     if (userState.userInfo) {
-      navigate("/");
+      // navigate("/");
     }
   }, [navigate, userState.userInfo]);
   const {

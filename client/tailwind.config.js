@@ -19,6 +19,7 @@ module.exports = {
         error: "#eb5757",
         black: "#1d1d1d",
         black2: "#212121",
+        black3: "#999999",
         gray1: "#333333",
         gray2: "#4f4f4f",
         gray3: "#828282",

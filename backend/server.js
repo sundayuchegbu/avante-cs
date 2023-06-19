@@ -1,6 +1,7 @@
 const express = require("express");
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
+const postsRoutes = require("./routes/postRoutes");
 const { notFound, errorResponseHandler } = require("./middleware/errorHandler");
 
 const dotenv = require("dotenv").config();
@@ -9,6 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.use("/api/v1/", userRoutes);
+app.use("/api/v1/", postsRoutes);
 
 app.use(notFound);
 app.use(errorResponseHandler);
