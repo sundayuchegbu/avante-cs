@@ -5,11 +5,21 @@ const { fileRemover } = require("../utils/fileRemover");
 const registerUser = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
+
+    // check whether the user exists or not
     let user = await User.findOne({ email });
+
     if (user) {
-      throw new Error("User already exist");
+      throw new Error("User have already registered");
     }
-    user = await User.create({ name, email, password });
+
+    // creating a new user
+    user = await User.create({
+      name,
+      email,
+      password,
+    });
+
     return res.status(201).json({
       _id: user._id,
       avatar: user.avatar,
@@ -36,11 +46,8 @@ const login = async (req, res, next) => {
     if (await user.comparePassword(password)) {
       return res.status(201).json({
         _id: user._id,
-        avatar: user.avatar,
         name: user.name,
         email: user.email,
-        verified: user.verified,
-        admin: user.admin,
         token: await user.generateJWT(),
       });
     } else {
@@ -57,11 +64,8 @@ const profile = async (req, res, next) => {
     if (user) {
       return res.status(201).json({
         _id: user._id,
-        avatar: user.avatar,
         name: user.name,
         email: user.email,
-        verified: user.verified,
-        admin: user.admin,
       });
     } else {
       let error = new Error("User not found");
@@ -94,11 +98,8 @@ const updateProfile = async (req, res, next) => {
 
     res.json({
       _id: updatedUserProfile._id,
-      avatar: updatedUserProfile.avatar,
       name: updatedUserProfile.name,
       email: updatedUserProfile.email,
-      verified: updatedUserProfile.verified,
-      admin: updatedUserProfile.admin,
       token: await updatedUserProfile.generateJWT(),
     });
   } catch (error) {

@@ -15,10 +15,13 @@ const userSchema = new Schema(
       validate: [validator.isEmail, "Please enter a valid email address"],
     },
     password: { type: String, required: true },
+    profilePic: {
+      type: String,
+      default: "",
+    },
     verified: { type: Boolean, default: false },
     verificationCode: { type: String, required: false },
     admin: { type: Boolean, default: false },
-    profilePic: { type: String, default: "" },
   },
   { timestamps: true }
 );
