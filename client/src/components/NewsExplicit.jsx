@@ -1,10 +1,23 @@
 import React from "react";
 import explicit from "../images/explicit.jpg";
 import article1 from "../images/article1.png";
+import { useParams } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { getSinglePost } from "../services/index/post";
+
 const NewsExplicit = () => {
+  const { slug } = useParams();
+  console.log(slug);
+
+  const {} = useQuery({
+    queryFn: () => getSinglePost({ slug }),
+    onSuccess: (data) => {
+      console.log(data);
+    },
+  });
   return (
     <div>
-      <div className="">
+      <div>
         <img
           src={explicit}
           alt="explicit"

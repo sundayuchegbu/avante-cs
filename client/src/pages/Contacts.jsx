@@ -4,55 +4,32 @@ import email from "../images/email.png";
 import smallcontact from "../images/smallcontact.png";
 import redphone from "../images/redphone.png";
 import redmail from "../images/redmail.png";
-import admin from "../images/admin.png";
-import LoginModal from "../components/LoginModal";
-import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
-import { useMutation } from "@tanstack/react-query";
-import { login } from "../services/users";
-import toast from "react-hot-toast";
-import { useDispatch, useSelector } from "react-redux";
-import { userActions } from "../store/reducers/userReducers";
-
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Axios } from "axios";
 
 const Contacts = () => {
-  const [showModel, setShowModel] = useState(false);
-
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const userState = useSelector((state) => state.user);
-  const { mutate, isLoading } = useMutation({
-    mutationFn: ({ email, password }) => {
-      return login({ email, password });
-    },
-    onSuccess: (data) => {
-      dispatch(userActions.setUserInfo(data));
-      localStorage.setItem("account", JSON.stringify(data));
-    },
-    onError: (error) => {
-      toast.error(error.message);
-      console.log(error);
-    },
+  const url = "http://localhost:5000/feeback";
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    reason: "",
+    msg: "",
   });
-  useEffect(() => {
-    if (userState.userInfo) {
-      // navigate("/dashboard");
-    }
-  }, [navigate, userState.userInfo]);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isValid },
-  } = useForm({
-    defaultValues: { email: "", password: "" },
-    mode: "onChange",
-  });
-  const submitHandler = (data) => {
-    const { email, password } = data;
-    mutate({ email, password });
-  };
-
+  function submit(e) {
+    e.preventDefault();
+    Axios.post(url, {
+      name: data.name,
+      email: data.email,
+      reason: data.reason,
+      msg: data.msg,
+    });
+  }
+  function handle(e) {
+    const newData = { ...data };
+    newData[e.target.id] = e.target.value;
+    setData(newData);
+    console.log(newData);
+  }
   return (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
@@ -103,132 +80,57 @@ const Contacts = () => {
                         info@avante-cs.com
                       </p>
                     </div>
-                    <div className="ml-52">
-                      <button onClick={() => setShowModel(true)}>
-                        {" "}
-                        <img src={admin} alt="admin" className="h-4 w-4" />
-                      </button>
-                      <LoginModal
-                        isVisible={showModel}
-                        onClose={() => setShowModel(false)}
-                      >
-                        <div className="py-6 px-6 lg-px-8 text-left">
-                          <form onSubmit={handleSubmit(submitHandler)}>
-                            <div className="mb-8 ml-52 text-primary">
-                              {" "}
-                              Sign in (admin only)
-                            </div>
-                            <div className="flex flex-col mb-6 w-full">
-                              <label
-                                htmlFor="Email"
-                                className="text-[#5a7184] font-semibold block"
-                              >
-                                Email
-                              </label>
-                              <input
-                                id="email"
-                                {...register("email", {
-                                  pattern: {
-                                    value:
-                                      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-                                    message: "Enter a valid email",
-                                  },
-                                  required: {
-                                    value: true,
-                                    message: "Email is required",
-                                  },
-                                })}
-                                placeholder="Email Address"
-                                type="text"
-                                className={`placeholder:text-[#595ead] text-dark-hard mt-3 rounded-lg px-5 py-4 font-semibold block outline-none border ${
-                                  errors.email
-                                    ? "border-red-500"
-                                    : " border-[#c3cad9]"
-                                } `}
-                              />
-                              {errors.email?.message && (
-                                <p className="text-red-500 text-sm mt-1">
-                                  {errors.email?.message}
-                                </p>
-                              )}
-                            </div>
-                            <div className="flex flex-col mb-6 w-full">
-                              <label
-                                htmlFor="password"
-                                className="text-[#5a7184] font-semibold block"
-                              >
-                                Enter password
-                              </label>
-                              <input
-                                id="password"
-                                {...register("password", {
-                                  required: {
-                                    value: true,
-                                    message: "Password id required",
-                                  },
-                                  minLength: {
-                                    value: 6,
-                                    message:
-                                      "Password must be at least 6 characters",
-                                  },
-                                })}
-                                placeholder="Enter password"
-                                type="password"
-                                className={`placeholder:text-[#595ead] text-dark-hard mt-3 rounded-lg px-5 py-4 font-semibold block outline-none border ${
-                                  errors.password
-                                    ? "border-red-500"
-                                    : " border-[#c3cad9]"
-                                }`}
-                              />
-                              {errors.password?.message && (
-                                <p className="text-red-500 text-sm mt-1">
-                                  {errors.password?.message}
-                                </p>
-                              )}
-                            </div>
-                            <button
-                              disabled={!isValid || isLoading}
-                              type="submit"
-                              className="bg-secondary text-white font-normal text-lg py-4 px-8 w-full rounded-lg my-6 disabled:opacity-70 disabled:cursor-not-allowed"
-                            >
-                              Sign In{" "}
-                            </button>
-                          </form>
-                        </div>
-                      </LoginModal>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className=" mx-12">
-              <div>
+            <form onSubmit={(e) => submit(e)}>
+              <div className=" mx-12">
+                <div>
+                  <input
+                    onChange={(e) => handle(e)}
+                    id="name"
+                    value={data.name}
+                    type="text"
+                    placeholder="Your full name"
+                    className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                  />
+                </div>{" "}
                 <input
+                  onChange={(e) => handle(e)}
+                  id="email"
+                  value={data.email}
                   type="text"
-                  placeholder="Your full name"
+                  placeholder="Your e-mail address"
                   className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                 />
-              </div>{" "}
-              <input
-                type="text"
-                placeholder="Your e-mail address"
-                className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
-              />
-              <input
-                type="text"
-                placeholder="Your reason"
-                className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
-              />
-              <input
-                type="text"
-                placeholder="drop a message here..."
-                className="w-full mt-12 px-3 h-24 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
-              />
-              <button className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6">
-                Submit
-              </button>
-            </div>
+                <input
+                  onChange={(e) => handle(e)}
+                  id="reason"
+                  value={data.reason}
+                  type="text"
+                  placeholder="Your reason"
+                  className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                />
+                <textarea
+                  onChange={(e) => handle(e)}
+                  id="msg"
+                  value={data.msg}
+                  type="text"
+                  placeholder="drop a message here..."
+                  className="w-full mt-12 px-3 h-24 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                />
+                <button
+                  onClick={submit}
+                  value="submit"
+                  type="submit"
+                  className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div className="block md:hidden flex-col flex justify-center item-center bg-background mb-12">

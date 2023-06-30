@@ -13,6 +13,12 @@ import ellipse1 from "../images/Ellipse1.png";
 import ellipse2 from "../images/Ellipse2.png";
 // import info6 from "../images/info6.jpg";
 import ellipse3 from "../images/Ellipse3.png";
+const flash = "/images/flash.png";
+
+export { default as stables } from "./stables";
+export const images = {
+  flash,
+};
 
 export const navLinks = [
   {
