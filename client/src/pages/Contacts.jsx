@@ -5,10 +5,9 @@ import smallcontact from "../images/smallcontact.png";
 import redphone from "../images/redphone.png";
 import redmail from "../images/redmail.png";
 import React, { useState } from "react";
-import { Axios } from "axios";
-
+import Axios from "axios";
 const Contacts = () => {
-  const url = "http://localhost:5000/feeback";
+  const url = "/api/v1/feeback";
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -22,6 +21,8 @@ const Contacts = () => {
       email: data.email,
       reason: data.reason,
       msg: data.msg,
+    }).then((res) => {
+      console.log(res.data);
     });
   }
   function handle(e) {
@@ -122,8 +123,6 @@ const Contacts = () => {
                   className="w-full mt-12 px-3 h-24 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                 />
                 <button
-                  onClick={submit}
-                  value="submit"
                   type="submit"
                   className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6"
                 >
