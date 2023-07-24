@@ -61,6 +61,9 @@
   background-repeat: no-repeat;
   background-position: center bottom; /* center the background image horizontally and align it to the bottom of the container */
 }
+#product {
+  background: linear-gradient(to right, #90cdf4, #ffffff);
+}
 
 #cta1 img {
   position: relative;

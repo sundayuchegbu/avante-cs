@@ -21,12 +21,9 @@ const Home = () => (
     </div>
     <Stats />
 
-    <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        {" "}
-        <Info />
-      </div>
-    </div>
+    {/* <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}> <Info /></div>
+    </div> */}
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}> </div>
     </div>

@@ -13,6 +13,7 @@ const Articles = () => {
       console.log(error);
     },
   });
+
   return (
     <section className="container mx-auto flex flex-wrap sm:gap-x-12 gap-y-5 px-5 py-10">
       {!isLoading &&

@@ -37,7 +37,7 @@ export const Card = () => {
               Avante Consulting provides implementation solutions for our
               customers from pre-sales assistance ...
             </div>
-            <Link to="/services/consulting">
+            <Link to="/contacts">
               <button className="flex sm:ml-8 ml-[-53px] items-center text-white text-[12px] ">
                 <span className="sm:mr-8 mr-20 font-inter font-normal">
                   Read more
@@ -72,7 +72,7 @@ export const Card = () => {
               Avante is a software development company that specializes in
               e-commerce, mobile solutions, ...
             </div>
-            <Link to="/services/software">
+            <Link to="/contacts">
               <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12 font-inter font-normal">Read more</span>
                 <i className="fas fa-chevron-right">
@@ -104,7 +104,7 @@ export const Card = () => {
               Avante is a silver partner of SAS and a solution partner within
               the Customer ...
             </div>
-            <Link to="/services/sas">
+            <Link to="/contacts">
               <button className="flex sm:ml-8 ml-[-40px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
@@ -130,13 +130,13 @@ export const Card = () => {
               </i>
             </div>
             <div className="text-white sm:mr-2 mr-20 font-inter font-normal sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
-              Web Development{" "}
+              eGain Collaboration{" "}
             </div>
             <div className="text-white sm:text-[14px] font-inter font-normal leading-[25.8px] text-[10px]  sm:text-base mb-4">
               View our projects to see a lists of our clients and how we have
               helped them to take their business ...
             </div>
-            <Link to="/services/web/development">
+            <Link to="/contacts">
               <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">

@@ -183,7 +183,7 @@ const Codeit = () => {
           <div className="text-dark ">
             We are a leading business and technology consulting organisation,
             with a very strong focus on Customer Experience, Knowledge
-            Management, Loyalty and Ticketing solutions.
+            Management, Loyalty, Ticketing, Transportation and Energy solutions.
             <p />
             <br /> Our expert consultants leverage their industry knowledge and
             technological expertise to deliver strategic insights, optimize

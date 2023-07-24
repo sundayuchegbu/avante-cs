@@ -61,6 +61,13 @@ const Footer = ({ link }) => {
                     }
                   >
                     Business Consulting{" "}
+                    <div className="font-inter font-normal text-[12px] leading-[24px] text-background hover:text-primary my-2 mb-6 cursor-pointer block">
+                      <p> - Implementation Services </p>
+                      <p> - Project Management </p>
+                      <p> - User Experience Research </p>
+                      <p> - Market Surveys </p>
+                      <p> - Feasibility Studies </p>
+                    </div>
                   </Link>
                   <Link
                     to="/services/software"
@@ -72,7 +79,7 @@ const Footer = ({ link }) => {
                     to="/services/sas"
                     className={`font-inter block font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4`}
                   >
-                    SAS Analytics{" "}
+                    SAS CX and Analytics{" "}
                   </Link>
                   <Link
                     to="/services/egain/collaboration"
@@ -92,12 +99,7 @@ const Footer = ({ link }) => {
                   >
                     Social Media Management{" "}
                   </Link>
-                  <Link
-                    to="/services/oracle"
-                    className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
-                  >
-                    Oracle Database{" "}
-                  </Link>
+
                   <Link
                     to="/services/web/development"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block`}
@@ -185,8 +187,7 @@ const Footer = ({ link }) => {
                   <li
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer `}
                   >
-                    Penthouse 11B, Kayode <br /> Otitoju Street, Off Admiralty
-                    Road, Lekki Phase 1, Lagos.{" "}
+                    66 Bode Thomas, Surulere, Lagos.{" "}
                   </li>
                   <div className="flex mt-4">
                     <ul className="flex">

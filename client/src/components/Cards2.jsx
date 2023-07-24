@@ -21,12 +21,12 @@ const Cards2 = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
         <div className="sm:ml-[280px]  ml-4">
           <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
-            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
+            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-68px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
                   src={microsoft}
                   alt="vector"
-                  className="sm:h-16 h-10 sm:w-16 w-10"
+                  className="md:h-14 h-10 md:w-14 "
                 />
               </i>
             </div>
@@ -61,7 +61,7 @@ const Cards2 = () => {
                 <img
                   src={sas}
                   alt="vector"
-                  className="sm:h-16  h-10 sm:w-16 w-10"
+                  className="md:h-16  h-10 md:w-14 "
                 />
               </i>
             </div>

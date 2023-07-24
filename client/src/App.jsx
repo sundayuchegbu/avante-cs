@@ -21,11 +21,18 @@ import Telecoms from "./pages/clients/Telecoms";
 import SME from "./pages/clients/SME";
 import Goods from "./pages/clients/Goods";
 import NewsExplicit from "./components/NewsExplicit";
-import Register from "./pages/auth/Register";
+// import Register from "./pages/auth/Register";
 import { Toaster } from "react-hot-toast";
+import ScrollToTop from "./components/ScrolToTop";
+import Implementation from "./pages/services/consulting/Implementation";
+import ProjectManagement from "./pages/services/consulting/ProjectManagement";
+import UserResearch from "./pages/services/consulting/UserResearch";
+import MarketSurvey from "./pages/services/consulting/MarketSurvey";
+import FeasibilityStudies from "./pages/services/consulting/FeasibilityStudies";
 
 const App = () => (
   <BrowserRouter>
+    <ScrollToTop />
     <div className="bg-background w-full overflow ">
       <div className={`${styles.paddingX} ${styles.flexCenter} `}>
         <div className={`${styles.boxWidth}`}>
@@ -38,6 +45,7 @@ const App = () => (
         <Route path="/about" element={<About />} />
 
         <Route path="/products" element={<Products />} />
+        <Route path="/details/:id" element={<NewsExplicit />} />
         <Route path="/news" element={<News />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/services/consulting" element={<Consulting />} />
@@ -48,18 +56,29 @@ const App = () => (
         <Route path="/clients/telecoms" element={<Telecoms />} />
         <Route path="/clients/sme" element={<SME />} />
         <Route path="/clients/goods" element={<Goods />} />
-        <Route path="/details/:slug" element={<NewsExplicit />} />
-        <Route path="/register" element={<Register />} />
+        {/* <Route path="/register" element={<Register />} /> */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
 
         <Route
           path="/services/egain/collaboration"
           element={<EgainCollaboration />}
         />
+        <Route path="/services/market/survey" element={<MarketSurvey />} />
+
         <Route path="/services/egain/knowledge" element={<EgainKnowledge />} />
         <Route path="/services/media/management" element={<SocialMediaMgt />} />
         <Route path="/services/oracle" element={<OracleDatabase />} />
         <Route path="/services/web/development" element={<WebDev />} />
+        <Route path="/services/implementations" element={<Implementation />} />
+        <Route path="/services/user/research" element={<UserResearch />} />
+        <Route
+          path="/services/feasibility/studies"
+          element={<FeasibilityStudies />}
+        />
+        <Route
+          path="/services/project/management"
+          element={<ProjectManagement />}
+        />
       </Routes>
       <Toaster />
       <Footer />

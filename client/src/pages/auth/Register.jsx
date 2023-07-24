@@ -6,10 +6,12 @@ import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { userActions } from "../../store/reducers/userReducers";
 import { useNavigate } from "react-router-dom";
+
 const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const userState = useSelector((state) => state.user);
+
   const { mutate, isLoading } = useMutation({
     mutationFn: ({ name, email, password }) => {
       return signup({ name, email, password });

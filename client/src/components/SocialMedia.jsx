@@ -1,8 +1,10 @@
 import styles, { layout } from "../style";
 import social from "../images/social.png";
 import smallmedia from "../images/smallmedia.png";
+import { useNavigate } from "react-router-dom";
 
 const SocialMedia = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div id="egain" className="hidden md:block">
@@ -47,9 +49,13 @@ const SocialMedia = () => {
             comprehensive social media management services that are tailored to
             meet the unique needs of your business.
           </p>
-          <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
+          <button
+            onClick={() => navigate("/contacts")}
+            className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary "
+          >
             <span className="mx-[60px] text-[14px] font-inter font-normal">
-              Contact us           </span>
+              Contact us{" "}
+            </span>
           </button>
         </div>
       </div>

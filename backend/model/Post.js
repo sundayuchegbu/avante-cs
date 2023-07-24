@@ -3,22 +3,24 @@ const { Schema, model } = mongoose;
 const postSchema = new Schema(
   {
     title: { type: String, required: true },
-    caption: { type: String, required: true },
-    slug: { type: String, required: true, unique: true },
-    body: { type: Object, required: true },
-    photo: { type: String, required: false },
-    user: { type: Schema.Types.ObjectId, ref: "User" },
-    tags: { type: [String] },
-    categories: [{ type: Schema.Types.ObjectId, ref: "PostCategories" }],
+    caption: {
+      type: String,
+      required: true,
+      maxlength: [300, "Your caption cannot excced 300 characters"],
+    },
+    description: {
+      type: String,
+      required: [true, "Please enter post details"],
+    },
+
+    image: {
+      type: String,
+    },
+
+    user: { type: mongoose.Schema.ObjectId, ref: "User" },
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
-
-// postSchema.virtual("comments", {
-//   ref: "Comment",
-//   localField: "_id",
-//   foreignField: "post",
-// });
 
 const Post = model("Post", postSchema);
 module.exports = Post;

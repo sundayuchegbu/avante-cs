@@ -2,21 +2,21 @@ import styles, { layout } from "../style";
 import moloyalproduct from "../images/moloyalproduct.png";
 import smallloyal from "../images/smallloyal.png";
 import smallwhite from "../images/smallwhite.png";
+import moloyallogo from "../images/moloyallogo.png";
 import { Link } from "react-router-dom";
 const ProductBanner = () => {
   return (
     <div>
       <div className="hidden md:block">
-        <div
-          id="ctas3"
-          className={`bg-gradient-to-r from-blue-500 to-blue-400  ${layout.sectionReverse}`}
-        >
+        <div id="product" className={`  ${layout.sectionReverse}`}>
           <div className={`  ${layout.sectionImgReverse1} h-[721px] mt-0   `}>
             <img src={moloyalproduct} alt="moloyalproduct" className="ml-72" />
           </div>
           <div className={` ml-24 ${layout.sectionInfo}`}>
-            <h2 className={`${styles.heading3} mb-4 `}>
-              MO <span className="text-secondary"> LOYAL</span>
+            <h2
+              className={`font-inter font-semibold xs:text-[40px] mt-[-200px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
+            >
+              <img src={moloyallogo} alt="moloyal" className="md:w-[200px]" />{" "}
             </h2>
             <div
               className={`${styles.paragraph} max-w-[470px]  sm:p-auto mt-5 mb-6`}

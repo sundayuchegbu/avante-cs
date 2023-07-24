@@ -68,7 +68,7 @@ const Navbar = () => {
         </NavLink>
         <Popover
           as="div"
-          className="relative group inline-block text-left mr-9"
+          className="relative group inline-block text-left mr-12"
         >
           {({ open }) => (
             <div
@@ -78,7 +78,7 @@ const Navbar = () => {
               <Popover.Button
                 ref={triggerRef}
                 type="popover-button"
-                className={`${
+                className={` ${
                   activePage === "/services" ? "text-primary" : "text-black2"
                 } inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px] hover:bg-background focus:ring-0 ring-offset-0 hover:text-secondary  focus:outline-none focus-visible:outline-none`}
                 id="menu-button"
@@ -103,7 +103,7 @@ const Navbar = () => {
               <Transition>
                 <div>
                   <Popover.Panel
-                    className="absolute right-0 z-10 mt-1 w-56 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
+                    className="absolute right-0 z-10 mt-1 w-64 origin-top-right  rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="menu-button"
@@ -112,20 +112,136 @@ const Navbar = () => {
                     <div>
                       <Popover.Panel>
                         <Link
-                          to="/services/consulting"
-                          className="text-gray-700 block  px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                          to=""
+                          className="text-gray-700 block  px-4 py-2 mb-4 text-sm   hover:text-white"
                           tabIndex="-1"
                           id="menu-item-0"
                           onClick={() => setActivePage("/services")}
                         >
-                          Business Consulting
+                          <div>
+                            <div
+                              onClick={() => setIsList(!isList)}
+                              className="w-64 p-4 -ml-4   mb-4 cursor-pointer font-inter font-normal text-[16px] text-gray-800 flex items-center justify-between cursor-pointer "
+                            >
+                              Business Consulting{" "}
+                              <div>
+                                {isList ? (
+                                  <div>
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      height="1em"
+                                      viewBox="0 0 320 512"
+                                    >
+                                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                                    </svg>
+                                  </div>
+                                ) : (
+                                  <>
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      height="1em"
+                                      viewBox="0 0 256 512"
+                                    >
+                                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                    </svg>{" "}
+                                  </>
+                                )}
+                              </div>
+                            </div>
+                            {isList && (
+                              <div className="w-64 -mt-5 p-4 ">
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center">
+                                    <svg
+                                      className="hidden"
+                                      width={12}
+                                      height={12}
+                                      viewBox="0 0 12 12"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M4.5 3L7.5 6L4.5 9"
+                                        stroke="#4B5563"
+                                        strokeWidth="1.25"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                      />
+                                    </svg>
+                                    <div className="pl-4 -mt-4 -ml-10 flex items-center">
+                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
+                                        <NavLink
+                                          onClick={() => setShowMobileNav(true)}
+                                          to="/services/implementations"
+                                        >
+                                          {" "}
+                                          - Implementation Services{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 pt-3 -ml-14">
+                                  <div className="flex items-center justify-between ">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
+                                        <NavLink
+                                          onClick={() => setShowMobileNav(true)}
+                                          to="/services/project/management"
+                                        >
+                                          {" "}
+                                          - Project Management
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 pt-3 -ml-14">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
+                                        <NavLink to="/services/user/research">
+                                          {" "}
+                                          - User Experience Research{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 pt-3 -ml-14">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
+                                        <NavLink to="/services/market/survey">
+                                          {" "}
+                                          - Market Surveys{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 pt-3 -ml-14">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
+                                        <NavLink to="/services/feasibility/studies">
+                                          {" "}
+                                          - Feasibility Studies{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </div>{" "}
                         </Link>
                       </Popover.Panel>
 
                       <Popover.Panel>
                         <Link
                           to="/services/software"
-                          className=" block px-4 py-2    mb-4 text-sm hover:bg-primary hover:text-white"
+                          className=" block px-4 py-2    mb-4 -mt-6 text-sm hover:bg-primary hover:text-white"
                           tabIndex="-1"
                           id="menu-item-1"
                           onClick={() => setActivePage("/services")}
@@ -182,21 +298,7 @@ const Navbar = () => {
                         Social Media Management{" "}
                       </Link>
                     </Popover.Panel>
-                    {/* </div> */}
-                    {/* <div className="py-1" role="none"> */}
-                    <Popover.Panel>
-                      <Link
-                        to="/services/oracle"
-                        className="text-gray-700 block px-4 py-2  mb-4 text-sm hover:bg-primary hover:text-white"
-                        tabIndex="-1"
-                        id="menu-item-6"
-                        onClick={() => setActivePage("/services")}
-                      >
-                        Oracle Database
-                      </Link>
-                    </Popover.Panel>
-                    {/* </div> */}
-                    {/* <div className="py-1" role="none"> */}
+
                     <Popover.Panel>
                       <Link
                         to="services/web/development"
@@ -362,7 +464,7 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className="sm:hidden   flex flex-1 justify-end w-full h-full     items-center bg-background ">
+      <div className="sm:hidden   flex flex-1 justify-end w-full h-full      items-center bg-background ">
         <img
           src={`${toggle && !showMobileNav ? close : menu} `}
           className={` w-[28px] h-[28px] object-contain`}
@@ -373,7 +475,7 @@ const Navbar = () => {
           alt="menu"
         />
         <div
-          className={`p-6  absolute bg-background w-full h-full   top-20 pl-2 duration-500 py-24   ${
+          className={`p-6  absolute bg-background w-full h-[1200px]   top-20 pl-2 duration-500 py-24   ${
             toggle ? " flex right-0 " : "right-[-100%]  hidden  "
           }  ${showMobileNav ? "hidden" : ""} `}
         >
@@ -397,7 +499,7 @@ const Navbar = () => {
             <div>
               <div
                 onClick={() => setIsList(!isList)}
-                className="w-64 p-4 -ml-4  -mt-4 mb-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center justify-between cursor-pointer"
+                className="w-64 p-4 -ml-4   mb-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center justify-between cursor-pointer"
               >
                 SERVICES
                 <div>
@@ -445,22 +547,126 @@ const Navbar = () => {
                         />
                       </svg>
                       <div className="pl-4 -mt-4 -ml-10 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
-                          <NavLink
-                            onClick={() => setShowMobileNav(true)}
-                            to="/services/consulting"
-                          >
-                            {" "}
-                            Business Consulting{" "}
-                          </NavLink>
-                        </p>
+                        <div className="text-sm leading-normal ml-2 text-gray-800">
+                          {" "}
+                          <div>
+                            <div
+                              onClick={() => setIsListed(!isListed)}
+                              className="w-64 p-4 -mt-4 -ml-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center  justify-between cursor-pointer"
+                            >
+                              Business Consulting{" "}
+                              <div>
+                                {isListed ? (
+                                  <div>
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      height="1em"
+                                      viewBox="0 0 320 512"
+                                    >
+                                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                                    </svg>{" "}
+                                  </div>
+                                ) : (
+                                  <div>
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      height="1em"
+                                      viewBox="0 0 256 512"
+                                    >
+                                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                    </svg>{" "}
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                            {isListed && (
+                              <div className="w-64 -mt-4 p-4  -pt-8 -ml-5 bg-background ">
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center">
+                                    <div className=" flex items-center">
+                                      <div className="text-[12px] leading-normal ml-2 text-gray-800">
+                                        <NavLink
+                                          onClick={() => setShowMobileNav(true)}
+                                          to="/services/implementations"
+                                        >
+                                          {" "}
+                                          - Implementation Services{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 -ml-8 pt-3">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-[12px] leading-normal ml-2 text-gray-800">
+                                        <NavLink
+                                          onClick={() => setShowMobileNav(true)}
+                                          to="/services/project/management"
+                                        >
+                                          {" "}
+                                          - Project Management{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 -ml-8 pt-3">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-[12px] leading-normal ml-2 text-gray-800">
+                                        <NavLink
+                                          to="/services/user/research"
+                                          onClick={() => setShowMobileNav(true)}
+                                        >
+                                          {" "}
+                                          - User Experience Research{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 -ml-8 pt-3">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-[12px] leading-normal ml-2 text-gray-800">
+                                        <NavLink
+                                          to="/services/market/survey"
+                                          onClick={() => setShowMobileNav(true)}
+                                        >
+                                          {" "}
+                                          - Market Surveys{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pl-4 -ml-8 pt-3">
+                                  <div className="flex items-center justify-between">
+                                    <div className="pl-4 flex items-center">
+                                      <div className="text-[12px] leading-normal ml-2 text-gray-800">
+                                        <NavLink
+                                          to="/services/feasibility/studies"
+                                          onClick={() => setShowMobileNav(true)}
+                                        >
+                                          {" "}
+                                          - Feasibility Studies{" "}
+                                        </NavLink>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="pl-4 pt-3 -ml-14">
+                  <div className="pl-4  -ml-14">
                     <div className="flex items-center justify-between ">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink
                             onClick={() => setShowMobileNav(true)}
                             to="/services/software"
@@ -468,59 +674,59 @@ const Navbar = () => {
                             {" "}
                             Software Development{" "}
                           </NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="pl-4 pt-3 -ml-14">
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink to="/services/sas"> SAS Analytics</NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="pl-4 pt-3 -ml-14">
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink to="/services/egain/collaboration">
                             {" "}
                             eGain Collaboration{" "}
                           </NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="pl-4 pt-3 -ml-14">
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink to="/services/egain/knowledge">
                             {" "}
                             eGain Knowledge
                           </NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="pl-4 pt-3 -ml-14">
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink to="/services/media/management">
                             {" "}
                             Social Media Management{" "}
                           </NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="pl-4 pt-3 -ml-14">
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink
                             onClick={() => setShowMobileNav(true)}
                             to="/services/oracle"
@@ -528,19 +734,19 @@ const Navbar = () => {
                             {" "}
                             Oracle Database{" "}
                           </NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="pl-4 pt-3 -ml-14">
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
-                        <p className="text-sm leading-normal ml-2 text-gray-800">
+                        <div className="text-[12px] leading-normal ml-2 text-gray-800">
                           <NavLink to="/services/web/development">
                             {" "}
                             Web Development{" "}
                           </NavLink>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -662,7 +868,7 @@ const Navbar = () => {
             </div>
             <NavLink
               to="/news"
-              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mb-6"
+              className=" cursor-pointer font-inter font-normal text-[12px] hover:text-primary mb-6"
               onClick={() => setShowMobileNav(true)}
             >
               NEWS

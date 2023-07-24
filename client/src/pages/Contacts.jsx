@@ -1,36 +1,77 @@
 import styles from "../style";
 import fone from "../images/fone.png";
-import email from "../images/email.png";
+import email1 from "../images/email1.png";
 import smallcontact from "../images/smallcontact.png";
 import redphone from "../images/redphone.png";
 import redmail from "../images/redmail.png";
-import React, { useState } from "react";
-import Axios from "axios";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
+
 const Contacts = () => {
-  const url = "/api/v1/feeback";
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    reason: "",
-    msg: "",
-  });
-  function submit(e) {
-    e.preventDefault();
-    Axios.post(url, {
-      name: data.name,
-      email: data.email,
-      reason: data.reason,
-      msg: data.msg,
-    }).then((res) => {
-      console.log(res.data);
-    });
-  }
-  function handle(e) {
-    const newData = { ...data };
-    newData[e.target.id] = e.target.value;
-    setData(newData);
-    console.log(newData);
-  }
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [reason, setReason] = useState("");
+  const [details, setDetails] = useState("");
+
+  const form = useRef();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const commentData = {
+      name,
+      email,
+      reason,
+      details,
+    };
+
+    fetch("http://localhost:5000/api/v1/comment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(commentData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Comment submitted successfully:", data);
+        toast.success("Message Submitted Successfully...");
+        sendEmail();
+        resetFormFields();
+      })
+      .catch((error) => {
+        console.error("Error submitting comment:", error);
+        // Handle any error or show error message to the user
+      });
+  };
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_qfj2jep",
+        "template_ju94j9v",
+        form.current,
+        "gD3c3lQwYVvx8AiBM"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message was sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const resetFormFields = () => {
+    setName("");
+    setEmail("");
+    setReason("");
+    setDetails("");
+  };
+
   return (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
@@ -59,8 +100,7 @@ const Contacts = () => {
                   </p>
                   <h3 className="text-primary">CONTACT INFO</h3>
                   <p className="font-Inter font-normal text-dimWhite text-[10px] leading-[20.8px] mb-8">
-                    Penthouse 11B, Kayode Otitoju Street, Off Admiralty <br />{" "}
-                    Road, Lekki Phase 1, Lagos
+                    66 Bode Thomas, Surulere, Lagos.{" "}
                   </p>{" "}
                   <div className="flex flex-row">
                     <div>
@@ -73,7 +113,7 @@ const Contacts = () => {
                   </div>
                   <div className="flex flex-row mt-4">
                     <div>
-                      <img src={email} alt="email" className="h-3 w-3 mr-2" />
+                      <img src={email1} alt="email" className="h-3 w-3 mr-2" />
                     </div>
 
                     <div>
@@ -86,41 +126,45 @@ const Contacts = () => {
               </div>
             </div>
 
-            <form onSubmit={(e) => submit(e)}>
+            <form ref={form} onSubmit={handleSubmit}>
               <div className=" mx-12">
                 <div>
                   <input
-                    onChange={(e) => handle(e)}
+                    onChange={(e) => setName(e.target.value)}
                     id="name"
-                    value={data.name}
+                    value={name}
+                    name="from_name"
                     type="text"
-                    placeholder="Your full name"
+                    placeholder="Full Name"
                     className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   />
                 </div>{" "}
                 <input
-                  onChange={(e) => handle(e)}
+                  onChange={(e) => setEmail(e.target.value)}
                   id="email"
-                  value={data.email}
+                  value={email}
                   type="text"
-                  placeholder="Your e-mail address"
+                  name="from_email"
+                  placeholder="Email Address"
                   className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                 />
                 <input
-                  onChange={(e) => handle(e)}
-                  id="reason"
-                  value={data.reason}
+                  onChange={(e) => setReason(e.target.value)}
+                  id="subject"
+                  value={reason}
                   type="text"
-                  placeholder="Your reason"
-                  className="w-full mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                  name="subject"
+                  placeholder="Subject"
+                  className="w-full mt-12 px-3 h-8  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                 />
                 <textarea
-                  onChange={(e) => handle(e)}
-                  id="msg"
-                  value={data.msg}
+                  onChange={(e) => setDetails(e.target.value)}
+                  id="details"
+                  value={details}
                   type="text"
-                  placeholder="drop a message here..."
-                  className="w-full mt-12 px-3 h-24 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                  name="message"
+                  placeholder="Type a message here..."
+                  className="w-full mt-8 px-3 h-12 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                 />
                 <button
                   type="submit"
@@ -153,33 +197,49 @@ const Contacts = () => {
               We have four growth pillars namely, Consulting, Avantesoft,
               Technology & Social Media Management.
             </p>
-            <div>
+            <form ref={form} onSubmit={handleSubmit}>
               <div className="relative">
                 <input
+                  onChange={(e) => setName(e.target.value)}
+                  id="name"
+                  value={name}
+                  name="from_name"
                   type="text"
                   placeholder="Your full name"
                   className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 text-[10px] block"
                 />
               </div>{" "}
               <input
+                onChange={(e) => setEmail(e.target.value)}
+                id="email"
+                value={email}
                 type="text"
+                name="from_email"
                 placeholder="Your e-mail address"
                 className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
               <input
+                onChange={(e) => setReason(e.target.value)}
+                id="subject"
+                value={reason}
                 type="text"
-                placeholder="Your reason"
+                name="subject"
+                placeholder="Subject"
                 className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
               <input
+                onChange={(e) => setDetails(e.target.value)}
+                id="details"
+                value={details}
                 type="text"
+                name="message"
                 placeholder="drop a message here..."
                 className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
               <button className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-24 mb-12 mt-6">
                 Submit
               </button>
-            </div>
+            </form>
             <div className="w-[349px] h-[42px] mb-8  ">
               {" "}
               <p className=" font-inter font-normal text-[16px] max-w-[300px] text-secondary ">
@@ -191,8 +251,7 @@ const Contacts = () => {
                 CONTACT INFO
               </h1>
               <p className="font-inter font-normal text-[12px] text-black1 ">
-                Penthouse 11B, Kayode Otitoju Street, Off Admiralty Road, Lekki
-                Phase 1, Lagos
+                66 Bode Thomas, Surulere, Lagos.{" "}
               </p>
             </div>
             <div className="overflow-auto ml-4  flex items-center mt-4 mb-2">

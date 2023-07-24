@@ -1,22 +1,30 @@
 const Post = require("../model/Post");
-const { fileRemover } = require("../utils/fileRemover");
-const { uploadPicture } = require("../middleware/uploadPictureMiddleware");
-const { v4: uuidv4 } = require("uuid");
-// const Comment = require('../model/Comments')
+const dotenv = require("dotenv").config();
+
+const cloudinary = require("cloudinary").v2;
+
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 const createPost = async (req, res, next) => {
   try {
-    const post = new Post({
-      title: "sample title",
-      caption: "sample caption",
-      slug: uuidv4(),
-      body: { type: "doc", content: [] },
-      photo: "",
+    const { title, caption, image, description } = req.body;
+    const imageUrl = await cloudinary.uploader.upload(image);
+    console.log(imageUrl);
+    console.log(imageUrl.url);
+
+    const newPost = await Post.create({
+      title,
+      caption,
+      image: imageUrl.url,
+      description,
       user: req.user._id,
     });
-
-    const createdPost = await post.save();
-    return res.json(createdPost);
+    res.status(201).json({ success: true, data: newPost });
+    console.log(data);
   } catch (error) {
     next(error);
   }
@@ -24,52 +32,46 @@ const createPost = async (req, res, next) => {
 
 const updatePost = async (req, res, next) => {
   try {
-    const post = await Post.findOne({ slug: req.params.slug });
+    const postId = req.params.id;
+    const { title, caption, image, description } = req.body;
+
+    // Find the post to be edited
+    const post = await Post.findById(postId);
 
     if (!post) {
-      const error = new Error("Post was not found");
-      next(error);
-      return;
+      return res
+        .status(404)
+        .json({ success: false, message: "Post not found" });
     }
 
-    const upload = uploadPicture.single("postPicture");
+    // Check if the user is authenticated and owns the post
+    if (!req.user || post.user.toString() !== req.user._id.toString()) {
+      return res.status(403).json({ success: false, message: "Unauthorized" });
+    }
 
-    const handleUpdatePostData = async (data) => {
-      const { title, caption, slug, body, tags, categories } = JSON.parse(data);
-      post.title = title || post.title;
-      post.caption = caption || post.caption;
-      post.slug = slug || post.slug;
-      post.body = body || post.body;
-      post.tags = tags || post.tags;
-      post.categories = categories || post.categories;
-      const updatedPost = await post.save();
-      return res.json(updatedPost);
-    };
+    // Update the post fields
+    post.title = title;
+    post.caption = caption;
+    post.description = description;
+    // Check if a new image is provided
+    if (image) {
+      console.log("image exist");
+      // Delete the old image from Cloudinary
+      await cloudinary.uploader.destroy(post.image);
 
-    upload(req, res, async function (err) {
-      if (err) {
-        const error = new Error(
-          "An unknown error occured when uploading " + err.message
-        );
-        next(error);
-      } else {
-        // every thing went well
-        if (req.file) {
-          let filename;
-          filename = post.photo;
-          if (filename) {
-            fileRemover(filename);
-          }
-          post.photo = req.file.filename;
-          handleUpdatePostData(req.body.document);
-        } else {
-          let filename;
-          filename = post.photo;
-          post.photo = "";
-          fileRemover(filename);
-          handleUpdatePostData(req.body.document);
-        }
-      }
+      // Upload the new image to Cloudinary
+      const imageUrl = await cloudinary.uploader.upload(image);
+      post.image = imageUrl.url;
+    }
+
+    // Save the updated post
+    await post.save();
+
+    res.status(200).json({
+      success: true,
+      data: post,
+      image: image,
+      message: "post updated successfully",
     });
   } catch (error) {
     next(error);
@@ -78,31 +80,44 @@ const updatePost = async (req, res, next) => {
 
 const deletePost = async (req, res, next) => {
   try {
-    const post = await Post.findOneAndDelete({ slug: req.params.slug });
+    const postId = req.params.id;
+
+    // Find the post to be deleted
+    const post = await Post.findById(postId);
 
     if (!post) {
-      const error = new Error("Post aws not found");
-      return next(error);
+      return res
+        .status(404)
+        .json({ success: false, message: "Post not found" });
     }
 
-    await Comment.deleteMany({ post: post._id });
+    // Check if the user is authenticated and owns the post
+    if (!req.user || post.user.toString() !== req.user._id.toString()) {
+      return res.status(403).json({ success: false, message: "Unauthorized" });
+    }
 
-    return res.json({
-      message: "Post is successfully deleted",
-    });
+    // Delete the image from Cloudinary
+    await cloudinary.uploader.destroy(post.image);
+
+    // Delete the post
+    await Post.deleteOne({ _id: postId });
+
+    res.status(200).json({ success: true, message: "Post deleted" });
   } catch (error) {
     next(error);
   }
 };
 
 const getPost = async (req, res, next) => {
+  console.log({ id: req.params.id });
   try {
-    const post = await Post.findOne({ slug: req.params.slug }).populate([
+    const post = await Post.findById(req.params.id).populate([
       {
         path: "user",
         select: ["avatar", "name"],
       },
     ]);
+    console.log(post);
 
     if (!post) {
       const error = new Error("Post was not found");

@@ -62,18 +62,20 @@ const DevBanner = () => {
             View our projects below to see a lists of our clients and how we
             have helped them to take their business to the next level.
           </p>
-          <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
-            <span className="mx-14 text-[12px] font-inter font-normal">
-              Request a demo
-            </span>
-            <i className="fas fa-chevron-right">
-              <img
-                src={smallwhite}
-                alt="smallwhite"
-                className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-              />{" "}
-            </i>
-          </button>
+          <Link to="/contacts">
+            <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
+              <span className="mx-14 text-[12px] font-inter font-normal">
+                Request a demo
+              </span>
+              <i className="fas fa-chevron-right">
+                <img
+                  src={smallwhite}
+                  alt="smallwhite"
+                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                />{" "}
+              </i>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
