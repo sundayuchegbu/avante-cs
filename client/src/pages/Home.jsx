@@ -4,7 +4,6 @@ import Codeit from "../components/Codeit";
 import Caller from "../components/Caller";
 import Clients from "../components/Clients";
 import Testimonial from "../components/Testimonial";
-import Info from "../components/Info";
 import Stats from "../components/Stats";
 import ProductSample from "../components/ProductSample";
 import Card from "../components/Card";
