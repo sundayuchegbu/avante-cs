@@ -2,12 +2,15 @@ import axios from "axios";
 
 export const getAllFeedback = async ({ name, email, reason, msg }) => {
   try {
-    const { data } = await axios.post("/api/v1/feedbacks", {
-      name,
-      email,
-      reason,
-      msg,
-    });
+    const { data } = await axios.post(
+      "https://avante-cs-backend.onrender.com/api/v1/feedbacks",
+      {
+        name,
+        email,
+        reason,
+        msg,
+      }
+    );
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

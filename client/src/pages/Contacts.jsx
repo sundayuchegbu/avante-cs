@@ -26,7 +26,7 @@ const Contacts = () => {
       details,
     };
 
-    fetch("http://localhost:5000/api/v1/comment", {
+    fetch("https://avante-cs-backend.onrender.com/api/v1/comment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const Contacts = () => {
       .then((data) => {
         console.log("Comment submitted successfully:", data);
         toast.success("Message Submitted Successfully...");
-        sendEmail();
+        // sendEmail();
         resetFormFields();
       })
       .catch((error) => {

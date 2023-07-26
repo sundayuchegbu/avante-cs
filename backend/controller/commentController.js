@@ -2,18 +2,16 @@ const Comments = require("../model/Comments");
 
 const createComments = async (req, res, next) => {
   try {
-    const newComment = new Comments({
-      name: req.body.name,
-      email: req.body.email,
-      reason: req.body.reason,
-      details: req.body.details,
+    const { name, email, reason, details } = req.body;
+    const newComment = await Comments.create({
+      name,
+      email,
+      reason,
+      details,
     });
-    const savedComment = await newComment.save();
-    res.status(200).json(savedComment);
-  } catch (error) {
-    console.error("Error saving comment:", error);
-    res.status(500).json({ error: "Failed to save comment" });
-  }
+    res.status(201).json({ success: true, data: newComment });
+    console.log(data);
+  } catch (error) {}
 };
 
 const getAllComments = async (req, res, next) => {
