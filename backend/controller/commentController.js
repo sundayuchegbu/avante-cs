@@ -11,7 +11,9 @@ const createComments = async (req, res, next) => {
     });
     res.status(201).json({ success: true, data: newComment });
     console.log(data);
-  } catch (error) {}
+  } catch (error) {
+    next(error);
+  }
 };
 
 const getAllComments = async (req, res, next) => {
