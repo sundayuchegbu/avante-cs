@@ -26,7 +26,7 @@ const Contacts = () => {
       details,
     };
 
-    fetch("https://avante-cs-backend.onrender.com/api/v1/comment", {
+    fetch("https://avante-css.onrender.com/api/v1/comment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const Contacts = () => {
       .then((data) => {
         console.log("Comment submitted successfully:", data);
         toast.success("Message Submitted Successfully...");
-        // sendEmail();
+        sendEmail();
         resetFormFields();
       })
       .catch((error) => {
@@ -49,10 +49,10 @@ const Contacts = () => {
   const sendEmail = () => {
     emailjs
       .sendForm(
-        "service_qfj2jep",
-        "template_ju94j9v",
+        "service_p6mfgac",
+        "template_cbxm7h3",
         form.current,
-        "gD3c3lQwYVvx8AiBM"
+        "ECfFboSu0y_L9md9N"
       )
       .then(
         (result) => {

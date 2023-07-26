@@ -9,8 +9,9 @@ const commentsSchema = new Schema(
       type: String,
       required: true,
       validate: [validator.isEmail, "Please enter a valid email address"],
+      unique: false,
     },
-    reason: { type: String, required: true, unique: true },
+    reason: { type: String, required: true, unique: false },
     details: { type: String, required: true },
   },
   { timestamps: true, toJSON: { virtuals: true } }
