@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllPosts = async () => {
   try {
     const { data } = await axios.get(
-      "https://avante-cs-backend.onrender.com/api/v1/posts"
+      "https://avante-css.onrender.com/api/v1/posts"
     );
     console.log(data);
     return data;
@@ -18,7 +18,7 @@ export const getSinglePost = async (id) => {
   console.log(id);
   try {
     const { data } = await axios.get(
-      `https://avante-cs-backend.onrender.com/api/v1/post/${id}`
+      `https://avante-css.onrender.com/api/v1/post/${id}`
     );
     console.log(data);
     return data;
