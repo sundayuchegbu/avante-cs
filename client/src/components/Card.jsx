@@ -119,7 +119,7 @@ export const Card = () => {
           </div>
         </div>
         <div className="sm:mt-24 sm:ml-4 ">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[320px] sm:h-[293px] h-[215px]">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[32x0px] sm:h-[293px] h-[215px]">
             <div className="text-white text-4xl sm:text-6xl sm:ml-[415px] ml-[30px] bg-primary sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-12">
               <i>
                 <img

@@ -7,21 +7,21 @@ import { Link } from "react-router-dom";
 
 const Cards2 = () => {
   return (
-    <div className="flex flex-col md:mb-12 mb-8">
-      <div className=" flex  sm:justify-center justify-end sm:items-end items-end sm:mr-[1000px] mr-[10px]  ">
-        <h1 className="sm:mb-4 font-inter font-semibold text-[16px]  ">
+    <div className="flex flex-col  md:mb-12 mb-8">
+      <div className=" flex  md:justify-center justify-center md:items-end items-center md:mr-[1000px] mr-[-20px]   ">
+        <h1 className="md:mb-4 font-inter font-semibold text-[16px]  ">
           OUR <span className="text-secondary ">PARTNERS</span>{" "}
         </h1>{" "}
       </div>
-      <div className=" flex items-center justify-center md:items-end  sm:mr-[890px] ml-[150px] mb-4">
+      <div className=" flex items-center justify-center md:items-end  md:mr-[890px] ml-[100px] mb-4">
         <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[14px]  ">
           Strategic Collaborative Alliances{" "}
         </h1>{" "}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
         <div className="sm:ml-[280px]  ml-4">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
-            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-68px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
+          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[300px] sm:h-[293px] h-[215px] ">
+            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-290px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
                   src={microsoft}
@@ -55,8 +55,8 @@ const Cards2 = () => {
         </div>
 
         <div className="md:mt-24 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[320px] md:h-[293px] h-[215px]">
-            <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[310px] md:h-[293px] h-[215px]">
+            <div className="text-white text-4xl md:text-6xl md:ml-[390px]   sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
               <i>
                 <img
                   src={sas}
@@ -65,7 +65,7 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-2 mr-56  sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+            <div className="text-white sm:ml-2 mr-44  sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
               SAS{" "}
             </div>
             <div className=" font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
@@ -73,8 +73,8 @@ const Cards2 = () => {
               the Customer Intelligence practice.
             </div>
             <Link to="/services/sas">
-              <button className="flex  sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
-                <span className="mr-12">Read more</span>
+              <button className="flex  sm:mr-0  items-center text-white text-[12px] ">
+                <span className="mr-32">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
