@@ -3,6 +3,7 @@ import logo from "../images/logo.png";
 import styles from "../style";
 import mail from "../images/mail.png";
 import insta2 from "../images/insta2.png";
+import egainfooter from "../images/egainfooter.jpg";
 
 import Facebook from "../images/Facebook.png";
 import phone from "../images/phone.png";
@@ -42,7 +43,7 @@ const Footer = ({ link }) => {
                   alt="phone"
                   className="w-[14px] h-[14px] mr-4  object-contain"
                 />
-                <p className="text-[16px] text-background font-inter text-[12px]">
+                <p className="md:text-[16px] text-background font-inter text-[12px]">
                   +234 -1-2953541
                 </p>
               </div>
@@ -53,20 +54,47 @@ const Footer = ({ link }) => {
                   {" "}
                   Services{" "}
                 </h4>
-                <ul className="list-none mb-4 block ">
+                <div className="list-none mb-4 block ">
                   <Link
-                    to="/services/consulting"
                     className={
-                      "font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary my-2 mb-6 cursor-pointer block"
+                      "font-inter font-normal text-[16px] leading-[24px] text-background  my-2 mb-6 cursor-pointer block"
                     }
                   >
                     Business Consulting{" "}
-                    <div className="font-inter font-normal text-[12px] leading-[24px] text-background hover:text-primary my-2 mb-6 cursor-pointer block">
-                      <p> - Implementation Services </p>
-                      <p> - Project Management </p>
-                      <p> - User Experience Research </p>
-                      <p> - Market Surveys </p>
-                      <p> - Feasibility Studies </p>
+                    <div className="font-inter font-normal text-[12px] leading-[24px] text-background  my-2 mb-6 cursor-pointer block">
+                      <button>
+                        <Link to="/services/implementations">
+                          {" "}
+                          - Implementation Services{" "}
+                        </Link>
+                      </button>
+                      <p />
+                      <button>
+                        {" "}
+                        <Link to="/services/project/management">
+                          {" "}
+                          - Project Management{" "}
+                        </Link>
+                      </button>
+                      <button>
+                        <Link to="/services/user/research">
+                          {" "}
+                          - User Experience Research{" "}
+                        </Link>
+                      </button>
+                      <button>
+                        <Link to="/services/market/survey">
+                          {" "}
+                          - Market Surveys{" "}
+                        </Link>
+                      </button>
+                      <p />
+                      <button>
+                        <Link to="/services/feasibility/studies">
+                          {" "}
+                          - Feasibility Studies{" "}
+                        </Link>
+                      </button>
                     </div>
                   </Link>
                   <Link
@@ -106,7 +134,7 @@ const Footer = ({ link }) => {
                   >
                     Website Development{" "}
                   </Link>
-                </ul>
+                </div>
               </div>
             </div>
             <div className="flex-[2.0] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
@@ -236,6 +264,17 @@ const Footer = ({ link }) => {
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background mt-[20px] hover:text-primary  cursor-pointer block`}
                   >
                     <img src={sas2} alt="sas" className="w-[200px]" />{" "}
+                  </Link>
+                  <Link
+                    to="https://www.sas.com/en_us/solutions/customer-intelligence.html"
+                    target="_blank"
+                    className={`font-inter font-normal text-[16px] leading-[24px] text-background mt-[20px] hover:text-primary  cursor-pointer block`}
+                  >
+                    <img
+                      src={egainfooter}
+                      alt="sas"
+                      className="w-[200px] h-[60px]"
+                    />{" "}
                   </Link>
                 </ul>
               </div>

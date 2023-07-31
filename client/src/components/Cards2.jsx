@@ -13,7 +13,7 @@ const Cards2 = () => {
           OUR <span className="text-secondary ">PARTNERS</span>{" "}
         </h1>{" "}
       </div>
-      <div className=" flex items-center justify-center md:items-end items-center sm:mr-[890px] ml-[150px] mb-4">
+      <div className=" flex items-center justify-center md:items-end  sm:mr-[890px] ml-[150px] mb-4">
         <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[14px]  ">
           Strategic Collaborative Alliances{" "}
         </h1>{" "}
@@ -26,7 +26,7 @@ const Cards2 = () => {
                 <img
                   src={microsoft}
                   alt="vector"
-                  className="md:h-14 h-10 md:w-14 "
+                  className="sm:h-16  h-12 sm:w-16 w-12"
                 />
               </i>
             </div>
@@ -61,7 +61,7 @@ const Cards2 = () => {
                 <img
                   src={sas}
                   alt="vector"
-                  className="md:h-16  h-10 md:w-14 "
+                  className="sm:h-16 h-12 sm:w-16 w-12"
                 />
               </i>
             </div>

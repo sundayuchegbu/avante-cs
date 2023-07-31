@@ -121,7 +121,7 @@ const Navbar = () => {
                           <div>
                             <div
                               onClick={() => setIsList(!isList)}
-                              className="w-64 p-4 -ml-4   mb-4 cursor-pointer font-inter font-normal text-[16px] text-gray-800 flex items-center justify-between cursor-pointer "
+                              className="w-64 p-4 -ml-4   mb-4 cursor-pointer font-inter font-normal text-[16px] text-gray-800 flex items-center justify-between  "
                             >
                               Business Consulting{" "}
                               <div>
@@ -279,7 +279,7 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/egain/knowledge"
-                        className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                        className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-4"
                         onClick={() => setActivePage("/services")}

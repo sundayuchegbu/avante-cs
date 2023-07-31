@@ -37,7 +37,7 @@ export const Card = () => {
               Avante Consulting provides implementation solutions for our
               customers from pre-sales assistance ...
             </div>
-            <Link to="/contacts">
+            <Link to="/services/consulting">
               <button className="flex sm:ml-8 ml-[-53px] items-center text-white text-[12px] ">
                 <span className="sm:mr-8 mr-20 font-inter font-normal">
                   Read more
@@ -72,7 +72,7 @@ export const Card = () => {
               Avante is a software development company that specializes in
               e-commerce, mobile solutions, ...
             </div>
-            <Link to="/contacts">
+            <Link to="/services/software">
               <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12 font-inter font-normal">Read more</span>
                 <i className="fas fa-chevron-right">
@@ -97,14 +97,14 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white font-inter font-normal sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter font-semibold mb-4">
+            <div className="text-white font-inter font-normal sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter  mb-4">
               SAS Analytics{" "}
             </div>
             <div className="text-white font-inter font-normal ml-8 font-inter leading-[25.8px] sm:text-[14px] text-[10px] sm:text-base mb-4">
               Avante is a silver partner of SAS and a solution partner within
               the Customer ...
             </div>
-            <Link to="/contacts">
+            <Link to="/services/sas">
               <button className="flex sm:ml-8 ml-[-40px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
@@ -129,14 +129,14 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:mr-2 mr-20 font-inter font-normal sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+            <div className="text-white md:mr-2 mr-20 font-inter font-normal md:text-[32px] text-[16px] font-inter  mb-4 ">
               eGain Collaboration{" "}
             </div>
             <div className="text-white sm:text-[14px] font-inter font-normal leading-[25.8px] text-[10px]  sm:text-base mb-4">
-              View our projects to see a lists of our clients and how we have
-              helped them to take their business ...
+              We deliver innovative omni-channel customer service and knowledge
+              management solutions....{" "}
             </div>
-            <Link to="/contacts">
+            <Link to="/services/egain/collaboration">
               <button className="flex sm:mr-0 mr-[100px] items-center text-white text-[12px] ">
                 <span className="mr-12">Read more</span>
                 <i className="fas fa-chevron-right">
