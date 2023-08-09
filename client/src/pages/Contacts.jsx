@@ -49,7 +49,7 @@ const Contacts = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [countryState]);
 
   const { countries } = countryState;
 

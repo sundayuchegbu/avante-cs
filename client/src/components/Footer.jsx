@@ -1,4 +1,4 @@
-import { useState, useRef, Fragment, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import logo from "../images/logo.png";
 import styles from "../style";
 import mail from "../images/mail.png";
@@ -10,19 +10,12 @@ import phone from "../images/phone.png";
 import sas2 from "../images/sas2.png";
 import linkedin2 from "../images/linkedin2.png";
 
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const timeoutDuration = 120;
 
 const Footer = ({ link }) => {
   const location = useLocation();
-  const navigate = useNavigate();
-  const [toggle, setToggle] = useState(false);
-  const [isShowing, setIsShowing] = useState(false);
-  const [showMobileNav, setShowMobileNav] = useState(false);
-
-  const [isList, setIsList] = useState(false);
-  const [isListed, setIsListed] = useState(false);
 
   const [activePage, setActivePage] = useState(location.pathname);
 
