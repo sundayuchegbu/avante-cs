@@ -67,7 +67,7 @@ const Codeit = () => {
                 disabled
               />{" "}
             </li>
-            <li className="w-full block hidden sm:block border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
+            <li className="w-full  hidden md:block border-gray-200 rounded-t-lg dark:border-gray-600 sm:mb-8 mb-1">
               <input
                 autoComplete="off"
                 id="list-radio-license6"
@@ -190,7 +190,7 @@ const Codeit = () => {
             processes, and drive innovation.
           </div>
         </div>
-        <Link to="/contacts">
+        <Link to="/about">
           <button className="bg-secondary text-white flex flex-start font-normal font-inter py-2 px-4 rounded">
             Learn more
           </button>

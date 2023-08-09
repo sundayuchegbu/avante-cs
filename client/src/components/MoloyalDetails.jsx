@@ -1,6 +1,6 @@
 import { layout } from "../style";
 import arrow4 from "../images/arrow4.svg";
-import loyalty from "../images/loyalty.png";
+import productimage1 from "../images/productimage1.png";
 import { Link } from "react-router-dom";
 const MoloyalDetails = () => {
   return (
@@ -20,18 +20,20 @@ const MoloyalDetails = () => {
         <div
           className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] mt-5 mb-6 `}
         >
-          MoLoyal™, the unique customer rewards programme, which helps
-          businesses improve customer retention by rewarding customers with free
-          airtime for every transaction made. Active members of MoLoyal can earn
-          free airtime rewards while making transactions in various industries
-          including; - Retail - Concerts, Festivals, Sports and Event Ticketing
-          Systems - Buses, Ferry Services, Trains or other transportation -
-          Tolling Systems for public and convenience services - Contribution and
-          payment collection systems. MoLoyal is also a digital airtime retail
-          and distribution platform where airtime from all major networks will
-          be electronically sold with flexible payment channels including Debit
-          or Credit Cards, Reward Wallet, Mobile Money, Shortcodes and Bank
-          deposits.
+          MoLoyal™ provides an easy to use fintech solution serving customers
+          with loyalty points for transaction they normally carry out on day to
+          day basis. With MoLoyal, you can start a micro-savings plan, buy
+          tickets to upcoming events, and discover discounted items listed on
+          the platform.
+          <p className="mb-4"></p>The MoLoyal products are namely: MoSave,
+          MoTickets, and the Loyalty Ecosystem; dedicated to promoting financial
+          inclusion, user engagement, and economic growth in the regions it
+          serves.
+          <p className="mb-4"></p>
+          The product API is available on demand as may be required for your
+          project
+          <p className="mb-4"></p>
+          MoLoyal app is available on playstore.
         </div>
         <Link to="https://www.moloyal.com">
           <button className="font-inter font-semibold text-secondary underline decoration-2 underline-offset-4 decoration-secondary">
@@ -46,7 +48,7 @@ const MoloyalDetails = () => {
       </div>
       <div className={`${layout.sectionImg} sm:mx-24 px-24 relative`}>
         <img
-          src={loyalty}
+          src={productimage1}
           alt="card"
           className=" block  sm:w-[479px] w-full  sm:h-[485.85px] h-full "
         />

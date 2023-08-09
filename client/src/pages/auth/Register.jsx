@@ -30,6 +30,7 @@ const Register = () => {
       // navigate("/");
     }
   }, [navigate, userState.userInfo]);
+
   const {
     register,
     handleSubmit,

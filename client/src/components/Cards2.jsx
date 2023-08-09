@@ -1,4 +1,4 @@
-import microsoft from "../images/microsoft.png";
+import microsoft from "../images/microsoft.jpg";
 import egain from "../images/egain.png";
 import oracle from "../images/oracle.png";
 import sas from "../images/sas.png";
@@ -14,39 +14,39 @@ const Cards2 = () => {
         </h1>{" "}
       </div>
       <div className=" flex items-center justify-center md:items-end  md:mr-[890px] ml-[100px] mb-4">
-        <h1 className="sm:mb-8 font-inter font-normal md:text-[28px] text-[14px]  ">
+        <h1 className="md:mb-8 font-inter font-normal md:text-[28px] text-[14px]  ">
           Strategic Collaborative Alliances{" "}
         </h1>{" "}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2  gap-8">
-        <div className="sm:ml-[280px]  ml-4">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[300px] sm:h-[293px] h-[215px] ">
-            <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-290px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+        <div className="md:ml-[280px]  ml-4">
+          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  md:w-[482px] w-[300px] md:h-[293px] h-[215px] ">
+            <div className="text-white text-4xl md:text-6xl  md:ml-[-65px] ml-[-290px] md:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
                   src={microsoft}
                   alt="vector"
-                  className="sm:h-16  h-12 sm:w-16 w-12"
+                  className="md:h-16  h-12 md:w-16 w-12 rounded-full"
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4">
+            <div className="text-white md:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4">
               eGain{" "}
             </div>
-            <div className=" font-inter font-normal text-white ml-8 font-inter sm:text-[14px] leading-[25.8px] text-[10px] md:text-base mb-4">
+            <div className=" font-inter font-normal text-white ml-8 font-inter md:text-[14px] leading-[25.8px] text-[10px] md:text-base mb-4">
               Our partnership with eGain strengthens our commitment to the
               industry's most innovative ...
             </div>
             <Link to="/services/egain/collaboration">
               <button className="flex md:ml-8 ml-[-32px] items-center text-white text-[12px] ">
-                <span className="sm:mr-8 mr-16 font-inter font-normal">
+                <span className="md:mr-8 mr-16 font-inter font-normal">
                   Read more
                 </span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
                     alt="whitearrow"
-                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                    className="md:w-[100%] w-[50%] md:h-[100%] h-[50%]"
                   />
                 </i>
               </button>
@@ -55,39 +55,39 @@ const Cards2 = () => {
         </div>
 
         <div className="md:mt-24 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[310px] md:h-[293px] h-[215px]">
-            <div className="text-white text-4xl md:text-6xl md:ml-[390px]   sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
+          <div className="bg-black flex flex-col items-end md:items-start justify-center px-8 py-6 md:w-[482px] w-[310px] md:h-[293px] h-[215px]">
+            <div className="text-white text-4xl md:text-6xl md:ml-[390px]   md:mt-[-110px] rounded-full p-4 absolute md:mr-0 -mr-16">
               <i>
                 <img
                   src={sas}
                   alt="vector"
-                  className="sm:h-16 h-12 sm:w-16 w-12"
+                  className="md:h-16 h-12 md:w-16 w-12 ml-2 rounded-full"
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-2 mr-44  sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+            <div className="text-white md:ml-2 mr-44  md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
               SAS{" "}
             </div>
-            <div className=" font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
+            <div className=" font-inter font-normal leading-[25.8px] text-white md:text-[14px] text-[12px]  md:text-base mb-4">
               Avante is a silver partner of SAS and a solution partner within
               the Customer Intelligence practice.
             </div>
             <Link to="/services/sas">
-              <button className="flex  sm:mr-0  items-center text-white text-[12px] ">
+              <button className="flex  md:mr-0  items-center text-white text-[12px] ">
                 <span className="mr-32">Read more</span>
                 <i className="fas fa-chevron-right">
                   <img
                     src={whitearrow}
                     alt="whitearrow"
-                    className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                    className="md:w-[100%] w-[50%] md:h-[100%] h-[50%]"
                   />{" "}
                 </i>
               </button>
             </Link>
           </div>
         </div>
-        <div className="sm:ml-[280px] sm:-mt-10 ml-4">
-          <div className=" bg-black flex flex-col items-center sm:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
+        <div className="md:ml-[280px] md:-mt-10 ml-4">
+          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
             <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img

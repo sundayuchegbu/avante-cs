@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "uuid": "^9.0.0"
+  }
+}

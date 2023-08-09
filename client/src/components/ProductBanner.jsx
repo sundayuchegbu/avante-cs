@@ -21,14 +21,26 @@ const ProductBanner = () => {
             <div
               className={`${styles.paragraph} max-w-[470px]  sm:p-auto mt-5 mb-6`}
             >
-              <p className="text-dark font-inter font-normal text-[16px]">
-                MoLoyal is a customer rewards program that incentivizes
-                customers to make transactions in various industries by offering
-                free airtime rewards. It also serves as a digital airtime retail
-                and distribution platform with multiple payment options.
+              <p className="text-dark font-inter font-normal text-[16px] mb-4">
+                MoLoyal Company is a part of the Avante Consulting group of
+                companies that manufacture software and provide technology
+                services to leading organizations and institutions.
+              </p>
+              <p className="text-dark font-inter font-normal text-[16px] mb-4">
+                We introduce cutting-edge technology solutions across industries
+                including Entertainment, Hospitality, Financial Services, Public
+                Sector, Telecommunications, Energy, Retail, Education, and
+                Consumer Goods.
+              </p>
+              <p className="text-dark font-inter font-normal text-[16px] mb-4">
+                The product API is available on demand as may be required for
+                your project
               </p>
             </div>
-            <Link to="https://www.moloyal.com" target="_blank">
+            <Link
+              to="https://calendly.com/avantesales/moloyal-product-demo-session"
+              target="_blank"
+            >
               <button className="bg-secondary text-white flex flex-start font-normal font-inter py-4 px-8 rounded">
                 Request a demo
               </button>

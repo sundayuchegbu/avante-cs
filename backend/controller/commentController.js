@@ -2,12 +2,14 @@ const Comments = require("../model/Comments");
 
 const createComments = async (req, res, next) => {
   try {
-    const { name, email, reason, details } = req.body;
+    const { name, email, reason, country, employment, details } = req.body;
     const newComment = await Comments.create({
       name,
       email,
       reason,
       details,
+      country,
+      employment,
     });
     res.status(201).json({ success: true, data: newComment });
     console.log(data);

@@ -12,6 +12,8 @@ const commentsSchema = new Schema(
       unique: false,
     },
     reason: { type: String, required: true, unique: false },
+    country: { type: String, required: true },
+    employment: { type: String, required: true },
     details: { type: String, required: true },
   },
   { timestamps: true, toJSON: { virtuals: true } }

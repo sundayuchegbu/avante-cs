@@ -14,6 +14,7 @@ const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
   const [isShowing, setIsShowing] = useState(false);
+  const [showConsulting, setShowConsulting] = useState();
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   const [isList, setIsList] = useState(false);
@@ -23,6 +24,7 @@ const Navbar = () => {
 
   const triggerRef = useRef();
   const timeOutRef = useRef();
+
   const handleEnter = (isOpen) => {
     clearTimeout(timeOutRef.current);
     !isOpen && triggerRef.current?.click();
@@ -33,10 +35,11 @@ const Navbar = () => {
       isOpen && triggerRef.current?.click();
     }, timeoutDuration);
   };
+
   useEffect(() => {}, [location]);
 
   return (
-    <nav className=" w-full flex p-8  justify-between items-center navbar ">
+    <nav className=" w-full flex p-8  justify-between items-center navbar  ">
       <NavLink to="/">
         {" "}
         <img
@@ -45,7 +48,7 @@ const Navbar = () => {
           className="sm:w-[192.76pxpx] sm:h-[46px] -ml-12"
         />
       </NavLink>
-      <div className=" sm:flex hidden justify-end items-center flex-1 ">
+      <div className=" md:flex hidden justify-end items-center flex-1 ">
         <NavLink
           to="/"
           className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9 ${
@@ -68,7 +71,7 @@ const Navbar = () => {
         </NavLink>
         <Popover
           as="div"
-          className="relative group inline-block text-left mr-12"
+          className="relative group inline-block text-left mr-9"
         >
           {({ open }) => (
             <div
@@ -109,152 +112,11 @@ const Navbar = () => {
                     aria-labelledby="menu-button"
                     tabIndex="-1"
                   >
-                    <div>
-                      <Popover.Panel>
-                        <Link
-                          to=""
-                          className="text-gray-700 block  px-4 py-2 mb-4 text-sm   hover:text-white"
-                          tabIndex="-1"
-                          id="menu-item-0"
-                          onClick={() => setActivePage("/services")}
-                        >
-                          <div>
-                            <div
-                              onClick={() => setIsList(!isList)}
-                              className="w-64 p-4 -ml-4   mb-4 cursor-pointer font-inter font-normal text-[16px] text-gray-800 flex items-center justify-between  "
-                            >
-                              Business Consulting{" "}
-                              <div>
-                                {isList ? (
-                                  <div>
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      height="1em"
-                                      viewBox="0 0 320 512"
-                                    >
-                                      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-                                    </svg>
-                                  </div>
-                                ) : (
-                                  <>
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      height="1em"
-                                      viewBox="0 0 256 512"
-                                    >
-                                      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
-                                    </svg>{" "}
-                                  </>
-                                )}
-                              </div>
-                            </div>
-                            {isList && (
-                              <div className="w-64 -mt-5 p-4 ">
-                                <div className="flex items-center justify-between">
-                                  <div className="flex items-center">
-                                    <svg
-                                      className="hidden"
-                                      width={12}
-                                      height={12}
-                                      viewBox="0 0 12 12"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M4.5 3L7.5 6L4.5 9"
-                                        stroke="#4B5563"
-                                        strokeWidth="1.25"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                      />
-                                    </svg>
-                                    <div className="pl-4 -mt-4 -ml-10 flex items-center">
-                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
-                                        <NavLink
-                                          onClick={() => setShowMobileNav(true)}
-                                          to="/services/implementations"
-                                        >
-                                          {" "}
-                                          - Implementation Services{" "}
-                                        </NavLink>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pl-4 pt-3 -ml-14">
-                                  <div className="flex items-center justify-between ">
-                                    <div className="pl-4 flex items-center">
-                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
-                                        <NavLink
-                                          onClick={() => setShowMobileNav(true)}
-                                          to="/services/project/management"
-                                        >
-                                          {" "}
-                                          - Project Management
-                                        </NavLink>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pl-4 pt-3 -ml-14">
-                                  <div className="flex items-center justify-between">
-                                    <div className="pl-4 flex items-center">
-                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
-                                        <NavLink to="/services/user/research">
-                                          {" "}
-                                          - User Experience Research{" "}
-                                        </NavLink>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pl-4 pt-3 -ml-14">
-                                  <div className="flex items-center justify-between">
-                                    <div className="pl-4 flex items-center">
-                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
-                                        <NavLink to="/services/market/survey">
-                                          {" "}
-                                          - Market Surveys{" "}
-                                        </NavLink>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pl-4 pt-3 -ml-14">
-                                  <div className="flex items-center justify-between">
-                                    <div className="pl-4 flex items-center">
-                                      <div className="text-sm leading-normal ml-2 text-gray-800 hover:bg-primary hover:text-white">
-                                        <NavLink to="/services/feasibility/studies">
-                                          {" "}
-                                          - Feasibility Studies{" "}
-                                        </NavLink>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            )}
-                          </div>{" "}
-                        </Link>
-                      </Popover.Panel>
-
-                      <Popover.Panel>
-                        <Link
-                          to="/services/software"
-                          className=" block px-4 py-2    mb-4 -mt-6 text-sm hover:bg-primary hover:text-white"
-                          tabIndex="-1"
-                          id="menu-item-1"
-                          onClick={() => setActivePage("/services")}
-                        >
-                          Software Development
-                        </Link>
-                      </Popover.Panel>
-                    </div>
                     {/* <div className="py-1 " role="none"> */}
                     <Popover.Panel>
                       <Link
                         to="/services/sas"
-                        className=" block px-4 py-2  mb-4 text-sm hover:bg-primary hover:text-white"
+                        className=" block px-4 py-2   text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-2"
                         onClick={() => setActivePage("/services")}
@@ -274,6 +136,145 @@ const Navbar = () => {
                         eGain Collaboration
                       </Link>
                     </Popover.Panel>
+                    <div>
+                      <Popover.Panel>
+                        <Link
+                          to="/services/software"
+                          className=" block px-4     mt-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                          tabIndex="-1"
+                          id="menu-item-1"
+                          onClick={() => setActivePage("/services")}
+                        >
+                          <div>
+                            {" "}
+                            <Popover as="div" className="relative group   ">
+                              <div
+                                onMouseEnter={() => setShowConsulting(true)}
+                                onMouseLeave={() => setShowConsulting(false)}
+                              >
+                                <Popover.Button
+                                  type="popover-button"
+                                  className={`inline-flex w-full  hover:py-3  gap-x-2  text-[16px]   ${
+                                    activePage === "/services"
+                                      ? "text-primary"
+                                      : "black2"
+                                  }    focus:ring-none hover:text-background `}
+                                  id="menu-button"
+                                  aria-expanded="true"
+                                  aria-haspopup="true"
+                                >
+                                  Business Consulting{" "}
+                                  <svg
+                                    className="-mr-1 h-5 w-5 text-gray-400"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                  >
+                                    <path
+                                      fillRule="evenodd"
+                                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                      clipRule="evenodd"
+                                    />
+                                  </svg>
+                                </Popover.Button>
+                              </div>
+
+                              <Transition
+                                show={showConsulting}
+                                onMouseEnter={() => setShowConsulting(true)}
+                                onMouseLeave={() => setShowConsulting(false)}
+                                as={Fragment}
+                              >
+                                <div>
+                                  <Popover.Panel
+                                    className="absolute left-[240px] z-10 -mt-12 w-56 origin-top-right  rounded-md bg-white   ring-opacity-5 focus:outline-none "
+                                    role="menu"
+                                    aria-orientation="vertical"
+                                    aria-labelledby="menu-button"
+                                    tabIndex="-1"
+                                  >
+                                    <div className="py-1" role="none">
+                                      <Popover.Panel>
+                                        <Link
+                                          to="/services/implementations"
+                                          className="text-gray-700 block  px-4 py-2 mb-2 text-sm hover:bg-primary hover:text-white"
+                                          role="menuitem"
+                                          tabIndex="-1"
+                                          id="menu-item-0"
+                                          onClick={() =>
+                                            setActivePage("/services")
+                                          }
+                                        >
+                                          Implementation Services
+                                        </Link>
+                                      </Popover.Panel>
+
+                                      <Popover.Panel>
+                                        <Link
+                                          to="/services/project/management"
+                                          className="text-gray-700 block px-4 py-2   mb-2 text-sm hover:bg-primary hover:text-white"
+                                          role="menuitem"
+                                          tabIndex="-1"
+                                          id="menu-item-1"
+                                          onClick={() =>
+                                            setActivePage("/services")
+                                          }
+                                        >
+                                          Project Management{" "}
+                                        </Link>
+                                      </Popover.Panel>
+                                      <Popover.Panel>
+                                        <Link
+                                          to="/services/user/research"
+                                          className="text-gray-700 block px-4 py-2  mb-2 text-sm hover:bg-primary hover:text-white"
+                                          role="menuitem"
+                                          tabIndex="-1"
+                                          id="menu-item-2"
+                                          onClick={() =>
+                                            setActivePage("/services")
+                                          }
+                                        >
+                                          User Experience Research{" "}
+                                        </Link>
+                                      </Popover.Panel>
+
+                                      <Popover.Panel>
+                                        <Link
+                                          to="/services/market/survey"
+                                          className="text-gray-700 block px-4  py-2 mb-2 text-sm hover:bg-primary hover:text-white"
+                                          role="menuitem"
+                                          tabIndex="-1"
+                                          id="menu-item-3"
+                                          onClick={() =>
+                                            setActivePage("/services")
+                                          }
+                                        >
+                                          Market Survey{" "}
+                                        </Link>
+                                      </Popover.Panel>
+                                      <Popover.Panel>
+                                        <Link
+                                          to="/services/feasibility/studies"
+                                          className="text-gray-700 block px-4  py-2 mb-2 text-sm  hover:bg-primary hover:text-white"
+                                          role="menuitem"
+                                          tabIndex="-1"
+                                          id="menu-item-4"
+                                          onClick={() =>
+                                            setActivePage("/clients")
+                                          }
+                                        >
+                                          Feasibility Studies{" "}
+                                        </Link>
+                                      </Popover.Panel>
+                                    </div>
+                                  </Popover.Panel>
+                                </div>
+                              </Transition>
+                            </Popover>
+                          </div>
+                        </Link>
+                      </Popover.Panel>
+                    </div>
                     {/* </div> */}
                     {/* <div className="py-1" role="none"> */}
                     <Popover.Panel>
@@ -287,6 +288,7 @@ const Navbar = () => {
                         eGain Knowledge
                       </Link>
                     </Popover.Panel>
+
                     <Popover.Panel>
                       <Link
                         to="/services/media/management"
@@ -429,7 +431,7 @@ const Navbar = () => {
                   <Popover.Panel>
                     <Link
                       to="/clients/goods"
-                      className="text-gray-700 block px-4  py-2 mb-2 text-sm hover:bg-primary hover:text-white hover:bg-primary hover:text-white"
+                      className="text-gray-700 block px-4  py-2 mb-2 text-sm  hover:bg-primary hover:text-white"
                       role="menuitem"
                       tabIndex="-1"
                       id="menu-item-4"
@@ -454,7 +456,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/contacts"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary -mr-20 text-black2 ${
+          className={`font-inter font-normal cursor-pointer text-[14px] text-secondary  -mr-20  ${
             activePage === "/contacts" ? "text-primary" : "black2"
           }
 `}
@@ -464,7 +466,7 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className="sm:hidden   flex flex-1 justify-end w-full h-full      items-center bg-background ">
+      <div className="md:hidden   flex flex-1 justify-end w-full h-full      items-center bg-background ">
         <img
           src={`${toggle && !showMobileNav ? close : menu} `}
           className={` w-[28px] h-[28px] object-contain`}
@@ -480,7 +482,7 @@ const Navbar = () => {
           }  ${showMobileNav ? "hidden" : ""} `}
         >
           <div
-            className={`list-none px-3 text-left   flex flex-col justify-start items-start flex flex-1 -mt-12`}
+            className={`list-none px-3 text-left    flex-col justify-start items-start flex flex-1 -mt-12`}
           >
             <NavLink
               to="/"
@@ -499,7 +501,7 @@ const Navbar = () => {
             <div>
               <div
                 onClick={() => setIsList(!isList)}
-                className="w-64 p-4 -ml-4   mb-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center justify-between cursor-pointer"
+                className="w-64 p-4 -ml-4   mb-4  font-inter font-normal text-[12px] text-gray-800 flex items-center justify-between cursor-pointer"
               >
                 SERVICES
                 <div>
@@ -552,7 +554,7 @@ const Navbar = () => {
                           <div>
                             <div
                               onClick={() => setIsListed(!isListed)}
-                              className="w-64 p-4 -mt-4 -ml-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center  justify-between cursor-pointer"
+                              className="w-64 p-4 -mt-4 -ml-4 cursor-pointer font-inter font-normal text-[12px] text-gray-800 flex items-center  justify-between "
                             >
                               Business Consulting{" "}
                               <div>

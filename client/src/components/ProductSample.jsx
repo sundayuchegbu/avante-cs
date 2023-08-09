@@ -1,21 +1,21 @@
 import React from "react";
 import styles, { layout } from "../style";
 import productimage1 from "../images/productimage1.png";
-import productimage2 from "../images/productimage2.png";
-import productimage3 from "../images/productimage3.png";
+// import productimage2 from "../images/productimage2.png";
+// import productimage3 from "../images/productimage3.png";
 import { Link } from "react-router-dom";
 
 const ProductSample = () => {
   return (
     <section id="cta" className="flex flex-row  sm:py-16 py-6">
-      <div className="md:ml-8 md:mr-8 flex-[1.5] flex justify-center items-start flex-col">
+      <div className="md:ml-24 md:mr-8 flex-[1.5] flex justify-center items-start flex-col">
         <h2
           className={` underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] mb-8
           ${styles.heading5}`}
         >
-          OUR <span className="text-primary">PRODUCT</span>{" "}
+          OUR <span className="text-primary">PRODUCT</span> - MOLOYAL
         </h2>
-        <div className=" flex items-center justify-center    mb-4  hidden md:block">
+        <div className="  items-center justify-center    mb-4  hidden md:block">
           <h3 className=" font-inter font-normal md:text-[32px] text-[16px]  ">
             Cutting-edge Solutions <br />
             Transforming Businesses Today{" "}
@@ -29,18 +29,28 @@ const ProductSample = () => {
         <p
           className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-5 mb-5 `}
         >
-          MoLoyal is also a digital airtime retail and distribution platform
-          where airtime from all major networks will be electronically sold with
-          flexible payment channels including Debit or Credit Cards, Reward
-          Wallet, Mobile Money, Shortcodes and Bank deposits.
+          MoLoyal provides an easy to use fintech solution serving customers
+          with loyalty points for transaction they normally carry out on day to
+          day basis. With MoLoyal, you can start a micro-savings plan, buy
+          tickets to upcoming events, and discover discounted items listed on
+          the platform.
+        </p>
+        <p className="mb-4"></p>
+        <p
+          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-5 mb-5 `}
+        >
+          The MoLoyal products are namely: MoSave, MoTickets, and the Loyalty
+          Ecosystem; dedicated to promoting financial inclusion, user
+          engagement, and economic growth in the regions it serves. MoLoyal app
+          is available on playstore.
         </p>
         <Link to="/products">
-          <button className="bg-secondary font-inter text-white  py-2 px-4 rounded ml-0 w-[148px] h-[46.36px]">
+          <button className="bg-secondary font-inter text-white mb-8 py-2 px-4 rounded ml-0 w-[148px] h-[46.36px]">
             Learn more{" "}
           </button>
         </Link>{" "}
         <div className="flex ">
-          <ul className=" mr-8 sm:mt-0 mt-16">
+          {/* <ul className=" mr-8 :mt-0 mt-24">
             <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
               <input
                 id="list-radio-license11"
@@ -102,25 +112,25 @@ const ProductSample = () => {
                 disabled
               />{" "}
             </li>
-          </ul>
-          <img
+          </ul> */}
+          {/* <img
             src={productimage1}
             alt="productimage1"
             className="md:w-[543px] md:h-[500px] w-[214px] sm:ml-24 h-[157px] mt-8  mb-4"
-          />
+          /> */}
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[410px]  hidden sm:block`}>
+      <div className={`${layout.sectionInfo} mt-[210px]  hidden md:block`}>
         <img
-          src={productimage2}
+          src={productimage1}
           alt="productimage2"
-          className="md:w-[448px] md:h-[500px] w-[140.41px] h-[156.71px]  md:mt-[-200px] mt-[-340px] "
+          className="md:w-full md:h-[500px] w-[140.41px] h-[156.71px]  md:mt-[-200px] mt-[-340px] "
         />
-        <img
+        {/* <img
           src={productimage3}
           alt="productimage3"
           className="md:mt-[10px] mt-[80px] md:[w-448px] md:h-[306px] "
-        />
+        /> */}
       </div>
     </section>
   );

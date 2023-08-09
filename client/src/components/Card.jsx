@@ -30,7 +30,7 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter font-semibold mb-4">
+            <div className="text-white sm:ml-8 -ml-20 sm:text-[32px] text-[16px] font-inter font-normal mb-4">
               Business Consulting{" "}
             </div>
             <div className="text-white font-inter font-normal ml-8 leading-[25.8px font-inter sm:text-[14px] text-[10px] sm:text-base mb-4">
@@ -65,7 +65,7 @@ export const Card = () => {
                 />
               </i>
             </div>
-            <div className="text-white font-inter  sm:ml-2 mr-20  sm:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+            <div className="text-white font-inter  sm:ml-2 mr-20  sm:text-[32px] text-[16px] font-inter font-normal mb-4 ">
               Software Development
             </div>
             <div className=" font-inter font-normal text-white leading-[25.8px sm:text-[14px] text-[10px]  sm:text-base mb-4">
@@ -119,7 +119,7 @@ export const Card = () => {
           </div>
         </div>
         <div className="sm:mt-24 sm:ml-4 ">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[32x0px] sm:h-[293px] h-[215px]">
+          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 sm:w-[482px] w-[320px] sm:h-[293px] h-[215px]">
             <div className="text-white text-4xl sm:text-6xl sm:ml-[415px] ml-[30px] bg-primary sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-12">
               <i>
                 <img
