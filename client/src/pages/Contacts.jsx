@@ -16,7 +16,6 @@ const Contacts = () => {
   const [reason, setReason] = useState("");
   const [details, setDetails] = useState("");
   const [employment, setEmployment] = useState("");
-
   const [country, setCountry] = useState();
   const [countryState, setCountryState] = useState({
     loading: false,
@@ -64,8 +63,7 @@ const Contacts = () => {
       country,
       details,
     };
-    // https://avante-css.onrender.com/api/v1/comment
-    fetch("http://localhost:5000/api/v1/comment", {
+    fetch("    https://avante-css.onrender.com/api/v1/comment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -192,15 +190,6 @@ const Contacts = () => {
                   className="w-full mt-12 px-3 h-4 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   required
                 />
-                {/* <input
-                  onChange={(e) => setReason(e.target.value)}
-                  id="subject"
-                  value={reason}
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                  className="w-full mt-12 px-3 h-8  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
-                /> */}
                 <select
                   onChange={(e) => setReason(e.target.value)}
                   id="subject"
