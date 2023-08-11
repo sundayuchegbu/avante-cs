@@ -1,6 +1,6 @@
-import React from "react";
-import { layout } from "../style";
-import fbanner1 from "../images/fbanner1.jpg";
+import React from 'react';
+import { layout } from '../style';
+import feasibility from '../images/feasibility.jpg';
 
 const FeasibleStudiesDetails = () => {
   return (
@@ -9,7 +9,7 @@ const FeasibleStudiesDetails = () => {
         <h1
           className={`font-inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
         >
-          Feasibility Studies:{" "}
+          Feasibility Studies:{' '}
         </h1>
         <div
           className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
@@ -26,14 +26,14 @@ const FeasibleStudiesDetails = () => {
           with your organization's goals and resources. With a clear
           understanding of the project's feasibility, you can make confident
           decisions and prioritize initiatives that offer the highest return on
-          investment while minimizing potential risks.{" "}
+          investment while minimizing potential risks.{' '}
         </div>
       </div>
       <div
-        className={` hidden md:block${layout.sectionImg} md:mx-24 md:px-24 relative`}
+        className={`hidden md:block ${layout.sectionImg} md:mx-24 md:px-24 relative`}
       >
         <img
-          src={fbanner1}
+          src={feasibility}
           alt="vision"
           className="  md:w-[561px] w-[371.34px]  md:h-[567px] h-[238px] "
         />

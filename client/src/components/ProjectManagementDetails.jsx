@@ -1,13 +1,13 @@
-import React from "react";
-import { layout } from "../style";
-import projectManagement from "../images/projectManagement.jpg";
+import React from 'react';
+import { layout } from '../style';
+import projectManagement2 from '../images/projectManagement2.jpg';
 
 const ProjectManagementDetails = () => {
   return (
     <section className=" flex md:flex-row flex-col sm:py-16 py-6 md:ml-24">
       <div className={`mx-12 ${layout.sectionInfo}`}>
         <h1
-          className={`font-Inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
+          className={`font-Inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px]   w-full mb-4 text-primary `}
         >
           Project Management:
         </h1>
@@ -37,7 +37,7 @@ const ProjectManagementDetails = () => {
         className={`hidden md:block ${layout.sectionImg}  md:mx-24 md:px-24 relative`}
       >
         <img
-          src={projectManagement}
+          src={projectManagement2}
           alt="vision"
           className="  md:w-[561px] w-[371.34px]  md:h-[567px] h-[238px] "
         />

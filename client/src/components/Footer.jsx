@@ -1,14 +1,14 @@
-import logo from "../images/logo.png";
-import styles from "../style";
-import mail from "../images/mail.png";
-import insta2 from "../images/insta2.png";
-import egainfooter from "../images/egainfooter.jpg";
-import Facebook from "../images/Facebook.png";
-import phone from "../images/phone.png";
-import sas2 from "../images/sas2.png";
-import linkedin2 from "../images/linkedin2.png";
+import logo from '../images/logo.png';
+import styles from '../style';
+import mail from '../images/mail.png';
+import egainfooter from '../images/egainfooter.jpg';
+import phone from '../images/phone.png';
+import sas2 from '../images/sas2.png';
+import { FiFacebook } from 'react-icons/fi';
+import { FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Footer = ({ link }) => {
   return (
@@ -31,9 +31,12 @@ const Footer = ({ link }) => {
                   alt="mail"
                   className="w-[14px] h-[14px] mr-4 object-contain"
                 />
-                <p className="text-[16px] text-background font-inter">
+                <Link
+                  to="mailto:support@avante-cs.com"
+                  className="text-[16px] text-background font-inter"
+                >
                   info@avante-cs.com
-                </p>
+                </Link>
               </div>
 
               <div className="overflow-auto  flex items-center ">
@@ -42,61 +45,64 @@ const Footer = ({ link }) => {
                   alt="phone"
                   className="w-[14px] h-[14px] mr-4  object-contain"
                 />
-                <p className="md:text-[16px] text-background font-inter text-[12px]">
+                <a
+                  href="tel:+23412953541"
+                  className="md:text-[16px] text-background font-inter text-[12px]"
+                >
                   +234 -1-2953541
-                </p>
+                </a>
               </div>
             </div>
             <div className="flex-[2.0] mr-8 w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
                 <h4 className="font-inter font-medium text-[18px] leading-[24px] text-white mb-4">
-                  {" "}
-                  Services{" "}
+                  {' '}
+                  Services{' '}
                 </h4>
                 <div className="list-none mb-4 block ">
                   <Link
                     to="/services/consulting"
                     className={`font-inter font-normal text-[16px] leading-[24px] mt-2 text-background hover:text-primary cursor-pointer block mb-4`}
                   >
-                    Business Consulting{" "}
+                    Business Consulting{' '}
                   </Link>
 
                   <Link
                     to="/services/software"
                     className={`font-inter font-normal text-[16px] leading-[24px] mt-4 text-background hover:text-primary cursor-pointer block mb-4`}
                   >
-                    Software Development{" "}
+                    Software Development{' '}
                   </Link>
                   <Link
                     to="/services/sas"
                     className={`font-inter block font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4`}
                   >
-                    SAS CX and Analytics{" "}
+                    SAS CX and Analytics{' '}
                   </Link>
                   <Link
-                    to="/services/egain/collaboration"
+                    to="/services/egain"
                     className={`font-inter font-normal block text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4`}
                   >
-                    eGain Collaboration{" "}
+                    eGain Collaboration{' '}
                   </Link>
                   <Link
-                    to="/services/egain/knowledge"
+                    to="/services/knowledge"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    eGain Knowledge{" "}
+                    eGain Knowledge{' '}
                   </Link>
                   <Link
-                    to="/services/media/management"
+                    to="/services/media"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Social Media Management{" "}
+                    Social Media Management{' '}
                   </Link>
 
                   <Link
-                    to="/services/web/development"
+                    to="/services/web"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block`}
                   >
-                    Website Development{" "}
+                    Website Development{' '}
                   </Link>
                 </div>
               </div>
@@ -104,27 +110,27 @@ const Footer = ({ link }) => {
             <div className="flex-[2.0] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
                 <h4 className="font-inter font-medium text-[18px] leading-[24px] text-white mb-4">
-                  {" "}
-                  About Us{" "}
+                  {' '}
+                  About Us{' '}
                 </h4>
                 <ul className="list-none mb-4 block">
                   <Link
                     to=""
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Corporate Philosophy{" "}
+                    Corporate Philosophy{' '}
                   </Link>
                   <Link
                     to=""
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Corporate Profile{" "}
+                    Corporate Profile{' '}
                   </Link>
                   <Link
                     to=""
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block mb-4`}
                   >
-                    Our Partners{" "}
+                    Our Partners{' '}
                   </Link>
                 </ul>
               </div>
@@ -132,39 +138,39 @@ const Footer = ({ link }) => {
             <div className="flex-[2.0] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
                 <h4 className="font-inter font-medium text-[18px] leading-[27px] text-white mb-4">
-                  {" "}
-                  Clients{" "}
+                  {' '}
+                  Clients{' '}
                 </h4>
                 <ul className="list-none mb-4">
                   <Link
                     to="/clients/agencies"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Government Agencies{" "}
+                    Government Agencies{' '}
                   </Link>
                   <Link
                     to="/clients/financial"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Financial Sector{" "}
+                    Financial Sector{' '}
                   </Link>
                   <Link
                     to="/clients/telecoms"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    Telecoms Sector{" "}
+                    Telecoms Sector{' '}
                   </Link>
                   <Link
                     to="/clients/sme"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
-                    SME{" "}
+                    SME{' '}
                   </Link>
                   <Link
                     to="/clients/goods"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block`}
                   >
-                    Consumer Goods{" "}
+                    Consumer Goods{' '}
                   </Link>
                 </ul>
               </div>
@@ -172,14 +178,14 @@ const Footer = ({ link }) => {
             <div className="flex-[2.3] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10 ">
               <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
                 <h4 className="font-inter font-medium text-[18px] leading-[24px] text-white mb-4">
-                  {" "}
-                  Address{" "}
+                  {' '}
+                  Address{' '}
                 </h4>
                 <ul className="list-none mb-4">
                   <li
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer `}
                   >
-                    66 Bode Thomas, Surulere, Lagos.{" "}
+                    66 Bode Thomas, Surulere, Lagos.{' '}
                   </li>
                   <div className="flex mt-4">
                     <ul className="flex">
@@ -188,11 +194,7 @@ const Footer = ({ link }) => {
                           target="_blank"
                           to="https://web.facebook.com/AvanteConsultingSolutions?_rdc=1&_rdr"
                         >
-                          <img
-                            src={Facebook}
-                            alt="Facebook"
-                            className="w-[6.50px] h-[15px] mt-3.5 ml-4 -p-1  "
-                          />
+                          <FiFacebook className="w-[11.99px] h-[12px] mt-3.5 ml-3.5 -p-1 text-white  " />
                         </Link>
                       </div>
 
@@ -201,11 +203,7 @@ const Footer = ({ link }) => {
                           target="_blank"
                           to="https://www.linkedin.com/company/avante-consulting-solutions-ltd/mycompany/"
                         >
-                          <img
-                            src={linkedin2}
-                            alt="twitter"
-                            className="w-[11.99px] h-[12px] mt-3.5 ml-3.5 -p-1  "
-                          />
+                          <FaLinkedinIn className="w-[11.99px] h-[12px]  mt-3.5 ml-3.5 -p-1 text-white " />
                         </Link>
                       </div>
                       <div className="flex  h-[40px] w-[39.97px]  rounded-full ring-2 ring-white  mr-7 hover:bg-blue">
@@ -213,11 +211,12 @@ const Footer = ({ link }) => {
                           to="https://www.instagram.com/avanteconsultingsolutions"
                           target="_blank"
                         >
-                          <img
+                          {/* <img
                             src={insta2}
                             alt="insta"
                             className="w-[11.99px] h-[12px]  mt-3.5 ml-3.5 -p-1 "
-                          />
+                          /> */}
+                          <FaInstagram className="w-[11.99px] h-[12px]  mt-3.5 ml-3.5 -p-1 text-white " />
                         </Link>
                       </div>
                     </ul>
@@ -227,10 +226,11 @@ const Footer = ({ link }) => {
                     target="_blank"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background mt-[20px] hover:text-primary  cursor-pointer block`}
                   >
-                    <img src={sas2} alt="sas" className="w-[200px]" />{" "}
+                    <img src={sas2} alt="sas" className="w-[200px]" />{' '}
                   </Link>
+
                   <Link
-                    to="https://www.sas.com/en_us/solutions/customer-intelligence.html"
+                    to="https://www.egain.com/"
                     target="_blank"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background mt-[20px] hover:text-primary  cursor-pointer block`}
                   >
@@ -238,7 +238,7 @@ const Footer = ({ link }) => {
                       src={egainfooter}
                       alt="sas"
                       className="w-[200px] h-[60px]"
-                    />{" "}
+                    />{' '}
                   </Link>
                 </ul>
               </div>

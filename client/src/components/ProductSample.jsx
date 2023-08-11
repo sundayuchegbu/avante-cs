@@ -1,9 +1,9 @@
-import React from "react";
-import styles, { layout } from "../style";
-import productimage1 from "../images/productimage1.png";
+import React from 'react';
+import styles, { layout } from '../style';
+import productimage1 from '../images/productimage1.png';
 // import productimage2 from "../images/productimage2.png";
 // import productimage3 from "../images/productimage3.png";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const ProductSample = () => {
   return (
@@ -18,16 +18,16 @@ const ProductSample = () => {
         <div className="  items-center justify-center    mb-4  hidden md:block">
           <h3 className=" font-inter font-normal md:text-[32px] text-[16px]  ">
             Cutting-edge Solutions <br />
-            Transforming Businesses Today{" "}
-          </h3>{" "}
+            Transforming Businesses Today{' '}
+          </h3>{' '}
         </div>
         <div className=" items-center justify-center  mb-12   visible md:invisible ">
           <h3 className=" font-inter font-semibold md:text-[28px] text-[12px] w-auto ">
             Cutting-edge Solutions Transforming Businesses Today
-          </h3>{" "}
+          </h3>{' '}
         </div>
         <p
-          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-5 mb-5 `}
+          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-24 mb-5 `}
         >
           MoLoyal provides an easy to use fintech solution serving customers
           with loyalty points for transaction they normally carry out on day to
@@ -46,9 +46,9 @@ const ProductSample = () => {
         </p>
         <Link to="/products">
           <button className="bg-secondary font-inter text-white mb-8 py-2 px-4 rounded ml-0 w-[148px] h-[46.36px]">
-            Learn more{" "}
+            Learn more{' '}
           </button>
-        </Link>{" "}
+        </Link>{' '}
         <div className="flex ">
           {/* <ul className=" mr-8 :mt-0 mt-24">
             <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">

@@ -1,33 +1,34 @@
-import styles from "./style";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
-import About from "./pages/About";
-import Products from "./pages/Products";
-import News from "./pages/News";
-import Contacts from "./pages/Contacts";
-import Consulting from "./pages/services/Consulting";
-import Software from "./pages/services/Software";
-import EgainCollaboration from "./pages/services/EgainCollaboration";
-import EgainKnowledge from "./pages/services/EgainKnowledge";
-import SocialMediaMgt from "./pages/services/SocialMediaMgt";
-import Sas from "./pages/services/Sas";
-import OracleDatabase from "./pages/services/OracleDatabase";
-import WebDev from "./pages/services/WebDev";
-import Agencies from "./pages/clients/Agencies";
-import Financial from "./pages/clients/Financial";
-import Telecoms from "./pages/clients/Telecoms";
-import SME from "./pages/clients/SME";
-import Goods from "./pages/clients/Goods";
-import NewsExplicit from "./components/NewsExplicit";
-import { Toaster } from "react-hot-toast";
-import ScrollToTop from "./components/ScrolToTop";
-import Implementation from "./pages/services/consulting/Implementation";
-import ProjectManagement from "./pages/services/consulting/ProjectManagement";
-import UserResearch from "./pages/services/consulting/UserResearch";
-import MarketSurvey from "./pages/services/consulting/MarketSurvey";
-import FeasibilityStudies from "./pages/services/consulting/FeasibilityStudies";
+import styles from './style';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
+import About from './pages/About';
+import Products from './pages/Products';
+import News from './pages/News';
+import Contacts from './pages/Contacts';
+import Consulting from './pages/services/Consulting';
+import Software from './pages/services/Software';
+import EgainCollaboration from './pages/services/EgainCollaboration';
+import EgainKnowledge from './pages/services/EgainKnowledge';
+import SocialMediaMgt from './pages/services/SocialMediaMgt';
+import Sas from './pages/services/Sas';
+import OracleDatabase from './pages/services/OracleDatabase';
+import WebDev from './pages/services/WebDev';
+import Agencies from './pages/clients/Agencies';
+import Financial from './pages/clients/Financial';
+import Telecoms from './pages/clients/Telecoms';
+import SME from './pages/clients/SME';
+import Goods from './pages/clients/Goods';
+import NewsExplicit from './components/NewsExplicit';
+import { Toaster } from 'react-hot-toast';
+import ScrollToTop from './components/ScrolToTop';
+import Implementation from './pages/services/consulting/Implementation';
+import ProjectManagement from './pages/services/consulting/ProjectManagement';
+import UserResearch from './pages/services/consulting/UserResearch';
+import MarketSurvey from './pages/services/consulting/MarketSurvey';
+import FeasibilityStudies from './pages/services/consulting/FeasibilityStudies';
+import Register from './pages/auth/Register';
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/register" element={<Register />} />
 
           <Route path="/products" element={<Products />} />
           <Route path="/details/:id" element={<NewsExplicit />} />
@@ -60,31 +62,19 @@ const App = () => {
             element={<Implementation />}
           />
 
-          <Route path="/services/user/research" element={<UserResearch />} />
+          <Route path="/services/research" element={<UserResearch />} />
+          <Route path="/services/project" element={<ProjectManagement />} />
           <Route
-            path="/services/project/management"
-            element={<ProjectManagement />}
-          />
-          <Route
-            path="/services/feasibility/studies"
+            path="/services/feasibility"
             element={<FeasibilityStudies />}
           />
-          <Route
-            path="/services/egain/collaboration"
-            element={<EgainCollaboration />}
-          />
-          <Route path="/services/market/survey" element={<MarketSurvey />} />
+          <Route path="/services/egain" element={<EgainCollaboration />} />
+          <Route path="/services/market" element={<MarketSurvey />} />
 
-          <Route
-            path="/services/egain/knowledge"
-            element={<EgainKnowledge />}
-          />
-          <Route
-            path="/services/media/management"
-            element={<SocialMediaMgt />}
-          />
+          <Route path="/services/knowledge" element={<EgainKnowledge />} />
+          <Route path="/services/media" element={<SocialMediaMgt />} />
           <Route path="/services/oracle" element={<OracleDatabase />} />
-          <Route path="/services/web/development" element={<WebDev />} />
+          <Route path="/services/web" element={<WebDev />} />
         </Routes>
         <Toaster />
         <Footer />

@@ -1,27 +1,35 @@
-import styles from "../style";
-import fone from "../images/fone.png";
-import email1 from "../images/email1.png";
-import smallcontact from "../images/smallcontact.png";
-import redphone from "../images/redphone.png";
-import redmail from "../images/redmail.png";
-import React, { useState, useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-hot-toast";
-import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
+import styles from '../style';
+import fone from '../images/fone.png';
+import email1 from '../images/email1.png';
+import smallcontact from '../images/smallcontact.png';
+import redphone from '../images/redphone.png';
+import redmail from '../images/redmail.png';
+import React, { useState, useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
+import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { Link } from 'react-router-dom';
 
 const Contacts = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [reason, setReason] = useState("");
-  const [details, setDetails] = useState("");
-  const [employment, setEmployment] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [reason, setReason] = useState('');
+  const [details, setDetails] = useState('');
+  const [employment, setEmployment] = useState('');
   const [country, setCountry] = useState();
   const [countryState, setCountryState] = useState({
     loading: false,
     countries: [],
-    errorMessage: "",
+    errorMessage: '',
   });
+
+  const [formValid, setFormValid] = useState(false);
+  const [emailValid, setEmailValid] = useState(false);
+  const [verified, setVerified] = useState(false);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useRef();
 
@@ -43,7 +51,7 @@ const Contacts = () => {
         setCountryState({
           ...countryState,
           loading: false,
-          errorMessage: "Something went wrong",
+          errorMessage: 'Something went wrong',
         });
       }
     };
@@ -52,8 +60,33 @@ const Contacts = () => {
 
   const { countries } = countryState;
 
+  useEffect(() => {
+    // Validate other fields (name, reason, employment, country, details)
+    const isOtherFieldsValid =
+      name !== '' &&
+      reason !== '' &&
+      employment !== '' &&
+      country !== '' &&
+      details !== '';
+
+    // Update the form validity based on all validations
+    setFormValid(isOtherFieldsValid && emailValid);
+  }, [name, reason, employment, country, details, emailValid]);
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
+  useEffect(() => {
+    // Update email validation state based on email validity
+    setEmailValid(validateEmail(email));
+  }, [email]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    setIsSubmitting(true); // Start loading
 
     const commentData = {
       name,
@@ -63,38 +96,40 @@ const Contacts = () => {
       country,
       details,
     };
-    fetch("    https://avante-css.onrender.com/api/v1/comment", {
-      method: "POST",
+    fetch('    https://avante-css.onrender.com/api/v1/comment', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(commentData),
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Comment submitted successfully:", data);
-        toast.success("Message Submitted Successfully...");
+        console.log('Comment submitted successfully:', data);
+        toast.success('Message Submitted Successfully...');
         sendEmail();
         resetFormFields();
+        setIsSubmitting(false); // Stop loading
       })
       .catch((error) => {
-        console.error("Error submitting comment:", error);
+        console.error('Error submitting comment:', error);
         // Handle any error or show error message to the user
+        setIsSubmitting(false); // Stop loading in case of error
       });
   };
 
   const sendEmail = () => {
     emailjs
       .sendForm(
-        "service_p6mfgac",
-        "template_cbxm7h3",
+        'service_p6mfgac',
+        'template_cbxm7h3',
         form.current,
-        "ECfFboSu0y_L9md9N"
+        'ECfFboSu0y_L9md9N'
       )
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message was sent");
+          console.log('message was sent');
         },
         (error) => {
           console.log(error.text);
@@ -103,13 +138,18 @@ const Contacts = () => {
   };
 
   const resetFormFields = () => {
-    setName("");
-    setEmail("");
-    setReason("");
-    setEmployment("");
+    setName('');
+    setEmail('');
+    setReason('');
+    setEmployment('');
     setCountry();
-    setDetails("");
+    setDetails('');
   };
+
+  function onChange(value) {
+    console.log('Captcha value', value);
+    setVerified(true);
+  }
 
   return (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
@@ -127,8 +167,8 @@ const Contacts = () => {
                 <div className=""></div>
                 <div className="">
                   <h3 className="text-white">
-                    Avante Consulting{" "}
-                    <span className="text-secondary">Solutions</span>{" "}
+                    Avante Consulting{' '}
+                    <span className="text-secondary">Solutions</span>{' '}
                   </h3>
                   <p className="font-Inter font-normal text-dimWhite text-[12px] leading-[20.8px] mb-8">
                     We have four growth pillars namely, <br />
@@ -140,8 +180,8 @@ const Contacts = () => {
                   </p>
                   <h3 className="text-secondary -mt-4">CONTACT INFO</h3>
                   <p className="font-Inter font-normal text-dimWhite text-[10px] leading-[20.8px] mb-8">
-                    66 Bode Thomas, Surulere, Lagos.{" "}
-                  </p>{" "}
+                    66 Bode Thomas, Surulere, Lagos.{' '}
+                  </p>{' '}
                   <div className="flex flex-row -mt-4">
                     <div>
                       <img src={fone} alt="fone" className="h-3 w-3 mr-2" />
@@ -157,9 +197,12 @@ const Contacts = () => {
                     </div>
 
                     <div>
-                      <p className="text-white text-[10px]  ">
+                      <Link
+                        to="mailto:support@avante-cs.com"
+                        className="text-white text-[10px]  "
+                      >
                         info@avante-cs.com
-                      </p>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -179,7 +222,7 @@ const Contacts = () => {
                     className="w-full  px-3 h-4 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                     required
                   />
-                </div>{" "}
+                </div>{' '}
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   id="email"
@@ -225,12 +268,13 @@ const Contacts = () => {
                   className="w-full  px-3 h-12  outline-none border  border-r-white border-l-white border-t-white   focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                   required
                 >
+                  <option>Nigeria</option>
                   <option
                     hidden
                     selected
                     className="font-inter font-normal text-[14px] text-gray5"
                   >
-                    -- Select country --
+                    Nigeria{' '}
                   </option>
                   {countries.map((item) => {
                     return <option key={uuidv4()}>{item.name.common}</option>;
@@ -252,7 +296,7 @@ const Contacts = () => {
                     selected
                     className="font-inter font-normal text-[14px] text-gray5"
                   >
-                    -- Employment Size --
+                    -- Employee size --
                   </option>
                   <option>1 - 10</option>
                   <option>11 - 25</option>
@@ -269,11 +313,42 @@ const Contacts = () => {
                   className="w-full -mt-4  outline-none border  border-r-white border-l-white border-t-white  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   required
                 />
+                <ReCAPTCHA
+                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  onChange={onChange}
+                />
                 <button
+                  disabled={!formValid || isSubmitting || verified}
                   type="submit"
-                  className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6"
+                  className={`${
+                    formValid ? 'bg-secondary' : 'bg-faded'
+                  } text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6`}
                 >
-                  Submit
+                  {isSubmitting ? (
+                    <div className="flex items-center justify-center">
+                      <div role="status">
+                        <svg
+                          aria-hidden="true"
+                          class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                          viewBox="0 0 100 101"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                            fill="currentFill"
+                          />
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  ) : (
+                    'Submit'
+                  )}
                 </button>
               </div>
             </form>
@@ -281,24 +356,25 @@ const Contacts = () => {
         </div>
         <div className="block md:hidden flex-col  justify-center item-center bg-background mb-12">
           <div>
-            {" "}
+            {' '}
             <img src={smallcontact} alt="smallcontact" />
           </div>
           <div className="flex-center bg-background mt-12  ">
             <h1 className="font-inter font-semibold text-[48px] text-secondary  mb-8">
-              Start a new{" "}
+              Start a new{' '}
               <span className="underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px]">
                 project!
               </span>
             </h1>
             <h3 className="font-inter font-semibold ">
-              Avante Consulting{" "}
-              <span className="text-secondary">Solutions</span>{" "}
+              Avante Consulting{' '}
+              <span className="text-secondary">Solutions</span>{' '}
             </h3>
 
             <p className="font-inter font-normal text-[12px] mt-8 w-[353px] max-w-[300px]  leading-[25.8px]">
-              We have four growth pillars namely, Consulting, Avantesoft,
-              Technology & Social Media Management.
+              How can we be of help? Talk to us today on any of our four growth
+              pillars namely; Business Consulting, Software Development, SAS
+              Analytics, & eGain Collaboration.
             </p>
             <form ref={form} onSubmit={handleSubmit}>
               <div className="relative">
@@ -311,7 +387,7 @@ const Contacts = () => {
                   placeholder="Your full name"
                   className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 text-[10px] block"
                 />
-              </div>{" "}
+              </div>{' '}
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 id="email"
@@ -350,16 +426,18 @@ const Contacts = () => {
                 id="country"
                 value={country}
                 type="text"
-                name="subject"
+                name="from_country"
                 placeholder="Subject"
                 className="w-[280px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               >
+                <option>Nigeria</option>
+
                 <option
                   hidden
                   selected
                   className="font-inter font-normal text-[14px] text-gray5 mb-4"
                 >
-                  -- Select Country --
+                  Nigeria
                 </option>
                 {countries.map((item) => {
                   return <option key={uuidv4()}>{item.name.common}</option>;
@@ -378,7 +456,7 @@ const Contacts = () => {
                   selected
                   className="font-inter font-normal text-[14px] text-gray5 mb-4"
                 >
-                  -- Employment Size --
+                  -- Employee size --
                 </option>
                 <option>1 - 10</option>
                 <option>11 - 25</option>
@@ -394,12 +472,45 @@ const Contacts = () => {
                 placeholder="drop a message here..."
                 className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
-              <button className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded ml-24 mb-12 mt-6">
-                Submit
+              <ReCAPTCHA
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={onChange}
+              />
+              <button
+                disabled={!formValid || isSubmitting || verified}
+                className={` ${
+                  formValid ? 'bg-secondary' : 'bg-faded'
+                } text-white flex flex-start font-bold py-2 px-12 rounded ml-24 mb-12 mt-6`}
+              >
+                {isSubmitting ? (
+                  <div className="flex items-center justify-center">
+                    <div role="status">
+                      <svg
+                        aria-hidden="true"
+                        class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                        viewBox="0 0 100 101"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                          fill="currentColor"
+                        />
+                        <path
+                          d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                          fill="currentFill"
+                        />
+                      </svg>
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </div>
+                ) : (
+                  'Submit'
+                )}{' '}
               </button>
             </form>
             <div className="w-[349px] h-[42px] mb-8  ">
-              {" "}
+              {' '}
               <p className=" font-inter font-normal text-[16px] max-w-[300px] text-secondary ">
                 Talk to us on any of these and we will be here to help.
               </p>
@@ -409,7 +520,7 @@ const Contacts = () => {
                 CONTACT INFO
               </h1>
               <p className="font-inter font-normal text-[12px] text-black1 ">
-                66 Bode Thomas, Surulere, Lagos.{" "}
+                66 Bode Thomas, Surulere, Lagos.{' '}
               </p>
             </div>
             <div className="overflow-auto ml-4  flex items-center mt-4 mb-2">
@@ -418,9 +529,12 @@ const Contacts = () => {
                 alt="mail"
                 className="w-[14px] h-[14px] mr-4 object-contain"
               />
-              <p className="text-[16px] text-black1 font-inter">
+              <Link
+                to="mailto:support@avante-cs.com"
+                className="text-[16px] text-black1 font-inter"
+              >
                 info@avante-cs.com
-              </p>
+              </Link>
             </div>
             <div className="overflow-auto ml-4  flex items-center ">
               <img
@@ -428,12 +542,15 @@ const Contacts = () => {
                 alt="phone"
                 className="w-[14px] h-[14px] mr-4  object-contain"
               />
-              <p className=" text-black1 font-inter text-[12px] underline decoration-1 underline-offset-4 decoration-black1 decoration:w-4 underline-offset-[20px">
+              <a
+                href="tel:+23412953541"
+                className=" text-black1 font-inter text-[12px] underline decoration-1 underline-offset-4 decoration-black1 decoration:w-4 underline-offset-[20px"
+              >
                 +234 -1-2953541
-              </p>
+              </a>
             </div>
           </div>
-        </div>{" "}
+        </div>{' '}
       </div>
     </div>
   );

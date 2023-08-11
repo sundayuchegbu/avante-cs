@@ -1,11 +1,11 @@
-import manage from "../images/manage.jpg";
+import projectManagement from '../images/projectManagement.jpg';
 
 const Banner5 = () => {
   return (
     <div className="block">
       <img
-        src={manage}
-        alt="Manage"
+        src={projectManagement}
+        alt="ProjectManagement"
         className="sm:w-full w-[414px] md:h-[650px] h-[282.58px]"
       />
     </div>
