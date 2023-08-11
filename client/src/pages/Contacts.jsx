@@ -288,7 +288,7 @@ const Contacts = () => {
                   name="from_employment"
                   placeholder="Select Employment"
                   data-te-select-init
-                  className="w-full  px-3   outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
+                  className="w-full  px-3   outline-none border  border-r-white border-l-white border-t-whitefocus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                   required
                 >
                   <option

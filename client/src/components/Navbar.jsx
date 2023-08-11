@@ -140,7 +140,7 @@ const Navbar = () => {
                       <Popover.Panel>
                         <Link
                           to="/services/software"
-                          className=" block px-4 hover:py-3 mt-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                          className={` block px-4  mt-2 mb-4 text-sm   hover:text-white `}
                           tabIndex="-1"
                           id="menu-item-1"
                           onClick={() => setActivePage('/services')}
@@ -154,7 +154,7 @@ const Navbar = () => {
                               >
                                 <Popover.Button
                                   type="popover-button"
-                                  className={`inline-flex w-full    gap-x-2  text-sm   ${
+                                  className={`inline-flex w-full  text-black hover:bg-primary py-3 hover:w-full  gap-x-16  text-sm   ${
                                     activePage === '/services'
                                       ? 'text-primary'
                                       : 'black2'
@@ -187,7 +187,7 @@ const Navbar = () => {
                               >
                                 <div>
                                   <Popover.Panel
-                                    className="absolute left-[240px] z-10 -mt-12 w-56 origin-top-right  rounded-md bg-white   ring-opacity-5 focus:outline-none"
+                                    className="absolute left-[240px] z-10 -mt-9 w-56 origin-top-right  rounded-md bg-white   ring-opacity-5 focus:outline-none"
                                     role="menu"
                                     aria-orientation="vertical"
                                     aria-labelledby="menu-button"
@@ -197,7 +197,7 @@ const Navbar = () => {
                                       <Popover.Panel>
                                         <Link
                                           to="/services/implementations"
-                                          className="text-gray-700 block  px-4 py-2 mb-2 text-sm hover:bg-primary  hover:text-white"
+                                          className="text-gray-700 block  px-4 py-3 mb-2 text-sm hover:bg-primary  hover:text-white"
                                           role="menuitem"
                                           tabIndex="-1"
                                           id="menu-item-0"

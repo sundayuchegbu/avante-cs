@@ -1,7 +1,7 @@
-import { layout } from "../style";
-import arrow4 from "../images/arrow4.svg";
-import productimage1 from "../images/productimage1.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import arrow4 from '../images/arrow4.svg';
+import productimage1 from '../images/productimage1.png';
+import { Link } from 'react-router-dom';
 const MoloyalDetails = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
@@ -14,7 +14,7 @@ const MoloyalDetails = () => {
         <h1
           className={`font-inter font-semibold sm:text-[28px] mt-[10px] text-[20px] text-secondary sm:leading-[30.8px] leading-[20.8px] w-full`}
         >
-          {" "}
+          {' '}
           Free airtime rewards program.
         </h1>
         <div
@@ -33,17 +33,22 @@ const MoloyalDetails = () => {
           The product API is available on demand as may be required for your
           project
           <p className="mb-4"></p>
-          MoLoyal app is available on playstore.
+          MoLoyal app is available on{' '}
+          <span className="text-primary underline">
+            <Link to="https://play.google.com/store/apps/details?id=com.moloyal.moloyal.app&hl=en&gl=US">
+               playstore.
+            </Link>
+          </span>
         </div>
         <Link to="https://www.moloyal.com">
           <button className="font-inter font-semibold text-secondary underline decoration-2 underline-offset-4 decoration-secondary">
-            Read more{" "}
+            Read more{' '}
           </button>
           <img
             src={arrow4}
             alt="arrow"
             className="-mt-4  ml-[100px] h-[20px]   w-[100px] top-[10px] mb-4"
-          />{" "}
+          />{' '}
         </Link>
       </div>
       <div className={`${layout.sectionImg} sm:mx-24 px-24 relative`}>
