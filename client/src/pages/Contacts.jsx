@@ -27,7 +27,7 @@ const Contacts = () => {
 
   const [formValid, setFormValid] = useState(false);
   const [emailValid, setEmailValid] = useState(false);
-  // const [verified, setVerified] = useState(false);
+  const [verified, setVerified] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -146,18 +146,18 @@ const Contacts = () => {
     setDetails('');
   };
 
-  // function onChange(value) {
-  //   console.log('Captcha value', value);
-  //   setVerified(true);
-  // }
+  function onChange(value) {
+    console.log('Captcha value', value);
+    setVerified(true);
+  }
 
   return (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <div className="ml-18  mb-12 mt-12 place-items-center hidden md:block relative">
+        <div className="mx-32  mb-12 mt-12 place-items-center hidden md:block relative">
           <div className="bg-white rounded-md   flex flex-row">
             <div
-              className="bg-black p-8 md-hover:scale-y-110 rounded-md transition md:block"
+              className="bg-black p-8  md-hover:scale-y-110 rounded-md transition md:block "
               id="contact_info"
             >
               <div className="flex justify-between">
@@ -315,12 +315,12 @@ const Contacts = () => {
                   className="w-full -mt-4  outline-none border  border-r-white border-l-white border-t-white  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   required
                 />
-                {/* <ReCAPTCHA
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                <ReCAPTCHA
+                  sitekey="6Ldxg6cnAAAAAA1grqOAt46XDRYxFPTDz_Mm2OYC"
                   onChange={onChange}
-                /> */}
+                />
                 <button
-                  disabled={!formValid || isSubmitting}
+                  disabled={!formValid || isSubmitting || verified}
                   type="submit"
                   className={`${
                     formValid ? 'bg-secondary' : 'bg-faded'

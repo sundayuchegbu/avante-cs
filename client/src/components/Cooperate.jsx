@@ -1,72 +1,12 @@
-import { layout } from "../style";
-import solution from "../images/solution.jpeg";
+import { layout } from '../style';
+import solution from '../images/solution.jpeg';
 const Cooperate = () => (
-  <section className={`flex md:flex-row flex-col sm:py-16 py-6 px-4 mb-14`}>
+  <section
+    id="coperate-profile"
+    className={`flex md:flex-row flex-col sm:py-16 py-6 px-4 mb-14`}
+  >
     <div className={` relative ${layout.sectionImgReverse}`}>
       <div className="relative flex">
-        {/* <ul className=" md:mr-24 mr-4  md:mt-[200px] mt-[110px]">
-          <li className=" w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-12 mb-2">
-            <input
-              id="list-radio-license17"
-              type="radio"
-              value=""
-              name="list-radio"
-              className="absolute md:w-4 md:h-4 w-2 h-2 checked:bg-primary text-blue-500 focus:ring-blue-500 disabled:bg-primary"
-              checked
-              disabled
-            />{" "}
-          </li>
-          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
-            <input
-              id="list-radio-license18"
-              type="radio"
-              value=""
-              name="list-radio"
-              className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
-              disabled
-            />{" "}
-          </li>
-          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
-            <input
-              id="list-radio-license19"
-              type="radio"
-              value=""
-              name="list-radio"
-              className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
-              disabled
-            />{" "}
-          </li>
-          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
-            <input
-              id="list-radio-license20"
-              type="radio"
-              value=""
-              name="list-radio"
-              className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
-              disabled
-            />{" "}
-          </li>
-          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
-            <input
-              id="list-radio-license21"
-              type="radio"
-              value=""
-              name="list-radio"
-              className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
-              disabled
-            />{" "}
-          </li>
-          <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 md:mb-8 mb-0">
-            <input
-              id="list-radio-license22"
-              type="radio"
-              value=""
-              name="list-radio"
-              className="md:w-4 md:h-4 w-2 h-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
-              disabled
-            />{" "}
-          </li>
-        </ul> */}
         <img
           src={solution}
           alt="codeit"
@@ -84,7 +24,7 @@ const Cooperate = () => (
         CORPORATE <span className="text-secondary ">PROFILE</span> <br />
       </h2>
       <h3 className="text-secondary font-inter font-semibold xs:text-[16px] mt-[10px] text-[20px] text-black xs:leading-[30.8px] leading-[30.8px] w-full">
-        {" "}
+        {' '}
         Consulting for transformation <br />
         by providing Business Tools
       </h3>

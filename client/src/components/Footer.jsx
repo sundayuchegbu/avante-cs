@@ -120,12 +120,12 @@ const Footer = ({ link }) => {
                   >
                     Corporate Philosophy{' '}
                   </Link>
-                  <Link
-                    to=""
+                  <a
+                    href="/about#coperate-profile"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
                     Corporate Profile{' '}
-                  </Link>
+                  </a>
                   <Link
                     to=""
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block mb-4`}
