@@ -28,7 +28,7 @@ const About = (offset = 0, trigger = true) => {
     scrollToHashElement();
     window.addEventListener('hashchange', scrollToHashElement);
     return () => window.removeEventListener('hashchange', scrollToHashElement);
-  }, [trigger]);
+  }, [trigger, offset]);
 
   return (
     <div>
