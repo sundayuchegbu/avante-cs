@@ -65,6 +65,7 @@ const Navbar = () => {
           }`}
           onClick={() => {
             setActivePage('/about');
+            setShowConsulting(false); // Close the subpanel
           }}
         >
           ABOUT US
@@ -116,12 +117,16 @@ const Navbar = () => {
                     <Popover.Panel>
                       <Link
                         to="/services/sas"
-                        className=" block px-4 py-2   text-sm hover:bg-primary hover:text-white"
+                        className="block px-4 py-2 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-2"
-                        onClick={() => setActivePage('/services')}
+                        onClick={() => {
+                          console.log('Link clicked - Debugging...');
+                          setActivePage('/services');
+                          triggerRef.current?.click(); // Close the popover
+                        }}
                       >
-                        SAS Analytics{' '}
+                        SAS Analytics
                       </Link>
                     </Popover.Panel>
 
@@ -131,7 +136,10 @@ const Navbar = () => {
                         className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-3"
-                        onClick={() => setActivePage('/services')}
+                        onClick={() => {
+                          setActivePage('/services');
+                          triggerRef.current?.click();
+                        }}
                       >
                         eGain Collaboration
                       </Link>
@@ -145,7 +153,10 @@ const Navbar = () => {
                           id="menu-item-1"
                           onClick={() => setActivePage('/services')}
                         >
-                          <div>
+                          <div
+                            onMouseEnter={() => setShowConsulting(true)}
+                            onMouseLeave={() => setShowConsulting(false)}
+                          >
                             {' '}
                             <Popover as="div" className="relative group">
                               <div
@@ -162,6 +173,8 @@ const Navbar = () => {
                                   id="menu-button"
                                   aria-expanded="true"
                                   aria-haspopup="true"
+                                  onMouseEnter={() => setShowConsulting(true)}
+                                  onMouseLeave={() => setShowConsulting(false)}
                                 >
                                   Business Consulting{' '}
                                   <svg
@@ -201,9 +214,11 @@ const Navbar = () => {
                                           role="menuitem"
                                           tabIndex="-1"
                                           id="menu-item-0"
-                                          onClick={() =>
-                                            setActivePage('/services')
-                                          }
+                                          onClick={() => {
+                                            setActivePage('/services');
+                                            setShowConsulting(false); // Close the subpanel
+                                            triggerRef.current?.click();
+                                          }}
                                         >
                                           Implementation Services
                                         </Link>
@@ -216,9 +231,11 @@ const Navbar = () => {
                                           role="menuitem"
                                           tabIndex="-1"
                                           id="menu-item-1"
-                                          onClick={() =>
-                                            setActivePage('/services')
-                                          }
+                                          onClick={() => {
+                                            setActivePage('/services');
+                                            setShowConsulting(false);
+                                            triggerRef.current?.click();
+                                          }}
                                         >
                                           Project Management{' '}
                                         </Link>
@@ -230,9 +247,11 @@ const Navbar = () => {
                                           role="menuitem"
                                           tabIndex="-1"
                                           id="menu-item-2"
-                                          onClick={() =>
-                                            setActivePage('/services')
-                                          }
+                                          onClick={() => {
+                                            setActivePage('/services');
+                                            setShowConsulting(false); // Close the subpanel
+                                            triggerRef.current?.click();
+                                          }}
                                         >
                                           User Experience Research{' '}
                                         </Link>
@@ -245,9 +264,11 @@ const Navbar = () => {
                                           role="menuitem"
                                           tabIndex="-1"
                                           id="menu-item-3"
-                                          onClick={() =>
-                                            setActivePage('/services')
-                                          }
+                                          onClick={() => {
+                                            setActivePage('/services');
+                                            setShowConsulting(false); // Close the subpanel
+                                            triggerRef.current?.click();
+                                          }}
                                         >
                                           Market Survey{' '}
                                         </Link>
@@ -259,9 +280,11 @@ const Navbar = () => {
                                           role="menuitem"
                                           tabIndex="-1"
                                           id="menu-item-4"
-                                          onClick={() =>
-                                            setActivePage('/clients')
-                                          }
+                                          onClick={() => {
+                                            setActivePage('/services');
+                                            setShowConsulting(false); // Close the subpanel
+                                            triggerRef.current?.click();
+                                          }}
                                         >
                                           Feasibility Studies{' '}
                                         </Link>
@@ -283,7 +306,10 @@ const Navbar = () => {
                         className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-4"
-                        onClick={() => setActivePage('/services')}
+                        onClick={() => {
+                          setActivePage('/services');
+                          triggerRef.current?.click();
+                        }}
                       >
                         eGain Knowledge
                       </Link>
@@ -295,7 +321,10 @@ const Navbar = () => {
                         className="text-gray-700 block  px-4 py-2 mb-4 text-sm hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-5"
-                        onClick={() => setActivePage('/services')}
+                        onClick={() => {
+                          setActivePage('/services');
+                          triggerRef.current?.click();
+                        }}
                       >
                         Social Media Management{' '}
                       </Link>
@@ -307,7 +336,10 @@ const Navbar = () => {
                         className="text-gray-700 block px-4 py-2 mb-4 text-sm  hover:bg-primary hover:text-white"
                         tabIndex="-1"
                         id="menu-item-6"
-                        onClick={() => setActivePage('/services')}
+                        onClick={() => {
+                          setActivePage('/services');
+                          triggerRef.current?.click();
+                        }}
                       >
                         Web Development
                       </Link>

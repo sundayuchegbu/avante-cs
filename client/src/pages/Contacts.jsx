@@ -27,7 +27,7 @@ const Contacts = () => {
 
   const [formValid, setFormValid] = useState(false);
   const [emailValid, setEmailValid] = useState(false);
-  const [verified, setVerified] = useState(false);
+  // const [verified, setVerified] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -146,16 +146,16 @@ const Contacts = () => {
     setDetails('');
   };
 
-  function onChange(value) {
-    console.log('Captcha value', value);
-    setVerified(true);
-  }
+  // function onChange(value) {
+  //   console.log('Captcha value', value);
+  //   setVerified(true);
+  // }
 
   return (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <div className="ml-32  mb-12 mt-12 place-items-center hidden md:block relative">
-          <div className="bg-white rounded-md  flex flex-row">
+        <div className="ml-18  mb-12 mt-12 place-items-center hidden md:block relative">
+          <div className="bg-white rounded-md   flex flex-row">
             <div
               className="bg-black p-8 md-hover:scale-y-110 rounded-md transition md:block"
               id="contact_info"
@@ -182,9 +182,9 @@ const Contacts = () => {
                   <p className="font-Inter font-normal text-dimWhite text-[10px] leading-[20.8px] mb-8">
                     66 Bode Thomas, Surulere, Lagos.{' '}
                   </p>{' '}
-                  <div className="flex flex-row -mt-4">
+                  <div className="flex flex-row -mt-3">
                     <div>
-                      <img src={fone} alt="fone" className="h-3 w-3 mr-2" />
+                      <img src={fone} alt="fone" className="h-3 w-3 mr-2 " />
                     </div>
 
                     <div>
@@ -193,17 +193,19 @@ const Contacts = () => {
                   </div>
                   <div className="flex flex-row py-4 ">
                     <div>
-                      <img src={email1} alt="email" className="h-3 w-3 mr-2 " />
+                      <img
+                        src={email1}
+                        alt="email"
+                        className="h-3 w-3 mr-2  "
+                      />
                     </div>
 
-                    <div>
-                      <Link
-                        to="mailto:support@avante-cs.com"
-                        className="text-white text-[10px]  "
-                      >
-                        info@avante-cs.com
-                      </Link>
-                    </div>
+                    <Link
+                      to="mailto:support@avante-cs.com"
+                      className="text-white text-[10px] -mt-0.5 "
+                    >
+                      info@avante-cs.com
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -288,7 +290,7 @@ const Contacts = () => {
                   name="from_employment"
                   placeholder="Select Employment"
                   data-te-select-init
-                  className="w-full  px-3   outline-none border  border-r-white border-l-white border-t-whitefocus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
+                  className="w-full  px-3   outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                   required
                 >
                   <option
@@ -313,12 +315,12 @@ const Contacts = () => {
                   className="w-full -mt-4  outline-none border  border-r-white border-l-white border-t-white  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   required
                 />
-                <ReCAPTCHA
+                {/* <ReCAPTCHA
                   sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                   onChange={onChange}
-                />
+                /> */}
                 <button
-                  disabled={!formValid || isSubmitting || verified}
+                  disabled={!formValid || isSubmitting}
                   type="submit"
                   className={`${
                     formValid ? 'bg-secondary' : 'bg-faded'
@@ -472,12 +474,12 @@ const Contacts = () => {
                 placeholder="drop a message here..."
                 className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
-              <ReCAPTCHA
+              {/* <ReCAPTCHA
                 sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                 onChange={onChange}
-              />
+              /> */}
               <button
-                disabled={!formValid || isSubmitting || verified}
+                disabled={!formValid || isSubmitting}
                 className={` ${
                   formValid ? 'bg-secondary' : 'bg-faded'
                 } text-white flex flex-start font-bold py-2 px-12 rounded ml-24 mb-12 mt-6`}
