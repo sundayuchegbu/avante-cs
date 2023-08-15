@@ -474,12 +474,12 @@ const Contacts = () => {
                 placeholder="drop a message here..."
                 className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
-              {/* <ReCAPTCHA
-                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              <ReCAPTCHA
+                sitekey="6Ldxg6cnAAAAAA1grqOAt46XDRYxFPTDz_Mm2OYC"
                 onChange={onChange}
-              /> */}
+              />
               <button
-                disabled={!formValid || isSubmitting}
+                disabled={!formValid || isSubmitting || verified}
                 className={` ${
                   formValid ? 'bg-secondary' : 'bg-faded'
                 } text-white flex flex-start font-bold py-2 px-12 rounded ml-24 mb-12 mt-6`}
