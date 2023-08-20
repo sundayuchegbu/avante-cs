@@ -118,24 +118,24 @@ const Footer = ({ link }) => {
                   About Us{' '}
                 </h4>
                 <ul className="list-none mb-4 block">
-                  <Link
-                    to=""
+                  <a
+                    href="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
                     Corporate Philosophy{' '}
-                  </Link>
-                  <a
+                  </a>
+                  <ahref
                     href="/about#coperate-profile"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
                     Corporate Profile{' '}
-                  </a>
-                  <Link
-                    to=""
+                  </ahref>
+                  <a
+                    href="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block mb-4`}
                   >
                     Our Partners{' '}
-                  </Link>
+                  </a>
                 </ul>
               </div>
             </div>
