@@ -1,10 +1,12 @@
-import { layout } from "../style";
-import { Link } from "react-router-dom";
-import united from "../images/united.png";
+import { layout } from '../style';
+import { Link } from 'react-router-dom';
+import united from '../images/united.png';
 const United = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
+      <div
+        className={`lg:mx-24 md:mx-12 lg:px-8 md:px-2 ${layout.sectionInfo}`}
+      >
         <h2
           className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
@@ -14,7 +16,7 @@ const United = () => {
           </span>
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           United Capital Plc. is a leading African financial and investment
           services Group providing bespoke value-added services to its clients.
@@ -43,7 +45,7 @@ const United = () => {
         <div className="hidden md:block">
           <div
             id="cta10"
-            className={`${layout.sectionImg} mx-24 px-24 relative`}
+            className={`${layout.sectionImg} lg:mx-24 md:mx-12 lg:px-24 md:px-8 px-12 relative`}
           >
             <img
               src={united}
@@ -57,7 +59,7 @@ const United = () => {
             <img src={united} alt="united" />
           </div>
         </div>
-      </div>{" "}
+      </div>{' '}
     </section>
   );
 };

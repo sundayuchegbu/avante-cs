@@ -1,25 +1,29 @@
-import styles, { layout } from "../style";
-import moloyalproduct from "../images/moloyalproduct.png";
-import smallloyal from "../images/smallloyal.png";
-import smallwhite from "../images/smallwhite.png";
-import moloyallogo from "../images/moloyallogo.png";
-import { Link } from "react-router-dom";
+import styles, { layout } from '../style';
+import moloyalproduct from '../images/moloyalproduct.png';
+import smallloyal from '../images/smallloyal.png';
+import smallwhite from '../images/smallwhite.png';
+import moloyallogo from '../images/moloyallogo.png';
+import { Link } from 'react-router-dom';
 const ProductBanner = () => {
   return (
     <div>
       <div className="hidden md:block">
         <div id="product" className={`  ${layout.sectionReverse}`}>
           <div className={`  ${layout.sectionImgReverse1} h-[721px] mt-0   `}>
-            <img src={moloyalproduct} alt="moloyalproduct" className="ml-72" />
+            <img
+              src={moloyalproduct}
+              alt="moloyalproduct"
+              className="lg:ml-72 md:ml-24"
+            />
           </div>
-          <div className={` ml-24 ${layout.sectionInfo}`}>
+          <div className={` lg:ml-24 md:ml-2 ${layout.sectionInfo}`}>
             <h2
               className={`font-inter font-semibold xs:text-[40px] mt-[-200px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
-              <img src={moloyallogo} alt="moloyal" className="md:w-[200px]" />{" "}
+              <img src={moloyallogo} alt="moloyal" className="md:w-[200px]" />{' '}
             </h2>
             <div
-              className={`${styles.paragraph} max-w-[470px]  sm:p-auto mt-5 mb-6`}
+              className={`${styles.paragraph} max-w-[470px]  md:p-auto mt-5 mb-6`}
             >
               <p className="text-dark font-inter font-normal text-[16px] mb-4">
                 MoLoyal Company is a part of the Avante Consulting group of
@@ -56,10 +60,10 @@ const ProductBanner = () => {
         />
         <div className="flex-start bg-background mt-12">
           <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-6 ">
-            Mo{" "}
+            Mo{' '}
           </h1>
           <h1 className=" font-inter font-semibold flex ml-[50px] text-primary mt-[-23px]">
-            LOYAL{" "}
+            LOYAL{' '}
           </h1>
           <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
             MoLoyal is a customer rewards program that incentivizes customers to
@@ -76,11 +80,11 @@ const ProductBanner = () => {
                 src={smallwhite}
                 alt="smallwhite"
                 className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-              />{" "}
+              />{' '}
             </i>
           </button>
         </div>
-      </div>{" "}
+      </div>{' '}
     </div>
   );
 };

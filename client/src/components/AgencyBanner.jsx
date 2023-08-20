@@ -1,24 +1,24 @@
-import React from "react";
-import govagency from "../images/govagency.png";
-import smallagency from "../images/smallagency.png";
-import smallwhite from "../images/smallwhite.png";
-import { layout } from "../style";
-import { Link } from "react-router-dom";
+import React from 'react';
+import govagency from '../images/govagency.png';
+import smallagency from '../images/smallagency.png';
+import smallwhite from '../images/smallwhite.png';
+import { layout } from '../style';
+import { Link } from 'react-router-dom';
 
 const AgencyBanner = () => {
   return (
     <div className="">
       <div className="hidden md:block">
         <div id="ctas2" className={`  h-[721px] ${layout.section}`}>
-          <div className={`mx-32 ${layout.sectionInfo}`}>
+          <div className={`lg:mx-32 md:mx-12 ${layout.sectionInfo}`}>
             <h2
-              className={`font-Inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
+              className={`font-inter font-semibold lg:text-[60px] md:text-[25px] mt-[20px] text-[40px] text-black xs:leading-[50.8px] leading-[66.8px] w-full mb-4 `}
             >
               Government <br className="sm:hidden" />
-              Agencies{" "}
+              Agencies{' '}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] min-w-[300px] mt-5 mb-6`}
             >
               Avante Consulting understands the unique challenges faced by
               government agencies. We provide specialized consulting services
@@ -30,7 +30,7 @@ const AgencyBanner = () => {
               sustainable growth.
             </div>
             <Link to="/contacts">
-              {" "}
+              {' '}
               <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
                   Read more
@@ -40,7 +40,7 @@ const AgencyBanner = () => {
                     src={smallwhite}
                     alt="smallwhite"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </Link>
@@ -84,7 +84,7 @@ const AgencyBanner = () => {
                 src={smallwhite}
                 alt="smallwhite"
                 className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-              />{" "}
+              />{' '}
             </i>
           </button>
         </div>

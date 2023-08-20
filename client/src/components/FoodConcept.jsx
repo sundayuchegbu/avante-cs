@@ -1,6 +1,6 @@
-import { layout } from "../style";
-import foodconcept from "../images/foodconcept.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import foodconcept from '../images/foodconcept.png';
+import { Link } from 'react-router-dom';
 const FoodConcept = () => {
   return (
     <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -24,17 +24,20 @@ const FoodConcept = () => {
         </div>
       </div>
 
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div className={`${layout.sectionInfo} lg:ml-56 md:ml-32 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
           FOOD <span className="text-primary">CONCEPT</span> <br />
-          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
-            Lorem Ipsum consectetur.{" "}
-          </span>
+          <Link
+            to="https://avante-cs.com/consumer-goods"
+            className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  "
+          >
+            https://avante-cs.com/consumer-goods{' '}
+          </Link>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Food Concepts opened Chicken Republic in 2004 and their other brands
           of focus include Butterfield Bakery, Reeds and Pizza Republic. Apart

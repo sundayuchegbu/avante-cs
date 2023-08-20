@@ -1,22 +1,22 @@
-import { layout } from "../style";
-import hero from "../images/hero.png";
-import smallhero from "../images/smallhero.png";
-import { useNavigate } from "react-router-dom";
+import { layout } from '../style';
+import hero from '../images/hero.png';
+import smallhero from '../images/smallhero.png';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="hidden md:block">
-        <div id="ctas2" className={`mb-32  h-[721px] ${layout.section}`}>
-          <div className={`mx-24 ${layout.sectionInfo}`}>
+      <div className="hidden sm:block">
+        <div id="ctas2" className={`mb-32  h-[721px] ${layout.section} `}>
+          <div className={`lg:mx-24 md:mx-12  ${layout.sectionInfo}`}>
             <h2
-              className={`font-inter font-normal xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
+              className={`font-inter font-normal lg:text-[60px] md:text-[40px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
               SAS Analytics
             </h2>
             <div
-              className={`font-Inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Avante is a silver partner of SAS and a solution partner within
               the Customer Intelligence practice. They have experience in
@@ -26,19 +26,19 @@ const Hero = () => {
             </div>
             <button
               className="bg-secondary text-white flex flex-start font-bold py-2 px-12 rounded"
-              onClick={() => navigate("/contacts")}
+              onClick={() => navigate('/contacts')}
             >
               Request a quote
             </button>
           </div>
           <div
             id="cta2"
-            className={`${layout.sectionImg} lg:mx-24 lg:px-24   relative`}
+            className={`${layout.sectionImg} lg:mx-24 lg:px-24 md:px-2   relative`}
           >
             <img
               src={hero}
               alt="card"
-              className=" mt-[20px] w-[471.19px] h-[518.48px]   "
+              className=" mt-[20px] lg:w-[471.19px] md:w-[310px] h-[518.48px]   "
             />
           </div>
         </div>
@@ -63,7 +63,7 @@ const Hero = () => {
                 improve productivity.
               </p>
               <button
-                onClick={() => navigate("/contacts")}
+                onClick={() => navigate('/contacts')}
                 className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary "
               >
                 <span className="mx-[60px] text-[14px] font-inter font-normal">
@@ -73,7 +73,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>{' '}
     </div>
   );
 };

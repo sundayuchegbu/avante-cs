@@ -1,7 +1,7 @@
-import React from "react";
-import { layout } from "../style";
-import lasgm from "../images/lasgm.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { layout } from '../style';
+import lasgm from '../images/lasgm.png';
+import { Link } from 'react-router-dom';
 
 const LasgMinistry = () => {
   return (
@@ -12,7 +12,7 @@ const LasgMinistry = () => {
             <img
               src={lasgm}
               alt="codeit"
-              className="block w-[488.47pz] h-[400.1px] -mt-[-50px]  ml-44"
+              className="block w-[488.47pz] h-[400.1px] -mt-[-50px]  lg:ml-44 md:ml-2"
             />
           </div>
         </div>
@@ -32,7 +32,7 @@ const LasgMinistry = () => {
           </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           The sole responsibility of this Ministry, since its inception is to
           provide professional and technical knowhow in the areas of IT, ICT and

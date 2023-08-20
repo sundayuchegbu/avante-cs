@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { layout } from "../style";
-import ninemobile from "../images/ninemobile.png";
+import { Link } from 'react-router-dom';
+import { layout } from '../style';
+import ninemobile from '../images/ninemobile.png';
 const Ninemobile = () => {
   return (
     <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -23,18 +23,18 @@ const Ninemobile = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:ml-56 px-8 `}>
+      <div className={`${layout.sectionInfo} lg:ml-56 px-8 `}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[150px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
           <span className="text-success">9</span>mobile
           <br />
           <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
-            Campaign Management <br /> Automation{" "}
+            Campaign Management <br /> Automation{' '}
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[350px] mt-5 mb-6`}
         >
           9mobile is Nigeria’s most innovative telecoms network. They began
           trading in October 2008 with the ground breaking “0809uchoose”

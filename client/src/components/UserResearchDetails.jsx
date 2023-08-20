@@ -1,15 +1,15 @@
-import React from "react";
-import { layout } from "../style";
-import research from "../images/research.jpg";
+import React from 'react';
+import { layout } from '../style';
+import research from '../images/research.jpg';
 
 const UserResearchDetails = () => {
   return (
-    <section className="flex md:flex-row flex-col sm:py-16 py-6 md:ml-24">
-      <div className={`mx-12 ${layout.sectionInfo}`}>
+    <section className="flex md:flex-row flex-col md:py-16 py-6 lg:ml-24 ml-12">
+      <div className={`lg:mx-12 md:mx-4 ${layout.sectionInfo}`}>
         <h1
-          className={`font-Inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
+          className={`font-inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
         >
-          User Experience Research:{" "}
+          User Experience Research:{' '}
         </h1>
         <div
           className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
@@ -33,7 +33,7 @@ const UserResearchDetails = () => {
         </div>
       </div>
       <div
-        className={` hidden md:block ${layout.sectionImg} md:mx-24 md:px-24 relative`}
+        className={` hidden md:block ${layout.sectionImg}  lg:mx-24 md:mx-8 lg:px-24 md:px-2 md relative`}
       >
         <img
           src={research}

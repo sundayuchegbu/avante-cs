@@ -1,11 +1,11 @@
-import { layout } from "../style";
-import contraco from "../images/contraco.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import contraco from '../images/contraco.png';
+import { Link } from 'react-router-dom';
 
 const Contraco = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
+      <div className={`lg:mx-24 md:mx-4 px-8 ${layout.sectionInfo}`}>
         <h2
           className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
@@ -15,7 +15,7 @@ const Contraco = () => {
           </span>
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
         >
           Contraco Limited is a reputable and multifaceted Oil and Gas,
           shipping, and Logistics Company incorporated in 1986 with
@@ -34,7 +34,7 @@ const Contraco = () => {
         <div className="hidden md:block">
           <div
             id="cta10"
-            className={`${layout.sectionImg} mx-24 px-24 relative`}
+            className={`${layout.sectionImg} lg:mx-24 md:mx-12 lg:px-24 md:px-4 relative`}
           >
             <img
               src={contraco}

@@ -1,22 +1,22 @@
-import React from "react";
-import { layout } from "../style";
-import financial1 from "../images/financial1.png";
-import smallwhite from "../images/smallwhite.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { layout } from '../style';
+import financial1 from '../images/financial1.png';
+import smallwhite from '../images/smallwhite.png';
+import { Link } from 'react-router-dom';
 
 const FinancialSector = () => {
   return (
     <div>
       <div className="hidden md:block">
         <div id="financial" className={`mb-32  h-[721px] ${layout.section}`}>
-          <div className={`ml-24 ${layout.sectionInfo}`}>
+          <div className={`lg:ml-24 md:ml-8 ${layout.sectionInfo}`}>
             <h2
               className={`font-inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
               Financial Sector
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
             >
               Avante Consulting has extensive experience working with clients in
               the financial sector. Our tailored consulting services help
@@ -24,10 +24,10 @@ const FinancialSector = () => {
               regulatory requirements, optimize operations, and drive digital
               transformation. Partner with us to enhance risk management,
               improve customer experiences, and achieve sustainable growth in
-              the competitive financial industry.{" "}
+              the competitive financial industry.{' '}
             </div>
             <Link to="/contacts">
-              {" "}
+              {' '}
               <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
                   Read more
@@ -37,12 +37,14 @@ const FinancialSector = () => {
                     src={smallwhite}
                     alt="smallwhite"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </Link>
           </div>
-          <div className={`${layout.sectionImg} md:mx-24 md:px-24   relative`}>
+          <div
+            className={`${layout.sectionImg} lg:mx-24 md:mx-12 lg:px-24 md:px-8   relative`}
+          >
             <img
               src={financial1}
               alt="card"
@@ -80,7 +82,7 @@ const FinancialSector = () => {
                     src={smallwhite}
                     alt="smallwhite"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </div>

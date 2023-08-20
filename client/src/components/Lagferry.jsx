@@ -1,7 +1,7 @@
-import React from "react";
-import { layout } from "../style";
-import lagferry2 from "../images/lagferry2.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { layout } from '../style';
+import lagferry2 from '../images/lagferry2.png';
+import { Link } from 'react-router-dom';
 const Lagferry = () => {
   return (
     <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -11,7 +11,7 @@ const Lagferry = () => {
             <img
               src={lagferry2}
               alt="codeit"
-              className="block w-[488.47pz] h-[535.1px] ml-32"
+              className="block w-[488.47pz] h-[535.1px] lg:ml-32"
             />
           </div>
         </div>
@@ -21,17 +21,17 @@ const Lagferry = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[200px] md:mr-44 px-8`}>
+      <div className={`${layout.sectionInfo} mt-[200px] lg:mr-44  px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[200px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
           LAGFERRY <br />
-          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
+          <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
             Water transport infrastructure
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Lagos Ferry Services Company (LFSC) known as Lagferry is a limited
           liability company which was established as a Special Purpose Vehicle

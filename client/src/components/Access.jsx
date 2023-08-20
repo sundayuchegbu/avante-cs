@@ -1,6 +1,6 @@
-import access2 from "../images/access2.png";
-import { layout } from "../style";
-import { Link } from "react-router-dom";
+import access2 from '../images/access2.png';
+import { layout } from '../style';
+import { Link } from 'react-router-dom';
 const Access = () => {
   return (
     <section className={` mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -8,7 +8,7 @@ const Access = () => {
         <div className="hidden md:block">
           <div
             id="cta9"
-            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+            className={`relative lg:mr-24 md:mr-12  ${layout.sectionImgReverse1} `}
           >
             <img src={access2} alt="access2" className="block h-[428.8px]" />
           </div>
@@ -19,7 +19,7 @@ const Access = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div className={`${layout.sectionInfo} lg:ml-56 md:ml-32 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
@@ -29,7 +29,7 @@ const Access = () => {
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
         >
           Access Bank is one of Nigeria’s leading banks with a very strong
           customer focus on customer service. They were looking for a true

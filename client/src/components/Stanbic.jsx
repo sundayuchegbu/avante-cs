@@ -1,10 +1,10 @@
-import { layout } from "../style";
-import stanbicibtc from "../images/stanbicibtc.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import stanbicibtc from '../images/stanbicibtc.png';
+import { Link } from 'react-router-dom';
 const Stanbic = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
+      <div className={`lg:mx-24 md:mx-4 px-8 ${layout.sectionInfo}`}>
         <h2
           className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4  `}
         >
@@ -14,7 +14,7 @@ const Stanbic = () => {
           </span>
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Stanbic IBTC Asset Management Limited (SIAML) is the leading
           non-pension asset manager in Nigeria and is committed to being the
@@ -31,7 +31,9 @@ const Stanbic = () => {
       </div>
       <div>
         <div className="hidden md:block">
-          <div className={`${layout.sectionImg} mx-24 px-24 relative`}>
+          <div
+            className={`${layout.sectionImg} lg:mx-24 md:mx-8 lg:px-24 md:px-8 relative`}
+          >
             <img
               src={stanbicibtc}
               alt="nsip"

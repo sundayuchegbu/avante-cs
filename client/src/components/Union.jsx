@@ -1,7 +1,7 @@
-import { layout } from "../style";
-import union1 from "../images/union1.png";
-import union from "../images/union.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import union1 from '../images/union1.png';
+import union from '../images/union.png';
+import { Link } from 'react-router-dom';
 const Union = () => {
   return (
     <section className={` mt-[-250px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -9,12 +9,12 @@ const Union = () => {
         <div className="hidden md:block md:mt-[50px]">
           <div
             id="union"
-            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+            className={`relative lg:mr-24  md:mr-12 ${layout.sectionImgReverse1} `}
           >
             <img
               src={union1}
               alt="union"
-              className="block w-[60%] h-[70%] ml-32"
+              className="block lg:w-[60%] md:w-[80%] h-[70%] lg:ml-32 md:ml-62"
             />
           </div>
         </div>
@@ -25,12 +25,12 @@ const Union = () => {
         </div>
       </div>
       <div
-        className={`${layout.sectionInfo} md:mt-[20px] mt-[200px] md:ml-44 px-8`}
+        className={`${layout.sectionInfo} md:mt-[20px] mt-[200px] lg:ml-44 md:ml-12 px-8`}
       >
         <h2
           className={`font-Inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-40px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
-          UNION <span className="text-secondary ">BANK</span>{" "}
+          UNION <span className="text-secondary ">BANK</span>{' '}
           <br className=" " />
           <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
             Campaign Management <br className="" />
@@ -38,7 +38,7 @@ const Union = () => {
           </span>
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] min-w-[400px] mt-5 mb-6`}
         >
           SAS and Union Bank have determined a roadmap to formulating a
           partnership to achieve Union Bank’s Digital Transformation vision.

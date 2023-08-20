@@ -1,12 +1,12 @@
-import React from "react";
-import { layout } from "../style";
-import lastveb from "../images/lastveb.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { layout } from '../style';
+import lastveb from '../images/lastveb.png';
+import { Link } from 'react-router-dom';
 
 const LastVeb = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
+      <div className={`lg:mx-24 px-8 ${layout.sectionInfo}`}>
         <h2
           className={`font-inter font-semibold xs:text-[20px] md:mt-[60px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
@@ -16,7 +16,7 @@ const LastVeb = () => {
           </span>
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] min-w-[300px] mt-5 mb-6`}
         >
           Lagos State Technical and Vocational Education Board (LASTVEB) aims to
           be National Leader for jobs and self-empowerment by up-skilling and
@@ -34,7 +34,7 @@ const LastVeb = () => {
       <div>
         <div className="hidden md:block mt-[200px]">
           <div
-            className={`${layout.sectionImg} mr-32 -mt-[50px] px-24 relative`}
+            className={`${layout.sectionImg} mr-32 -mt-[50px] lg:px-24 relative`}
           >
             <img
               src={lastveb}

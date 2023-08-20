@@ -1,44 +1,44 @@
-import Ellipse1 from "../images/Ellipse1.png";
-import round from "../images/round.png";
-import Ellipse3 from "../images/Ellipse3.png";
+import Ellipse1 from '../images/Ellipse1.png';
+import round from '../images/round.png';
+import Ellipse3 from '../images/Ellipse3.png';
 
 const Feedback = () => (
-  <div className="md:flex justify-between   md:mx-24 mb-32">
-    <div className="md:w-1/3 md:h-[274px] h-[190px] md:w-[350px] w-[305px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
+  <div className="md:flex justify-between   lg:mx-24 md:mx-[8] mb-32">
+    <div className="md:w-1/3 lg:h-[274px] md:h-[310px] h-[190px] lg:w-[350px]  w-[305px] p-6  border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
       <div className="flex items-center md:mb-4 ">
         <div className="h-[60px] w-[60px] rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
           <img src={Ellipse1} alt="microsoft" />
         </div>
       </div>
-      <h2 className="ml-4  md:text-[18px] text-[16px]  mb-4 font-inter font-semibold">
+      <h2 className="lg:ml-4 md:ml-0 ml-4  lg:text-[18px] md:text-[12px] text-[16px]  mb-4 font-inter font-semibold">
         Business Consulting
       </h2>
 
-      <p className="font-inter font-normal xs:text-[14px] leading-[25.8px] text-[12px] ml-4">
+      <p className="font-inter font-normal xs:text-[14px] leading-[25.8px] text-[12px] lg:ml-4 md:ml-0 ml-4">
         We are a leading business and technology consulting organisation, with a
         very strong focus on Customer Experience, Knowledge Management, Loyalty
-        and Ticketing solutions.{" "}
+        and Ticketing solutions.{' '}
       </p>
     </div>
 
-    <div className="md:w-1/3 md:h-[274px] h-[210px] md:w-[350px] w-[305px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
+    <div className="md:w-1/3 lg:h-[274px] md:h-[310px] h-[190px] lg:w-[350px]  w-[305px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
       <div className="flex items-center mb-4 ">
         <div className="h-[60px] w-[60px] rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
           <img src={round} alt="microsoft" />
         </div>
       </div>
-      <h2 className="ml-4 md:text-[18px] text-[16px] text-black2 mb-4 font-inter font-semibold">
+      <h2 className="lg:ml-4 md:ml-0 ml-4  lg:text-[18px] md:text-[12px] text-[16px]  mb-4 font-inter font-semibold">
         Technology Services
       </h2>
 
-      <p className="font-inter font-normal xs:text-[14px] leading-[25.8px] text-black2 text-[12px] ml-4">
+      <p className="font-inter font-normal xs:text-[14px] leading-[25.8px] text-black2 text-[12px] lg:ml-4 md:ml-0 ml-4">
         We are committed to growing our business through embracing technology,
         developing strong partnerships and by placing the emphasis on providing
-        high levels of customer satisfaction.{" "}
+        high levels of customer satisfaction.{' '}
       </p>
     </div>
 
-    <div className="md:w-1/3 md:h-[274px] h-[190px] md:w-[350px] w-[305px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
+    <div className="md:w-1/3 lg:h-[274px] md:h-[310px] h-[190px] lg:w-[350px]  w-[305px] p-6 border-2 md:mb-4 mb-12 ml-8 border-primary  rounded-lg">
       <div className="flex items-center mb-4 ">
         <div className="h-[60px] w-[60px] rounded-full bg-gray-400 -mx-[40px] mt-[-4rem] mr-24">
           <img src={Ellipse3} alt="microsoft" />

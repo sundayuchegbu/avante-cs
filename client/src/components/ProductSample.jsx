@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
 
 const ProductSample = () => {
   return (
-    <section id="cta" className="flex flex-row  sm:py-16 py-6">
-      <div className="md:ml-24 md:mr-8 flex-[1.5] flex justify-center items-start flex-col">
+    <section id="cta" className="flex flex-row  md:py-16 py-6">
+      <div className="lg:ml-24 md:mr-8 flex-[1.5] flex justify-center items-start flex-col">
         <h2
           className={` underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] mb-8
-          ${styles.heading5}`}
+          ${styles.heading5} `}
         >
           OUR <span className="text-primary">PRODUCT</span> - MOLOYAL
         </h2>
         <div className="  items-center justify-center    mb-4  hidden md:block">
-          <h3 className=" font-inter font-normal md:text-[32px] text-[16px]  ">
+          <h3 className="  font-inter font-normal md:text-[32px] text-[16px]   ">
             Cutting-edge Solutions <br />
             Transforming Businesses Today{' '}
           </h3>{' '}
@@ -27,7 +27,7 @@ const ProductSample = () => {
           </h3>{' '}
         </div>
         <p
-          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-24 mb-5 `}
+          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] lg:mt-[-120px] md:mt-[-120px] mt-0 mb-5 `}
         >
           MoLoyal provides an easy to use fintech solution serving customers
           with loyalty points for transaction they normally carry out on day to
@@ -120,11 +120,13 @@ const ProductSample = () => {
           /> */}
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[210px]  hidden md:block`}>
+      <div
+        className={`${layout.sectionInfo} lg:mt-[210px] md:mt-[350px]  hidden md:block`}
+      >
         <img
           src={productimage1}
           alt="productimage2"
-          className="md:w-full md:h-[500px] w-[140.41px] h-[156.71px]  md:mt-[-200px] mt-[-340px] "
+          className="md:w-full lg:h-[500px] md:h-[350px] w-[140.41px] h-[156.71px]  md:mt-[-200px] mt-[-340px] "
         />
         {/* <img
           src={productimage3}

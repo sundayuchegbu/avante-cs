@@ -1,26 +1,26 @@
-import microsoft from "../images/microsoft.jpg";
-import egain from "../images/egain.png";
-import oracle from "../images/oracle.png";
-import sas from "../images/sas.png";
-import whitearrow from "../images/whitearrow.png";
-import { Link } from "react-router-dom";
+import microsoft from '../images/microsoft.jpg';
+import egain from '../images/egain.png';
+import oracle from '../images/oracle.png';
+import sas from '../images/sas.png';
+import whitearrow from '../images/whitearrow.png';
+import { Link } from 'react-router-dom';
 
 const Cards2 = () => {
   return (
     <div className="flex flex-col  md:mb-12 mb-8">
-      <div className=" flex  md:justify-center justify-center md:items-end items-center md:mr-[1000px] mr-[-20px]   ">
+      <div className=" flex  lg:justify-center justify-center lg:items-end items-center lg:mr-[1000px] mr-[-20px]   ">
         <h1 className="md:mb-4 font-inter font-semibold text-[16px]  ">
-          OUR <span className="text-secondary ">PARTNERS</span>{" "}
-        </h1>{" "}
+          OUR <span className="text-secondary ">PARTNERS</span>{' '}
+        </h1>{' '}
       </div>
-      <div className=" flex items-center justify-center md:items-end  md:mr-[890px] ml-[100px] mb-4">
+      <div className=" flex items-center justify-center lg:items-end md:items-start  lg:mr-[890px] ml-[100px] mb-4">
         <h1 className="md:mb-8 font-inter font-normal md:text-[28px] text-[14px]  ">
-          Strategic Collaborative Alliances{" "}
-        </h1>{" "}
+          Strategic Collaborative Alliances{' '}
+        </h1>{' '}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-        <div className="md:ml-[280px]  ml-4">
-          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  md:w-[482px] w-[300px] md:h-[293px] h-[215px] ">
+      <div className="grid grid-cols-1 lg:grid-cols-2  gap-8">
+        <div className="lg:ml-[280px] md:ml-24  ml-4">
+          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  lg:w-[482px] md:w-[600px] w-[300px] lg:h-[293px] md:h-[320px] h-[215px] ">
             <div className="text-white text-4xl md:text-6xl  md:ml-[-65px] ml-[-290px] md:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
@@ -30,8 +30,8 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white md:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4">
-              eGain{" "}
+            <div className="text-white md:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+              eGain{' '}
             </div>
             <div className=" font-inter font-normal text-white ml-8 font-inter md:text-[14px] leading-[25.8px] text-[10px] md:text-base mb-4">
               Our partnership with eGain strengthens our commitment to the
@@ -54,9 +54,9 @@ const Cards2 = () => {
           </div>
         </div>
 
-        <div className="md:mt-24 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-end md:items-start justify-center px-8 py-6 md:w-[482px] w-[310px] md:h-[293px] h-[215px]">
-            <div className="text-white text-4xl md:text-6xl md:ml-[390px]   md:mt-[-110px] rounded-full p-4 absolute md:mr-0 -mr-16">
+        <div className="lg:mt-24 md:mt-2 md:ml-[100px] ml-4">
+          <div className="bg-black flex flex-col items-end lg:items-start justify-center px-8 py-6 lg:w-[482px] md:w-[600px] w-[300px] lg:h-[293px] md:h-[320px] h-[215px] ">
+            <div className="text-white text-4xl md:text-6xl lg:ml-[390px]   md:mt-[-110px] rounded-full p-4 absolute lg:mr-0 -md:mr-[25px] -mr-16">
               <i>
                 <img
                   src={sas}
@@ -65,12 +65,13 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white md:ml-2 mr-44  md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
-              SAS{" "}
+            <div className="text-white md:ml-2 lg:mr-44 md:mr-[400px] mr-44  md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+              SAS{' '}
             </div>
             <div className=" font-inter font-normal leading-[25.8px] text-white md:text-[14px] text-[12px]  md:text-base mb-4">
               Avante is a silver partner of SAS and a solution partner within
-              the Customer Intelligence practice.
+              the <br />
+              Customer Intelligence practice.
             </div>
             <Link to="/services/sas">
               <button className="flex  md:mr-0  items-center text-white text-[12px] ">
@@ -80,14 +81,14 @@ const Cards2 = () => {
                     src={whitearrow}
                     alt="whitearrow"
                     className="md:w-[100%] w-[50%] md:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </Link>
           </div>
         </div>
-        <div className="md:ml-[280px] md:-mt-10 ml-4">
-          <div className=" bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  sm:w-[482px] w-[320px] sm:h-[293px] h-[215px] ">
+        <div className="lg:ml-[280px] md:ml-24  ml-4">
+          <div className="  bg-black flex flex-col items-center md:items-start justify-center px-8 py-6  lg:w-[482px] md:w-[600px] w-[300px] lg:h-[293px] md:h-[320px] h-[215px] ">
             <div className="text-white text-4xl sm:text-6xl  sm:ml-[-65px] ml-[-330px] sm:mt-[-110px] mt-[-40px] rounded-full p-4 absolute">
               <i>
                 <img
@@ -98,7 +99,7 @@ const Cards2 = () => {
               </i>
             </div>
             <div className="text-white sm:ml-8 -ml-32 md:text-[32px] text-[16px] font-inter font-semibold mb-4">
-              ORACLE{" "}
+              ORACLE{' '}
             </div>
             <div className=" font-inter font-normal leading-[25.8px] text-white ml-8 font-inter sm:text-[14px] text-[10px] md:text-base mb-4">
               Our Oracle Consultancy Practice is focused on helping
@@ -118,9 +119,9 @@ const Cards2 = () => {
             </Link>
           </div>
         </div>
-        <div className="sm:mt-10 md:ml-[50px] ml-4">
-          <div className="bg-black flex flex-col items-end sm:items-start justify-center px-8 py-6 md:w-[482px] w-[320px] md:h-[293px] h-[215px]">
-            <div className="text-white text-4xl md:text-6xl md:ml-[400px] ml-[30px]  sm:mt-[-110px] rounded-full p-4 absolute sm:mr-0 -mr-16">
+        <div className="lg:mt-24 md:mt-2 md:ml-[100px] ml-4">
+          <div className="bg-black flex flex-col items-end lg:items-start justify-center px-8 py-6 lg:w-[482px] md:w-[600px] w-[300px] lg:h-[293px] md:h-[320px] h-[215px] ">
+            <div className="text-white text-4xl md:text-6xl lg:ml-[390px]   md:mt-[-110px] rounded-full p-4 absolute lg:mr-0 -md:mr-[25px] -mr-16">
               <i>
                 <img
                   src={egain}
@@ -129,8 +130,8 @@ const Cards2 = () => {
                 />
               </i>
             </div>
-            <div className="text-white sm:mr-2 mr-20  md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
-              Microsoft{" "}
+            <div className="text-white md:ml-2 lg:mr-44 md:mr-[400px] mr-44  md:text-[32px] text-[16px] font-inter font-semibold mb-4 ">
+              Microsoft{' '}
             </div>
             <div className="font-inter font-normal leading-[25.8px] text-white sm:text-[14px] text-[12px]  md:text-base mb-4">
               Avante is a software development company that specializes in
@@ -144,9 +145,9 @@ const Cards2 = () => {
                     src={whitearrow}
                     alt="whitearrow"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
-              </button>{" "}
+              </button>{' '}
             </Link>
           </div>
         </div>

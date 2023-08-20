@@ -154,14 +154,18 @@ const Contacts = () => {
   return (
     <div className={`bg-background ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <div className="mx-32  mb-12 mt-12 place-items-center hidden md:block relative">
+        <div className="lg:mx-32 md:-mx-12  mb-24 mt-12 place-items-center hidden md:block relative">
           <div className="bg-white rounded-md   flex flex-row">
             <div
               className="bg-black p-8  md-hover:scale-y-110 rounded-md transition md:block "
               id="contact_info"
             >
               <div className="flex justify-between">
-                <h1 className={`${styles.heading2}`}>Start a new project!</h1>
+                <h1
+                  className={`font-inter font-semibold lg:text-[50px] md:text-[45px] lg:mt-[20px] md:-mt-8 text-[20px] text-white lg:leading-[60.8px] md:leading-[50px] leading-[66.8px] w-full`}
+                >
+                  Start a new project!
+                </h1>
               </div>
               <div className="mt-6 flex flex-row">
                 <div className=""></div>
@@ -171,14 +175,14 @@ const Contacts = () => {
                     <span className="text-secondary">Solutions</span>{' '}
                   </h3>
                   <p className="font-Inter font-normal text-dimWhite text-[12px] leading-[20.8px] mb-8">
-                    We have four growth pillars namely, <br />
-                    Business Consulting, Software Development, SAS Analytics &
-                    eGain Collaboration
+                    How can we be of help? Talk to us today on any of our four
+                    growth pillars namely; Business Consulting, Software
+                    Development, SAS Analytics, & eGain Collaboration.{' '}
                   </p>
                   <p className="font-inter font-normal -mt-8 text-dimWhite text-[10px] leading-[20.8px] mb-8">
                     Talk to us on any of these and we will be here to help.
                   </p>
-                  <h3 className="text-secondary -mt-4">CONTACT INFO</h3>
+                  <h3 className="text-secondary -mt-8">CONTACT INFO</h3>
                   <p className="font-Inter font-normal text-dimWhite text-[10px] leading-[20.8px] mb-8">
                     66 Bode Thomas, Surulere, Lagos.{' '}
                   </p>{' '}
@@ -221,7 +225,7 @@ const Contacts = () => {
                     name="from_name"
                     type="text"
                     placeholder="Full Name"
-                    className="w-full  px-3 h-4 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                    className="lg:w-full md:w-[500px]  px-3 h-4 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                     required
                   />
                 </div>{' '}
@@ -232,7 +236,7 @@ const Contacts = () => {
                   type="text"
                   name="from_email"
                   placeholder="Email Address"
-                  className="w-full mt-12 px-3 h-4 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                  className="lg:w-full md:w-[500px] mt-12 px-3 h-4 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   required
                 />
                 <select
@@ -243,7 +247,7 @@ const Contacts = () => {
                   name="subject"
                   placeholder="services"
                   data-te-select-init
-                  className="w-full mt-12 px-3 h-12  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
+                  className="lg:w-full md:w-[500px] mt-12 px-3 h-12  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                   required
                 >
                   <option
@@ -267,7 +271,7 @@ const Contacts = () => {
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
                   data-te-select-init
-                  className="w-full  px-3 h-12  outline-none border  border-r-white border-l-white border-t-white   focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
+                  className="lg:w-full md:w-[500px]  px-3 h-12  outline-none border  border-r-white border-l-white border-t-white   focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                   required
                 >
                   <option>Nigeria</option>
@@ -290,7 +294,7 @@ const Contacts = () => {
                   name="from_employment"
                   placeholder="Select Employment"
                   data-te-select-init
-                  className="w-full  px-3   outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
+                  className="lg:w-full md:w-[500px]  px-3   outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 mb-16"
                   required
                 >
                   <option
@@ -312,7 +316,7 @@ const Contacts = () => {
                   type="text"
                   name="message"
                   placeholder="Type a message here..."
-                  className="w-full -mt-4  outline-none border  border-r-white border-l-white border-t-white  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
+                  className="lg:w-full md:w-[500px] -mt-4  outline-none border  border-r-white border-l-white border-t-white  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2"
                   required
                 />
                 <ReCAPTCHA
@@ -324,7 +328,7 @@ const Contacts = () => {
                   type="submit"
                   className={`${
                     formValid ? 'bg-secondary' : 'bg-faded'
-                  } text-white flex flex-start font-bold py-2 px-12 rounded ml-[450px] mt-6`}
+                  } text-white flex flex-start font-bold py-2 px-12 rounded lg:ml-[450px] mt-6`}
                 >
                   {isSubmitting ? (
                     <div className="flex items-center justify-center">
@@ -376,7 +380,7 @@ const Contacts = () => {
             <p className="font-inter font-normal text-[12px] mt-8 w-[353px] max-w-[300px]  leading-[25.8px]">
               How can we be of help? Talk to us today on any of our four growth
               pillars namely; Business Consulting, Software Development, SAS
-              Analytics, & eGain Collaboration.
+              Analytics, & eGain Collaboration.{' '}
             </p>
             <form ref={form} onSubmit={handleSubmit}>
               <div className="relative">
@@ -387,7 +391,7 @@ const Contacts = () => {
                   name="from_name"
                   type="text"
                   placeholder="Your full name"
-                  className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 text-[10px] block"
+                  className="w-[350px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 text-[10px] block"
                 />
               </div>{' '}
               <input
@@ -397,7 +401,7 @@ const Contacts = () => {
                 type="text"
                 name="from_email"
                 placeholder="Your e-mail address"
-                className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
+                className="w-[350px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
               <select
                 onChange={(e) => setReason(e.target.value)}
@@ -406,7 +410,7 @@ const Contacts = () => {
                 type="text"
                 name="subject"
                 placeholder="Subject"
-                className="w-[280px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
+                className="w-[350px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               >
                 <option
                   hidden
@@ -430,7 +434,7 @@ const Contacts = () => {
                 type="text"
                 name="from_country"
                 placeholder="Subject"
-                className="w-[280px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
+                className="w-[350px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               >
                 <option>Nigeria</option>
 
@@ -446,12 +450,12 @@ const Contacts = () => {
                 })}
               </select>
               <select
-                onChange={(e) => setReason(e.target.value)}
+                onChange={(e) => setEmployment(e.target.value)}
                 id="employment"
                 value={employment}
                 type="Number"
                 name="from_employment"
-                className="w-[280px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
+                className="w-[350px] mt-12 px-3  outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               >
                 <option
                   hidden
@@ -472,7 +476,7 @@ const Contacts = () => {
                 type="text"
                 name="message"
                 placeholder="drop a message here..."
-                className="w-[280px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
+                className="w-[350px] mt-12 px-3 h-8 my-2 outline-none border  border-r-white border-l-white border-t-white border-b  focus:border-r-white focus:border-l-white focus:border-t-white focus:border-b-primary focus:ring-white border-b-2 block text-[10px]"
               />
               <ReCAPTCHA
                 sitekey="6Ldxg6cnAAAAAA1grqOAt46XDRYxFPTDz_Mm2OYC"

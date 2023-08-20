@@ -1,6 +1,6 @@
-import { layout } from "../style";
-import offshore1 from "../images/offshore1.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import offshore1 from '../images/offshore1.png';
+import { Link } from 'react-router-dom';
 
 const Offshore = () => {
   return (
@@ -9,7 +9,7 @@ const Offshore = () => {
         <div className="hidden md:block">
           <div
             id="cta9"
-            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+            className={`relative lg:mr-24 md:mr-8  ${layout.sectionImgReverse1} `}
           >
             <img
               src={offshore1}
@@ -18,7 +18,7 @@ const Offshore = () => {
             />
           </div>
         </div>
-        <div className="px-8 block md:hidden mx-8">
+        <div className="px-8 block md:hidden mx-8 mt-4">
           <div id="cta19" className="block md:hidden">
             <img
               src={offshore1}
@@ -33,12 +33,12 @@ const Offshore = () => {
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2 `}
         >
           4H OFFSHORE <br />
-          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2">
+          <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2">
             Campaign Management Automation
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
         >
           4H Offshore provides optimal, timely, and quality goods and services
           in a safe and environmentally friendly manner to the Oil and Gas,

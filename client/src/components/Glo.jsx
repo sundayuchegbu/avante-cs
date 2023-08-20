@@ -1,7 +1,7 @@
-import React from "react";
-import { layout } from "../style";
-import globalcom from "../images/globalcom.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { layout } from '../style';
+import globalcom from '../images/globalcom.png';
+import { Link } from 'react-router-dom';
 const Glo = () => {
   return (
     <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -9,7 +9,7 @@ const Glo = () => {
         <div className="hidden md:block">
           <div
             id="cta9"
-            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+            className={`relative lg:mr-24  ${layout.sectionImgReverse1} `}
           >
             <img
               src={globalcom}
@@ -24,7 +24,7 @@ const Glo = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div className={`${layout.sectionInfo} lg:ml-56 md:ml-8 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
@@ -34,7 +34,7 @@ const Glo = () => {
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Globacom Limited is a Nigerian multinational telecommunications
           company headquartered in Lagos, Nigeria. GLO started operations on 29

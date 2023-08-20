@@ -1,6 +1,6 @@
-import { layout } from "../style";
-import diamond from "../images/diamond.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import diamond from '../images/diamond.png';
+import { Link } from 'react-router-dom';
 const Diamond = () => {
   return (
     <section
@@ -10,18 +10,20 @@ const Diamond = () => {
         <div className="hidden md:block">
           <div
             id="cta9"
-            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+            className={`relative lg:mr-24 md:mr-12  ${layout.sectionImgReverse1} `}
           >
             <img src={diamond} alt="diamond" className="block h-[428.8px]" />
           </div>
         </div>
-        <div className="px-8 block md:hidden mx-8">
+        <div className="px-8 block md:hidden lg:mx-8 md:mx-16 mx-8">
           <div id="cta19" className="block md:hidden">
             <img src={diamond} alt="diamond" />
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div
+        className={`${layout.sectionInfo} lg:ml-56 md:ml-24 lg:px-8 md:px-12 px-8`}
+      >
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
@@ -31,7 +33,7 @@ const Diamond = () => {
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Diamond bank is one of the leading banks in Nigeria. They were looking
           to revamp the entire digital landscape from web to mobile. eGain gives

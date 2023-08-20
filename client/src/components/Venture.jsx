@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { layout } from "../style";
-import venture from "../images/venture.png";
+import { Link } from 'react-router-dom';
+import { layout } from '../style';
+import venture from '../images/venture.png';
 
 const Venture = () => {
   return (
@@ -21,17 +21,17 @@ const Venture = () => {
         </div>
       </div>
 
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div className={`${layout.sectionInfo} lg:ml-56 md:ml-32 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
           VENTURE GARDEN GROUP (VGG) <br />
           <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
-            Campaign Management <br /> Automation{" "}
+            Campaign Management <br /> Automation{' '}
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[350px] mt-5 mb-6`}
         >
           Venture Garden Group (VGG) is a leading provider of innovative,
           data-driven, end-to-end technology platforms addressing reconciliation

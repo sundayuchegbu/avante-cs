@@ -1,7 +1,7 @@
-import React from "react";
-import { layout } from "../style";
-import naijacities1 from "../images/naijacities1.png";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { layout } from '../style';
+import naijacities1 from '../images/naijacities1.png';
+import { Link } from 'react-router-dom';
 const NaijaCities = () => {
   return (
     <section className={` mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -21,7 +21,7 @@ const NaijaCities = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} mt-[200px] md:mr-44 px-8`}>
+      <div className={`${layout.sectionInfo} mt-[200px] lg:mr-44 md:mr-8 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[200px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
@@ -32,7 +32,7 @@ const NaijaCities = () => {
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] min-w-[380px] mt-5 mb-6`}
         >
           The Future Cities Nigeria (FCN) program is a series of infrastructure
           and capacity building projects delivered for Nigerian State

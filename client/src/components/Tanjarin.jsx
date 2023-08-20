@@ -1,6 +1,6 @@
-import { layout } from "../style";
-import tanjarin from "../images/tanjarin.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import tanjarin from '../images/tanjarin.png';
+import { Link } from 'react-router-dom';
 const Tanjarin = () => {
   return (
     <section className={`mt-[-150px] flex md:flex-row flex-col sm:py-16 py-6`}>
@@ -19,7 +19,7 @@ const Tanjarin = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div className={`${layout.sectionInfo} lg:ml-56 md:ml-12 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
@@ -30,7 +30,7 @@ const Tanjarin = () => {
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
         >
           Tanjarin.com is a news aggregation platform that pride itself on
           finding the most pertinent and important stories, videos, and every

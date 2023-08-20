@@ -39,19 +39,19 @@ const Navbar = () => {
   useEffect(() => {}, [location]);
 
   return (
-    <nav className=" w-full flex p-8  justify-between items-center navbar  ">
+    <nav className="w-full flex p-8  justify-between items-center navbar ">
       <NavLink to="/">
         {' '}
         <img
           src={logo}
           alt="logo"
-          className="sm:w-[192.76pxpx] sm:h-[46px] -ml-12"
+          className="md:w-[192.76pxpx] lg:h-[46px] -ml-12"
         />
       </NavLink>
       <div className=" md:flex hidden justify-end items-center flex-1 ">
         <NavLink
           to="/"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9 ${
+          className={`font-inter font-normal cursor-pointer lg:text-[14px] md:text-[10px] lg:mr-9 md:mr-3 hover:text-secondary  ${
             activePage === '/' ? 'text-primary' : 'black2'
           }`}
           onClick={() => setActivePage('/')}
@@ -60,7 +60,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/about"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9  ${
+          className={`font-inter font-normal cursor-pointer  hover:text-secondary lg:text-[14px] md:text-[10px] lg:mr-9 md:mr-3  ${
             activePage === '/about' ? 'text-primary' : 'black2'
           }`}
           onClick={() => {
@@ -72,7 +72,7 @@ const Navbar = () => {
         </NavLink>
         <Popover
           as="div"
-          className="relative group inline-block text-left mr-9"
+          className="relative group inline-block text-left lg:text-[14px] md:text-[10px] lg:mr-9 md:mr-3"
         >
           {({ open }) => (
             <div
@@ -84,14 +84,14 @@ const Navbar = () => {
                 type="popover-button"
                 className={` ${
                   activePage === '/services' ? 'text-primary' : 'text-black2'
-                } inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px] hover:bg-background focus:ring-0 ring-offset-0 hover:text-secondary  focus:outline-none focus-visible:outline-none`}
+                } inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 lg:text-[14px] md:text-[10px] hover:bg-background focus:ring-0 ring-offset-0 hover:text-secondary  focus:outline-none focus-visible:outline-none`}
                 id="menu-button"
                 aria-expanded="true"
                 aria-haspopup="true"
               >
                 SERVICES
                 <svg
-                  className="-mr-1 h-5 w-5 text-gray-400"
+                  className="-mr-1 lg:h-5 md:h-3 lg:w-5 md:w-3 text-gray-400"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -314,6 +314,20 @@ const Navbar = () => {
                         eGain Knowledge
                       </Link>
                     </Popover.Panel>
+                    <Popover.Panel>
+                      <Link
+                        to="/services/software"
+                        className="text-gray-700 block px-4  py-2 mb-4 text-sm hover:bg-primary hover:text-white"
+                        tabIndex="-1"
+                        id="menu-item-4"
+                        onClick={() => {
+                          setActivePage('/services');
+                          triggerRef.current?.click();
+                        }}
+                      >
+                        Software Development
+                      </Link>
+                    </Popover.Panel>
 
                     <Popover.Panel>
                       <Link
@@ -356,7 +370,7 @@ const Navbar = () => {
           to="/products"
           className={`font-inter font-normal cursor-pointer  ${
             activePage === '/products' ? 'text-primary' : 'black2'
-          }  text-[14px] hover:text-secondary mr-9`}
+          }   hover:text-secondary lg:text-[14px] md:text-[10px] lg:mr-9 md:mr-3`}
           onClick={() => setActivePage('/products')}
         >
           PRODUCTS
@@ -364,7 +378,7 @@ const Navbar = () => {
 
         <Popover
           as="div"
-          className="relative group inline-block text-left mr-9"
+          className="relative group inline-block text-left lg:text-[14px] md:text-[10px] lg:mr-9 md:mr-3"
         >
           <div
             onMouseEnter={() => setIsShowing(true)}
@@ -372,7 +386,7 @@ const Navbar = () => {
           >
             <Popover.Button
               type="popover-button"
-              className={`inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 text-[14px]   ${
+              className={`inline-flex w-full justify-center   gap-x-2  focus:bg-backgound  bg-background px-3 py-0 lg:text-[14px] md:text-[10px]  ${
                 activePage === '/clients' ? 'text-primary' : 'black2'
               }   hover:bg-background focus:ring-none hover:text-secondary `}
               id="menu-button"
@@ -381,7 +395,7 @@ const Navbar = () => {
             >
               CLIENTS
               <svg
-                className="-mr-1 h-5 w-5 text-gray-400"
+                className="-mr-1 lg:h-5 md:h-3 lg:w-5 md:w-3 text-gray-400"
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 aria-hidden="true"
@@ -479,7 +493,7 @@ const Navbar = () => {
         </Popover>
         <NavLink
           to="/news"
-          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary mr-9  ${
+          className={`font-inter font-normal cursor-pointer text-[14px] hover:text-secondary lg:text-[14px] md:text-[10px] lg:mr-9 md:mr-3  ${
             activePage === '/news' ? 'text-primary' : 'black2'
           }`}
           onClick={() => setActivePage('/news')}
@@ -488,7 +502,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/contacts"
-          className={`font-inter font-normal cursor-pointer text-[14px] text-secondary  -mr-20  ${
+          className={`font-inter font-normal cursor-pointer lg:text-[14px] md:text-[10px] text-secondary lg:-mr-20 md:-mr-20  ${
             activePage === '/contacts' ? 'text-primary' : 'black2'
           }
 `}
@@ -509,7 +523,7 @@ const Navbar = () => {
           alt="menu"
         />
         <div
-          className={`p-6  absolute bg-background w-full h-[1200px]   top-20 pl-2 duration-500 py-24   ${
+          className={`p-6  absolute bg-background w-full h-[1200px]   top-20 pl-2 duration-500 py-24    ${
             toggle ? ' flex right-0 ' : 'right-[-100%]  hidden  '
           }  ${showMobileNav ? 'hidden' : ''} `}
         >
@@ -525,7 +539,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/about"
-              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mr-10 mb-6"
+              className="cursor-pointer font-inter font-normal text-[12px] hover:text-primary mr-10 mb-4"
               onClick={() => setShowMobileNav(true)}
             >
               ABOUT US
@@ -716,7 +730,13 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <div className="text-[12px] leading-normal ml-2 text-gray-800">
-                          <NavLink to="/services/sas"> SAS Analytics</NavLink>
+                          <NavLink
+                            to="/services/sas"
+                            onClick={() => setShowMobileNav(true)}
+                          >
+                            {' '}
+                            SAS Analytics
+                          </NavLink>
                         </div>
                       </div>
                     </div>
@@ -725,7 +745,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <div className="text-[12px] leading-normal ml-2 text-gray-800">
-                          <NavLink to="/services/egain">
+                          <NavLink
+                            to="/services/egain"
+                            onClick={() => setShowMobileNav(true)}
+                          >
                             {' '}
                             eGain Collaboration{' '}
                           </NavLink>
@@ -737,7 +760,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <div className="text-[12px] leading-normal ml-2 text-gray-800">
-                          <NavLink to="/services/knowledge">
+                          <NavLink
+                            to="/services/knowledge"
+                            onClick={() => setShowMobileNav(true)}
+                          >
                             {' '}
                             eGain Knowledge
                           </NavLink>
@@ -749,7 +775,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <div className="text-[12px] leading-normal ml-2 text-gray-800">
-                          <NavLink to="/services/media">
+                          <NavLink
+                            to="/services/media"
+                            onClick={() => setShowMobileNav(true)}
+                          >
                             {' '}
                             Social Media Management{' '}
                           </NavLink>
@@ -762,7 +791,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <div className="text-[12px] leading-normal ml-2 text-gray-800">
-                          <NavLink to="/services/web">
+                          <NavLink
+                            to="/services/web"
+                            onClick={() => setShowMobileNav(true)}
+                          >
                             {' '}
                             Web Development{' '}
                           </NavLink>
@@ -847,8 +879,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between">
                       <div className="pl-4 flex items-center">
                         <p className="text-sm leading-normal ml-2 text-gray-800">
-                          <NavLink to="/clients/telecoms">
-                            {' '}
+                          <NavLink
+                            to="/clients/telecoms"
+                            onClick={() => setShowMobileNav(true)}
+                          >
                             Telecomms Sector{' '}
                           </NavLink>
                         </p>
@@ -862,8 +896,10 @@ const Navbar = () => {
                           <NavLink
                             onClick={() => setShowMobileNav(true)}
                             to="/clients/sme"
-                          ></NavLink>
-                          SME{' '}
+                          >
+                            {' '}
+                            SME{' '}
+                          </NavLink>
                         </p>
                       </div>
                     </div>

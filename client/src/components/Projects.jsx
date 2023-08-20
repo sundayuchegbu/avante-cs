@@ -1,27 +1,27 @@
-import mtn1 from "../images/mtn1.png";
-import arrow from "../images/arrow.svg";
-import moloyal from "../images/moloyal.png";
-import tado from "../images/tado.png";
-import laswa1 from "../images/laswa1.png";
-import idi from "../images/idi.png";
-import driving from "../images/driving.png";
-import starkey from "../images/starkey.png";
-import compass from "../images/compass.png";
-import legal from "../images/legal.png";
-import offshore from "../images/offshore.png";
-import energy from "../images/energy.png";
-import sector from "../images/sector.png";
-import agent from "../images/agent.png";
-import customer from "../images/customer.png";
-import { Link } from "react-router-dom";
+import mtn1 from '../images/mtn1.png';
+import arrow from '../images/arrow.svg';
+import moloyal from '../images/moloyal.png';
+import tado from '../images/tado.png';
+import laswa1 from '../images/laswa1.png';
+import idi from '../images/idi.png';
+import driving from '../images/driving.png';
+import starkey from '../images/starkey.png';
+import compass from '../images/compass.png';
+import legal from '../images/legal.png';
+import offshore from '../images/offshore.png';
+import energy from '../images/energy.png';
+import sector from '../images/sector.png';
+import agent from '../images/agent.png';
+import customer from '../images/customer.png';
+import { Link } from 'react-router-dom';
 const Projects = () => {
   return (
     <div className="mb-24 block md:mt-[-200px]">
-      <div className="  font-inter font-normal md:text-[31.15px] text-[20px] md:w-[800px] w-[340] md:h-[47px] h-[60px] p-6 md:mb-24 mb-8 sm:ml-32 ">
+      <div className="  font-inter font-normal lg:text-[31.15px] md:text-[25px] text-[20px] lg:w-[800px] w-[340] md:h-[47px] h-[60px] p-6 md:mb-24 mb-8 md:ml-32 ">
         <span className="text-primary">We are Creative.</span> We are
         Innovative. <span className="text-secondary">We are Avante!</span>
       </div>
-      <div className="grid grid-col md:grid-cols-2 gap-8 sm:-mb-12  sm:mx-24  ">
+      <div className="grid grid-col lg:grid-cols-2 gap-8 sm:-mb-12  sm:mx-24  ">
         <div className="relative sm:mb-56 mb-0 ml-4 md:w-[555.13px] w-[336px] md:h-[280px] h-[172.25px]">
           <img
             src={mtn1}
@@ -47,7 +47,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://mtnonline.com">
@@ -55,7 +55,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12] ">
             <h2 className=" block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
-              MoLoyal{" "}
+              MoLoyal{' '}
             </h2>
             <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-4 ">
               MoLoyal, the unique customer rewards programme, which helps
@@ -80,7 +80,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px]"
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://moloyal.com">
@@ -88,7 +88,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12] ">
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
-              Tado Emme{" "}
+              Tado Emme{' '}
             </h2>
             <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Tado Emme is a fashion company that produces suits made for men
@@ -113,7 +113,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://tadoemme.com">
@@ -121,7 +121,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -133,7 +133,7 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12] ">
             <h2 className=" block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-24 md:mb-2 mb-4">
-              Lagos Waterways Authority (LASWA){" "}
+              Lagos Waterways Authority (LASWA){' '}
             </h2>
             <p className="font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8 ">
               Lagos Waterways Authority (LASWA) is charged with the
@@ -147,7 +147,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px]"
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://lagoswaterways.com">
@@ -155,7 +155,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -167,7 +167,7 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12]  ">
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-24 md:mb-2 mb-4">
-              Infrastructure Delivery International{" "}
+              Infrastructure Delivery International{' '}
             </h2>
             <p className="  font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               We understand that addressing Africa’s infrastructural gaps will
@@ -179,7 +179,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://idi-ng.com">
@@ -187,7 +187,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -212,7 +212,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://idi-ng.com">
@@ -220,7 +220,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -232,7 +232,7 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12]  ">
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
-              Data Starkey Network Limited{" "}
+              Data Starkey Network Limited{' '}
             </h2>
             <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Data Starkey Network System is an information Based system
@@ -245,7 +245,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://datastarkey.com/.com/">
@@ -253,7 +253,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px]  "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -279,7 +279,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://compassglobalservices.com/">
@@ -287,7 +287,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -311,7 +311,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="http://www.4hoffshore.com/">
@@ -319,7 +319,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -343,7 +343,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://3rdsectordev.com/">
@@ -351,7 +351,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -366,7 +366,7 @@ const Projects = () => {
               Watermans Legal Practitioners
             </h2>
             <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
-              {" "}
+              {' '}
               Waterman’s, Legal Practitioners was registered to do business by
               the Corporate Affairs Commission; Nigeria in April 2003. The
               firm’s offices are centrally located and easily accessible in
@@ -377,7 +377,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px]"
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://watermanslp.com/">
@@ -385,7 +385,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -397,10 +397,10 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12] ">
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
-              Silverstream Energy{" "}
+              Silverstream Energy{' '}
             </h2>
             <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
-              {" "}
+              {' '}
               We are an energy sector focused company principally involved in
               providing environmental protection solution, targeted at the oil &
               gas, marine and automotive sectors. We also have interest in the
@@ -412,7 +412,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://silverstreamenergy.com/">
@@ -420,7 +420,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -444,7 +444,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://play.google.com/store/apps/details?id=com.moloyal.moloyal.app&pli=1">
@@ -452,7 +452,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>
@@ -464,7 +464,7 @@ const Projects = () => {
           />
           <div className="absolute bg-background  md:w-[510px] w-[336.25px] md:h-[206px] h-[126.73px]  inset-x-0 bottom-0 top-[280px] md:mt-[-80px] mt-[-150px] ring-gray-200 shadow-lg   md:ml-6 -ml-[12] ">
             <h2 className="block font-inter font-semibold md:text-[12px] text-[9.84px]   md:sm:mt-4 sm:ml-56 ml-32 md:mb-2 mb-4">
-              MoLoyal Agent App{" "}
+              MoLoyal Agent App{' '}
             </h2>
             <p className=" font-inter font-normal text-black2 md:text-[12px] text-[7.38px] md:leading-[20.8px] leading-[10.8px] sm:px-8 px-2  sm:mb-8">
               Moloyal agent app provides a platform for merchants to enable
@@ -476,7 +476,7 @@ const Projects = () => {
                 className="block text-secondary sm:ml-[350px] ml-[200px] sm:-mt-4 mt-4 md:text-[12px] text-[7.38px] "
                 target="_blank"
               >
-                Read more{" "}
+                Read more{' '}
               </button>
             </Link>
             <Link to="https://moloyal.com/app/">
@@ -484,7 +484,7 @@ const Projects = () => {
                 src={arrow}
                 alt="arrow"
                 className="sm:-mt-4 -mt-3  sm:ml-[390px] ml-[220px] h-[15px]   w-[100px] top-[10px] "
-              />{" "}
+              />{' '}
             </Link>
           </div>
         </div>

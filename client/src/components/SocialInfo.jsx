@@ -1,14 +1,16 @@
-import { layout } from "../style";
-import socialservice from "../images/socialservice.jpg";
-import socialservice2 from "../images/socialservice2.jpg";
+import { layout } from '../style';
+import socialservice from '../images/socialservice.jpg';
+import socialservice2 from '../images/socialservice2.jpg';
 const SocialInfo = () => {
   return (
-    <section className={` ${layout.section}`}>
+    <section
+      className={`flex lg:flex-row flex-col lg:py-24 py-6 lg:-mt-32 md:-mt-[500px] `}
+    >
       <div
         id="cta3"
-        className={`hidden sm:block mr-56 mt-[400px] ${layout.sectionInfo}`}
+        className={`mr-[350px] mt-[400px] flex-1 flex justify-center items-start flex-col `}
       >
-        <ul className="relative ml-[50px] mt-[-300px] hidden md:block">
+        <ul className="relative ml-[50px] mt-[-900px] hidden lg:block">
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
               id="list-radio-license1"
@@ -18,7 +20,7 @@ const SocialInfo = () => {
               className="w-4 h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
               checked
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -28,7 +30,7 @@ const SocialInfo = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -38,7 +40,7 @@ const SocialInfo = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -48,7 +50,7 @@ const SocialInfo = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -58,7 +60,7 @@ const SocialInfo = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -68,18 +70,18 @@ const SocialInfo = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
         </ul>
         <img
           src={socialservice2}
           alt="bup"
-          className="mt-[300px] mr-[120px] md:block hidden w-[448px] h-[500px] "
+          className="mt-[300px] lg:mr-[120px] -md:mr-20 lg:block hidden lg:w-full md:w-[200px]  "
         />
         <img
           src={socialservice}
           alt="bdown"
-          className=" mt-[730px] mr-[120px] md:block hidden w-[448px] h-[306px]"
+          className=" mt-[730px] lg:mr-[120px]  lg:block hidden lg:w-full md:w-[200px]"
         />
       </div>
       <div
@@ -97,36 +99,36 @@ const SocialInfo = () => {
         <div
           className={`font-inter font-normal text-black2 sm:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:mt-5 mt-2 mb-6 `}
         >
-          {" "}
+          {' '}
           <span className="font-inter font-semibold">
             Strategy Development:
-          </span>{" "}
+          </span>{' '}
           We work closely with you to understand your business objectives and
           target audience, and develop a customized social media strategy that
           aligns with your goals.
           <p className="mb-4"></p>
           <span className="font-inter font-semibold">
-            {" "}
+            {' '}
             Content Creation:
-          </span>{" "}
+          </span>{' '}
           Our team of content experts creates compelling and shareable social
           media posts that resonate with your target audience and reflect your
           brand's voice and values.
-          <p className="mb-4"></p>{" "}
-          <span className="font-inter font-semibold">Platform Management:</span>{" "}
+          <p className="mb-4"></p>{' '}
+          <span className="font-inter font-semibold">Platform Management:</span>{' '}
           We handle the management of your social media platforms, ensuring
           consistent branding and messaging across channels such as Facebook,
-          Twitter, Instagram, LinkedIn, and more.<p className="mb-4"></p>{" "}
+          Twitter, Instagram, LinkedIn, and more.<p className="mb-4"></p>{' '}
           <span className="font-inter font-semibold">
             Community Engagement:
-          </span>{" "}
+          </span>{' '}
           We actively engage with your social media community, responding to
           comments, messages, and reviews in a timely and professional manner,
           fostering meaningful interactions.
           <p className="mb-4"></p>
           <span className="font-inter font-semibold">
             Performance Tracking:
-          </span>{" "}
+          </span>{' '}
           Our team closely monitors the performance of your social media
           campaigns, tracking key metrics and providing regular reports to
           measure success and identify areas for improvement.

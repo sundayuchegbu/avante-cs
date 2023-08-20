@@ -1,8 +1,8 @@
-import styles, { layout } from "../style";
-import webimage1 from "../images/webimage1.png";
-import smallweb from "../images/smallweb.png";
-import smallwhite from "../images/smallwhite.png";
-import { Link } from "react-router-dom";
+import styles, { layout } from '../style';
+import webimage1 from '../images/webimage1.png';
+import smallweb from '../images/smallweb.png';
+import smallwhite from '../images/smallwhite.png';
+import { Link } from 'react-router-dom';
 const DevBanner = () => {
   return (
     <div className="md:mb-56">
@@ -14,13 +14,13 @@ const DevBanner = () => {
             <img
               src={webimage1}
               alt="webimage"
-              className="block w-[561px] h-[567px] ml-44"
+              className="block w-[561px] h-[567px] lg:ml-44 md:ml-24 ml-44"
             />
           </div>
           <div className={`ml-12 ${layout.sectionInfo}`}>
             <h2 className={`${styles.heading3} mb-4 `}>Web Development </h2>
             <div
-              className={`${styles.paragraph} max-w-[470px] sm:p-auto mt-5 mb-6 leading-[25.8px]`}
+              className={`${styles.paragraph} lg:max-w-[470px] md:p-auto mt-5 mb-6 leading-[25.8px]`}
             >
               <p className="text-dark font-inter font-normal text-[14px] leading-[25.8px]">
                 Welcome to our Web Development services, where we bring your
@@ -42,7 +42,7 @@ const DevBanner = () => {
                     src={smallwhite}
                     alt="smallwhite"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </Link>
@@ -72,7 +72,7 @@ const DevBanner = () => {
                   src={smallwhite}
                   alt="smallwhite"
                   className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                />{" "}
+                />{' '}
               </i>
             </button>
           </Link>

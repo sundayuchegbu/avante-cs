@@ -1,18 +1,18 @@
-import styles, { layout } from "../style";
-import softpix1 from "../images/softpix1.png";
-import mobilesoft from "../images/mobilesoft.png";
-import { useNavigate } from "react-router-dom";
+import styles, { layout } from '../style';
+import softpix1 from '../images/softpix1.png';
+import mobilesoft from '../images/mobilesoft.png';
+import { useNavigate } from 'react-router-dom';
 const Softwarebanner = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="hidden md:block ">
         <div id="ctas" className={` mb-8 ${layout.sectionReverse}`}>
-          <div className={` ml-44 ${layout.sectionImgReverse}  `}>
+          <div className={` lg:ml-44 md:ml-8 ${layout.sectionImgReverse}  `}>
             <img
               src={softpix1}
               alt="sofware"
-              className="w-[471.19px] h-[518.48px] "
+              className=" w-[471.19px] h-[518.48px] "
             />
           </div>
           <div className={`   ${layout.sectionInfo}`}>
@@ -20,7 +20,7 @@ const Softwarebanner = () => {
               SOFTWARE <br className="sm:block hidden" /> DEVELOPMENT
             </h2>
             <div
-              className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
+              className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] lg:max-w-[470px] md:max-w-[310px] md:p-auto mt-5 mb-6`}
             >
               <p className="text-dark">
                 Avante is a software development company that specializes in
@@ -33,7 +33,7 @@ const Softwarebanner = () => {
             </div>
             <button
               className="bg-secondary text-white flex flex-start font-normal py-4 px-24 rounded"
-              onClick={() => navigate("/contacts")}
+              onClick={() => navigate('/contacts')}
             >
               Request a quote
             </button>
@@ -55,7 +55,7 @@ const Softwarebanner = () => {
             Service-oriented architecture (SOA) to improve productivity.
           </p>
           <button
-            onClick={() => navigate("/contacts")}
+            onClick={() => navigate('/contacts')}
             className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary "
           >
             <span className="mx-[60px] text-[14px] font-inter font-normal">

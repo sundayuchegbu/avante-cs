@@ -1,6 +1,6 @@
-import { layout } from "../style";
-import funmobile from "../images/funmobile.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import funmobile from '../images/funmobile.png';
+import { Link } from 'react-router-dom';
 
 const FunMobile = () => {
   return (
@@ -9,7 +9,7 @@ const FunMobile = () => {
         <div className="hidden md:block">
           <div
             id="cta9"
-            className={`relative md:mr-24  ${layout.sectionImgReverse1} `}
+            className={`relative lg:mr-24 md:mr-12  ${layout.sectionImgReverse1} `}
           >
             <img
               src={funmobile}
@@ -24,7 +24,7 @@ const FunMobile = () => {
           </div>
         </div>
       </div>
-      <div className={`${layout.sectionInfo} md:ml-56 px-8`}>
+      <div className={`${layout.sectionInfo} lg:ml-56 md:ml-32 px-8`}>
         <h2
           className={`font-inter font-semibold xs:text-[16px] md:mt-[150px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2  `}
         >
@@ -34,7 +34,7 @@ const FunMobile = () => {
           </span>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           An online company that provides mobile content such as ringtones,
           messaging solutions, flight booking services and Infosearch, an online

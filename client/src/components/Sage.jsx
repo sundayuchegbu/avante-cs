@@ -1,11 +1,11 @@
-import { layout } from "../style";
-import sage from "../images/sage.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import sage from '../images/sage.png';
+import { Link } from 'react-router-dom';
 
 const Sage = () => {
   return (
     <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-24 px-8 ${layout.sectionInfo}`}>
+      <div className={`lg:mx-24 md:mx-4 px-8 ${layout.sectionInfo}`}>
         <h2
           className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
@@ -15,7 +15,7 @@ const Sage = () => {
           </span>
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
         >
           Sage Integrated Marine Services Ltd specialises in providing marine
           and offshore support solutions to the oil and gas industry. The
@@ -33,7 +33,10 @@ const Sage = () => {
       </div>
       <div>
         <div className="hidden md:block">
-          <div id="" className={`${layout.sectionImg} mx-24 px-24 relative`}>
+          <div
+            id=""
+            className={`${layout.sectionImg} lg:mx-24 md:mx-2 px-24 relative`}
+          >
             <img
               src={sage}
               alt="sage"
@@ -46,7 +49,7 @@ const Sage = () => {
             <img src={sage} alt="sage" />
           </div>
         </div>
-      </div>{" "}
+      </div>{' '}
     </section>
   );
 };

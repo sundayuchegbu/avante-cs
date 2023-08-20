@@ -4,21 +4,21 @@ import productimage1 from '../images/productimage1.png';
 import { Link } from 'react-router-dom';
 const MoloyalDetails = () => {
   return (
-    <section className={`flex md:flex-row flex-col-reverse sm:py-16 py-6`}>
-      <div className={`md:mx-32 px-4 mt-12 ${layout.sectionInfo}`}>
+    <section className={`flex md:flex-row flex-col-reverse md:py-16 py-6`}>
+      <div className={`lg:mx-32  px-4 mt-12 ${layout.sectionInfo}`}>
         <h2
           className={`font-inter font-semibold sm:text-[16px] mt-[20px] text-[20px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-2 `}
         >
           MOLOYAL <br className="sm:block hidden" />
         </h2>
         <h1
-          className={`font-inter font-semibold sm:text-[28px] mt-[10px] text-[20px] text-secondary sm:leading-[30.8px] leading-[20.8px] w-full`}
+          className={`font-inter font-semibold lg:text-[28px] md:text-[20px] mt-[10px] text-[20px] text-secondary sm:leading-[30.8px] leading-[20.8px] w-full`}
         >
           {' '}
-          Free airtime rewards program.
+          A savings, ticketing, and loyalty product.
         </h1>
         <div
-          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] max-w-[470px] mt-5 mb-6 `}
+          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] min-w-[350px] mt-5 mb-6 `}
         >
           MoLoyal™ provides an easy to use fintech solution serving customers
           with loyalty points for transaction they normally carry out on day to
@@ -51,11 +51,11 @@ const MoloyalDetails = () => {
           />{' '}
         </Link>
       </div>
-      <div className={`${layout.sectionImg} sm:mx-24 px-24 relative`}>
+      <div className={`${layout.sectionImg} lg:mx-24 -md:mx-24 px-24 relative`}>
         <img
           src={productimage1}
           alt="card"
-          className=" block  sm:w-[479px] w-full  sm:h-[485.85px] h-full "
+          className=" block  lg:w-[479px] md:w-[500px] w-full  lg:h-[485.85px] md:h-[200px] h-full "
         />
       </div>
     </section>

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const { Schema, model } = mongoose;
 const postSchema = new Schema(
   {
@@ -6,21 +6,21 @@ const postSchema = new Schema(
     caption: {
       type: String,
       required: true,
-      maxlength: [300, "Your caption cannot excced 300 characters"],
+      maxlength: [150, 'Your caption cannot excced 300 characters'],
     },
     description: {
       type: String,
-      required: [true, "Please enter post details"],
+      required: [true, 'Please enter post details'],
     },
 
     image: {
       type: String,
     },
 
-    user: { type: mongoose.Schema.ObjectId, ref: "User" },
+    user: { type: mongoose.Schema.ObjectId, ref: 'User' },
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
 
-const Post = model("Post", postSchema);
+const Post = model('Post', postSchema);
 module.exports = Post;

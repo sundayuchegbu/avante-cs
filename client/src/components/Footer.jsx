@@ -12,11 +12,11 @@ import { Link } from 'react-router-dom';
 
 const Footer = ({ link }) => {
   return (
-    <div className={`bg-dark sm:px-16 px-6 flex justify-center items-start`}>
+    <div className={`bg-dark md:px-16 px-6 flex justify-center items-start`}>
       <div className=" xl:max-w-[1280px] w-full">
         <div className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
           <div
-            className={`${styles.flexStart} md:flex-row flex-col mb-10 w-full`}
+            className={`${styles.flexStart} lg:flex-row flex-col mb-10 w-full`}
           >
             <div className="flex-[3.0] flex flex-col justify-start mr-[100px] w-full ">
               <img src={logo} alt="logo" className="w-full " />

@@ -1,20 +1,20 @@
-import { layout } from "../style";
-import vision1 from "../images/vision1.png";
+import { layout } from '../style';
+import vision1 from '../images/vision1.png';
 const Vision1 = () => (
-  <section className="flex md:flex-row flex-col-reverse sm:py-16 py-6 md:ml-24">
-    <div className={`mx-12 ${layout.sectionInfo}`}>
+  <section className="flex md:flex-row flex-col-reverse lg:py-16  py-6 lg:ml-24 ">
+    <div className={`lg:mx-12 md:mx-2 ${layout.sectionInfo}`}>
       <h2
-        className={`font-Inter font-semibold xs:text-[16px] md:mt-[10px] mt-[20px] text-[14px] text-black   w-full mb-4 `}
+        className={`font-inter font-semibold xs:text-[16px] md:mt-[10px] mt-[20px] text-[14px] text-black   w-full mb-4 `}
       >
         OUR <span className="text-primary">MISSION</span>
       </h2>
       <h1
-        className={`font-Inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
+        className={`font-inter font-semibold xs:text-[28px] md:mt-[2px] text-[20px] text-black  w-full mb-4 text-primary `}
       >
-        Delivering Excellence Together.{" "}
+        Delivering Excellence Together.{' '}
       </h1>
       <div
-        className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
+        className={`font-inter font-normal  md:text-[16px] text-[12px] md:leading-[25.8px] leading-[25.8px] lg:max-w-[400px] md:w-[400px] md:mt-0 mt-5 mb-6`}
       >
         <ul className="text-dark list-disc font-inter font-normal ml-4">
           <li>
@@ -35,12 +35,12 @@ const Vision1 = () => (
             ambitious. <p className="mb-2"></p>
           </li>
           <li className="mt-4">
-            {" "}
+            {' '}
             By ensuring we provide the right resources at the right time, we aim
             to maximise the client business potential. <p className="mb-2"></p>
           </li>
           <li className="mt-4">
-            {" "}
+            {' '}
             Retaining our competitive edge through innovation is central to the
             way we operate and we are always looking at ways to improve our
             business processes and services.
@@ -48,7 +48,9 @@ const Vision1 = () => (
         </ul>
       </div>
     </div>
-    <div className={`${layout.sectionImg} md:mx-24 md:px-24 relative`}>
+    <div
+      className={`${layout.sectionImg} lg:mx-24 md:mx-2 lg:px-24 md:px-0 relative`}
+    >
       <img
         src={vision1}
         alt="vision"
