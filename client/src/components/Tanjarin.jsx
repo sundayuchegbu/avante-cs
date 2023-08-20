@@ -25,12 +25,12 @@ const Tanjarin = () => {
         >
           TANGERINE
           <br />
-          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
+          {/* <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
             LASTVEB up-skilling youth.
-          </span>
+          </span> */}
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[310px] mt-5 mb-6`}
         >
           Tanjarin.com is a news aggregation platform that pride itself on
           finding the most pertinent and important stories, videos, and every

@@ -37,7 +37,7 @@ const FoodConcept = () => {
           </Link>
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Food Concepts opened Chicken Republic in 2004 and their other brands
           of focus include Butterfield Bakery, Reeds and Pizza Republic. Apart

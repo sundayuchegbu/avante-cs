@@ -1,8 +1,8 @@
-import { layout } from "../style";
-import sme1 from "../images/sme1.png";
-import sme2 from "../images/sme2.png";
-import smallwhite from "../images/smallwhite.png";
-import { Link } from "react-router-dom";
+import { layout } from '../style';
+import sme1 from '../images/sme1.png';
+import sme2 from '../images/sme2.png';
+import smallwhite from '../images/smallwhite.png';
+import { Link } from 'react-router-dom';
 const GoodsBanner = () => {
   return (
     <div>
@@ -12,10 +12,10 @@ const GoodsBanner = () => {
             <h2
               className={`font-inter font-semibold xs:text-[60px] mt-[20px] text-[40px] text-black xs:leading-[60.8px] leading-[66.8px] w-full mb-4 `}
             >
-              Consumer Goods{" "}
+              Consumer Goods{' '}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter text-justify font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Avante Consulting provides tailored consulting services for
               consumer goods companies seeking to thrive in the ever-changing
@@ -26,7 +26,7 @@ const GoodsBanner = () => {
               growth in the dynamic consumer goods industry.
             </div>
             <Link to="/contacts">
-              {" "}
+              {' '}
               <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
                   Read more
@@ -36,7 +36,7 @@ const GoodsBanner = () => {
                     src={smallwhite}
                     alt="smallwhite"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </Link>
@@ -56,7 +56,7 @@ const GoodsBanner = () => {
             <img src={sme2} alt="consumer" className="w-[] h-[246.65px]" />
             <div className="flex-start bg-background mt-12 ">
               <h1 className="font-inter font-semibold text-[16px] underline decoration-4 underline-offset-4 decoration-primary decoration:w-4 underline-offset-[20px] ml-4 ">
-                Consumer Goods{" "}
+                Consumer Goods{' '}
               </h1>
 
               <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
@@ -78,13 +78,13 @@ const GoodsBanner = () => {
                     src={smallwhite}
                     alt="smallwhite"
                     className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-                  />{" "}
+                  />{' '}
                 </i>
               </button>
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>{' '}
     </div>
   );
 };

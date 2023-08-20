@@ -29,12 +29,12 @@ const Ninemobile = () => {
         >
           <span className="text-success">9</span>mobile
           <br />
-          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
+          {/* <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2   ">
             Campaign Management <br /> Automation{' '}
-          </span>
+          </span> */}
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[350px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[350px] mt-5 mb-6`}
         >
           9mobile is Nigeria’s most innovative telecoms network. They began
           trading in October 2008 with the ground breaking “0809uchoose”

@@ -19,7 +19,11 @@ const Footer = ({ link }) => {
             className={`${styles.flexStart} lg:flex-row flex-col mb-10 w-full`}
           >
             <div className="flex-[3.0] flex flex-col justify-start mr-[100px] w-full ">
-              <img src={logo} alt="logo" className="w-full " />
+              <img
+                src={logo}
+                alt="logo"
+                className="lg:w-full md:w-[600px] w-full"
+              />
               <p className={`${styles.paragraph5} mt-2 max-w-[470px]  `}>
                 We are a leading business and technology consulting
                 organisation, with a very strong focus on Customer Experience,

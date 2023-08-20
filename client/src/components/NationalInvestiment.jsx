@@ -12,12 +12,12 @@ const NationalInvestiment = () => {
         >
           THE NATIONAL SOCIAL INVESTMENT PROGRAMMS{' '}
           <br className="sm:block hidden" />
-          <span className=" text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
+          {/* <span className=" text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
             Customer service application
-          </span>
+          </span> */}
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           The National Social Investment Programmes were created to overcome the
           failings of the past and to enshrine the values and vision of the

@@ -11,12 +11,12 @@ const Pension = () => {
           className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
           STANBICIBTC PENSION <br className="" />
-          <span className=" text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
+          {/* <span className=" text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
             LASTVEB up-skilling youth.
-          </span>
+          </span> */}
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           StanbicIBTC Pension is the leading and largest private pension company
           in Nigeria. In order to service their large customer base efficiently

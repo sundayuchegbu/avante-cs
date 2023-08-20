@@ -32,13 +32,13 @@ const Union = () => {
         >
           UNION <span className="text-secondary ">BANK</span>{' '}
           <br className=" " />
-          <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
+          {/* <span className="text-primary font-Inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2 ">
             Campaign Management <br className="" />
             Automation
-          </span>
+          </span> */}
         </h2>
         <p
-          className={`font-Inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] min-w-[400px] mt-5 mb-6`}
+          className={`font-inter text-justify text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] min-w-[400px] mt-5 mb-6`}
         >
           SAS and Union Bank have determined a roadmap to formulating a
           partnership to achieve Union Bank’s Digital Transformation vision.

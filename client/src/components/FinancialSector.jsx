@@ -16,7 +16,7 @@ const FinancialSector = () => {
               Financial Sector
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
+              className={`font-inter text-justify font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
             >
               Avante Consulting has extensive experience working with clients in
               the financial sector. Our tailored consulting services help

@@ -16,7 +16,7 @@ const SMEBanner = () => {
               SME
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:min-w-[400px] mt-5 mb-6`}
+              className={`font-inter text-justify font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:min-w-[400px] mt-5 mb-6`}
             >
               Avante Consulting understands the unique challenges and
               aspirations of small and medium-sized enterprises (SMEs). Our

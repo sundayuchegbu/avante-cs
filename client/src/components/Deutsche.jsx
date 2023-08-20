@@ -11,12 +11,12 @@ const Deutsche = () => {
         >
           Deutsche Telekom AG
           <br />
-          <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2">
+          {/* <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2">
             Professional training assistance
-          </span>
+          </span> */}
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           Deutsche Telekom AG is a German telecommunications company
           headquartered in Bonn. Deutsche Telekom AG offers services such as

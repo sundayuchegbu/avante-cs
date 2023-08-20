@@ -9,12 +9,12 @@ const MtnNigeria = () => {
           className={`font-inter font-semibold xs:text-[20px] mt-[70px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-4`}
         >
           MTN NIGERIA <br />
-          <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2">
+          {/* <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2">
             Water transport infrastructure
-          </span>
+          </span> */}
         </h2>
         <div
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] lg:max-w-[470px] md:min-w-[300px] mt-5 mb-6`}
         >
           MTN Nigeria is the biggest telecoms company in Nigeria supporting over
           58 million subscribers. Consequently the eGain multichannel project is
@@ -41,7 +41,7 @@ const MtnNigeria = () => {
         <div className="hidden md:block">
           <div
             id=""
-            className={`${layout.sectionImg} lg:mx-24 -md:mx-12 px-24 relative`}
+            className={`${layout.sectionImg} lg:mx-24 -md:mx-12 lg:px-24 md:px-2 relative`}
           >
             <img
               src={mtn2}

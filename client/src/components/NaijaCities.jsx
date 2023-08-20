@@ -26,13 +26,13 @@ const NaijaCities = () => {
           className={`font-inter font-semibold xs:text-[16px] md:mt-[200px] mt-[-100px] text-[16px] text-black sm:leading-[60.8px] leading-[30.8px] w-full mb-2   `}
         >
           FUTURE CITIES <span className="text-secondary ">NIGERIA</span> <br />
-          <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
+          {/* <span className="text-primary font-inter font-semibold sm:text-[28px] md:mt-[50px] text-[20px]  sm:leading-[8.8px] leading-[6.8px] w-full mb-2  ">
             Collaborative infrastructure <br />
             program.
-          </span>
+          </span> */}
         </h2>
         <p
-          className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] min-w-[380px] mt-5 mb-6`}
+          className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] min-w-[380px] mt-5 mb-6`}
         >
           The Future Cities Nigeria (FCN) program is a series of infrastructure
           and capacity building projects delivered for Nigerian State

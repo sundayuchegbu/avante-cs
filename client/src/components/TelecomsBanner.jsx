@@ -14,7 +14,7 @@ const TelecomsBanner = () => {
               Telecoms sectors{' '}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:max-w-[500px] mt-5 mb-6`}
+              className={`font-inter text-justify font-normal text-black2 text-[16px] leading-[25.8px] lg:max-w-[470px] md:max-w-[500px] mt-5 mb-6`}
             >
               Avante Consulting is a trusted partner for telecom companies
               seeking to thrive in the dynamic and competitive
@@ -40,7 +40,9 @@ const TelecomsBanner = () => {
               </button>
             </Link>
           </div>
-          <div className={`${layout.sectionImg} md:mx-24 md:px-24   relative`}>
+          <div
+            className={`${layout.sectionImg} lg:mx-24 md:mx-12 lg:px-24 md:px-4   relative`}
+          >
             <img
               src={financial}
               alt="telecombanner"
