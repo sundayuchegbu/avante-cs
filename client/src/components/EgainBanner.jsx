@@ -1,7 +1,7 @@
-import styles, { layout } from "../style";
-import egainbanner from "../images/egainbanner.png";
-import smallebanner from "../images/smallebanner.png";
-import { Link } from "react-router-dom";
+import styles, { layout } from '../style';
+import egainbanner from '../images/egainbanner.png';
+import smallebanner from '../images/smallebanner.png';
+import { Link } from 'react-router-dom';
 const EgainBanner = () => {
   return (
     <div>
@@ -13,9 +13,9 @@ const EgainBanner = () => {
           <div className={`${layout.sectionInfo} ml-32`}>
             <h2 className={`${styles.heading3} mb-4 `}>eGain Collaboration</h2>
             <div
-              className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
+              className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] max-w-[470px] md:max-w-[300px] sm:p-auto mt-5 mb-6`}
             >
-              <p className="text-dark">
+              <p className="text-dark text-justify">
                 Our partnership with eGain strengthens our commitment to the
                 industry's most innovative omni-channel customer service and
                 knowledge management solutions. Avante is the number one eGain
@@ -25,7 +25,7 @@ const EgainBanner = () => {
             </div>
             <Link to="/contacts">
               <button className="bg-secondary text-white flex flex-start font-normal py-4 px-24 rounded">
-                Contact us{" "}
+                Contact us{' '}
               </button>
             </Link>
           </div>
@@ -40,7 +40,7 @@ const EgainBanner = () => {
           <h1 className=" font-inter font-semibold flex ml-[70px] text-primary mt-[-23px]">
             COLLABORATION
           </h1>
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
+          <p className="font-inter font-normal text-justify text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
             Our partnership with eGain strengthens our commitment to the
             industry's most innovative omni-channel customer service and
             knowledge management solutions. Avante is the number one eGain
@@ -50,7 +50,7 @@ const EgainBanner = () => {
           <Link to="/contacts">
             <button className="flex  items-center text-white text-[14px] ml-4 mt-8 h-[46px] w-[247px] rounded-lg  bg-secondary ">
               <span className="mx-[60px] text-[14px] font-inter font-normal">
-                Contact us{" "}
+                Contact us{' '}
               </span>
             </button>
           </Link>

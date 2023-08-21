@@ -1,11 +1,11 @@
-import bluetick from "../images/bluetick.png";
+import bluetick from '../images/bluetick.png';
 const EgainCard = () => {
   return (
     <div className="mt-12 mb-8">
       <h1 className="md:mx-32 font-inter md:text-[28px] text-[20px] mb-8 -px-2">
         <span className="text-primary">
-          {" "}
-          Knowledge-powered automation platform for customer engagement{" "}
+          {' '}
+          Knowledge-powered automation platform for customer engagement{' '}
         </span>
       </h1>
       <div className=" md:mx-24 flex flex-col md:flex-row">
@@ -17,7 +17,7 @@ const EgainCard = () => {
             </h3>
           </div>
           <div className="bg-background border-r-2 border-gray-300 p-4">
-            <p className="  text-black1 font-inter font-normal leading-[25.8px] xs:text-[14px] text-[12px] ">
+            <p className=" text-justify text-black1 font-inter font-normal leading-[25.8px] xs:text-[14px] text-[12px] ">
               Interactive and push experiences via web chat, in-app messaging,
               Apple Business Chat™, Facebook Messenger™, Google’s Business
               Messages, SMS, and WhatsApp. Open APIs to quickly connect via new
@@ -37,7 +37,7 @@ const EgainCard = () => {
               eGain Chat
             </h3>
           </div>
-          <div className="bg-background border-r-2 border-gray-300 p-4">
+          <div className="bg-background text-justify border-r-2 border-gray-300 p-4">
             <div className="text-black1 font-inter font-normal sm:text-[14px] leading-[25.8px] text-[12px]">
               eGain Chat enables you to offer real-time chat assistance to
               website visitors. Agents can exchange text messages, files, web
@@ -59,8 +59,8 @@ const EgainCard = () => {
               eGain Virtual Assistant™
             </h3>
           </div>
-          <div className="bg-background  border-gray-300  p-4">
-            <p className="text-black1 font-inter font-normal leading-[25.8px] sm:text-[14px] text-[12px]">
+          <div className="bg-background text-justify  border-gray-300  p-4">
+            <p className="text-black1 font-inter v font-normal leading-[25.8px] sm:text-[14px] text-[12px]">
               eGain’s chatbot provides the frontline support so your customer
               service staff can concentrate on more complex tasks. A customer
               simply chats with the virtual assistant (also called VA, virtual

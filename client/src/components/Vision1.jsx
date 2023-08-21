@@ -14,32 +14,32 @@ const Vision1 = () => (
         Delivering Excellence Together.{' '}
       </h1>
       <div
-        className={`font-inter font-normal  md:text-[16px] text-[12px] md:leading-[25.8px] leading-[25.8px] lg:max-w-[400px] md:w-[400px] md:mt-0 mt-5 mb-6`}
+        className={`font-inter font-normal  md:text-[16px] text-[12px] md:leading-[25.8px] leading-[25.8px] lg:max-w-[400px] md:w-[400px] w-[350px] md:mt-0 mt-5 mb-6`}
       >
-        <ul className="text-dark list-disc font-inter font-normal ml-4">
+        <ul className="text-dark text-justify list-disc font-inter font-normal ml-4">
           <li>
             Our mission statement is to contribute to the success of our clients
             by partnering with them to enhance their business processes and to
             create innovative solutions to their business challenges.
           </li>
           <p></p>
-          <li className="mt-4 mt-6">
+          <li className="mt-4 mt-6 text-justify">
             We are committed to growing our business through embracing
             technology, developing strong partnerships and by placing the
             emphasis on providing high levels of customer satisfaction.
           </li>
           <p></p>
-          <li className="mt-4">
+          <li className="mt-4 text-justify">
             We strive for excellence and aim to exceed expectations. We work
             hard to achieve our goals and we encourage our staff to be
             ambitious. <p className="mb-2"></p>
           </li>
-          <li className="mt-4">
+          <li className="mt-4 text-justify">
             {' '}
             By ensuring we provide the right resources at the right time, we aim
             to maximise the client business potential. <p className="mb-2"></p>
           </li>
-          <li className="mt-4">
+          <li className="mt-4 text-justify">
             {' '}
             Retaining our competitive edge through innovation is central to the
             way we operate and we are always looking at ways to improve our

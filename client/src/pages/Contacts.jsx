@@ -174,7 +174,7 @@ const Contacts = () => {
                     Avante Consulting{' '}
                     <span className="text-secondary">Solutions</span>{' '}
                   </h3>
-                  <p className="font-Inter font-normal text-dimWhite text-[12px] leading-[20.8px] mb-8">
+                  <p className="font-inter text-justify font-normal text-dimWhite text-[12px] leading-[20.8px] mb-8">
                     How can we be of help? Talk to us today on any of our four
                     growth pillars namely; Business Consulting, Software
                     Development, SAS Analytics, & eGain Collaboration.{' '}
@@ -377,7 +377,7 @@ const Contacts = () => {
               <span className="text-secondary">Solutions</span>{' '}
             </h3>
 
-            <p className="font-inter font-normal text-[12px] mt-8 w-[353px] max-w-[300px]  leading-[25.8px]">
+            <p className="font-inter text-justify font-normal text-[12px] mt-8 w-[353px] max-w-[300px]  leading-[25.8px]">
               How can we be of help? Talk to us today on any of our four growth
               pillars namely; Business Consulting, Software Development, SAS
               Analytics, & eGain Collaboration.{' '}

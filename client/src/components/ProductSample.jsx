@@ -27,7 +27,7 @@ const ProductSample = () => {
           </h3>{' '}
         </div>
         <p
-          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] lg:mt-[-120px] md:mt-[-120px] mt-0 mb-5 `}
+          className={`font-inter text-justify font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] lg:mt-[-120px] md:mt-[-120px] mt-0 mb-5 `}
         >
           MoLoyal provides an easy to use fintech solution serving customers
           with loyalty points for transaction they normally carry out on day to
@@ -37,7 +37,7 @@ const ProductSample = () => {
         </p>
         <p className="mb-4"></p>
         <p
-          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-5 mb-5 `}
+          className={`font-inter text-justify font-normal text-black2 md:text-[14px] text-[12px] md:leading-[25.8px] leading-[25.8px] max-w-[470px] -mt-5 mb-5 `}
         >
           The MoLoyal products are namely: MoSave, MoTickets, and the Loyalty
           Ecosystem; dedicated to promoting financial inclusion, user

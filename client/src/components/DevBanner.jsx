@@ -20,9 +20,9 @@ const DevBanner = () => {
           <div className={`ml-12 ${layout.sectionInfo}`}>
             <h2 className={`${styles.heading3} mb-4 `}>Web Development </h2>
             <div
-              className={`${styles.paragraph} lg:max-w-[470px] md:p-auto mt-5 mb-6 leading-[25.8px]`}
+              className={`${styles.paragraph} lg:max-w-[470px] md:max-w-[300px] md:p-auto mt-5 mb-6 leading-[25.8px]`}
             >
-              <p className="text-dark font-inter font-normal text-[14px] leading-[25.8px]">
+              <p className="text-dark text-justify font-inter font-normal text-[14px] leading-[25.8px]">
                 Welcome to our Web Development services, where we bring your
                 digital vision to life. Our skilled team of developers utilizes
                 a range of programming languages and frameworks to create
@@ -58,7 +58,7 @@ const DevBanner = () => {
           <h1 className=" font-inter font-semibold flex ml-[70px] text-primary mt-[-23px]">
             DEVELOPMENT
           </h1>
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+          <p className="font-inter text-justify font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
             View our projects below to see a lists of our clients and how we
             have helped them to take their business to the next level.
           </p>

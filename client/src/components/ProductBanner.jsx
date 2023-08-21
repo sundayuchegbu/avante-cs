@@ -23,9 +23,9 @@ const ProductBanner = () => {
               <img src={moloyallogo} alt="moloyal" className="md:w-[200px]" />{' '}
             </h2>
             <div
-              className={`${styles.paragraph} max-w-[470px]  md:p-auto mt-5 mb-6`}
+              className={`${styles.paragraph} lg:max-w-[470px] md:max-w-[300px]  md:p-auto mt-5 mb-6`}
             >
-              <p className="text-dark font-inter font-normal text-[16px] mb-4">
+              <p className="text-dark text-justify font-inter font-normal text-[16px] mb-4">
                 MoLoyal Company is a part of the Avante Consulting group of
                 companies that manufacture software and provide technology
                 services to leading organizations and institutions.

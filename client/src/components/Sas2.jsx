@@ -99,7 +99,7 @@ const Sas2 = () => {
             </span>
           </h2>
           <div
-            className={`font-inter font-normal text-black2 md:text-[16px] text-[12px] leading-[25.8px] lg:max-w-[470px] md:max-w-[570px] md:-mt-6 mt-[-10px] mb-6 px-2`}
+            className={`font-inter text-justify font-normal text-black2 md:text-[16px] text-[12px] leading-[25.8px] lg:max-w-[470px] md:max-w-[570px] md:-mt-6 mt-[-10px] mb-6 px-2`}
           >
             Avante is a silver partner of SAS and a solution partner within the
             Customer Intelligence practice. Avante has extensive experience in

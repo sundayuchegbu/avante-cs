@@ -45,7 +45,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="logo"
-          className="md:w-[192.76pxpx] lg:h-[46px] -ml-12"
+          className="lg:w-[350px] lg:h-full md:w-[170px] w-[150px]  -ml-12"
         />
       </NavLink>
       <div className=" md:flex hidden justify-end items-center flex-1 ">

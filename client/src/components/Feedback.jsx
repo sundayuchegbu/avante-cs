@@ -14,7 +14,7 @@ const Feedback = () => (
         Business Consulting
       </h2>
 
-      <p className="font-inter font-normal xs:text-[14px] leading-[25.8px] text-[12px] lg:ml-4 md:ml-0 ml-4">
+      <p className="font-inter text-justify font-normal xs:text-[14px] leading-[25.8px] text-[12px] lg:ml-4 md:ml-0 ml-4">
         We are a leading business and technology consulting organisation, with a
         very strong focus on Customer Experience, Knowledge Management, Loyalty
         and Ticketing solutions.{' '}
@@ -27,11 +27,11 @@ const Feedback = () => (
           <img src={round} alt="microsoft" />
         </div>
       </div>
-      <h2 className="lg:ml-4 md:ml-0 ml-4  lg:text-[18px] md:text-[12px] text-[16px]  mb-4 font-inter font-semibold">
+      <h2 className="lg:ml-4 md:ml-0 ml-4 -mt-8 lg:text-[18px] md:text-[12px] text-[16px]  mb-4 font-inter font-semibold">
         Technology Services
       </h2>
 
-      <p className="font-inter font-normal xs:text-[14px] leading-[25.8px] text-black2 text-[12px] lg:ml-4 md:ml-0 ml-4">
+      <p className="font-inter text-justify font-normal xs:text-[14px] leading-[25.8px] text-black2 text-[12px] lg:ml-4 md:ml-0 ml-4">
         We are committed to growing our business through embracing technology,
         developing strong partnerships and by placing the emphasis on providing
         high levels of customer satisfaction.{' '}
@@ -48,7 +48,7 @@ const Feedback = () => (
         Solutions
       </h2>
 
-      <p className="font-inter font-normal text-black2 leading-[25.8px] xs:text-[14px] text-[12px] ml-4">
+      <p className="font-inter font-normal text-justify text-black2 leading-[25.8px] xs:text-[14px] text-[12px] ml-4">
         In the role of a trusted advisor, Avante consistently delivers solutions
         that are measurable, implementable and customized to your requirements.
       </p>

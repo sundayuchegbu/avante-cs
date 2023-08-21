@@ -18,7 +18,7 @@ const MoloyalDetails = () => {
           A savings, ticketing, and loyalty product.
         </h1>
         <div
-          className={`font-inter font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] min-w-[350px] mt-5 mb-6 `}
+          className={`font-inter text-justify font-normal text-black2 md:text-[14px] text-[12px] leading-[25.8px] min-w-[350px] mt-5 mb-6 `}
         >
           MoLoyal™ provides an easy to use fintech solution serving customers
           with loyalty points for transaction they normally carry out on day to

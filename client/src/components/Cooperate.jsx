@@ -29,7 +29,7 @@ const Cooperate = () => (
         by providing Business Tools
       </h3>
       <div
-        className={`font-inter font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-4 mb-6`}
+        className={`font-inter text-justify font-normal text-black2 text-[14px] leading-[25.8px] max-w-[470px] mt-4 mb-6`}
       >
         Avante Consulting Solutions provides business and technology services
         and solutions to participants in the Financial Services, Public Sector,

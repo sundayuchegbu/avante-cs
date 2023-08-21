@@ -10,7 +10,7 @@ const Banner = () => (
         Driving Success Through <br />
         Innovative Solutions{' '}
       </h2>
-      <p className=" font-inter text-[16px] leading-[25.8px] text-white mb-6 lg:ml-[100px] md:ml-[20px] lg:w-[520px] md:w-[300px]">
+      <p className=" font-inter text-justify text-[16px] leading-[25.8px] text-white mb-6 lg:ml-[100px] md:ml-[20px] lg:w-[520px] md:w-[300px]">
         At Avante Consulting Solutions, we are dedicated to driving success for
         your business. With our innovative solutions and industry expertise, we
         empower organizations to thrive in today's dynamic market. Partner with

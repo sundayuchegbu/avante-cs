@@ -1,5 +1,5 @@
-import { layout } from "../style";
-import consulting from "../images/consulting.png";
+import { layout } from '../style';
+import consulting from '../images/consulting.png';
 
 const BusinessConsulting = () => {
   return (
@@ -15,7 +15,7 @@ const BusinessConsulting = () => {
               className="w-4 h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
               checked
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -25,7 +25,7 @@ const BusinessConsulting = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -35,7 +35,7 @@ const BusinessConsulting = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -45,7 +45,7 @@ const BusinessConsulting = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey "
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -55,7 +55,7 @@ const BusinessConsulting = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
           <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
             <input
@@ -65,7 +65,7 @@ const BusinessConsulting = () => {
               name="list-radio"
               className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
               disabled
-            />{" "}
+            />{' '}
           </li>
         </ul>
         <div className="flex justify-center item-center mt-12">
@@ -87,7 +87,7 @@ const BusinessConsulting = () => {
                 className="w-4 h-4 checked:bg-secondary text-red-500 focus:ring-red-500 disabled:bg-secondary"
                 checked
                 disabled
-              />{" "}
+              />{' '}
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
@@ -97,7 +97,7 @@ const BusinessConsulting = () => {
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
-              />{" "}
+              />{' '}
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
@@ -107,7 +107,7 @@ const BusinessConsulting = () => {
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
-              />{" "}
+              />{' '}
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
@@ -117,7 +117,7 @@ const BusinessConsulting = () => {
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
-              />{" "}
+              />{' '}
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
@@ -127,7 +127,7 @@ const BusinessConsulting = () => {
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
-              />{" "}
+              />{' '}
             </li>
             <li className="w-full  border-gray-200 rounded-t-lg dark:border-gray-600 mb-8">
               <input
@@ -137,7 +137,7 @@ const BusinessConsulting = () => {
                 name="list-radio"
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-1 dark:bg-grey"
                 disabled
-              />{" "}
+              />{' '}
             </li>
           </ul>
         </div>
@@ -154,7 +154,7 @@ const BusinessConsulting = () => {
         <div
           className={`font-Inter font-normal text-black1 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
         >
-          <p className=" font-inter font-normal text-dark list-disc leading-[25.8px] md:p-0 p-4 ">
+          <p className=" font-inter text-justify font-normal text-dark list-disc leading-[25.8px] md:p-0 p-4 ">
             Avante Consulting provides implementation solutions for our
             customers from pre-sales assistance through to “go-live” events.
             These solutions are based on a proven implementation methodologies
@@ -166,13 +166,13 @@ const BusinessConsulting = () => {
             industry-specific business expertise. Our implementation support
             services include, but are not limited to:
           </p>
-          <ul className="font-inter font-normal text-dark md:text-[14px] text-[12px] list-disc ml-8">
+          <ul className="font-inter text-justify font-normal text-dark md:text-[14px] text-[12px] list-disc ml-8">
             <li>
               Complete product implementations, encompassing all implementation
               phases from project definition to the final production “go-live”.
             </li>
             <li>
-              {" "}
+              {' '}
               Business and functional design, gap analysis, and transition
               planning
             </li>
@@ -183,7 +183,7 @@ const BusinessConsulting = () => {
             </li>
             <li>Functional and technical operational support.</li>
           </ul>
-          <p className="font-inter font-normal text-dark1 md:text-[14px] text-[12px] md:p-0 p-4 list-disc mt-2 leading-[25.8px]">
+          <p className="font-inter text-justify font-normal text-dark1 md:text-[14px] text-[12px] md:p-0 p-4 list-disc mt-2 leading-[25.8px]">
             Our professionals share a vision and are selected based on quality,
             like-mindedness, and commitment to client service. Outstanding
             client service continues to be our top priority.

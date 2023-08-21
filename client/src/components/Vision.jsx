@@ -22,8 +22,8 @@ const Vision = () => (
       <div
         className={`font-inter font-normal text-background md:text-[14px] text-[12px] leading-[25.8px]  mt-5 mb-6 `}
       >
-        <ul className="">
-          <li className="text-dark list-disc ml-5">
+        <ul className="text-justify">
+          <li className="text-dark list-disc ml-5 text-justify">
             Our vision is to be the most respected and trusted IT{' '}
             <p className="mb-2"></p> professional services firm recognized by
             our clients for<p className="mb-2"></p> delivering excellence.

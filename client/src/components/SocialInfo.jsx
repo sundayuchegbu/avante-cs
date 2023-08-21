@@ -97,7 +97,7 @@ const SocialInfo = () => {
           </span>
         </h2>
         <div
-          className={`font-inter font-normal text-black2 sm:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:mt-5 mt-2 mb-6 `}
+          className={`font-inter text-justify font-normal text-black2 sm:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:mt-5 mt-2 mb-6 `}
         >
           {' '}
           <span className="font-inter font-semibold">
@@ -133,7 +133,9 @@ const SocialInfo = () => {
           campaigns, tracking key metrics and providing regular reports to
           measure success and identify areas for improvement.
           <p className="mb-4"></p>
-          <h4 className="font-semibold">Why Choose Avante Consulting? </h4>
+          <h4 className="font-semibold text-justify">
+            Why Choose Avante Consulting?{' '}
+          </h4>
           Expertise in social media trends, algorithms, and best practices. Time
           and resource savings with our comprehensive management. Enhanced brand
           presence and increased awareness. Targeted audience engagement for

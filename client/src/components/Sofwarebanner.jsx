@@ -20,7 +20,7 @@ const Softwarebanner = () => {
               SOFTWARE <br className="sm:block hidden" /> DEVELOPMENT
             </h2>
             <div
-              className={`font-inter font-normal text-dimWhite text-[16px] leading-[25.8px] lg:max-w-[470px] md:max-w-[310px] md:p-auto mt-5 mb-6`}
+              className={`font-inter text-justify font-normal text-dimWhite text-[16px] leading-[25.8px] lg:max-w-[470px] md:max-w-[310px] md:p-auto mt-5 mb-6`}
             >
               <p className="text-dark">
                 Avante is a software development company that specializes in
@@ -47,7 +47,7 @@ const Softwarebanner = () => {
             SOFTWARE
           </h1>
           <h1 className="flex ml-32 mt-[-20px]">DEVELOPMENT</h1>
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+          <p className="font-inter text-justify font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
             Avante is a software development company that specializes in
             e-commerce, mobile solutions, customer relationship management, and
             enterprise resource management. They have experience building custom

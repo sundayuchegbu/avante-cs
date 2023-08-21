@@ -13,7 +13,7 @@ const Banner2 = () => (
         Experience. Expertise. <br />
         Exceptional Results. Avante{' '}
       </h2>
-      <p className=" font-inter text-[16px] text-white mb-6 lg:ml-[100px] md:ml-[20px] lg:w-[520px] md:w-[350px]">
+      <p className=" font-inter text-justify text-[16px] text-white mb-6 lg:ml-[100px] md:ml-[20px] lg:w-[520px] md:w-[350px]">
         At Avante Consulting, we bring a wealth of experience and expertise to
         every project. With our dedicated team, we deliver exceptional results
         that exceed client expectations. Partner with us for transformative

@@ -24,7 +24,7 @@ const SocialMedia = () => {
               Media for Business Success <br className="lg:block hidden" />{' '}
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto sm:-mt-5 mb-6 p-6`}
+              className={`font-inter text-justify font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] sm:p-auto sm:-mt-5 mb-6 p-6`}
             >
               In the ever-evolving world of social media, effectively managing
               your online presence is essential for staying ahead of the
@@ -42,7 +42,7 @@ const SocialMedia = () => {
             Harness the Power of Social Media for Business Success{' '}
           </h1>
 
-          <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
+          <p className="font-inter text-justify font-normal text-[12px] mt-12 ml-4 mr-4 leading-[30.8px]">
             In the ever-evolving world of social media, effectively managing
             your online presence is essential for staying ahead of the
             competition. At Avante Consulting, we specialize in providing

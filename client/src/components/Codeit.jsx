@@ -180,7 +180,7 @@ const Codeit = () => {
         <div
           className={`font-Inter font-normal  text-background text-[15px] leading-[25.8px] max-w-[470px]  mt-5 mb-6`}
         >
-          <div className="text-dark ">
+          <div className="text-dark text-justify ">
             We are a leading business and technology consulting organisation,
             with a very strong focus on Customer Experience, Knowledge
             Management, Loyalty, Ticketing, Transportation and Energy solutions.

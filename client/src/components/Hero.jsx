@@ -16,7 +16,7 @@ const Hero = () => {
               SAS Analytics
             </h2>
             <div
-              className={`font-inter font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
+              className={`font-inter text-justify font-normal text-black2 text-[16px] leading-[25.8px] max-w-[470px] mt-5 mb-6`}
             >
               Avante is a silver partner of SAS and a solution partner within
               the Customer Intelligence practice. They have experience in
@@ -54,7 +54,7 @@ const Hero = () => {
               <h1 className="flex ml-[60px] mt-[-22px] font-semibold text-primary">
                 ANALYTICS
               </h1>
-              <p className="font-inter font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
+              <p className="font-inter text-justify font-normal text-[12px] mt-12 ml-4 mr-4 leading-[25.8px]">
                 Avante is a software development company that specializes in
                 e-commerce, mobile solutions, customer relationship management,
                 and enterprise resource management. They have experience
