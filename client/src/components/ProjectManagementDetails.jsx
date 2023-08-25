@@ -12,7 +12,7 @@ const ProjectManagementDetails = () => {
           Project Management:
         </h1>
         <div
-          className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
+          className={`font-inter text-justify font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
         >
           Successful projects require effective Project Management, and that's
           precisely what we excel at. At Avante Consulting, our experienced

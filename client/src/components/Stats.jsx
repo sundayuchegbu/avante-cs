@@ -21,10 +21,10 @@ const Stats = () => (
 
       <div className="md:p-12 p-6  mt-0 md:mb-0 hover:bg-red-700   object-contain md:h-[360] md:w-[360] ">
         <h2 className="font-inter font-semibold  md:text-[80px] text-[22.77px] font-bold display-5 text-primary hover:text-white ">
-          10+
+          50+
         </h2>
         <h5 className="font-inter font-semibold  md:text-[24px] text-[6.83px]  mt-4">
-          Complete Projects{" "}
+          Complete Projects{' '}
         </h5>
       </div>
 
@@ -33,7 +33,7 @@ const Stats = () => (
           5+
         </h2>
         <h5 className="font-inter font-semibold  md:text-[24px] text-[6.83px] font-medium mt-4">
-          Live products{" "}
+          Live products{' '}
         </h5>
       </div>
     </div>

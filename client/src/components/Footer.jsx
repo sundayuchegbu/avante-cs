@@ -124,12 +124,12 @@ const Footer = ({ link }) => {
                   >
                     Corporate Philosophy{' '}
                   </a>
-                  <ahref
+                  <a
                     href="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
                     Corporate Profile{' '}
-                  </ahref>
+                  </a>
                   <a
                     href="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block mb-4`}

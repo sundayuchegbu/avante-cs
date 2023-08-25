@@ -12,7 +12,7 @@ const UserResearchDetails = () => {
           User Experience Research:{' '}
         </h1>
         <div
-          className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
+          className={`font-inter text-justify font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
         >
           To build products and services that truly resonate with your
           customers, understanding their needs and preferences is paramount. Our

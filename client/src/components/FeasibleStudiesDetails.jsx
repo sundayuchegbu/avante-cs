@@ -12,7 +12,7 @@ const FeasibleStudiesDetails = () => {
           Feasibility Studies:{' '}
         </h1>
         <div
-          className={`font-inter font-normal  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
+          className={`font-inter font-normal text-justify  sm:text-[16px] text-[12px] sm:leading-[25.8px] leading-[25.8px] max-w-[400px] md:mt-0 mt-5 mb-6`}
         >
           Before embarking on a new venture, it is crucial to assess its
           viability and potential risks. Our Feasibility Studies are designed to

@@ -154,7 +154,7 @@ const ImplementDetails = () => {
         <div
           className={`font-inter font-normal text-black1 md:text-[14px] text-[12px] leading-[30.8px] max-w-[470px] sm:p-auto mt-5 mb-6`}
         >
-          <p className=" font-inter font-normal text-dark list-disc leading-[25.8px] md:p-4 p-4 md:mb-4">
+          <p className=" font-inter text-justify font-normal text-dark list-disc leading-[25.8px] md:p-4 p-4 md:mb-4">
             At Avante Consulting, our Implementation Services go beyond just
             software installation; we are your trusted partners in transforming
             your business processes and systems. Our expert team collaborates
