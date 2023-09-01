@@ -33,7 +33,7 @@ const AgencyBanner = () => {
               {' '}
               <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
                 <span className="mx-8 text-[12px] font-inter font-normal">
-                  Read more
+                  Learn more
                 </span>
                 <i className="fas fa-chevron-right">
                   <img
@@ -75,18 +75,20 @@ const AgencyBanner = () => {
             citizen services. Partner with us to navigate the complexities of
             government operations and drive sustainable growth.
           </p>
-          <button className="flex  items-center text-white text-[12px] ml-8 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
-            <span className="mx-8 text-[12px] font-inter font-normal">
-              Read more
-            </span>
-            <i className="fas fa-chevron-right">
-              <img
-                src={smallwhite}
-                alt="smallwhite"
-                className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
-              />{' '}
-            </i>
-          </button>
+          <Link to="/contacts">
+            <button className="flex  items-center text-white text-[12px] ml-8 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
+              <span className="mx-8 text-[12px] font-inter font-normal">
+                Learn more
+              </span>
+              <i className="fas fa-chevron-right">
+                <img
+                  src={smallwhite}
+                  alt="smallwhite"
+                  className="sm:w-[100%] w-[50%] sm:h-[100%] h-[50%]"
+                />{' '}
+              </i>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

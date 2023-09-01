@@ -28,7 +28,7 @@ const SMEBanner = () => {
             </div>
             <button className="flex  items-center text-white text-[12px] -ml-2 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
               <span className="mx-8 text-[12px] font-inter font-normal">
-                Read more
+                Learn more{' '}
               </span>
               <i className="fas fa-chevron-right">
                 <img
@@ -69,7 +69,7 @@ const SMEBanner = () => {
           <Link to="/contacts">
             <button className="flex  items-center text-white text-[12px] ml-4 mt-8 h-[45px] w-[165px] rounded-lg  bg-secondary ">
               <span className="mx-8 text-[12px] font-inter font-normal">
-                Read more
+                Learn more{' '}
               </span>
               <i className="fas fa-chevron-right">
                 <img

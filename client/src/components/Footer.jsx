@@ -118,24 +118,24 @@ const Footer = ({ link }) => {
                   About Us{' '}
                 </h4>
                 <ul className="list-none mb-4 block">
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
                     Corporate Philosophy{' '}
-                  </a>
-                  <a
-                    href="/about"
+                  </Link>
+                  <Link
+                    to="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer mb-4 block`}
                   >
                     Corporate Profile{' '}
-                  </a>
-                  <a
-                    href="/about"
+                  </Link>
+                  <Link
+                    to="/about"
                     className={`font-inter font-normal text-[16px] leading-[24px] text-background hover:text-primary  cursor-pointer block mb-4`}
                   >
                     Our Partners{' '}
-                  </a>
+                  </Link>
                 </ul>
               </div>
             </div>

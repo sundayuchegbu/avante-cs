@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const getAllPosts = async () => {
   try {
     const { data } = await axios.get(
-      "https://avante-css.onrender.com/api/v1/posts"
+      'https://avante-css.onrender.com/api/v1/posts'
     );
     console.log(data);
     return data;
